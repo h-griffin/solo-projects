@@ -4,6 +4,7 @@
 #
 
 def simpleArraySum(arr):    # takes in arr length, not sure how
+    """takes in an array and adds all indices together"""
     counter = 0
     for i in arr:
         counter += i

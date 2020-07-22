@@ -8,6 +8,7 @@ import sys
 
 # Complete the aVeryBigSum function below.
 def aVeryBigSum(ar):
+    """takes in n length arr and adds all together"""
     all_sums = 0
     for i in ar:
         all_sums += i

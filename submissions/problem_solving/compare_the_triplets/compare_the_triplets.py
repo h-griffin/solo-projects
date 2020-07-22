@@ -1,5 +1,7 @@
 # Complete the compareTriplets function below.
 def compareTriplets(a, b):
+    """takes in two arrays with 3 indices and compares them,
+    returning a list of points for each index larger than the other array"""
     point_list = []
     aPoints=0
     bPoints=0
