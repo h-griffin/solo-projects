@@ -16,18 +16,28 @@ import sys
 def diagonalDifference(arr):
     """takes in a matrix array and adds two diagonals together,
     returning the absolute value of the difference"""
-    n = len(arr)
-    principal = 0
+
+    n = len(arr)-1      #len=4
+    principal = 0 # 11
     secondary = 0
-    for i in range(n):
-        for j in range(n):
+    for i in range(0, n):
+        for j in range(0, n):
             if (i == j):
                 principal += arr[i][j]
             if ((i+j) == (n - 1)):
                 secondary += arr[i][j]  # <<< IndexError: list index out of range
 
     equation = principal - secondary
-    return abs(equation)
+    return principal
+    # return abs(equation)
+
+
+#       i  ([[3],
+#
+#            j  j  j
+#       i  [11, 2, 4],
+#       i  [4, 5, 6],
+#       i  [10, 8, -12]])
 
 # if __name__ == '__main__':
 #     diagonalDifference([[3],
