@@ -36,3 +36,12 @@ def test_all_b():
     actual = compareTriplets(a,b)
     expected = [0, 3]
     assert actual == expected
+
+def test_all_draw():
+    a = [1, 2, 3]
+    b = [1, 2, 3]
+    #    -  -  -
+
+    actual = compareTriplets(a,b)
+    expected = [0, 0]
+    assert actual == expected
