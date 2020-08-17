@@ -1,5 +1,5 @@
 import pytest
-from submissions.problem_solving.simple_array_sum.simple_array_sum import simpleArraySum
+from problem_solving.simple_array_sum.simple_array_sum import simpleArraySum
 
 def test_pos_1():
     actual = simpleArraySum([1,2,3,4,10,11])    # takes in n length arr, not sure how
