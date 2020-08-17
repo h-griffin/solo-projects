@@ -1,5 +1,5 @@
 import pytest
-from submissions.problem_solving.compare_the_triplets.compare_the_triplets import compareTriplets
+from problem_solving.compare_the_triplets.compare_the_triplets import compareTriplets
 
 def test_draw():
     a = [5, 6, 7]

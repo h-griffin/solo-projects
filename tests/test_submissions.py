@@ -1,4 +1,4 @@
-from submissions.problem_solving import __version__
+from problem_solving import __version__
 
 
 def test_version():

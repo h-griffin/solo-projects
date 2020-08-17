@@ -1,6 +1,6 @@
 
 import pytest
-from submissions.problem_solving.diagonal_difference.diagonal_difference import diagonalDifference
+from problem_solving.diagonal_difference.diagonal_difference import diagonalDifference
 
 #    ([ [3],
 #     [ 11, 2, 4 ],
