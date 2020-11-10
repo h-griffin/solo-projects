@@ -20,5 +20,5 @@
 
 - [print linked list](problem_solving/print_linked_list)
 
-
+- [weird - not weird (fizzbuzz)](problem_solving/not_weird)
 
