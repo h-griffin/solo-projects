@@ -22,5 +22,6 @@
 
 - [weird - not weird (fizzbuzz)](problem_solving/not_weird)
 
-- [arithmatic operators and division](problem_solving/aritmatic)
+- [arithmatic operators and division](problem_solving/arithmatic)
 
+- [leap lear](problem_solving/leap_year)
