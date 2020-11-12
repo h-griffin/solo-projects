@@ -1,4 +1,4 @@
-## Task
+# Task : Math
 The provided code stub reads two integers from STDIN, a and b. Add code to print three lines where:
 
 The first line contains the sum of the two numbers.
@@ -40,7 +40,7 @@ Print the three lines as explained above.
 3 * 2 = 6
 
 
-## Task
+# Task : Division
 The provided code stub reads two integers, a and b, from STDIN.
 
 Add logic to print two lines. The first line should contain the result of integer division, a //b . The second line should contain the result of float division, a /b .
@@ -74,7 +74,7 @@ Print the two lines as described above.
 1.33333333333
 
 
-# Task
+# Task : Squared
 The provided code stub reads and integer,n , from STDIN. For all non-negative integers , i<n print i^2.
 
 ## Example
