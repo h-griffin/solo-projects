@@ -7,12 +7,17 @@ def math( a, b):
     print(multiplication)
 
 def div( a,b):
-    
+
+def squares(n):
+    for i in range(n):
+        print(i**2)
 
 
 if __name__ == '__main__':
     # a = int(input())
     # b = int(input())
     math(a, b)
+    div(a,b)
+    squares(n)
 
 
