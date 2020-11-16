@@ -1,6 +1,12 @@
 
 
 def weird(n):
+    """takes in an integer and returns
+    not weird if it is in the range of 2-6 and even ,
+    returns weird if it is in the range of 6-21 and even,
+    and returns not weird if it is less than 20 and even,
+    if it is not even it returns weird.
+    """
     if n % 2 == 0:
         if n in range(2,6):
             print("Not Weird")

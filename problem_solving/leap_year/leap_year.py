@@ -14,6 +14,7 @@
     # return leap
 
 def is_leap(year):
+    """takes in a year and returns boolean if leap year"""
     return year % 4 == 0 and (year % 400 == 0 or year % 100 != 0)
 
 if __name__ == "__main__":
