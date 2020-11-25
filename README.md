@@ -3,7 +3,7 @@
 
 # [griffins hackerrank](https://www.hackerrank.com/haleygriffin708)
 
-## problem Solving
+## problem Solving : Python
 - [simple array sum](problem_solving/simple_array_sum)
 
 - [compare the triplets](problem_solving/compare_the_triplets)
