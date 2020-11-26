@@ -1,5 +1,5 @@
 # HackerRank
-#### note : some challenges pass in hackerrank web editor but not in VScode
+#### note : some challenges pass tests in hackerrank web editor but not in VScode
 
 # [griffins hackerrank](https://www.hackerrank.com/haleygriffin708)
 
