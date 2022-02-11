@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $( document ).ready(function() {
+            console.log( "document loaded" );
+        });
+        
+        $( window ).on( "load", function() {
+            console.log( "window loaded" );
+        });
+        </script>
+        <script src="table.js" ></script>
+    </head>
+<body>
+    
+
+                        <!-- Tabla Mes -->
+                        <div class="dataTableParent">
+                            <table class="table dataTable myTable" id="tableMonth">
+                                <thead>
+                                    <tr>
+                                        <th class="oddCell">Vendedor</th>
+                                        <th class="oddCell">Nombre Vendedor</th>
+                                        <th>Cotiza</th>
+                                        <th>Fideliza</th>
+                                        <th>Elige</th>
+                                        <th>Unidades</th>
+                                        <th>MG (%)</th>
+                                        <th>Venta</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="oddCell">261</td>
+                                        <td class="oddCell">PAULA TORRES</td>
+                                        <td>34</td>
+                                        <td>32</td>
+                                        <td>404</td>
+                                        <td>2.235</td>
+                                        <td>36,29 %</td>
+                                        <td>$ 8.642.219</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="oddCell">60</td>
+                                        <td class="oddCell">DONATILA CARTES</td>
+                                        <td>36</td>
+                                        <td>29</td>
+                                        <td>339</td>
+                                        <td>2.265</td>
+                                        <td>36,29 %</td>
+                                        <td>$ 8.642.219</td>
+                                    </tr>
+                                <tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="boldText">70</td>
+                                        <td class="boldText">61</td>
+                                        <td class="boldText">743</td>
+                                        <td class="boldText">4.786</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tfoot>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+</body>
+</html>
