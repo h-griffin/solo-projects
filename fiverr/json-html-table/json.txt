@@ -1,0 +1,101 @@
+{
+"ventaBrutaTotal": 66604498,
+"diferenciaVentaBrutaMetaReal": -1796368,
+"porcentajeCumplimientoVenta": -29.772264560017394,
+"metaVentaBruta": 64808130,
+"metaMargenPorcentual": 36.945441612590535,
+"avanceMargenMensual": 0,
+"margenCumplimiento": 0,
+"ventaVendedores": [
+{
+"codigoVendedor": "1",
+"nombreVendedor": "MARIBEL CONTRERAS",
+"cotiza": 0,
+"fideliza": 2,
+"elige": 54,
+"unidades": 299,
+"margenP": 41.46,
+"ventaBruta": 1930792
+},
+{
+"codigoVendedor": "2",
+"nombreVendedor": "SAMIA JOUDIEH",
+"cotiza": 0,
+"fideliza": 0,
+"elige": 8,
+"unidades": 133,
+"margenP": 35.86,
+"ventaBruta": 627213
+},
+{
+"codigoVendedor": "3",
+"nombreVendedor": "CARMEN NOVOA",
+"cotiza": 0,
+"fideliza": 0,
+"elige": 0,
+"unidades": 0,
+"margenP": 0,
+"ventaBruta": 0
+},
+{
+"codigoVendedor": "4",
+"nombreVendedor": "NORMA MUÑOZ",
+"cotiza": 0,
+"fideliza": 0,
+"elige": 0,
+"unidades": 0,
+"margenP": 0,
+"ventaBruta": 0
+},
+{
+"codigoVendedor": "5",
+"nombreVendedor": "CESAR VILLAGRAN",
+"cotiza": 0,
+"fideliza": 0,
+"elige": 0,
+"unidades": 235,
+"margenP": 96.74,
+"ventaBruta": 3452108
+},
+{
+"codigoVendedor": "6",
+"nombreVendedor": "ROCIO MENDEZ",
+"cotiza": 1,
+"fideliza": 91,
+"elige": 54,
+"unidades": 4016,
+"margenP": 38.12,
+"ventaBruta": 28678273
+},
+{
+"codigoVendedor": "7",
+"nombreVendedor": "MARIA JULIA RIVERA",
+"cotiza": 0,
+"fideliza": 0,
+"elige": 0,
+"unidades": 0,
+"margenP": 0,
+"ventaBruta": 0
+},
+{
+"codigoVendedor": "8",
+"nombreVendedor": "CARLOS VILLAGRAN NOVOA",
+"cotiza": 0,
+"fideliza": 0,
+"elige": 0,
+"unidades": 0,
+"margenP": 0,
+"ventaBruta": 0
+},
+{
+"codigoVendedor": "9",
+"nombreVendedor": "ITALO FLORES",
+"cotiza": 0,
+"fideliza": 105,
+"elige": 95,
+"unidades": 4295,
+"margenP": 37.87,
+"ventaBruta": 31916112
+}
+]
+}
