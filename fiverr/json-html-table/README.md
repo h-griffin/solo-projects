@@ -35,3 +35,10 @@ this code accesses the array `ventaVendedores` and the index is set to `[i]`, wh
 77
 ```
 added a class identifier and Math to the CSS modifier
+
+# option tags
+- setting the select option values to corresponding date numbers for month and year query, then watching the options on change to update table.
+
+- on update it clears the html body of old content and selects the option values from the selected to use in a template literal to piece together a date string to pass into the url to query db.
+
+
