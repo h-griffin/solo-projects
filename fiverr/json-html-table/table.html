@@ -13,15 +13,20 @@
         $( document ).ready(function() {
             console.log( "document loaded" );
         });
-        
+
         $( window ).on( "load", function() {
             console.log( "window loaded" );
         });
+
+        window.setInterval('refresh()', 10000);
+          function refresh() {
+              window .location.reload();
+        }
         </script>
         <script src="table.js" ></script>
     </head>
 <body>
-    
+
 
                         <!-- Tabla Mes -->
                         <div class="dataTableParent">
