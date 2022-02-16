@@ -41,4 +41,17 @@ added a class identifier and Math to the CSS modifier
 
 - on update it clears the html body of old content and selects the option values from the selected to use in a template literal to piece together a date string to pass into the url to query db.
 
+# html to json table (for each)
+-
+
+# auto scroll
+-
+
+# number formatting with string.tolocal
+-
+
+# timed refresh
+
+# chart.js
+-
 
