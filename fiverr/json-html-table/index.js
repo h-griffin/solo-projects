@@ -195,9 +195,32 @@ $(document).ready(function () {
 
     });
 
-    function pageScroll() {
-        window.scrollBy(0,1);
-        scrolldelay = setTimeout(pageScroll,30);
+     //Scroll
+     function scrollpage() {
+        function f() {
+            window.scrollTo(0, i);
+            if (status == 0) {
+                i = i + 0.1; //scroll speed top to bottom
+                if (i >= Height) {
+                    status = 1000;
+                }
+            } else {
+                i = i - 1; //scroll speed bottom to top
+                if (i <= 0.1) {
+                    status = 0;
+                }
+            }
+        setTimeout(f, 0.0001);
+        }
+        f();
     }
-    pageScroll();
+    var Height = Math.max($(document).height(), $(window).height());  // <<<<<<
+    console.log(Height, "height")
+    var i = 3;
+    status = 0;
+    // scrollpage();
+
+
+    var n = 34523453.345;
+    console.log(n.toLocaleString());
 });
