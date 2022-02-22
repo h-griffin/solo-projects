@@ -42,16 +42,17 @@ added a class identifier and Math to the CSS modifier
 - on update it clears the html body of old content and selects the option values from the selected to use in a template literal to piece together a date string to pass into the url to query db.
 
 # html to json table (for each)
--
+- fix indexing to reach matrix array
 
 # auto scroll
--
+- set speed to scrolle the document and window height and return to top at end of distance.
 
 # number formatting with string.tolocal
--
+- 100,000,000.000 defaults to default local on machine
 
 # timed refresh
+- in html or in javascript, refresh page every 30 seconds
 
 # chart.js
--
+- inside table creation loop, create an empty object and append to list of all objects. pass this list to chart.js settings for datasets to display.
 
