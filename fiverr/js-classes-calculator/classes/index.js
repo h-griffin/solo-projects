@@ -24,21 +24,42 @@ class Teacher {
 const history = new Course(1, "History");
 const science = new Course(2, "Science");
 const math = new Course(3, "Math");
-console.log(history);
-console.log(science);
-console.log(math);
+const courses = [];
+courses.push(history, science, math);
+// console.log(courses);
 
 const jake = new Student(1, "Jake", [1,2]);
 const mike = new Student(2, "Mike", [1,3]);
 const john = new Student(1, "John", [2,3]);
-console.log(jake);
-console.log(mike);
-console.log(john);
+const students = [];
+students.push(jake, mike, john);
+// console.log(students);
 
 const mrHowser = new Teacher("mrHowser", 1);
 const mrsMiller = new Teacher("mrsMiller", 2);
 const mrsSmith = new Teacher("mrsSmith", 3);
-console.log(mrHowser);
-console.log(mrsMiller);
-console.log(mrsSmith);
+const teachers = [];
+teachers.push(mrHowser, mrsMiller, mrsSmith);
+// console.log(teachers);
+
+
+// how many students in teachers class
+function studentsInTeacherCourse(teacher, students) {
+    const classId = teacher.courseSessionId;
+
+    // filter through all students classes and adding to new array if they have the classId
+    const studentsInClass = students.filter(student => student.classes.includes(classId));
+
+    console.log(studentsInClass);
+
+    const studentCount = studentsInClass.length;
+    return studentCount;
+
+}
+
+console.log(studentsInTeacherCourse(mrHowser, students));
+console.log(studentsInTeacherCourse(mrsMiller, students));
+console.log(studentsInTeacherCourse(mrsSmith, students));
+
+// list each student - get course id - get teacher for course
 
