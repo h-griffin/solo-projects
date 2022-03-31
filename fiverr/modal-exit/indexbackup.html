@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<title>Mon Kou Restaurant -- Official Website</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv=“Pragma” content=”no-cache”>
+<meta http-equiv=“Expires” content=”-1″>
+<meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="css/estro.min.css" />
+	<link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+
+	<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.estro.min.js"></script>
+	<style>
+		.peKenBurns { width:400px; height:250px; float:left; margin-left:10px; z-index: 99; }
+		.peKenBurns .peKb_slides { padding: 8px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }		/* customize rounded border (not supported before ie9) */
+		.peKenBurns .peKb_slides { background-color:#2A1D06; }					/* outer border background */
+		.peKenBurns .peKb_slides .peKb_frame { background-color:#000; }			/* inner frame (insider border) background */
+    	.peKenBurns .peKb_slides .peKb_caption h1 { font-family: Arial; font-size: 14px; color: #FEFEFE; font-weight:bold; }	/* caption font */
+		.peKenBurns .peKb_slides .peKb_caption .peKb_real { padding: 3px 15px; }												/* caption padding */
+    	.peKenBurns .peKb_slides .peKb_caption { margin: 0px 5px 5px 5px; padding-left:10px; }							    	/* caption margins */
+    	.peKenBurns .peKb_slides .peKb_caption .peKb_background { background-color: #202020; }									/* caption background */
+	</style>
+
+	<script>
+		jQuery(function($){
+			$(".peKenBurns").peKenburnsSlider()
+		})
+	</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+<style type="text/css">
+#overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #000;
+filter:alpha(opacity=70);
+-moz-opacity:0.7;
+-khtml-opacity: 0.7;
+opacity: 0.7;
+z-index: 100;
+display: none;
+}
+.cnt223 a{
+text-decoration: none;
+}
+.popup{
+width: 100%;
+margin: 0 auto;
+display: none;
+position: fixed;
+z-index: 101;
+}
+.cnt223{
+
+max-width: 600px;
+min-height: 150px;
+margin: 100px auto;
+background: #f3f3f3;
+position: relative;
+z-index: 103;
+padding: 35px;
+border-radius: 5px;
+box-shadow: 0 2px 5px #000;
+}
+.cnt223 p{
+clear: both;
+    color: #555555;
+    /* text-align: justify; */
+    font-size: 20px;
+	line-height:35px;
+    font-family: sans-serif;
+}
+.cnt223 p a{
+color: #881c1c;
+font-weight: bold;
+}
+.cnt223 .x{
+float: right;
+height: 35px;
+left: 22px;
+position: relative;
+top: -25px;
+width: 34px;
+}
+.cnt223 .x:hover{
+cursor: pointer;
+}
+</style>
+<script type='text/javascript'>
+
+$(function(){
+  var overlay = $('<div id="overlay"></div>');
+  overlay.show();
+  overlay.appendTo(document.body);
+  $('.popup').show();
+
+  $('.close').on('click',function(){
+    $('.popup').hide();
+    overlay.appendTo(document.body).remove();
+    return false;
+  });
+})
+
+$('.x').on('click',function(){
+  $('.popup').hide();
+  overlay.appendTo(document.body).remove();
+  return false;
+  });
+
+// // When the user clicks anywhere outside of the modal, close it
+$(window).on('click',function(){
+  if (event.target == document.getElementById('popup')) {
+    $('.popup').hide();
+    overlay.remove();
+    return false;
+  }
+  });
+
+</script>
+<div class='popup' id='popup'>
+<div class='cnt223'>
+<p>
+Welcome everyone! We are operating at full capacity and seating is first come first serve. Reservations are no longer needed for inside dining; however, we will take a reservation if you plan to have more than 7 guests. Last seating is 45 minutes before closing time and last take out is half hour before closing and must be prepaid.
+We are adhering to the suggestion of the CDC regarding masking wearing. No masks are required but those unvaccinated are suggested to wear a mask. Thank you for your cooperation and we hope to see you soon!
+<br/>
+<br/>
+<a href="#" class="close">Close</a>
+</p>
+</div>
+</div>
+</head>
+
+
+
+
+
+<body id="home">
+<div id="wrapper">
+	<div id="page_top"></div>
+	<div id="page_container">
+		<div id="logo">
+			<div id="characters">
+				<img src="images/MonKouChar.png" />
+			</div>
+			<div id="cuisine"></div>
+			<div id="monKoulogo"></div>
+			<div id="pageLabel"></div>
+		</div>
+		<div style="clear:both;"></div>
+		<div id="left">
+			<div id="nav">
+				<ul>
+					<li><a href="index.html" id="homenav">Home Page<span>Welcome to our website</span></a></li>
+					<li><a href="menu.html" id="menunav">Our Menu<span>Page through our exquisite and extensive menu</span></a></li>
+					<li><a href="directions.html" id="directionsnav">Directions<span>Get driving directions to our restaurant</span></a></li>
+					<li><a href="about.html" id="aboutnav">About Us<span>Our background, history and links to our community</span></a></li>
+				</ul>
+			</div>
+
+			<div class="border"></div>
+			<div class="hours">
+				<h2>Hours</h2>
+			<table id="hoursTable">
+					<tr><td>Sunday</td><td>11:30am</td><td>to</td><td>10:00pm</td></tr>
+					<tr><td>Monday</td><td>11:30am</td><td>to</td><td>10:00pm</td></tr>
+					<tr><td>Tuesday</td><td>11:30am</td><td>to</td><td>10:00pm</td></tr>
+					<tr><td>Wednesday</td><td>11:30am</td><td>to</td><td>10:00pm</td></tr>
+					<tr><td>Thursday</td><td>11:30am</td><td>to</td><td>10:00pm</td></tr>
+					<tr><td>Friday</td><td>11:30am</td><td>to</td><td>midnight</td></tr>
+					<tr><td>Saturday</td><td>11:30am</td><td>to</td><td>midnight</td></tr>
+
+				</table>
+			</div>
+			<div class="border"></div>
+			<div class="contactUs">
+				<h2>Contact</h2>
+				<table id="contactTable">
+					<tr><td style="padding-top:4px;">Phone</td><td style="font-size:140%;">508-399-8020</td></tr>
+					<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+					<tr><td>Address</td><td>676 Washington St<br/>South Attleboro, MA</td></tr>
+				</table>
+			</div>
+		</div>		<!-- left section  -->
+
+		<div id="right" style="padding:0;margin:0;height:100%;">
+			<div class="shadow" style="position:relative;float:right;width:450px;height:150px;background-color:#D5C899;margin-right:35px;border-left:5px solid #2A1D06;padding-left:15px;margin-top:10px;">
+				<img src="images/Welcome.png" class="imgLeft" style="margin-top:10px;"/>
+				<img src="images/hula-trans.png" class="imgRight" style="margin-bottom:0;margin-right:0;"/> <!--width:126px;height:119px;"/> -->
+				<div style="clear:left;padding:10px 5px 5px 15px;">
+					We are very pleased that you have chosen to visit our restaurant's online pages.<br/><br/>
+					We look forward to welcoming you in person, whether dining in or carrying out.
+				</div>
+			</div>
+			<div style="clear:both;padding-bottom:40px;"></div>
+			<div class="peKenBurns" data-controls="disabled" data-mode="kb" data-logo="disabled" data-shadow="enabled" data-thumb="disabled" data-caption-align="bottom,left" >
+				<div class="peKb_active" data-delay="8">
+					<img src="images/Mon-Kou-025-640x480.jpg" alt="" />
+					<h1>spicy beef with string beans</h1>
+				</div>
+				<div data-delay="8">
+					<img src="images/blank.png" data-src="images/Mon-Kou-034-640x480.jpg" alt="" />
+					<h1>sesame chicken</h1>
+				</div>
+				<div data-delay="8">
+					<img src="images/blank.png" data-src="images/Mon-Kou-001-640x480.jpg" alt="" />
+					<h1>hand-made egg rolls</h1>
+				</div>
+				<div data-delay="8">
+					<img src="images/blank.png" data-src="images/Mon-Kou-175-640x480.jpg" alt="" />
+					<h1>beef with straw mushrooms</h1>
+				</div>
+				<div data-delay="8">
+					<img src="images/blank.png" data-src="images/Mon-Kou-011-640x480.jpg" alt="" />
+					<h1>peking ravioli</h1>
+				</div>
+				<div data-delay="8">
+					<img src="images/blank.png" data-src="images/Mon-Kou-165-640x480.jpg" alt="" />
+					<h1>subgum shrimp chow mein</h1>
+				</div>
+				<div data-delay="8">
+					<img src="images/blank.png" data-src="images/Mon-Kou-038-640x480.jpg" alt="" />
+					<h1>kung pao chicken &amp; chicken wings</h1>
+				</div>
+				<div data-delay="8">
+					<img src="images/blank.png" data-src="images/Mon-Kou-087-640x480.jpg" alt="" />
+					<h1>chicken chow foon</h1>
+				</div>
+				<div data-delay="8">
+					<img src="images/blank.png" data-src="images/Mon-Kou-098-640x480.jpg" alt="" />
+					<h1>diamond head</h1>
+				</div>
+				<div data-delay="8">
+					<img src="images/blank.png" data-src="images/Mon-Kou-105-640x480.jpg" alt="" />
+					<h1>barbecued spare ribs</h1>
+				</div>
+				<div data-delay="8">
+					<img src="images/blank.png" data-src="images/Mon-Kou-151-640x480.jpg" alt="" />
+					<h1>baked salt shrimp</h1>
+				</div>
+				<div data-delay="8">
+					<img src="images/blank.png" data-src="images/Mon-Kou-172-640x480.jpg" alt="" />
+					<h1>pu pu platter</h1>
+				</div>
+				<div data-delay="8">
+					<img src="images/blank.png" data-src="images/Mon-Kou-115-640x480.jpg" alt="" />
+					<h1>pork chow mein</h1>
+				</div>
+			</div>
+			<div class="shadow" style="float:left;width:190px;background-color:#F0C16F;margin:3px 5px 10px 10px;border-left:5px solid #2A1D06;padding:12px;">
+				<h3 style="padding-bottom:2px;">Dine In or Take Out</h3>
+				Open 7 days for lunch and dinner - <b>our delicious menu</b> will tempt your taste buds and have your mouth watering.<br/><br/>
+				Need food to go? Fast food never tasted this good. <b>Phone</b> your order and your food will be piping hot when you arrive.
+			</div>
+
+			<div style="clear:both;padding-bottom:0px;"></div>
+
+			<div class="peKenBurns" style="width:300px;height:220px;float:right;margin:0 10px;" data-controls="disabled" data-mode="kb" data-logo="disabled" data-shadow="enabled" data-thumb="disabled">
+				<div class="peKb_active" data-delay="6">
+					<img src="images/MonKouFunction1.jpg" alt="" />
+				</div>
+				<div data-delay="6">
+					<img src="images/blank.png" data-src="images/MonKouFunction4.jpg" alt="" />
+				</div>
+				<div data-delay="6">
+					<img src="images/blank.png" data-src="images/MonKouOutside1.jpg" alt="" />
+				</div>
+				<div data-delay="6">
+					<img src="images/blank.png" data-src="images/MonKouFunction3.jpg" alt="" />
+				</div>
+				<div data-delay="6">
+					<img src="images/blank.png" data-src="images/MonKouOutside2.jpg" alt="" />
+				</div>
+				<div data-delay="6">
+					<img src="images/blank.png" data-src="images/MonKouInside1.jpg" alt="" />
+				</div>
+				<div data-delay="6">
+					<img src="images/blank.png" data-src="images/MonKouFunction6.jpg" alt="" />
+				</div>
+				<div data-delay="6">
+					<img src="images/blank.png" data-src="images/MonKouOutside3.jpg" alt="" />
+				</div>
+			</div>
+
+			<div class="shadow" style="float:right;width:310px;background-color:#F0C16F;margin:0 0px 0 0px;border-left:5px solid #2A1D06;padding:12px;">
+				<h3>Parties &amp; Functions</h3>
+				Having a party for up to 40 people? Our <b>private banquet room</b> is the perfect place to enjoy fine food and the company of good friends. (Limited availability)
+			</div>
+
+			<div id="creditcards" style="float:left;margin:60px 0 0 20px;font-size:125%;font-weight:bold;color:#1F0C06;font-style:italic;">
+				We accept
+				<img src="images/mastercard.png" style="padding:0 8px;margin:0;vertical-align:middle;"/>
+				<img src="images/visa.png" style="padding:0 8px;margin:0;vertical-align:middle;"/>
+				<img src="images/american_express.png" style="padding:0 8px;margin:0;vertical-align:middle;"/>
+			</div>
+
+
+		</div>
+
+		<div style="clear:both;"></div>
+
+		<div id="page_bottom">
+			<div id="copyright">
+				Copyright &copy; <script type="text/javascript">var d = new Date(); document.write(d.getFullYear());</script> <span class="bar">|</span> Mon Kou Restaurant <span class="bar">|</span> All rights reserved.
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
