@@ -35,7 +35,6 @@ body {
 .modal-content p{
     margin-left: -30%;
     margin-bottom: 0px;
-    font-weight: 700px;
 }
 
 .reasons-list{
@@ -61,4 +60,6 @@ button{
     width:150px;
     cursor:pointer;
     color: white;
+
+    font-family: Muli, sans-serif;
 }
