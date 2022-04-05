@@ -1,0 +1,25 @@
+/*colors
+purple: #5C5CFF
+dark-purple: #3923B7
+green: #20E0D6
+blue: #2CB4FF
+text-color & modal border:  #0B1A38
+font-family: Muli, sans-serif
+*/
+
+
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+.modal-container {
+	width: 50%;
+	top: 25%;
+	position: absolute;
+	margin: 0 25%;
+}
+
+.modal {
+	
+}
