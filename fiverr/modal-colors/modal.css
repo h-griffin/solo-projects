@@ -11,6 +11,7 @@ font-family: Muli, sans-serif
 body {
 	width: 100vw;
 	height: 100vh;
+    font-family: Muli, sans-serif;
 }
 
 .modal-container {
@@ -18,8 +19,46 @@ body {
 	top: 25%;
 	position: absolute;
 	margin: 0 25%;
+    padding-bottom: 3%;
+
+    border: solid 2px #0B1A38;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.modal {
-	
+.header-text{
+    background-color: #5C5CFF;
+    color: white;
+    padding: 15px;
+}
+
+.modal-content p{
+    margin-left: -30%;
+    margin-bottom: 0px;
+    font-weight: 700px;
+}
+
+.reasons-list{
+    list-style-type: circle;
+    text-align: left;
+    display: inline-block;
+}
+
+li:nth-child(1) {
+    color: #20E0D6;
+  }
+li:nth-child(2) {
+    color: #2CB4FF;
+  }
+li:nth-child(3) {
+    color: #5C5CFF;
+  }
+
+button{
+    border: none;
+    background-color: #3923B7;
+    height:40px;
+    width:150px;
+    cursor:pointer;
+    color: white;
 }
