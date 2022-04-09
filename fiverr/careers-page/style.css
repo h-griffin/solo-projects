@@ -68,26 +68,26 @@
 
     /* embedded youtube player */
     .container {
-        /* position: fixed; */
-        top: (100% - 30%) / 2;
-        left: (100% - 30%) / 2;
-        right: (100% - 30%) / 2;
-        bottom: (100% - 30%) / 2;
-        }
-    
-        .video-fg {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 */
-            padding-top: 25px;
-            height: 0;
-        }
-        .video-fg iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+    /* position: fixed; */
+    top: (100% - 30%) / 2;
+    left: (100% - 30%) / 2;
+    right: (100% - 30%) / 2;
+    bottom: (100% - 30%) / 2;
+    }
+
+    .video-fg {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+    .video-fg iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
     DIV#header,
     DIV#footer {
@@ -713,6 +713,35 @@
     }
 
     @media screen and (min-width: 1080px) {
+
+        /* @size: 70%; */
+        .container {
+        /* position: fixed; */
+        top: (100% - 30%) / 2;
+        left: (100% - 30%) / 2;
+        right: (100% - 30%) / 2;
+        bottom: (100% - 30%) / 2;
+        height: 50vh;
+        }
+
+        .video-bg {
+        background: white;
+        /* position: absolute; */
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: 1;
+        /* overflow: hidden; */
+        }
+        .video-bg .video-fg,
+        .video-bg iframe,
+        .video-bg video {
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        margin-bottom: -13%;
+        }
+
             
         DIV#body>DIV.job-container>DIV.row{
             height: 80vh;
@@ -768,15 +797,7 @@
         }
 
         UL.menu.lang {
-            /* margin: 0px;
-            padding: 0px;
-            display: block;
-            height: 50px;
-            float: right; */
-
-                /* clear: both; */
             float: right;
-            /* padding-top: 50px; */
             display: inline-block;
             height: 50px;
         }
@@ -850,13 +871,8 @@
         /* footer menu */
 
         DIV#footer UL.menu.legal {
-            /* padding-top: 20px; */
-            /* clear: both; */
-            /* float: none;/ */
             margin-left: 0px;
-            /* width: 600px; */
             margin: auto;
-    
         }
     }
 
