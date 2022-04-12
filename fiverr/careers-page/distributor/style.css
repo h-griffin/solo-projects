@@ -1,0 +1,819 @@
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+
+    /*! @import https://www.banquelaurentienne.ca/css/home_v4.css */
+    BODY {
+        font-family: HelveticaNowText-Regular, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        color: black;
+        margin: 0px;
+        background-color: #efefef;
+        padding: 0px;
+        text-align: center;
+    }
+
+
+    A:link,
+    A:visited {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        /* border-bottom: 2px black solid; */
+    }
+
+    A:link[href='#'],
+    A:visited[href='#'],
+    A:hover[href='#'] {
+        cursor: default;
+    }
+
+    /* A:hover {
+        border-bottom: 2px #e00d40 solid;
+        color: #e00d40;
+    } */
+
+    A:link,
+    A:visited,
+    A:hover {
+        outline: none;
+    }
+
+    DIV.page {
+        background-color: white;
+        margin: 0px auto;
+        /* text-align: left; */
+    }
+
+    /* embedded youtube player */
+    .container {
+        /* position: fixed; */
+        top: (100% - 30%) / 2;
+        left: (100% - 30%) / 2;
+        right: (100% - 30%) / 2;
+        bottom: (100% - 30%) / 2;
+    }
+
+    .video-fg {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+
+    .video-fg iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    DIV#header,
+    DIV#footer {
+        padding: 30px;
+    }
+
+    DIV#body>DIV {
+        width: 100%;
+        min-height: 100px;
+        border: 0px black solid;
+        box-sizing: border-box;
+        color: lightgrey;
+        line-height: 24px;
+        height: 70vh;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a:focus {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+
+    a#ffwd {
+        display: block;
+        overflow: hidden;
+        height: 0px;
+        text-align: center;
+        padding: 0px;
+        background-color: lightgrey;
+        color: white;
+        border: none;
+    }
+
+    a#ffwd:focus {
+        height: 1%;
+        padding: 0.5rem;
+        overflow: visible;
+    }
+
+    DIV#body>DIV a {
+        font-size: x-large;
+        color: black;
+        background-color: transparent;
+        border: solid medium black;
+        padding: 15px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    DIV#body>DIV.job-container a {
+        font-size: x-large;
+        color: black;
+        background-color: transparent;
+        border: solid medium black;
+        padding: 15px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    DIV#body>DIV#intro {
+        background-color: lightgrey;
+        padding: 15% 10% 10% 10%;
+    }
+
+    DIV#body>DIV#intro a {
+        margin-top: 5%;
+    }
+
+    DIV#body>DIV#join {
+        background-color: white;
+        padding: 15% 20% 0% 20%;
+    }
+
+    DIV#body>DIV.job-container>DIV.row {
+        height: 80vh;
+        width: 100%;
+    }
+
+    DIV#body>DIV>DIV>DIV h3,
+    p {
+        margin: 20% 15% 0% 15%;
+
+    }
+
+    DIV#body>DIV>DIV>DIV h3 {
+        font-size: 50px;
+
+    }
+
+    DIV#body>DIV>DIV>DIV#left-job-desc {
+        font-size: x-large;
+        background-color: white;
+        width: 50%;
+        display: inline-block;
+    }
+
+    DIV#body>DIV>DIV>DIV#right-job-desc {
+        font-size: x-large;
+        width: 50%;
+        height: 100%;
+        float: right;
+    }
+
+    DIV#body>DIV>DIV>DIV.job-img {
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    DIV#body>DIV>DIV>DIV#left-job-img {
+        background-color: lightgrey;
+        width: 50%;
+        height: 100%;
+
+        /* background: url("/assets/business-woman-at-work-as-advisor-in-office-financial-consultant-with-client-health-in-SBI-337358596.jpg"); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    DIV#body>DIV>DIV>DIV#right-job-img {
+        background-color: lightgrey;
+        width: 50%;
+        height: 100%;
+        float: right;
+        background: cover;
+        /* background: url("/assets/image-of-two-young-businessmen-discussing-new-project-in-office-SBI-300726620.jpg"); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    DIV#body>DIV>DIV>DIV.one {
+        background: url("/assets/picture1.jpg");
+    }
+
+    DIV#body>DIV>DIV>DIV.two {
+        background: url("/assets/picture2.jpg");
+    }
+
+    DIV#body>DIV>DIV>DIV.three {
+        background: url("/assets/picture3.jpg");
+    }
+
+    /* DIV#body>DIV>DIV>DIV.one {
+        background: url("https://pixabay.com/get/g475d33e9327ae0b78e3c9972972a8034145ef6f3aa16e7bbae14c57fd38d05beef568d2c9f8879b35832c3421736e65953e068a9311564e01f3a0d146cf82393_1920.jpg");
+    }
+    DIV#body>DIV>DIV>DIV.two {
+        background: url("https://pixabay.com/get/gd4244caed621ee0331ff95cb6fc1b3d9556806abe95ed1d27da5b3c8fb41fec5a3886448f635fe74ba451bc475a5112d77e24af6005e9447437119e088c30583_1920.jpg");
+    }
+    DIV#body>DIV>DIV>DIV.three {
+        background: url("https://pixabay.com/get/ga5a26d7c64737232170013382fc9cd54e40952e5f6783cd7d4cc32b4620dcd23fbd4f065411a8e9a334bd0430d3314dd4e14dcd90f9a48b12599c6e114960249_1920.jpg");
+    } */
+
+    DIV#body>DIV#socials {
+        display: inline-block;
+        background-color:  #222;
+        height: 30vh;
+    }
+
+    DIV#body>DIV#socials>DIV a {
+        margin-top: 8%;
+        margin-left: 3%;
+        color: white;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+
+
+    /* navbar menu */
+
+
+
+
+
+    /* footer menu */
+
+    DIV#footer {
+        clear: both;
+        background-color: lightgrey;
+        min-height: 250px;
+        color: white;
+    }
+
+
+    DIV#footer A:link,
+    DIV#footer A:visited {
+        color: darkgrey;
+        /* text-decoration: underline; */
+        text-decoration: none;
+        border-bottom: none;
+    }
+
+
+
+    @media (min-width:320px) {
+        /* smartphones, iPhone, portrait 480x320 phones */
+
+
+        DIV.page {
+            width: 540px;
+            min-height: 960px;
+        }
+
+        DIV#body>DIV>DIV>DIV h3,
+        p {
+            margin: 5% 15% 0% 15%;
+
+        }
+
+        DIV#body>DIV>DIV>DIV h3 {
+            font-size: 30px;
+        }
+
+        
+        UL.menu li {
+            display: list-item;
+            float: none;
+            list-style: none;
+            padding-left: 0px;
+            padding-bottom: 20px;
+            clear: both;
+        }
+
+        DIV#body>DIV {
+            height: auto;
+        }
+
+        DIV#body>DIV#intro {
+            background-color: lightgrey;
+            padding: 10% 10% 10% 10%;
+        }
+
+        DIV#body>DIV#join {
+            background-color: white;
+            padding: 5% 20% 5% 20%;
+        }
+
+        DIV#body>DIV.job-container>DIV.row {
+            height: 40vh;
+            width: 100%;
+        }
+
+        DIV#body>DIV#socials {
+            height: 23vh;
+        }
+
+        DIV#body>DIV,
+        DIV#footer UL.menu,
+        DIV#header UL.menu,
+        DIV#footer DIV#legal {
+            width: 100%;
+        }
+
+        DIV#footer {
+            min-height: 300px;
+        }
+
+        html[lang="en"] DIV#footer {
+            min-height: 290px;
+        }
+    }
+
+    @media (min-width:481px) {
+        /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    }
+
+    @media (min-width:641px) {
+
+        /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+        DIV.page {
+            width: 100%;
+            min-height: 960px;
+        }
+
+        DIV#body>DIV.job-container>DIV.row {
+            height: 35vh;
+            width: 100%;
+        }
+
+        DIV#body>DIV>DIV>DIV h3,
+        p {
+            margin: 20% 15% 0% 15%;
+        }
+
+        DIV#body>DIV#socials {
+            height: 15vh;
+        }
+    }
+
+    @media (min-width:961px) {
+        /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+    }
+
+    @media screen and (min-width: 1080px) {
+
+        /* @size: 70%; */
+        .container {
+            /* position: fixed; */
+            top: (100% - 30%) / 2;
+            left: (100% - 30%) / 2;
+            right: (100% - 30%) / 2;
+            bottom: (100% - 30%) / 2;
+            height: 50vh;
+        }
+
+        .video-bg {
+            background: white;
+            /* position: absolute; */
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            /* overflow: hidden; */
+        }
+
+        .video-bg .video-fg,
+        .video-bg iframe,
+        .video-bg video {
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80%;
+            margin-bottom: -13%;
+        }
+
+
+        DIV#body>DIV.job-container>DIV.row {
+            height: 80vh;
+            width: 100%;
+        }
+
+        DIV#body>DIV#socials {
+            height: 35vh;
+        }
+
+
+        DIV#header DIV.menus {
+            display: inline-block;
+            width: 819px;
+        }
+
+        .logo {
+            width: 140px;
+            height: 50px;
+            display: inline-block;
+            padding-top: 5px;
+
+        }
+
+        html[lang="en"] .logo {
+            /* background: url("https://www.banquelaurentienne.ca/en/images/logo_blcgf.png") 0 0/140px no-repeat; */
+            background: url("/assets/logo.jpg") 0 0/140px no-repeat;
+        }
+
+        UL.menu {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        DIV#header UL.menu {
+            display: inline-block;
+            height: 50px;
+            width: auto;
+            margin-top: -6vh;
+            margin-right: 4vh;
+        }
+
+        DIV#header UL.menu.lang {
+            float: right;
+            padding-top: 0px;
+            display: inline-block;
+            height: 50px;
+            clear: none;
+        }
+
+        UL.menu li {
+            display: block;
+            margin: 0px;
+            float: left;
+            padding-left: 1em;
+            padding-top: 15px;
+            clear: none;
+        }
+
+        UL.menu.lang {
+            float: right;
+            display: inline-block;
+            height: 50px;
+        }
+
+        UL.menu.lang li:first-child:after {
+            content: '|';
+            width: 1em;
+            height: 1em;
+            padding: 0px 5px;
+            margin-top: -2px;
+            color: lightgrey;
+            font-weight: bold;
+        }
+
+        UL.menu.lang li {
+            padding: 15px 0px;
+            color: lightgrey;
+            text-transform: uppercase;
+            line-height: 50px;
+        }
+
+        UL.menu.lang li.active {
+            font-weight: bold;
+        }
+
+        DIV.menu.burger {
+            display: none;
+        }
+
+        ul.menu li.parent a:hover+ul {
+            display: block;
+        }
+
+        li.parent>a:after {
+            content: ' \25bc';
+        }
+
+        ul.menu ul:hover {
+            display: block;
+        }
+
+        ul.menu ul {
+            position: fixed;
+            padding-left: 0px;
+            display: none;
+            background-color: white;
+            padding-bottom: 1em;
+            margin-left: -1em;
+            margin-top: 4px;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            ul.menu ul {
+                margin-top: 0px;
+            }
+        }
+
+        ul.menu ul li {
+            display: block;
+            float: none;
+            width: 300px;
+            margin-left: 0px;
+        }
+
+        ul.menu ul li a:link,
+        ul.menu ul li a:visited,
+        ul.menu ul li a:hover {
+            border-bottom: none;
+        }
+
+        /* footer menu */
+
+        DIV#footer UL.menu.legal {
+            margin-left: 0px;
+            margin: auto;
+        }
+
+        /*! CSS Used from: http://www.colabor.com/wp-content/themes/colabor-child.colabor/style.css ; media=all */
+        @media all {
+
+            /*! @import http://www.colabor.com/wp-content/themes/colabor/style.css */
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            #header {
+                width: 980px;
+                margin: 0 auto;
+                /* position: absolute; */
+                top: 15px;
+                left: 20px;
+                background: url(http://www.colabor.com/wp-content/themes/colabor/images/headerBG.png) no-repeat left top;
+                /* width: 981px; */
+                height: 5vh;
+                margin-top: 30px;
+                z-index: 1000;
+            }
+
+            #access .menu {
+                float: right;
+                padding-top: 1px;
+            }
+
+            #access .menu li {
+                float: left;
+                list-style: none;
+                background: url(http://www.colabor.com/wp-content/themes/colabor/images/mainMenuDiv.png) no-repeat left center;
+                height: 71px;
+                line-height: 72px;
+                font-weight: bold;
+                padding-left: 1px;
+            }
+
+            #access .menu li a {
+                color: #797979;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            #access .menu li:last-child {
+                margin-right: 1px;
+            }
+
+            #access .menu li:last-child a {
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            #access .menu li:hover a,
+            #access .menu li:first-child:hover a {
+                background: url(http://www.colabor.com/wp-content/themes/colabor/images/menuOver.png) repeat-x left top;
+                display: block;
+                height: 100%;
+            }
+
+            h1#logo {
+                background: url(http://www.colabor.com/wp-content/themes/colabor/images/colabor_logo.png) no-repeat left 7px;
+                width: 248px;
+                height: 53px;
+                text-indent: -9000px;
+                margin: 10px 12px;
+                float: left;
+            }
+
+            h1#logo a {
+                text-indent: -9000px;
+                width: 248px;
+                height: 53px;
+                display: block;
+            }
+
+            /*! end @import */
+
+            /* footer */
+
+            /*! CSS Used from: http://www.colabor.com/wp-content/themes/colabor-child.colabor/style.css ; media=all */
+            @media all {
+
+                /*! @import http://www.colabor.com/wp-content/themes/colabor/style.css */
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                img {
+                    border: 0;
+                }
+
+                .clear {
+                    clear: both;
+                }
+
+                h2 {
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                }
+
+                #footer {
+                    background: #EBEBEB;
+                    text-decoration: none;
+                }
+
+                #footer a {
+                    color: #797979;
+                    text-decoration: none;
+                }
+
+                #footer a:hover {
+                    color: #333;
+                }
+
+                #footerContent {
+                    width: 960px;
+                    margin: 0 auto;
+                    padding: 20px 0 15px;
+                    position: relative;
+                }
+
+                .footBlock {
+                    width: 169px;
+                    float: left;
+                }
+
+                .footBlockLast {
+                    width: 111px;
+                    float: right;
+                    position: relative;
+                    top: 40px;
+                }
+
+                .footBlock h2 {
+                    font-size: 13px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+
+                .footBlock ul,
+                .footBlockLast ul {
+                    margin-left: 5px;
+                    list-style: none;
+                }
+
+                .footBlock li,
+                .footBlockLast li {
+                    margin-bottom: 4px;
+                }
+
+                /*! end @import */
+            }
+
+            /* legal bottom banner */
+            /*! CSS Used from: http://www.colabor.com/wp-content/themes/colabor-child.colabor/style.css ; media=all */
+            @media all {
+
+                /*! @import http://www.colabor.com/wp-content/themes/colabor/style.css */
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .clear {
+                    clear: both;
+                }
+
+                #legals {
+                    padding: 10px 0;
+                    background: #222;
+                    border-top: dashed 1px #929292;
+                }
+
+                #legalsContent {
+                    width: 960px;
+                    margin: 0 auto;
+                }
+
+                #copyright {
+                    float: right;
+                }
+
+                #copyright a {
+                    color: #797979;
+                    text-decoration: none;
+                }
+
+                #mm {
+                    float: left;
+                    padding-right: 40px;
+                    height: 15px;
+                    line-height: 15px;
+                }
+
+                /*! end @import */
+
+                /* top tools */
+                /*! CSS Used from: http://www.colabor.com/wp-content/themes/colabor-child.colabor/style.css ; media=all */
+@media all{
+    /*! @import http://www.colabor.com/wp-content/themes/colabor/style.css */
+    *{margin:0;padding:0;}
+    img{border:0;}
+    #topTools{height:30px;background:#000;}
+    #toolsContainer{position:relative;width:980px;margin:0 auto;}
+    #shortcuts{position:absolute;top:7px;left:571px;color:#fff;font-size:12px;width:200px;}
+    #shortcuts a{color:#fff;text-decoration:none;}
+    #search-glass{width:100px;position:relative;left:520px;}
+    #search{position:absolute;top:4px;left:300px;height:22px;width:215px;background:#fff;font-size:12px;font-style:normal;color:#A2A2A2;border-radius:4px;}
+    body.page #searchform input[type="text"]{height:20px;width:215px;font-size:15px;font-weight:bold;color:#000000;padding:0px 7px;background:0 none;border:0 none;}
+    #searchform label,#searchform input[type="submit"]{display:none;}
+    #login{background:url(http://www.colabor.com/wp-content/themes/colabor/images/topLoginBG.png) no-repeat left top;width:225px;height:40px;position:absolute;right:-3px;top:0;z-index:1000;color:#A2A2A2;}
+    #login a{color:#797979;text-decoration:none;font-size:12px;text-transform:none;}
+    #login ul{padding-left:30px;}
+    #login li{line-height:30px;float:left;list-style:none;background:url(http://www.colabor.com/wp-content/themes/colabor/images/topToolsArrow.png) no-repeat left 13px;padding-left:7px;margin-right:7px;}
+    #qtranslate-chooser li{list-style:none;}
+    #qtranslate-chooser li.active{display:none;list-style:none;}
+    #qtranslate-chooser{float:left;padding-left:0px;width:50px;}
+    #menu-contact li{float:left;list-style:none;padding-right:4px;}
+    #menu-contact li a:after{content:" |";}
+    /*! end @import */
+    }
+            }
+        }
+    }
+
+
+
+    /*! end @import */
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+    font-family: HelveticaNowText-Regular;
+    src: url("https://www.banquelaurentienne.ca/fonts/39F84B_0_0.eot");
+    src: url("https://www.banquelaurentienne.ca/fonts/39F84B_0_0.eot#iefix") format('embedded-opentype'), url("https://www.banquelaurentienne.ca/fonts/39F84B_0_0.woff2") format('woff2'), url("https://www.banquelaurentienne.ca/fonts/39F84B_0_0.woff") format('woff'), url("https://www.banquelaurentienne.ca/fonts/39F84B_0_0.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: HelveticaNowText-Bold;
+    src: url("https://www.banquelaurentienne.ca/fonts/39F84B_1_0.eot");
+    src: url("https://www.banquelaurentienne.ca/fonts/39F84B_1_0.eot#iefix") format('embedded-opentype'), url("https://www.banquelaurentienne.ca/fonts/39F84B_1_0.woff2") format('woff2'), url("https://www.banquelaurentienne.ca/fonts/39F84B_1_0.woff") format('woff'), url("https://www.banquelaurentienne.ca/fonts/39F84B_1_0.ttf") format('truetype');
+}
