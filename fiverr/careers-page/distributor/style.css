@@ -4,8 +4,6 @@
     /*! @import https://www.banquelaurentienne.ca/css/home_v4.css */
     BODY {
         font-family: HelveticaNowText-Regular, Helvetica, Arial, sans-serif;
-        /* font-size: 16px; */
-        /* line-height: 20px; */
         color: black;
         margin: 0px;
         background-color: #efefef;
@@ -20,7 +18,6 @@
         color: black;
         font-weight: bold;
         text-decoration: none;
-        /* border-bottom: 2px black solid; */
     }
 
     A:link[href='#'],
@@ -28,11 +25,6 @@
     A:hover[href='#'] {
         cursor: default;
     }
-
-    /* A:hover {
-        border-bottom: 2px #e00d40 solid;
-        color: #e00d40;
-    } */
 
     A:link,
     A:visited,
@@ -43,12 +35,10 @@
     DIV.page {
         background-color: white;
         margin: 0px auto;
-        /* text-align: left; */
     }
 
     /* embedded youtube player */
     .container {
-        /* position: fixed; */
         top: (100% - 30%) / 2;
         left: (100% - 30%) / 2;
         right: (100% - 30%) / 2;
@@ -58,7 +48,6 @@
     .video-fg {
         position: relative;
         padding-bottom: 56.25%;
-        /* 16:9 */
         padding-top: 25px;
         height: 0;
     }
@@ -81,7 +70,6 @@
         min-height: 100px;
         border: 0px black solid;
         box-sizing: border-box;
-        /* color: lightgrey; */
         line-height: 24px;
         height: 70vh;
         text-align: center;
@@ -121,16 +109,6 @@
         cursor: pointer;
         width: 60%;
     }
-
-    /* DIV#body>DIV.job-container a {
-        font-size: x-large;
-        color: white;
-        background-color: transparent;
-        border: solid medium white;
-        padding: 15px;
-        display: inline-block;
-        cursor: pointer;
-    } */
 
     DIV#body>DIV#intro {
         background-color: lightgrey;
@@ -204,7 +182,6 @@
         width: 50%;
         height: 100%;
 
-        /* background: url("/assets/business-woman-at-work-as-advisor-in-office-financial-consultant-with-client-health-in-SBI-337358596.jpg"); */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -219,33 +196,22 @@
         height: 100%;
         float: right;
         background: cover;
-        /* background: url("/assets/image-of-two-young-businessmen-discussing-new-project-in-office-SBI-300726620.jpg"); */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
 
     DIV#body>DIV>DIV>DIV.one {
-        background: url("/assets/picture1.jpg");
+        background: url("../assets/picture1.jpg");
     }
 
     DIV#body>DIV>DIV>DIV.two {
-        background: url("/assets/picture2.jpg");
+        background: url("../assets/picture2.jpg");
     }
 
     DIV#body>DIV>DIV>DIV.three {
-        background: url("/assets/picture3.jpg");
+        background: url("../assets/picture3.jpg");
     }
-
-    /* DIV#body>DIV>DIV>DIV.one {
-        background: url("https://pixabay.com/get/g475d33e9327ae0b78e3c9972972a8034145ef6f3aa16e7bbae14c57fd38d05beef568d2c9f8879b35832c3421736e65953e068a9311564e01f3a0d146cf82393_1920.jpg");
-    }
-    DIV#body>DIV>DIV>DIV.two {
-        background: url("https://pixabay.com/get/gd4244caed621ee0331ff95cb6fc1b3d9556806abe95ed1d27da5b3c8fb41fec5a3886448f635fe74ba451bc475a5112d77e24af6005e9447437119e088c30583_1920.jpg");
-    }
-    DIV#body>DIV>DIV>DIV.three {
-        background: url("https://pixabay.com/get/ga5a26d7c64737232170013382fc9cd54e40952e5f6783cd7d4cc32b4620dcd23fbd4f065411a8e9a334bd0430d3314dd4e14dcd90f9a48b12599c6e114960249_1920.jpg");
-    } */
 
     DIV#body>DIV#socials {
         display: inline-block;
@@ -297,23 +263,16 @@
 
 
     /* navbar menu */
-    /*  */
     #header {
-        /* width: 980px; */
         margin: 0 auto;
-        /* position: absolute; */
-        top: 15px;
-        left: 20px;
-        background: url(http://www.colabor.com/wp-content/themes/colabor/images/headerBG.png) no-repeat left top;
-        /* width: 981px; */
-        /* height: 5vh; */
-        margin-top: 30px;
-        z-index: 1000;
+        background: url(http://www.colabor.com/wp-content/themes/colabor/images/headerBG.png) no-repeat left bottom;
+        height: 20vh;
+        margin-bottom: 3vh;
     }
 
     #access .menu {
         float: right;
-        padding-top: 1px;
+        padding-top: 10vh;
     }
 
     #access .menu li {
@@ -324,6 +283,8 @@
         line-height: 72px;
         font-weight: bold;
         padding-left: 1px;
+        font-size: x-small;
+        margin-top: -30px;
     }
 
     #access .menu li a {
@@ -334,8 +295,11 @@
         padding-right: 15px;
     }
 
+    #access .menu li:first-child {
+        margin-left: 10px;
+    }
     #access .menu li:last-child {
-        margin-right: 1px;
+        margin-right: -5px;
     }
 
     #access .menu li:last-child a {
@@ -351,12 +315,7 @@
     }
 
     h1#logo {
-        background: url(http://www.colabor.com/wp-content/themes/colabor/images/colabor_logo.png) no-repeat left 7px;
-        width: 248px;
-        height: 53px;
-        text-indent: -9000px;
-        margin: 10px 12px;
-        float: left;
+        background: url(http://www.colabor.com/wp-content/themes/colabor/images/colabor_logo.png) no-repeat center 7px;
     }
 
     h1#logo a {
@@ -378,7 +337,6 @@
     
             #toolsContainer {
                 position: relative;
-                /* width: 980px; */
                 width: 100%;
                 margin: 0 auto;
             }
@@ -399,7 +357,6 @@
     
             #search-glass {
                 width: 40px;
-                /* width: 20px; */
                 position: relative;
                 left: 250px;
                 top: 40px;
@@ -536,7 +493,6 @@
         }
 
         #footerContent {
-            /* width: 960px; */
             width: 100%;
             margin: 0 auto;
             padding: 20px 0 15px;
@@ -549,10 +505,8 @@
         }
 
         .footBlockLast {
-            width: 111px;
             float: right;
             position: relative;
-            top: 40px;
         }
 
         .footBlock h2 {
@@ -586,7 +540,6 @@
         }
 
         #legalsContent {
-            /* width: 960px; */
             width: 100%;
             margin: 0 auto;
         }
@@ -620,7 +573,6 @@
     DIV#footer A:link,
     DIV#footer A:visited {
         color: darkgrey;
-        /* text-decoration: underline; */
         text-decoration: none;
         border-bottom: none;
     }
@@ -646,14 +598,19 @@
             font-size: 30px;
         }
 
+        
+
 
         UL.menu li {
             display: list-item;
             float: none;
             list-style: none;
             padding-left: 0px;
-            /* padding-bottom: 20px; */
             clear: none;
+        }
+
+        #access .menu li:first-child {
+            margin-left: 19px;
         }
 
         DIV#body>DIV {
@@ -691,10 +648,13 @@
         }
 
         DIV#body>DIV,
-        DIV#footer UL.menu,
         DIV#header UL.menu,
         DIV#footer DIV#legal {
             width: 100%;
+        }
+
+        DIV#header UL.menu{
+            width:112%;
         }
 
         DIV#footer {
@@ -706,9 +666,47 @@
         }
     }
 
-    @media (min-width:481px) {
+    /* @media (min-width:481px) { */
+    @media (min-width:414px) {
         /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+        #header {
+            height: 14vh;
+            margin-bottom: 3vh;
+        }
+
+        #access .menu {
+            padding-top: 7vh;
+        }
     }
+
+    @media (min-width:360px) {
+        #header {
+            height: 17vh;
+            margin-bottom: 3vh;
+        }
+
+        #access .menu {
+            padding-top: 7vh;
+        }
+    }
+    @media (min-width:390px) {
+        #header {
+            height: 14vh;
+            margin-bottom: 3vh;
+        }
+
+        #access .menu {
+            padding-top: 6vh;
+        }
+    }
+    @media (min-width:412px) {
+
+        #access .menu {
+            padding-top: 7vh;
+        }
+    }
+
 
     @media (min-width:641px) {
 
@@ -733,58 +731,50 @@
         }
     }
 
+    
+
+    /* ipad */
+
+    @media (min-width:768px) {
+        #header {
+            height: 11vh;
+        }
+
+        #access .menu {
+            padding-top: 4.5vh;
+        }
+
+        DIV#header UL.menu{
+            width:80%;
+        } 
+        
+    }
+
+    @media (min-width:820px) {
+        #header {
+            height: 10vh;
+        }
+
+        #access .menu {
+            padding-top: 4.5vh;
+        }
+
+        DIV#header UL.menu{
+            width:80%;
+        } 
+        
+    }
+   
+
     @media (min-width:961px) {
         /* tablet, landscape iPad, lo-res laptops ands desktops */
-        .topnav {
-            overflow: hidden;
-            background-color: #333;
-            position: relative;
-          }
-          
-          /* Hide the links inside the navigation menu (except for logo/home) */
-          .topnav #access {
-            display: none;
-          }
-          /* .topnav #myLinks {
-            display: none;
-          } */
-          
-          /* Style navigation menu links */
-          .topnav a {
-            color: white;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-            display: block;
-          }
-          
-          /* Style the hamburger menu */
-          .topnav a.icon {
-            background: black;
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 0;
-          }
-          
-          /* Add a grey background color on mouse-over */
-          .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-          }
-          
-          /* Style the active link (or home/logo) */
-          .active {
-            background-color: #04AA6D;
-            color: white;
-          }
+        
     }
 
     @media screen and (min-width: 1080px) {
 
         /* @size: 70%; */
         .container {
-            /* position: fixed; */
             top: (100% - 30%) / 2;
             left: (100% - 30%) / 2;
             right: (100% - 30%) / 2;
@@ -794,19 +784,16 @@
 
         .video-bg {
             background: white;
-            /* position: absolute; */
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
             z-index: 1;
-            /* overflow: hidden; */
         }
 
         .video-bg .video-fg,
         .video-bg iframe,
         .video-bg video {
-            /* position: absolute; */
             top: 0;
             left: 0;
             width: 100%;
@@ -838,10 +825,16 @@
 
         }
 
+        h1#logo {
+        background: url(http://www.colabor.com/wp-content/themes/colabor/images/colabor_logo.png) no-repeat left 7px;
+
+    }
+
         html[lang="en"] .logo {
-            /* background: url("https://www.banquelaurentienne.ca/en/images/logo_blcgf.png") 0 0/140px no-repeat; */
             background: url("/assets/logo.jpg") 0 0/140px no-repeat;
         }
+
+
 
         UL.menu {
             margin: 0px;
@@ -849,11 +842,14 @@
         }
 
         DIV#header UL.menu {
-            display: inline-block;
             height: 50px;
             width: auto;
             margin-top: -4vh;
             margin-right: 4vh;
+
+            display:flex;
+            justify-content:space-between;
+            list-style:none;
         }
 
         DIV#header UL.menu.lang {
@@ -868,8 +864,6 @@
             display: block;
             margin: 0px;
             float: left;
-            /* padding-left: 1em; */
-            /* padding-top: 15px; */
             clear: none;
         }
 
@@ -945,23 +939,12 @@
             border-bottom: none;
         }
 
+        /* top header tools*/
 
-
-
-
-
-
-        #header {
-            width: 980px;
-            left: 20px;
-            /* width: 981px; */
-            height: 5vh;
-            margin-top: 30px;
-            z-index: 1000;
+        #topTools {
+            height: 40px;
         }
 
-
-        /* top header tools*/
         #toolsContainer {
             width: 980px;
         }
@@ -970,16 +953,22 @@
             clear: both;
         }
         #shortcuts {
-            left: 571px;
-            width: 200px;
+            left: 550px;
+            width: 180px;
+            
+            display:flex;
+            justify-content:space-between;
+            list-style:none;
         }
+        
         #search-glass {
-                width: 100px;
-                left: 500px;
-            }
-        #search {
-            top: 4px;
+            width: 100px;
             left: 300px;
+            top: 7px;
+        }
+        #search {
+            top: 8px;
+            left: 100px;
             height: 22px;
             width: 215px;
         }
@@ -987,6 +976,44 @@
             width: 27vh;
             height: 2.4vh;
         }
+        #menu-contact{
+            display:flex;
+            justify-content:space-between;
+            list-style:none;
+        }
+
+        #login ul {
+            padding-left: 30px;
+            display:flex;
+            justify-content:flex-start;
+            list-style:none;
+        }
+
+        #header {
+            width: 980px;
+            left: 20px;
+            height: 4vh;
+            margin-bottom: 3vh;
+            margin-top: 30px;
+            z-index: 1000;
+        }
+
+        #access .menu {
+            float: right;
+            padding-top: 0vh;
+        }
+
+
+        #access .menu li {
+            float: left;
+            list-style: none;
+            background: url(http://www.colabor.com/wp-content/themes/colabor/images/mainMenuDiv.png) no-repeat left center;
+            height: 71px;
+            line-height: 72px;
+            font-weight: bold;
+            padding-left: 1px;
+        }
+
 
         /* job grid */
         DIV#body>DIV a {
@@ -1003,23 +1030,20 @@
         DIV#body>DIV>DIV>DIV#left-job-desc a{
             margin-top: 10vh;
         }
-    
 
         /* footer */
+        .footBlockLast {
+            width: 111px;
+            float: right;
+            position: relative;
+            top: 40px;
+        }
         #footerContent {
             width: 960px;
         }
         #legalsContent {
             width: 960px;
         }
-
-
-
-
-
-
-
-
 
         /* footer menu */
 
