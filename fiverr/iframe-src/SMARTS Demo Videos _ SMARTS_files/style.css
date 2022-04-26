@@ -1,0 +1,188 @@
+/*
+Theme Name: SMARTS: Real estate back office simplified.
+Description: SMARTS Custom Child Theme for Divi
+Author: The Heartstone Company
+Template: Divi
+*/
+
+html, body { height: 100%; }
+
+/* ---------->>> VERTICAL VIDEO SIDEBAR MENU <<<-----------*/ 
+
+/* Adds icon to external links */
+#menu-video-slider-menu .external i { 
+	font-size: 12px; 
+	margin-left: 4px;
+}
+
+#video-menu a {
+	color: #666666;
+	font-weight: 600;
+	opacity: 1 !important;
+	font-size: 16px !important;
+}
+
+#video-menu a:hover {
+	color: #E87101;
+}
+
+/* ---------->>> DEMONSTRATION VIDEO PAGE <<<-----------*/ 
+
+
+/* Removes transition animation from video menu */
+.et-menu a, .et-menu a:hover {
+    transition: all 0s ease-in-out;
+}
+
+
+@media (max-width: 980px) {
+	/*open the mobile menu up and use on all devices*/
+	.et-db #et-boc .et-l .pa-vertical-menu .et_pb_menu__menu {
+		display: flex;
+	}
+	/*hide the hamburger icon*/
+	.et-db #et-boc .et-l .pa-vertical-menu .et_mobile_nav_menu {
+		display: none;
+	}
+}
+
+@media (max-width: 980px) {
+	/*open the mobile menu up and use on all devices*/
+	.et-db #et-boc .et-l .pa-vertical-menu .et_pb_menu__menu {
+		display: flex;
+	}
+	/*hide the hamburger icon*/
+	.et-db #et-boc .et-l .pa-vertical-menu .et_mobile_nav_menu {
+		display: none;
+	}
+}
+
+
+/* MOBILE MENU DROPDOWN */
+.et_mobile_menu li a, .nav li li a {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+/* Hide gradient behind Chrome media player */
+video::-webkit-media-controls-panel {
+	background-image: linear-gradient(transparent, transparent) !important;
+}
+
+
+
+/* ---------->>> COLOR PALETTE <<<-----------*/ 
+/*
+#d13239 - SMARTS Red
+rgba(52,96,148,0.09) - Pale Blue Background
+#346094 - Common Blue
+*/
+
+#top-menu-nav #top-menu li.secondary-page a:link {
+font-weight: bold;
+}
+
+/* ---------->>> MAIN MENU <<<-----------*/ 
+
+#main-header { border-bottom: 1px solid #dedede; }
+
+
+/* Spacing between main menu links */
+ul#top-menu li.menu-item:not(:last-child) { padding-right: 24px !important; }
+#et_top_search { margin-left: 24px !important; }
+
+/* Main Menu Call-to-Action */
+#top-menu-nav #top-menu .cta a {
+color: #ffffff !important;
+background-color: #d13239;
+padding: 8px 10px !important;
+display: inline-block;
+opacity: 1;
+border-radius: 3px;
+font-size: 14px !important;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+#top-menu-nav #top-menu .cta a:hover {
+opacity: 1;
+background: #346094;
+}
+
+/* ---------->>> SECONDARY MENU <<<-----------*/ 
+
+#page-container #et-secondary-menu li a:hover {
+color: #c4c7d8 !important;
+opacity: 1 !important;
+}
+
+/* ---------->>> TYPOGRAPHY <<<-----------*/ 
+
+h2 { margin-bottom: 18px; }
+
+.report-list ul { 
+list-style-type: none;
+padding-left: 0;
+padding-bottom: 0;
+line-height: 1.2em;
+}
+.report-list li { margin-bottom: .75em; }
+
+ul.clean {
+list-style-type: none !important;
+padding-left: 0;
+}
+
+/* ---------->>> CONTACT FORM <<<-----------*/ 
+
+/* Contact form success message */
+#contact .et-pb-contact-message p {
+color: #346094;
+font-size: 21px;
+text-align: center;
+font-weight: 600;
+}
+
+/* ---------->>> FOOTER <<<-----------*/ 
+
+#page-footer a,
+#page-footer a:link { color: #aaaaaa; }
+#page-footer a:hover { color: #d13239; }
+
+/* Footer CTA Button */
+#page-footer a.footer-cta {
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: #ffffff !important;
+padding: 6px 8px;
+border: 2px solid #d13239;
+border-radius: 3px;
+}
+#page-footer a.footer-cta:hover {
+color: #ffffff !important;
+background-color: #d13239;
+}
+
+/* ---------->>> GENERAL THEME OVERRIDES <<<-----------*/ 
+
+/* Sets padding on page sections */
+:not(.et_pb_fullwidth_section).et_pb_section { 
+
+}
+
+#about { padding-bottom: 0 !important; }
+
+#footer-bottom { display: none; }
+
+/* Changes transition time of menu hovers */
+#top-menu-nav #top-menu a,
+#top-header #et-secondary-menu a {
+-webkit-transition: color .2s ease;
+-moz-transition: color .2s ease;
+-o-transition: color .2s ease;
+-ms-transition: color .2s ease;
+transition: color .2s ease;
+opacity: 1;
+}

@@ -1,0 +1,1 @@
+window.embedController={mediaViewed:function(e,i){var d,n,o,a;d="/media/"+e+"/MediaViewed",n={mediaGuid:i},o=function(e){},a="json",$.post(d,n,o,a)}};
