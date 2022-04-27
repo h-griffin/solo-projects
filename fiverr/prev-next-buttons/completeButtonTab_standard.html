@@ -1,0 +1,288 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<div class="tab-panels">
+  <ul class="tabs">
+    <li rel="panel1" class="active">panel1</li>
+    <li rel="panel2">panel2</li>
+    <li rel="panel3">panel3</li>
+    <li rel="panel4">panel4</li>
+  </ul>
+
+  <div id="panel1" class="panel active">
+    content1<br />
+    content1<br />
+    content1<br />
+    content1<br />
+    content1<br />
+  </div>
+  <div id="panel2" class="panel">
+    content2<br />
+    content2<br />
+    content2<br />
+    content2<br />
+    content2<br />
+  </div>
+  <div id="panel3" class="panel">
+    content3<br />
+    content3<br />
+    content3<br />
+    content3<br />
+    content3<br />
+  </div>
+  <div id="panel4" class="panel">
+    content4<br />
+    content4<br />
+    content4<br />
+    content4<br />
+    content4<br />
+  </div>
+  <button class="prev display_none">Previous</button>
+  <button class="nxt">Next</button>
+</div>
+
+<div class="tab-panels">
+  <ul class="tabs">
+    <li rel="panel5" class="active">panel5</li>
+    <li rel="panel6">panel6</li>
+    <li rel="panel7">panel7</li>
+    <li rel="panel8">panel8</li>
+  </ul>
+
+  <div id="panel5" class="panel active">
+    content5<br />
+    content5<br />
+    content5<br />
+    content5<br />
+    content5<br />
+  </div>
+  <div id="panel6" class="panel">
+    content6<br />
+    content6<br />
+    content6<br />
+    content6<br />
+    content6<br />
+  </div>
+  <div id="panel7" class="panel">
+    content7<br />
+    content7<br />
+    content7<br />
+    content7<br />
+    content7<br />
+  </div>
+  <div id="panel8" class="panel">
+    content8<br />
+    content8<br />
+    content8<br />
+    content8<br />
+    content8<br />
+  </div>
+  <button class="prev display_none">Previous</button>
+  <button class="nxt">Next</button>
+</div>
+
+<div class="tab-panels">
+  <ul class="tabs">
+    <li rel="panel9" class="active">panel9</li>
+    <li rel="panel10">panel10</li>
+    <li rel="panel11">panel11</li>
+    <li rel="panel12">panel12</li>
+  </ul>
+
+  <div id="panel9" class="panel active">
+    content9<br />
+    content9<br />
+    content9<br />
+    content9<br />
+    content9<br />
+  </div>
+  <div id="panel10" class="panel">
+    content10<br />
+    content10<br />
+    content10<br />
+    content10<br />
+    content10<br />
+  </div>
+  <div id="panel11" class="panel">
+    content11<br />
+    content11<br />
+    content11<br />
+    content11<br />
+    content11<br />
+  </div>
+  <div id="panel12" class="panel">
+    content12<br />
+    content12<br />
+    content12<br />
+    content12<br />
+    content12<br />
+  </div>
+  <button class="prev display_none">Previous</button>
+  <button class="nxt">Next</button>
+</div>
+
+<style>
+  body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+  }
+
+  .tab-panels ul {
+    margin: 0;
+    padding: 0;
+  }
+  .tab-panels ul li {
+    list-style-type: none;
+    display: inline-block;
+    background: #999;
+    margin: 0;
+    padding: 3px 10px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-weight: 200;
+    cursor: pointer;
+  }
+  .tab-panels ul li:hover {
+    color: #fff;
+    background: #666;
+  }
+
+  .tab-panels ul li.active {
+    color: #fff;
+    background: #666;
+  }
+
+  .tab-panels .panel {
+    display: none;
+    background: #c9c9c9;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .tab-panels .panel.active {
+    display: block;
+  }
+  .display_none {
+    display: none;
+  }
+  .completeTab_bg {
+    background: red !important;
+  }
+</style>
+
+<script>
+  $(function () {
+    
+    // Mark as Complete
+    $(".tab-panels").append('<button class="completeTab">completeTab</button>');
+    $(".completeTab").on("click", function () {
+        var $panel = $(this).closest(".tab-panels");
+        $panel.find(".tabs li.active").toggleClass("completeTab_bg");
+    });
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // Panels
+    
+    $(".tab-panels .tabs li").on("click", function () {
+      var $panel = $(this).closest(".tab-panels");
+      var fndprevBTNs = $panel.find(".prev");
+      var fndnxtBTNs = $panel.find(".nxt");
+      
+      // Add Active Class to Tabs
+      
+      $panel.find(".tabs li.active").removeClass("active");
+      $(this).addClass("active");
+      
+      var panelToShow = $(this).attr("rel");
+      var nxtli = $(this);
+      
+      swhdbtn(nxtli);
+      
+      // Show/Hide Prev/Next Buttons
+      
+      function swhdbtn(nxtli) {
+        if ($(nxtli).is(":first-child") == true) {
+          fndprevBTNs.addClass("display_none");
+          fndnxtBTNs.removeClass("display_none");
+        } else if ($(nxtli).is(":last-child") == true) {
+          fndprevBTNs.removeClass("display_none");
+          fndnxtBTNs.addClass("display_none");
+        } else {
+          fndprevBTNs.removeClass("display_none");
+          fndnxtBTNs.removeClass("display_none");
+        }
+      }
+      
+      // Show Next Panel
+      
+      $panel.find(".panel.active").show(showNextPanel);
+      function showNextPanel() {
+        $(this).removeClass("active");
+        $("#" + panelToShow).hide(function () {
+          $(this).addClass("active");
+        });
+      }
+    });
+    
+    $(".tab-panels .nxt").on("click", function () {
+      var thisBTN = $(this);
+      var $btn_panel = $(this).closest(".tab-panels");
+      var crntli = $btn_panel.find(".tabs li.active");
+      crntli.removeClass("active");
+      var nxtli = crntli.next();
+      var nextpanelToShow = nxtli.attr("rel");
+      nxtli.addClass("active");
+      thisBTN.prev().removeClass("display_none");
+      showHideBTN(nxtli);
+      function showHideBTN(nxtli) {
+        if ($(nxtli).is(":last-child") == true) {
+          thisBTN.addClass("display_none");
+        }
+      }
+      $btn_panel.find(".panel.active").show(btnshowNextPanel);
+      function btnshowNextPanel() {
+        $(this).removeClass("active");
+
+        $("#" + nextpanelToShow).hide(function () {
+          $(this).addClass("active");
+        });
+      }
+    });
+    
+    // Show Previous Panel
+    
+    $(".tab-panels .prev").on("click", function () {
+      var thisBTN = $(this);
+      var $btn_panel = $(this).closest(".tab-panels");
+      var crntli = $btn_panel.find(".tabs li.active");
+      crntli.removeClass("active");
+      var prvli = crntli.prev();
+      var prvpanelToShow = prvli.attr("rel");
+      prvli.addClass("active");
+      showHideBTN(prvli);
+      function showHideBTN(prvli) {
+        if ($(prvli).is(":first-child") == true) {
+          thisBTN.addClass("display_none");
+          thisBTN.next().removeClass("display_none");
+        } else {
+          thisBTN.next().removeClass("display_none");
+        }
+      }
+      $btn_panel.find(".panel.active").show(btnshowPrevPanel);
+      function btnshowPrevPanel() {
+        $(this).removeClass("active");
+        $("#" + prvpanelToShow).hide(function () {
+          $(this).addClass("active");
+        });
+      }
+    });
+  });
+</script>
