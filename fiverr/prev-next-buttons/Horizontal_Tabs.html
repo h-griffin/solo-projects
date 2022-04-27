@@ -1,0 +1,271 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+<!-- Horizontal_Tabs 10 -->
+ <div class="hTab_contain">
+ 
+   <!-- Navigation -->
+   <div class="gridContent hTab_navigation">
+     <div class="hTabLinks active"><span class="light"></span><span>1</span></div>
+     <div class="hTabLinks"><span class="light"></span><span>2</span></div>
+     <div class="hTabLinks"><span class="light"></span><span>3</span></div>
+     <div class="hTabLinks"><span class="light"></span><span>4</span></div>
+     
+     <button class="prev display_none">Previous</button>
+     <button class="nxt">Next</button>
+   </div>
+   
+   <!-- Contents -->
+   <div class="gridContent hTab_contents">
+    <ul class="hTabs_content">
+         <li class="hTabs_panel active">
+             <h2>Tab1</h2>
+             <p>Tab 1</p>
+         </li>
+         <li class="hTabs_panel">
+             <h2>Tab2</h2>
+             <p>Tab 2</p>
+         </li>
+         <li class="hTabs_panel">
+             <h2>Tab3</h2>
+             <p>Tab 3</p>
+         </li>
+         <li class="hTabs_panel">
+             <h2>Tab4</h2>
+             <p>Tab 4</p>
+         </li>
+    </ul>
+    
+   </div>
+   
+ </div>
+<!-- End Horizontal_Tabs 10 -->
+
+
+
+<!-- Start Horizontal_Tabs 20 -->
+<div class="hTab_contain">
+ 
+   <!-- Navigation -->
+   <div class="gridContent hTab_navigation">
+     <div class="hTabLinks active"><span class="light"></span><span>1</span></div>
+     <div class="hTabLinks"><span class="light"></span><span>2</span></div>
+     <div class="hTabLinks"><span class="light"></span><span>3</span></div>
+     <div class="hTabLinks"><span class="light"></span><span>4</span></div>
+     
+     <button class="prev display_none">Previous</button>
+     <button class="nxt">Next</button>
+   </div>
+   
+   <!-- Contents -->
+   <div class="gridContent hTab_contents">
+    <ul class="hTabs_content">
+         <li class="hTabs_panel active">
+             <h2>Tab1</h2>
+             <p>Tab 1</p>
+         </li>
+         <li class="hTabs_panel">
+             <h2>Tab2</h2>
+             <p>Tab 2</p>
+         </li>
+         <li class="hTabs_panel">
+             <h2>Tab3</h2>
+             <p>Tab 3</p>
+         </li>
+         <li class="hTabs_panel">
+             <h2>Tab4</h2>
+             <p>Tab 4</p>
+         </li>
+    </ul>
+    
+   </div>
+   
+ </div>
+<!-- End Horizontal_Tabs 20 -->
+
+
+
+<style>
+
+/* Container */
+
+ .gridContent {
+	 box-sizing: border-box;
+	 display: inline-block;
+	 margin-right: -0.25em;
+	 min-height: 1px;
+	 padding-left: 40px;
+	 vertical-align: top;
+}
+ .hTab_navigation {
+	 width: 40%;
+}
+ .hTab_contents {
+	 width: 60%;
+}
+
+/* Navigation */
+
+.hTab_navigation div {
+	 padding: 15px 20px 15px 40px;
+	 margin-bottom: 10px;
+	 color: #303f9f;
+	 background: #3f51b5;
+	 box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	 cursor: pointer;
+	 position: relative;
+	 vertical-align: middle;
+	 font-weight: 700;
+	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.hTab_navigation div:hover {
+	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.hTab_navigation div span.light {
+	 height: 10px;
+	 width: 10px;
+	 position: absolute;
+	 top: 24px;
+	 left: 15px;
+	 background-color: #303f9f;
+	 border-radius: 100%;
+	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.hTab_navigation div.active span.light {
+	 background-color: #fbc02d;
+	 left: 0;
+	 height: 100%;
+	 width: 3px;
+	 top: 0;
+	 border-radius: 0;
+}
+.hTab_navigation div.active {
+	 color: #fbc02d;
+	 padding: 15px 20px 15px 20px;
+}
+.display_none {
+    display: none;
+  }
+
+/* Panels */
+
+ .hTabs_content {
+	 position: relative;
+	 height: 0px;
+	 list-style: none;
+	 margin: 0;
+	 padding: 0;
+	 transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ .hTabs_content .hTabs_panel {
+	 opacity: 0;
+	 transform: translateX(50px);
+	 position: absolute;
+	 list-style: none;
+	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ .hTabs_content .hTabs_panel.active {
+	 transition-delay: 0.3s;
+	 z-index: 2;
+	 opacity: 1;
+	 transform: translateX(0px);
+}
+</style>
+
+<script>
+// Acc
+$(function() {
+
+    // click on tabs 
+    $(".hTab_contain .hTab_navigation div").on("click", function () {
+        var $panel = $(this).closest(".hTab_contain");
+        var numberIndex = $(this).index();
+        var fndprevBTNs = $panel.find(".prev");
+        var fndnxtBTNs = $panel.find(".nxt");
+        
+        // remove active class and add to clicked tab
+        $panel.find(".hTab_navigation div").removeClass("active");
+		$panel.find(".hTabs_content .hTabs_panel").removeClass("active"); 
+
+		$(this).addClass("active"); // navigation div 
+		$panel.find(".hTabs_content").find(".hTabs_panel:eq(" + numberIndex + ")").addClass("active"); 
+
+        // show/hide buttons
+        var panelToShow = $(this).attr("rel");
+        var crntli = $(this);
+        
+        swhdbtn(crntli);
+        function swhdbtn(crntli) {
+            if ($(crntli).is(":first-child") == true) {
+            fndprevBTNs.addClass("display_none");
+            fndnxtBTNs.removeClass("display_none");
+            } else if ($(crntli).is(":nth-last-child(3)") == true) {
+            fndprevBTNs.removeClass("display_none");
+            fndnxtBTNs.addClass("display_none");
+            } else {
+            fndprevBTNs.removeClass("display_none");
+            fndnxtBTNs.removeClass("display_none");
+            }
+        }
+
+    });
+    
+    // click next button
+    $(".hTab_contain .nxt").on("click", function () {
+        var thisBTN = $(this);
+        var $btn_panel = $(this).closest(".hTab_contain");
+        var crntli = $btn_panel.find(".hTabs_content li.active"); //panel description li
+        var crntdiv = $btn_panel.find(".hTab_navigation div.active"); //navigation div
+
+        // remove active class and add to next  >panel description li
+        crntli.removeClass("active");
+        var nxtli = crntli.next();
+        nxtli.addClass("active");
+
+        // remove active class and add to next  >navigation div
+        crntdiv.removeClass("active");
+        var nxtdiv = crntdiv.next();
+        nxtdiv.addClass("active");
+
+        thisBTN.prev().removeClass("display_none");
+        showHideBTN(nxtli);
+        function showHideBTN(nxtli) {
+            if ($(nxtli).is(":last-child") == true) {
+                thisBTN.addClass("display_none");
+            }
+        }
+
+    });
+    
+    // Show Previous Panel
+    $(".hTab_contain .prev").on("click", function () {
+      var thisBTN = $(this);
+      var $btn_panel = $(this).closest(".hTab_contain");
+      var crntli = $btn_panel.find(".hTabs_content li.active");
+      var crntdiv = $btn_panel.find(".hTab_navigation div.active");
+     
+      // remove active class and add to previous  >panel description li
+      crntli.removeClass("active");
+      var prvli = crntli.prev();
+      prvli.addClass("active");
+      // remove active class and add to previous  >navigation div
+      crntdiv.removeClass("active");
+      var prvdiv = crntdiv.prev();
+      prvdiv.addClass("active");
+      
+      thisBTN.prev().removeClass("display_none");
+      showHideBTN(prvli);
+      function showHideBTN(prvli) {
+        if ($(prvli).is(":first-child") == true) {
+          thisBTN.addClass("display_none");
+          thisBTN.next().removeClass("display_none");
+        } else {
+          thisBTN.next().removeClass("display_none");
+        }
+      }
+
+    });
+
+});
+</script>
