@@ -1,0 +1,55 @@
+
+.buttons{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn{
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    padding: 4px 12px;
+    margin: auto;
+    margin-top: 20%;
+ 
+     -o-transition: background-color .2s ease-in; 
+     -moz-transition: background-color .2s ease-in;
+     -webkit-transition: background-color .2s ease-in; 
+     transition: background-color .2s ease-in; 
+}
+
+.btn:hover {
+    background-color: #e5e5e5;    
+}
+
+.btn:active {
+    background-color: #ccc;
+}
+
+body{
+    display: flex;
+    margin: 5% 10%;
+}
+
+.input{
+    border: 1px solid darkgrey;
+    background-color: #f0f0f0;
+    width: 45%;
+    height: 80vh;
+    text-align: center;
+}
+
+#copy, #paste{
+    text-align: left;
+    margin: auto;
+    padding: 3px;
+    border: 1px solid darkgrey;
+    background-color: white;
+    width: 90%;
+    height: 85%;
+    overflow: scroll;
+}
+
+
+
