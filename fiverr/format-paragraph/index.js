@@ -22,7 +22,7 @@ function sync()
 
 function format() {
     sync();
- 
+
     var copyElParent  = document.getElementById('copy');
 
     var elements = ['span', 'ul', ' li'];
@@ -51,10 +51,13 @@ function replace(oldtag, newtag){
         var newEl = document.createElement(newtag);
         newEl.style.fontWeight = 700;
         newEl.style.lineHeight = 1.38;
+        newEl.style.color = "inherit";
     } else {
         var newEl = document.createElement(newtag);
         newEl.style.lineHeight = 1.38;
+        newEl.style.color = "inherit";
     }
+
 
     newEl.innerHTML = oldEl.innerHTML;
 
