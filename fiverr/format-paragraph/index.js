@@ -47,15 +47,18 @@ function replace(oldtag, newtag){
 
     var oldEl = copyElParent.getElementsByTagName(oldtag)[0];
 
-    if (window.getComputedStyle(oldEl).fontWeight == 700){
+    if (window.getComputedStyle(oldEl).fontWeight == 700) {
         var newEl = document.createElement(newtag);
         newEl.style.fontWeight = 700;
-        newEl.style.lineHeight = 1.38;
-        newEl.style.color = "inherit";
+        newEl.style.lineHeight = 1.2;
+        newEl.style.color = "#023d67";
+        newEl.style.fontSize = "16px";
+
     } else {
         var newEl = document.createElement(newtag);
-        newEl.style.lineHeight = 1.38;
-        newEl.style.color = "inherit";
+        newEl.style.lineHeight = 1.2;
+        newEl.style.color = "#023d67";
+        newEl.style.fontSize = "16px";
     }
 
 
