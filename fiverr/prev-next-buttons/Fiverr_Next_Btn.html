@@ -1,49 +1,88 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<style> .active { background: yellow; border: 1px solid } </style>
+<style>
+    .active {
+        background: yellow;
+        border: 1px solid
+    }
+    .panel{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+</style>
 
 <section>
-<div class="prev">
-  <h1>prev</h1>
-</div>
-<div class="next">
-  <h1>next</h1>
-</div>
-<div class="case active">content 1</div>
-<div class="case">content 2</div>
-<div class="case">content 3</div>
+    <div class="prev">
+        <h1>prev</h1>
+    </div>
+    <div class="next">
+        <h1>next</h1>
+    </div>
+    <div class="navigation">
+        <div class="case active">panel_1_navigation</div>
+        <div class="case">panel_2_navigation</div>
+        <div class="case">panel_3_navigation</div>
+    </div>
+    <br />
+    <div class="content">
+        <div class="panel show">panel_1_content</div>
+        <div class="panel">panel_2_content</div>
+        <div class="panel">panel_3_content</div>
+    </div>
 </section>
 
 <section>
-<div class="prev">
-  <h1>prev</h1>
-</div>
-<div class="next">
-  <h1>next</h1>
-</div>
-<div class="case active">content 1</div>
-<div class="case">content 2</div>
-<div class="case">content 3</div>
+    <div class="prev">
+        <h1>prev</h1>
+    </div>
+    <div class="next">
+        <h1>next</h1>
+    </div>
+    <div class="navigation">
+        <div class="case active">panel_1_navigation</div>
+        <div class="case">panel_2_navigation</div>
+        <div class="case">panel_3_navigation</div>
+    </div>
+    <br />
+    <div class="content">
+        <div class="panel show">panel_1_content</div>
+        <div class="panel">panel_2_content</div>
+        <div class="panel">panel_3_content</div>
+    </div>
 </section>
 
 <script>
-$(document).ready(function(){
-  
-  $('.next').click(function(){
-    var $buttons = $(this).closest('section');
-    if ($buttons.find('.active').next('.case').length) {
-        $buttons.find('.active').removeClass('active')
+    $(document).ready(function () {
+
+        $('.next').click(function () {
+            var $buttons = $(this).closest('section');
+            if ($buttons.find('.navigation .active').next('.case').length) {
+                $buttons.find('.navigation .active').removeClass('active')
                     .next('.case')
                     .addClass('active');
-    }
-  });
-  $('.prev').click(function(){
-    var $buttons = $(this).closest('section');
-    if ($buttons.find('.active').prev('.case').length) {
-        $buttons.find('.active').removeClass('active')
+            }
+            if ($buttons.find('.content .show').next('.panel').length) {
+                $buttons.find('.content .show').removeClass('show')
+                    .next('.panel')
+                    .addClass('show');
+            }
+
+
+        });
+        $('.prev').click(function () {
+            var $buttons = $(this).closest('section');
+            if ($buttons.find('.navigation .active').prev('.case').length) {
+                $buttons.find('.navigation .active').removeClass('active')
                     .prev('.case')
                     .addClass('active');
-    }
-  });
-});
+            }
+            if ($buttons.find('.content .show').prev('.panel').length) {
+                $buttons.find('.content .show').removeClass('show')
+                    .prev('.panel')
+                    .addClass('show');
+            }
+        });
+    });
 </script>
