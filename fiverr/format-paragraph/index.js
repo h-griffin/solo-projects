@@ -36,7 +36,7 @@ function format() {
         } if (children[i].tagName == "LI" ){
             replace("li", "a");
         } if (children[i].tagName == "P" ){
-            children[i].style.lineHeight = 1.38;
+            children[i].style.lineHeight = 1.2;
         }
     }
   }
