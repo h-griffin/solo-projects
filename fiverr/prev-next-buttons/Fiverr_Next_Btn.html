@@ -1,0 +1,49 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<style> .active { background: yellow; border: 1px solid } </style>
+
+<section>
+<div class="prev">
+  <h1>prev</h1>
+</div>
+<div class="next">
+  <h1>next</h1>
+</div>
+<div class="case active">content 1</div>
+<div class="case">content 2</div>
+<div class="case">content 3</div>
+</section>
+
+<section>
+<div class="prev">
+  <h1>prev</h1>
+</div>
+<div class="next">
+  <h1>next</h1>
+</div>
+<div class="case active">content 1</div>
+<div class="case">content 2</div>
+<div class="case">content 3</div>
+</section>
+
+<script>
+$(document).ready(function(){
+  
+  $('.next').click(function(){
+    var $buttons = $(this).closest('section');
+    if ($buttons.find('.active').next('.case').length) {
+        $buttons.find('.active').removeClass('active')
+                    .next('.case')
+                    .addClass('active');
+    }
+  });
+  $('.prev').click(function(){
+    var $buttons = $(this).closest('section');
+    if ($buttons.find('.active').prev('.case').length) {
+        $buttons.find('.active').removeClass('active')
+                    .prev('.case')
+                    .addClass('active');
+    }
+  });
+});
+</script>
