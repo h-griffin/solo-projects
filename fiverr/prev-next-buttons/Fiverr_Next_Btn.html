@@ -20,10 +20,15 @@
     <div class="next">
         <h1>next</h1>
     </div>
-    <div class="navigation">
-        <div class="case active">panel_1_navigation</div>
-        <div class="case">panel_2_navigation</div>
-        <div class="case">panel_3_navigation</div>
+    <div class="navigation 1">
+        <div class="case 1 active">panel_1_navigation</div>
+        <div class="case 2 ">panel_2_navigation</div>
+        <div class="case 3 ">panel_3_navigation</div>
+    </div>
+    <div class="navigation 2">
+        <div class="case 1 active">panel_1_navigation</div>
+        <div class="case 2 ">panel_2_navigation</div>
+        <div class="case 3 ">panel_3_navigation</div>
     </div>
     <br />
     <div class="content">
@@ -56,30 +61,62 @@
 <script>
     $(document).ready(function () {
 
+        $(".navigation .case").on("click", function () {
+            var $section = $(this).closest("section");
+            var numberIndex = $(this).index();
+
+            $section.find(".active").removeClass("active");
+            $(this).addClass("active");
+            $section.find(".navigation").find(".case:eq(" + numberIndex + ")").addClass("active");
+
+            $section.find(".content .show").removeClass("show");
+            $section.find(".content").find(".panel:eq(" + numberIndex + ")").addClass("show");
+
+        });
+
         $('.next').click(function () {
-            var $buttons = $(this).closest('section');
-            if ($buttons.find('.navigation .active').next('.case').length) {
-                $buttons.find('.navigation .active').removeClass('active')
+            var $section = $(this).closest('section');
+            if ($section.find('.navigation .active').next('.case').length) {
+                $section.find('.navigation .active').removeClass('active')
                     .next('.case')
                     .addClass('active');
             }
-            if ($buttons.find('.content .show').next('.panel').length) {
-                $buttons.find('.content .show').removeClass('show')
+            if ($section.find('.navigation 1 .active').next('.case').length) {
+                $section.find('.navigation 1 .active').removeClass('active')
+                    .next('.case')
+                    .addClass('active');
+            }
+            if ($section.find('.navigation 2 .active').next('.case').length) {
+                $section.find('.navigation 2 .active').removeClass('active')
+                    .next('.case')
+                    .addClass('active');
+            }
+            if ($section.find('.content .show').next('.panel').length) {
+                $section.find('.content .show').removeClass('show')
                     .next('.panel')
                     .addClass('show');
             }
-
-
         });
+
         $('.prev').click(function () {
-            var $buttons = $(this).closest('section');
-            if ($buttons.find('.navigation .active').prev('.case').length) {
-                $buttons.find('.navigation .active').removeClass('active')
+            var $section = $(this).closest('section');
+            if ($section.find('.navigation .active').prev('.case').length) {
+                $section.find('.navigation .active').removeClass('active')
                     .prev('.case')
                     .addClass('active');
             }
-            if ($buttons.find('.content .show').prev('.panel').length) {
-                $buttons.find('.content .show').removeClass('show')
+            if ($section.find('.navigation 1 .active').prev('.case').length) {
+                $section.find('.navigation 1 .active').removeClass('active')
+                    .prev('.case')
+                    .addClass('active');
+            }
+            if ($section.find('.navigation 2 .active').prev('.case').length) {
+                $section.find('.navigation 2 .active').removeClass('active')
+                    .prev('.case')
+                    .addClass('active');
+            }
+            if ($section.find('.content .show').prev('.panel').length) {
+                $section.find('.content .show').removeClass('show')
                     .prev('.panel')
                     .addClass('show');
             }
