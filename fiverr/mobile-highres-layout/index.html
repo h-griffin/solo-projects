@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#128190;dship.biz&#128190;</title>
+    <style media="screen" type="text/css">
+        body {
+            background-color: black;
+            text-align: center;
+        }
+
+        img {}
+
+        .logo {
+            margin-top: 10%;
+
+        }
+
+
+
+        img {
+            image-rendering: optimizeSpeed;
+            /* STOP SMOOTHING, GIVE ME SPEED  */
+            image-rendering: -moz-crisp-edges;
+            /* Firefox                        */
+            image-rendering: -o-crisp-edges;
+            /* Opera                          */
+            image-rendering: -webkit-optimize-contrast;
+            /* Chrome (and eventually Safari) */
+            image-rendering: pixelated;
+            /* Chrome */
+            image-rendering: optimize-contrast;
+            /* CSS3 Proposed                  */
+            -ms-interpolation-mode: nearest-neighbor;
+            /* IE8+                           */
+
+        }
+
+        /* @media (max-width:641px)  {  */
+        @media (max-width:961px)  { 
+            /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+            .logo{
+                width: 80%;
+                margin-top: 10vh;
+            }
+            .button{
+                width: 60%;
+                margin-top: 5vh;
+            }
+        }
+
+        @media (min-width:1281px) { 
+            /* hi-res laptops and desktops */ 
+            .logo{
+                width: 80%;
+            }
+            .button{
+                width: 30%;
+            }
+        }
+
+
+    </style>
+</head>
+
+<audio id="sound1" src="dshiptag.mp3" preload="auto"></audio>
+<a onclick="document.getElementById('sound1').play();"><img class="logo" src="dealership.png" /></a>
+<br />
+<a href="https://www.youtube.com/channel/UChuDrluNtizLLR0bFZcoziw"><img class="button" src="youtube.png" /></a>
+<br />
+<a href="http://soundcloud.com/dlrshp"><img class="button" src="3soundcloud.png" /></a>
+<br />
+<a href="http://dlrshp.bandcamp.com"><img class="button" src="4bandcamp.png" /></a>
+<br />
+<a href="http://instagram.com/dealership92"><img class="button" src="6insta.png" /></a>
+<br />
+<a href="https://podcasts.apple.com/us/podcast/dealership-mixes/id1617593924"><img class="button"
+        src="podcast.png" /></a>
+
+</html>
