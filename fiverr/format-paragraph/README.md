@@ -1,6 +1,8 @@
 # format-paragraph
 
-- paste styled text and receive black html with bold kept
+- paste rich text and receive plain black html with bold and line breaks kept
+- https://jsfiddle.net/g602dcny/
+
 
 
 
