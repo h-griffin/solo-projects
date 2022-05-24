@@ -14,7 +14,7 @@ body {
 .crossword-board {
   margin: auto;
   margin-top: 10px;
-  width: 760px;
+  width: 890px;
   height: 360px;
   background-color: #f5f5f5;  
 }
@@ -78,6 +78,7 @@ input{
     height: 85%;
     width: 80%;
     text-align: center;
+    text-transform: uppercase;    
 }
 
 /*Clue styling*/
@@ -86,6 +87,7 @@ input{
   height: 400px;
   margin: auto;
   padding-top: 30px;
+
 }
 
 #acrossClues {
@@ -101,11 +103,13 @@ input{
 p{
     text-decoration: underline;
     text-align: center;
-  font-size: 30px;
+    font-size: 30px;
 }
 
 .clue {
   font-family: "Courier", Times, serif;
-  font-size: 18px;
+  font-size: 25px;
   margin-top: 2px;
+  text-transform: uppercase;    
+
 }
