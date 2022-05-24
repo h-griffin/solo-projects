@@ -7,7 +7,7 @@ function createBoard(info) {
 }
 
 function createRow(rowNumber, info) {
-  var row = document.createElement("div");
+  var row = document.createElement("tr");
   row.classList = "row";
   for (var i=0; i<info.width; i++) {
     var block = createBlock(rowNumber, i, info);
@@ -17,7 +17,7 @@ function createRow(rowNumber, info) {
 }
 
 function createBlock(row, column, info) {
-  var block = document.createElement("div");
+  var block = document.createElement("td");
   block.classList = "block";
   
   var letter = info.puzzle[row][column];
@@ -29,8 +29,8 @@ function createBlock(row, column, info) {
     var letterSpan = document.createElement("div");
     letterSpan.classList = "letter"; 
     letterSpan.innerHTML = " ";
-    letterSpan.innerHTML = '<input></input>';
-    // letterSpan.innerHTML = letter;
+    letterSpan.innerHTML = `<input></input>`;
+    // letterSpan.innerHTML = letter;           // display answers in grid
     block.appendChild(letterSpan);
   }
   
@@ -41,6 +41,7 @@ function createBlock(row, column, info) {
   
   return block;
 }
+ 
 
 function getNumberDiv(row, column, info) {
   var numberObj;
@@ -215,6 +216,21 @@ var info = {
     ]
   }
 };
-            
+
+    
+$(document).ready(function(){
+    $('#crossword').on('keyup', 'input', function(e){
+        if(e.which==39)
+            $(this).closest('td').next().find('input').focus();
+        else if(e.which==37)
+            $(this).closest('td').prev().find('input').focus();
+        else if(e.which==40)
+            $(this).closest('tr').next().children().eq($(this).closest('td').index()).find('input').focus(); 
+        else if(e.which==38)
+            $(this).closest('tr').prev().children().eq($(this).closest('td').index()).find('input').focus(); 
+    });
+});
+ 
+
 createBoard(info.puzzle1);
 writeClues(info.puzzle1);
