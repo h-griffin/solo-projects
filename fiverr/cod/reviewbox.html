@@ -82,10 +82,6 @@
         }
 
         .gp-container {
-            width: 1170px;
-        }
-
-        .gp-container {
             position: relative;
             margin: 0 auto;
             z-index: 1;
@@ -186,10 +182,6 @@
         #gp-review-summary .gp-large-rating {
             float: left;
             margin: -50px 0 0;
-        }
-
-        #gp-review-summary .gp-rating-gauge.gp-large-rating {
-            width: 230px;
         }
 
         .gp-rating-gauge .gp-rating-inner {
@@ -376,26 +368,6 @@
             color: #fff;
         }
 
-        @media only screen and (max-width:1200px) {
-            .gp-responsive .gp-container {
-                width: 1040px;
-            }
-
-            .gp-responsive .gp-site-rating-criteria-wrapper {
-                width: 218px;
-            }
-        }
-
-        @media only screen and (max-width:1082px) {
-            .gp-responsive .gp-container {
-                width: 980px;
-            }
-
-            .gp-responsive .gp-site-rating-criteria-wrapper {
-                width: 191px;
-            }
-        }
-
         @media only screen and (max-width:1023px) {
             .gp-responsive .gp-container {
                 padding-right: 20px;
@@ -468,21 +440,37 @@
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e63900", endColorstr="#E67300", GradientType=1);
         }
 
-        @media only screen and (min-width:1201px) {
-            .gp-container {
-                width: 1170px;
-            }
-        }
 
-        @media only screen and (max-width:1200px) and (min-width:1083px) {
-            .gp-responsive .gp-container {
-                width: 1040px;
+        /* @media only screen and (min-width:1118px) and (max-width:1118px) { */
+        @media only screen and (min-width:768px) and (max-width:1118px)  {
+            #gp-review-summary .gp-large-rating,
+            .gp-site-rating-criteria-wrapper{
+                margin-top: 5%;
             }
-        }
 
-        @media only screen and (max-width:1082px) and (min-width:1024px) {
-            .gp-responsive .gp-container {
-                width: 980px;
+            #gp-review-summary .gp-large-rating,
+            .gp-site-rating-criteria-wrapper,
+            .gp-rating-criteria #gp-points-wrapper,
+            #gp-review-summary.gp-rating-criteria .gp-rating-wrapper
+            {
+                width: 100%;
+            }
+
+        }
+        @media only screen and (max-width:768px){
+            #gp-review-summary .gp-large-rating,
+            .gp-site-rating-criteria-wrapper{
+                margin-top: 5%;
+            }
+
+            #gp-review-summary .gp-large-rating,
+            .gp-site-rating-criteria-wrapper,
+            .gp-rating-criteria #gp-points-wrapper,
+            #gp-review-summary.gp-rating-criteria .gp-rating-wrapper,
+
+            #gp-points-wrapper .gp-good-points, #gp-points-wrapper .gp-bad-points
+            {
+                width: 100%;
             }
         }
 
@@ -563,6 +551,9 @@
         src: url(https://fonts.gstatic.com/s/arvo/v20/tDbD2oWUg0MKqScQ7Z7o_vo.woff2) format('woff2');
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
+
+
+
 </style>
 
 <body>
@@ -613,7 +604,7 @@
                     </div>
                     <h4 class="gp-rating-text">Great</h4>
                 </div>
-                
+
                 <!-- script -->
 
                 <div class="gp-site-rating-criteria-wrapper gp-rating-gauge">
