@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*! CSS Used from: https://gauge.ghostpool.com/wp-content/cache/autoptimize/css/autoptimize_cc54a62ecc24b350b5e9fdf6070a3b1a.css ; media=all */
+    @media all {
+        h4 {
+            overflow-wrap: break-word;
+        }
+
+        ul {
+            overflow-wrap: break-word;
+        }
+
+        div,
+        span,
+        h4,
+        i,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            vertical-align: baseline;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            outline: none;
+            -webkit-text-size-adjust: none;
+        }
+
+        h4 {
+            clear: both;
+            margin: 15px 0;
+            padding: 0;
+            word-wrap: break-word;
+        }
+
+        ul {
+            margin: 0 0 24px 20px;
+            padding: 0;
+            list-style-type: square;
+        }
+
+        .gp-top-bg-gradient-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background: -moz-linear-gradient(top, rgba(0, 0, 0, .95) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, .95)), color-stop(100%, rgba(0, 0, 0, 0)));
+            background: -webkit-linear-gradient(top, rgba(0, 0, 0, .95) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -o-linear-gradient(top, rgba(0, 0, 0, .95) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -ms-linear-gradient(top, rgba(0, 0, 0, .95) 0%, rgba(0, 0, 0, 0) 100%);
+            background: linear-gradient(to bottom, rgba(0, 0, 0, .95) 0%, rgba(0, 0, 0, 0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2000000', endColorstr='#00000000', GradientType=0);
+        }
+
+        .gp-bg-overlay-light {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5);
+        }
+
+        .gp-container {
+            width: 1170px;
+        }
+
+        .gp-container {
+            position: relative;
+            margin: 0 auto;
+            z-index: 1;
+        }
+
+        #gp-review-summary {
+            float: left;
+            clear: both;
+            width: 100%;
+            position: relative;
+            padding: 30px 0;
+            border-top-width: 10px !important;
+            border-bottom-width: 10px !important;
+            background-size: cover;
+        }
+
+        #gp-review-summary:before {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            content: ' ';
+            border-top: 1px solid rgba(0, 0, 0, .05);
+            width: 100%;
+            height: 1px;
+        }
+
+        #gp-review-summary:after {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            content: ' ';
+            border-bottom: 1px solid rgba(0, 0, 0, .05);
+            width: 100%;
+            height: 1px;
+        }
+
+        #gp-points-wrapper {
+            float: left;
+            width: 73%;
+            margin-right: 2%;
+        }
+
+        .gp-rating-criteria #gp-points-wrapper {
+            width: 53%;
+        }
+
+        #gp-points-wrapper .gp-good-points,
+        #gp-points-wrapper .gp-bad-points {
+            float: left;
+            width: 49%;
+        }
+
+        #gp-points-wrapper .gp-good-points {
+            margin-right: 2%;
+        }
+
+        #gp-points-wrapper h4 {
+            font-size: 16px;
+            line-height: 26px;
+            margin: 0 0 5px;
+            text-transform: uppercase;
+        }
+
+        #gp-points-wrapper ul {
+            margin: 0;
+        }
+
+        #gp-points-wrapper li {
+            list-style: none;
+            margin: 0 0 0 24px;
+        }
+
+        #gp-points-wrapper li i {
+            margin-right: 10px;
+            margin-left: -24px;
+        }
+
+        .gp-rating-wrapper {
+            float: right;
+            position: relative;
+            text-align: center;
+            z-index: 2;
+        }
+
+        #gp-review-summary .gp-rating-wrapper {
+            width: 25%;
+        }
+
+        #gp-review-summary.gp-rating-criteria .gp-rating-wrapper {
+            width: 45%;
+        }
+
+        .gp-large-rating {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        #gp-review-summary .gp-large-rating {
+            float: left;
+            margin: -50px 0 0;
+        }
+
+        #gp-review-summary .gp-rating-gauge.gp-large-rating {
+            width: 230px;
+        }
+
+        .gp-rating-gauge .gp-rating-inner {
+            display: inline-block;
+            position: relative;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            vertical-align: middle;
+            border-radius: 100%;
+            background: #1c1c1c;
+            box-shadow: #131415 0 0 30px 7.5px inset, rgba(0, 0, 0, .2) 0 0 4px 5px;
+        }
+
+        @media screen\0 {
+            .gp-rating-gauge .gp-rating-inner {
+                overflow: hidden;
+            }
+        }
+
+        #gp-review-summary .gp-rating-gauge .gp-rating-inner {
+            width: 200px;
+            height: 200px;
+        }
+
+        .gp-header-rating .gp-rating-gauge .gp-rating-inner:before,
+        .gp-header-rating .gp-rating-gauge .gp-rating-inner:after {
+            content: ' ';
+            position: absolute;
+            border-radius: 100%;
+        }
+
+        .gp-header-rating .gp-rating-gauge .gp-rating-inner:before {
+            top: -20px;
+            bottom: -20px;
+            left: -20px;
+            right: -20px;
+            border: 2px dashed rgba(255, 255, 255, .15);
+        }
+
+        .gp-header-rating .gp-rating-gauge .gp-rating-inner:before {
+            top: -15px;
+            bottom: -15px;
+            left: -15px;
+            right: -15px;
+        }
+
+        .gp-header-rating .gp-rating-gauge .gp-rating-inner:after {
+            top: -15px;
+            bottom: -15px;
+            left: -15px;
+            right: -15px;
+            border: 1px solid rgba(255, 255, 255, .2);
+        }
+
+        .gp-rating-gauge .gp-score-clip {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .gp-rating-gauge .gp-score-spinner {
+            border-radius: 100% 0 0 100%/50% 0 0 50%;
+            z-index: 2;
+            border-right: none;
+            overflow: hidden;
+            -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+            width: 50%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .gp-rating-gauge .gp-score-filler {
+            opacity: 1;
+            border-radius: 0 100% 100% 0/0 50% 50% 0;
+            left: 50%;
+            z-index: 3;
+            border-left: none;
+            overflow: hidden;
+            -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+            width: 50%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .gp-rating-gauge .gp-score-inner {
+            background: #1c1c1c;
+            box-shadow: rgba(0, 0, 0, .75) 0 0 3px, rgba(255, 255, 255, .3) 0 0 1px inset;
+            color: #f1f1f4;
+            text-shadow: rgba(0, 0, 0, .5) 0 1px 5px;
+            text-align: center;
+            font-weight: 700;
+            position: absolute;
+            z-index: 4;
+            border-radius: 400px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-transition: background .25s;
+            transition: background .25s;
+        }
+
+        #gp-review-summary .gp-rating-gauge .gp-score-inner {
+            font-size: 60px;
+            line-height: 60px;
+            top: 15px;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+        }
+
+        .gp-rating-gauge .gp-score-table {
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
+
+        .gp-rating-gauge .gp-score-cell {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .gp-rating-gauge .gp-rating-text {
+            width: 100%;
+            line-height: 1;
+            text-align: center;
+            z-index: 5;
+            text-transform: uppercase;
+            margin: 0;
+            word-wrap: inherit;
+        }
+
+        #gp-review-summary .gp-rating-gauge .gp-rating-text {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .gp-site-rating-criteria-wrapper {
+            width: 276px;
+            float: right;
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .gp-site-rating-criteria {
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .gp-site-rating-slider-wrapper {
+            float: left;
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            height: 25px;
+        }
+
+        .gp-site-rating-selection {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            border-radius: 4px;
+        }
+
+        .gp-rating-gauge .gp-site-rating-selection {
+            background: url(//gauge.ghostpool.com/wp-content/themes/gauge/lib/images/site-rating-slider-rated.png) repeat;
+            background-size: cover;
+        }
+
+        .gp-site-rating-criteria-text {
+            position: absolute;
+            z-index: 2;
+            top: 1px;
+            left: 5px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .gp-rating-gauge .gp-site-rating-criteria-text {
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+            color: #fff;
+        }
+
+        @media only screen and (max-width:1200px) {
+            .gp-responsive .gp-container {
+                width: 1040px;
+            }
+
+            .gp-responsive .gp-site-rating-criteria-wrapper {
+                width: 218px;
+            }
+        }
+
+        @media only screen and (max-width:1082px) {
+            .gp-responsive .gp-container {
+                width: 980px;
+            }
+
+            .gp-responsive .gp-site-rating-criteria-wrapper {
+                width: 191px;
+            }
+        }
+
+        @media only screen and (max-width:1023px) {
+            .gp-responsive .gp-container {
+                padding-right: 20px;
+                padding-left: 20px;
+                width: 100% !important;
+            }
+
+            .gp-responsive #gp-points-wrapper {
+                width: 100%;
+                margin: 0;
+            }
+
+            .gp-responsive .gp-good-points,
+            .gp-responsive .gp-bad-points {
+                margin-bottom: 30px;
+            }
+
+            .gp-responsive #gp-review-summary .gp-rating-wrapper {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            .gp-responsive #gp-review-summary .gp-large-rating {
+                float: none;
+                margin: 0 auto;
+            }
+
+            .gp-responsive #gp-review-summary .gp-rating-gauge.gp-large-rating {
+                width: 230px;
+            }
+
+            .gp-responsive .gp-site-rating-criteria-wrapper {
+                width: 100% !important;
+                margin: 30px 0 0;
+            }
+        }
+
+        @media only screen and (max-width:767px) {
+
+            .gp-responsive #gp-points-wrapper .gp-good-points,
+            .gp-responsive #gp-points-wrapper .gp-bad-points {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+
+        .gp-score-spinner {
+            background: #e63900;
+            background: -moz-linear-gradient(#e63900 0%, #E6730070);
+            background: -webkit-gradient(color-stop(0%, #e63900), color-stop(70%, #e67300));
+            background: -webkit-linear-gradient(#e63900 0%, #e67300 70%);
+            background: -o-linear-gradient(#e63900 0%, #e67300 70%);
+            background: -ms-linear-gradient(#e63900 0%, #e67300 70%);
+            background: linear-gradient(#e63900 0%, #e67300 70%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#E67300", endColorstr="#e63900", GradientType=1);
+        }
+
+        .gp-no-score-clip-1 .gp-score-spinner {
+            background: #e63900;
+        }
+
+        .gp-no-score-clip-2 .gp-score-filler {
+            background: #e63900;
+            background: -moz-linear-gradient(#e67300 0%, #e6390070);
+            background: -webkit-gradient(color-stop(0%, #e67300), color-stop(70%, #e63900));
+            background: -webkit-linear-gradient(#e67300 0%, #e63900 70%);
+            background: -o-linear-gradient(#e67300 0%, #e63900 70%);
+            background: -ms-linear-gradient(#e67300 0%, #e63900 70%);
+            background: linear-gradient(#e67300 0%, #e63900 70%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e63900", endColorstr="#E67300", GradientType=1);
+        }
+
+        @media only screen and (min-width:1201px) {
+            .gp-container {
+                width: 1170px;
+            }
+        }
+
+        @media only screen and (max-width:1200px) and (min-width:1083px) {
+            .gp-responsive .gp-container {
+                width: 1040px;
+            }
+        }
+
+        @media only screen and (max-width:1082px) and (min-width:1024px) {
+            .gp-responsive .gp-container {
+                width: 980px;
+            }
+        }
+
+        .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .fa-plus-square:before {
+            content: "\f0fe";
+        }
+
+        .fa-minus-square:before {
+            content: "\f146";
+        }
+
+        h4 {
+            font-family: Arvo;
+            line-height: 30px;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+            font-display: swap;
+        }
+
+        #gp-review-summary {
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        #gp-review-summary {
+            background-color: #1c1c1c;
+        }
+
+        #gp-review-summary {
+            color: #fff;
+        }
+
+        #gp-points-wrapper .gp-good-points li i {
+            color: #f84103;
+        }
+
+        #gp-points-wrapper .gp-bad-points li i {
+            color: #5fa2a5;
+        }
+
+        #gp-review-summary .gp-rating-text {
+            color: #fff;
+        }
+
+        .gp-rating-gauge .gp-site-rating-selection {
+            background-image: url('https://gauge.ghostpool.com/wp-content/themes/gauge/lib/images/site-rating-slider-rated.png');
+        }
+
+        .gp-rating-gauge .gp-site-rating-criteria-text {
+            color: #fff;
+        }
+    }
+
+    /*! CSS Used fontfaces */
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url(//gauge.ghostpool.com/wp-content/themes/gauge/lib/fonts/font-awesome/css/../fonts/fontawesome-webfont.eot?v=4.7.0);
+        src: url(//gauge.ghostpool.com/wp-content/themes/gauge/lib/fonts/font-awesome/css/../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(//gauge.ghostpool.com/wp-content/themes/gauge/lib/fonts/font-awesome/css/../fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'), url(//gauge.ghostpool.com/wp-content/themes/gauge/lib/fonts/font-awesome/css/../fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'), url(//gauge.ghostpool.com/wp-content/themes/gauge/lib/fonts/font-awesome/css/../fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'), url(//gauge.ghostpool.com/wp-content/themes/gauge/lib/fonts/font-awesome/css/../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Arvo';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/arvo/v20/tDbD2oWUg0MKqScQ7Z7o_vo.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+</style>
+
+<body>
+
+    <div id="gp-review-summary" class="gp-rating-criteria"
+        style="background-image: url(https://gauge.ghostpool.com/wp-content/uploads/photodune-5356634-stalker-pulling-rope-m.jpg);">
+        <div class="gp-top-bg-gradient-overlay"></div>
+        <div class="gp-bg-overlay-light"></div>
+        <div class="gp-container">
+            <div id="gp-points-wrapper">
+                <div class="gp-good-points">
+                    <h4 class="gp-good-title">Good</h4>
+                    <ul>
+                        <li><i class="fa fa-plus-square"></i>Compellingly embrace empowered users without leading-edge
+                        </li>
+                        <li><i class="fa fa-plus-square"></i>Efficiently communicate empowered alignments</li>
+                        <li><i class="fa fa-plus-square"></i>Collaboratively formulate adaptive</li>
+                        <li><i class="fa fa-plus-square"></i>Globally foster multidisciplinary functionalities</li>
+                    </ul>
+                </div>
+                <div class="gp-bad-points">
+                    <h4 class="gp-bad-title">Bad</h4>
+                    <ul>
+                        <li><i class="fa fa-minus-square"></i>Progressively provide access to superior interfaces</li>
+                        <li><i class="fa fa-minus-square"></i>Competently cultivate client-centered results for
+                            collaborative markets</li>
+                        <li><i class="fa fa-minus-square"></i>Phosfluorescently optimize client-based functionalities
+                        </li>
+                        <li><i class="fa fa-minus-square"></i>Objectively embrace long-term high-impact technology</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gp-rating-wrapper gp-header-rating">
+                <div class="gp-site-rating-wrapper gp-large-rating gp-rating-gauge">
+                    <div class="gp-rating-inner">
+                        <div class="gp-score-clip gp-no-score-clip-1">
+                            <div class="gp-score-spinner"
+                                style="-webkit-transform: rotate(309.6deg); transform: rotate(309.6deg);"></div>
+                        </div>
+                        <div class="gp-score-clip gp-no-score-clip-2">
+                            <div class="gp-score-filler"></div>
+                        </div>
+                        <div class="gp-score-inner">
+                            <div class="gp-score-table">
+                                <div class="gp-score-cell"> 8.6</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="gp-rating-text">Great</h4>
+                </div>
+                
+                <!-- script -->
+
+                <div class="gp-site-rating-criteria-wrapper gp-rating-gauge">
+                    <div class="gp-site-rating-criteria">
+                        <div class="gp-site-rating-slider-wrapper">
+                            <div class="gp-site-rating-unselected"> <span class="gp-site-rating-criteria-text">Gameplay
+                                    - 10</span>
+                                <div class="gp-site-rating-selection" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gp-site-rating-criteria">
+                        <div class="gp-site-rating-slider-wrapper">
+                            <div class="gp-site-rating-unselected"> <span class="gp-site-rating-criteria-text">Storyline
+                                    - 8</span>
+                                <div class="gp-site-rating-selection" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gp-site-rating-criteria">
+                        <div class="gp-site-rating-slider-wrapper">
+                            <div class="gp-site-rating-unselected"> <span class="gp-site-rating-criteria-text">Graphics
+                                    - 7.5</span>
+                                <div class="gp-site-rating-selection" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gp-site-rating-criteria">
+                        <div class="gp-site-rating-slider-wrapper">
+                            <div class="gp-site-rating-unselected"> <span class="gp-site-rating-criteria-text">Sound -
+                                    9</span>
+                                <div class="gp-site-rating-selection" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="application/ld+json">{
+    "@context": "http://schema.org/",
+        "@type": "Review",
+        "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://gauge.ghostpool.com/call-of-duty-ghosts/review/"
+        },
+        "itemReviewed": {
+            "@type": "Game",
+            "name": "Call Of Duty: Ghosts"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "GhostPool"
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "8.6",
+            "worstRating" : "1",
+            "bestRating": "10"
+        }
+    }</script>
+
+</html>
