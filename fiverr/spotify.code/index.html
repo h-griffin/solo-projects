@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify</title>
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="lib/gmynd.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+
+    <script src="data.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <h1>Top 100 Songs 2010 - 2019</h1>
+    <div id="renderer" class="m-5">
+        <div class="years"></div>
+        <div class="titleList"></div>
+        <div class="titleList"></div>
+        <div class="titleList"></div>
+        <div class="titleList"></div>
+        <div class="titleList"></div>
+        <div class="titleList"></div>
+        <div class="titleList"></div>
+        <div class="titleList"></div>
+        <div class="titleList"></div>
+        <div class="titleList"></div>
+        <div id="hoverLabel" class="m-5"></div>
+    </div>
+
+
+    <!-- <script src="data.js"></script>
+    <script src="js/main.js"></script> -->
+    <!-- Labels für den Hover- und Click-Event.
+    Hier werden die entsprechenden Inhalte angezeigt. -->
+    <div id="hoverLabel" class="m-5"></div>
+    <div id="clickLabel" class="m-5"></div>
+    <div id="clickLabelbpm" class="m-5"></div>
+
+    <!-- Toggle Buttons -->
+    <button onclick="filterGenre('pop')" id="toggleViewButton" class="m-5 pop" >pop</button>
+    <button onclick="filterGenre('dance')" id="toggleViewButton" class="m-5 dance">dance</button>
+    <button onclick="filterGenre('edm')" id="toggleViewButton" class="m-5 edm">edm</button>
+    <button onclick="filterGenre('house')" id="toggleViewButton" class="m-5 house">house</button>
+    <button onclick="filterGenre('rap')" id="toggleViewButton" class="m-5 rap">rap</button>
+    <button onclick="filterGenre('hiphop')" id="toggleViewButton" class="m-5 hiphop">HipHop</button>
+    <button onclick="filterGenre('rAndb')" id="toggleViewButton" class="m-5 rb">r&b</button>
+    <button onclick="filterGenre('latin')" id="toggleViewButton" class="m-5 latin">latin</button>
+    <button onclick="filterGenre('reggae')" id="toggleViewButton" class="m-5 reggae">reggae</button>
+    <button onclick="filterGenre('country')" id="toggleViewButton" class="m-5 country">country</button>
+    <button onclick="filterGenre('indie')" id="toggleViewButton" class="m-5 indie">indie</button>
+    <button onclick="filterGenre('rock')" id="toggleViewButton" class="m-5 rock">rock</button>
+    <button onclick="filterGenre('metal')" id="toggleViewButton" class="m-5 metal">metal</button>
+
+    
+</body>
+
+<style>
+    h1 {
+      color: white
+    }
+
+ 
+    @keyframes pulse-animation {
+        0% {
+            /* box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2); */
+            box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.4);
+        }
+        100% {
+            /* box-shadow: 0 0 0 20px rgba(0, 0, 0, 0); */
+            box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+        }
+    }
+ 
+</style>
+
+</html>
