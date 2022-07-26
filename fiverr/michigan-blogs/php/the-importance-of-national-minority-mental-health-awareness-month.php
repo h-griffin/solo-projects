@@ -36,7 +36,7 @@ $meta_desc = '';
 							<!-- Entry Image
 							============================================= -->
 							<div class="entry-image bottommargin">
-								<a href="#"><img src="/images/blog/2022/07/the-importance-of-national-minority-mental-health-awareness-month" alt="Blog Single"></a>
+								<a href="#"><img src="/images/blog/2022/07/the-importance-of-national-minority-mental-health-awareness-month.jpg" alt="Blog Single"></a>
 							</div><!-- .entry-image end -->
 
 							<!-- Entry Content
