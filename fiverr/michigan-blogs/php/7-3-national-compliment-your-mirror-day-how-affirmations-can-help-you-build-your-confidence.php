@@ -36,7 +36,7 @@ $meta_desc = '';
 							<!-- Entry Image
 							============================================= -->
 							<div class="entry-image bottommargin">
-								<a href="#"><img src="/images/blog/2022/07/7-3-national-compliment-your-mirrior-day-how-affirmations-can-help-you-build-your-confidence.jpg" alt="Blog Single"></a>
+								<a href="#"><img src="/images/blog/2022/07/7-3-national-compliment-your-mirror-day-how-affirmations-can-help-you-build-your-confidence.jpg" alt="Blog Single"></a>
 							</div><!-- .entry-image end -->
 
 							<!-- Entry Content
@@ -86,7 +86,7 @@ $meta_desc = '';
 							
 
 							<div class="col-12 col-md-auto text-center">
-								<a href="/blog/7-12-national-simplicity-day-the-mental-health-benifits-of-simplifying-your-life.php">NATIONAL SIMPLICITY DAY: THE MENTAL HEALTH BENEFITS OF SIMPLIFYING YOUR LIFE ⇒</a>
+								<a href="/blog/7-12-national-simplicity-day-the-mental-health-benefits-of-simplifying-your-life.php">NATIONAL SIMPLICITY DAY: THE MENTAL HEALTH BENEFITS OF SIMPLIFYING YOUR LIFE ⇒</a>
 							</div>
 						</div><!-- .post-navigation end -->
 						<div class="line"></div>
