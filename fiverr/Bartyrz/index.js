@@ -141,6 +141,30 @@ function saveSubmission(firstName, lastName, email, itemTypeSelected, durationEx
      
 }
 
+function updateCollectionCount(){
+
+    var collectionCountRef = db.ref_db("collectionCount");
+
+
+    db.collection('submissions').get().limit(1)
+    .then(
+        collection => {
+        if (!collection.exists) {
+            // set
+            set(ref_db(collectionCountRef), 0);
+ 
+        } else {
+            // increment
+
+            collectionCountRef.push({
+                count: firebase.database.ServerValue.increment(1)
+            });
+ 
+        }
+    });
+
+}
+
 function switchTabs(newSubmissionKey){
     // disable form tab
     document.getElementById('link-tab-14b7').ariaSelected = false;
@@ -162,6 +186,7 @@ function switchTabs(newSubmissionKey){
     document.getElementById('tab-2917').classList.add("u-tab-active");
     
 }
+
 
 
 
