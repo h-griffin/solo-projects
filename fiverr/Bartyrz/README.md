@@ -7,3 +7,7 @@
 - gets a download url and saves to the database with the rest of the data,
 - and when finished then activates the review tab.
 
+
+- upload up to 4 pictures
+- display all info on review tab
+- display pictures in review tab
