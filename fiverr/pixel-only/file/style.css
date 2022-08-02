@@ -13,7 +13,7 @@
 
 /* === SET PAGE SPACING === */
 header, #content, .hero, .banner{
-    margin-bottom: 100px !important;
+    margin-bottom: 50px !important;
 }
 
 /* === TEMP STYLES === */
@@ -41,20 +41,27 @@ body {
 /* === HEADER === */
 header {
     margin-bottom: 36px;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 #logo {
-    width: 653px;
     margin: 0 auto;
     margin-bottom: 50px;
 }
 
 #logo a{
     border: none;
+    
+}
+#logo a:visited, #logo a:hover, #logo a:active { 
+    background-color: unset !important; 
+}
+
+#logo img{
+    width: 350px;
 }
  
-#logo h1 {
+/* #logo h1 {
     padding: 30px;
     background-color: #df94b3;
     border-radius: 50%;
@@ -64,10 +71,10 @@ header {
     text-align: center;
     margin: 20px;
     text-transform: uppercase !important;
-}
+} */
 
 nav ul{
-    width: 1030px !important;
+    /* width: 1030px !important; */
     margin: auto;
     display: block;
 }
@@ -84,7 +91,7 @@ li:last-child {
 li a {
     padding: 10px;
     display: block;
-    width: 200px;
+    width: 100px;
 }
 
 a:link {
@@ -102,16 +109,15 @@ a:active { background-color: #df91e6; }
 /* === PAGE CONTENT === */
 #content {
     display: inline-block;
-    width: 1800px;
+    width: 800px;
     background-color: #f8eef3;
 }
 
 .banner{
     background-image: url("images/Cover.jpg");
     background-size: cover;
-    padding: 250px 0px;
-    top: 70px !important;
-    width: 1200px;
+    padding: 50px 0px;
+    width: 700px;
     margin: auto;
     margin-top: 50px;
     display: block;
@@ -128,29 +134,29 @@ a:active { background-color: #df91e6; }
 .product {
     float:left;
     margin: 20px;
-    width: 857px;
+    width: 357px;
 }
 
 .center-cropped {
     object-fit: cover;
     object-position: center;
-    height: 800px;
-    width: 857px;
+    height: 357px;
+    width: 357px;
   }
 
 .featured-product{
     float:left;
     margin: 20px;
-    width: 555px;
+    width: 223px;
 }
 
 .featured-product .center-cropped{
-    height: 500px;
-    width: 546px;
+    height: 223px;
+    width: 223px;
 }
 
 .product p, .featured-product p{
-    padding: 20px 0px;
+    /* padding: 20px 0px; */
     font-size: 18px ;
 }
 

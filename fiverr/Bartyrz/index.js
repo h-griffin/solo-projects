@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
-import { getDatabase, set, push, child as child_db, ref as ref_db, update } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";
+import { getDatabase, set, push, child as child_db, ref as ref_db, get } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";
 // import { getStorage, ref } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-storage.js";
 import { getStorage, ref as ref_storage, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-storage.js";
 
@@ -22,12 +22,18 @@ const app = initializeApp(firebaseConfig);
 
 // Initialize RealtimeDatabase and get a reference to the service
 const db = getDatabase(app);
+// Create a db reference from our db service
+const dbRef = ref_db(getDatabase());
+
+
+var collectionCountRef = ref_db(db, "collectionCount");
+
 
 // Initialize Cloud Storage and get a reference to the service
 const storage = getStorage(app);
 // Create a storage reference from our storage service
-const storageRef = ref_storage(storage);
-const imagesRef = ref_storage(storage, "images/");
+// const storageRef = ref_storage(storage);
+// const imagesRef = ref_storage(storage, "images/");
 
 
 // ======================================
@@ -59,30 +65,50 @@ function getInputVal(id) {
     return document.getElementById(id).value;
 }
 
-// upload optional photo submit to firebase storage
-function uploadimage(){
 
+
+
+const send = (firstFiveKey, file) => {
+       
+    const imgPathRef = ref_storage(storage, `${firstFiveKey}/${file.name}` );
+    
     return new Promise(resolve => {
-        var file = document.getElementById("photos").files[0];
-        const imgPathRef = ref_storage(storage, "images/" + file.name);
-
-        uploadBytes(imgPathRef, file).then((snapshot) => {
-            console.log('Uploaded a blob or file!');
-        }).then(() => {
-            getDownloadURL(ref_storage(imgPathRef))
-            .then((url) => {
-                // show img on page
-                // document.getElementById('myimg').setAttribute('src', url);
-
-                resolve(url);
+        uploadBytes(imgPathRef, file)
+            .then((snapshot) => {
+                console.log('Uploaded a blob or file!');
             })
-            .catch((error) => {
-                console.log("error : ", error);
-            });
-        }) 
+            .then(() => {
+                getDownloadURL(ref_storage(imgPathRef))
+                    .then((url) => {
+                        resolve(url);     
+                    })
+                    .catch((error) => {
+                        console.log("error : ", error);
+                    });
+            }) 
     })
 }
- 
+
+// upload optional photo submit to firebase storage
+const sendAllImages = async (firstFiveKey) => {
+    
+    var fileCount = document.getElementById("photos").files.length < 4 ? document.getElementById("photos").files.length : 4;
+    var FileUrls= [];
+
+    for(var i = 0; i < fileCount; i++){
+        var file = document.getElementById("photos").files[i];
+        
+        await send(firstFiveKey, file)
+            .then((url) => {
+
+                FileUrls.push(url);
+            })
+    }
+
+    return FileUrls;
+    
+}
+
 
 // form submission handler
 async function submitForm (e) {
@@ -98,13 +124,21 @@ async function submitForm (e) {
     var itemDescription = getInputVal('itemDescription');
     var contentProvider = getInputVal('contentProvider');
 
+    // get key
+    const newSubmissionKey = push(child_db(ref_db(db, "submissions"), 'posts')).key;
+    console.log("key", newSubmissionKey);
+    
+    // trim key
+    var firstFiveKey = newSubmissionKey.slice(1, 6);
+
     // optional photo upload
     if(document.getElementById("photos").files[0]){
-        uploadimage().then(function(downloadUrl) { 
-            saveSubmission(firstName, lastName, email, itemTypeSelected, durationExchangeDays, itemTitle, itemDescription, downloadUrl, contentProvider);
+
+        sendAllImages(firstFiveKey).then(function(downloadUrl) { 
+            saveSubmission(firstName, lastName, email, itemTypeSelected, durationExchangeDays, itemTitle, itemDescription, contentProvider, firstFiveKey, downloadUrl);
         });
     } else {
-        saveSubmission(firstName, lastName, email, itemTypeSelected, durationExchangeDays, itemTitle, itemDescription, contentProvider);
+        saveSubmission(firstName, lastName, email, itemTypeSelected, durationExchangeDays, itemTitle, itemDescription, contentProvider, firstFiveKey);
     }
 
 }
@@ -113,7 +147,13 @@ async function submitForm (e) {
 document.getElementById("surveyForm").addEventListener('submit', submitForm);
 
 // save to submissions on firebase
-function saveSubmission(firstName, lastName, email, itemTypeSelected, durationExchangeDays, itemTitle, itemDescription, downloadUrl="", contentProvider) {
+function saveSubmission(firstName, lastName, email, itemTypeSelected, durationExchangeDays, itemTitle, itemDescription, contentProvider, firstFiveKey, downloadUrl=[]) {
+
+    // firebase realtime databse does not hold arrays 
+    var downloadUrl1 = downloadUrl[0] ? downloadUrl[0]: "";
+    var downloadUrl2 = downloadUrl[1] ? downloadUrl[1]: "";
+    var downloadUrl3 = downloadUrl[2] ? downloadUrl[2]: "";
+    var downloadUrl4 = downloadUrl[3] ? downloadUrl[3]: "";
 
     // new entry
     const newSubmission = {
@@ -125,47 +165,40 @@ function saveSubmission(firstName, lastName, email, itemTypeSelected, durationEx
         itemTitle: itemTitle,
         itemDescription: itemDescription,
         contentProvider: contentProvider,
-        downloadUrl: downloadUrl ? downloadUrl : "",
+        firstFiveKey: firstFiveKey,
+
+        downloadUrl1: downloadUrl1, 
+        downloadUrl2: downloadUrl2,
+        downloadUrl3: downloadUrl3,
+        downloadUrl4: downloadUrl4
     }
+
     console.log("new submission", newSubmission);
 
-    // get key
-    const newSubmissionKey = push(child_db(ref_db(db, "submissions"), 'posts')).key;
-    console.log("key", newSubmissionKey);
+    // set review tab values
+    document.getElementById('reviewFirstName').innerHTML = firstName
+    document.getElementById('reviewLastName').innerHTML = lastName
+    document.getElementById('reviewEmail').innerHTML = email
+    document.getElementById('reviewItemTypeSelected').innerHTML = itemTypeSelected
+    document.getElementById('reviewDurationExchangeDays').innerHTML = durationExchangeDays
+    document.getElementById('reviewItemTitle').innerHTML = itemTitle
+    document.getElementById('reviewItemDescription').innerHTML = itemDescription
+    document.getElementById('reviewContentProvider').innerHTML = contentProvider
+    
+    document.getElementById('reviewDownloadUrl1').setAttribute('src', downloadUrl1) 
+    document.getElementById('reviewDownloadUrl2').setAttribute('src', downloadUrl2)  
+    document.getElementById('reviewDownloadUrl3').setAttribute('src', downloadUrl3)  
+    document.getElementById('reviewDownloadUrl4').setAttribute('src', downloadUrl4) 
 
     // activate review tab
-    switchTabs(newSubmissionKey);
+    switchTabs(firstFiveKey);
 
-    console.log(" save submission success");
-    return set(ref_db(db, "submissions/" + newSubmissionKey), newSubmission);
+    console.log("save submission success");
+    return set(ref_db(db, "submissions/" + firstFiveKey), newSubmission);
      
 }
 
-function updateCollectionCount(){
-
-    var collectionCountRef = db.ref_db("collectionCount");
-
-
-    db.collection('submissions').get().limit(1)
-    .then(
-        collection => {
-        if (!collection.exists) {
-            // set
-            set(ref_db(collectionCountRef), 0);
- 
-        } else {
-            // increment
-
-            collectionCountRef.push({
-                count: firebase.database.ServerValue.increment(1)
-            });
- 
-        }
-    });
-
-}
-
-function switchTabs(newSubmissionKey){
+function switchTabs(firstFiveKey){
     // disable form tab
     document.getElementById('link-tab-14b7').ariaSelected = false;
     document.getElementById('link-tab-14b7').classList.remove("active");
@@ -175,7 +208,7 @@ function switchTabs(newSubmissionKey){
     // update review page with submission key
     Array.from(document.getElementsByClassName("key")).forEach(
         function(element, index, array) {
-            element.innerHTML = "key" + newSubmissionKey;
+            element.innerHTML = firstFiveKey;
         }
     );
     

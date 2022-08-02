@@ -34,6 +34,9 @@
 <style>
      .container{
         margin-top: 2%;
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between;
      }
 </style>
 
@@ -147,7 +150,7 @@
                             <form id="surveyForm" style="display: flex; flex-direction: column;">
                                 <!-- <h1>content provider [comingFromWebsite]</h1> -->
 
-                                <button onclick="updateCollectionCount()">collection counter</button>
+
                                 <div>
                                     <label>Content Provider: </label>
                                     <input id="contentProvider" label="contentProvider" type="text" placeholder="" style="width: 87%;margin-left: 5px;">
@@ -155,7 +158,7 @@
                                 </div>
 
 
-                                <div class="container" style="display: flex; flex-direction: row; justify-content: space-between;">
+                                <div class="container" >
 
                                     <label>First Name: </label>
                                     <input required id="firstName" label="firstName" type="text">
@@ -167,7 +170,7 @@
                                     <input required id="email" label="email" type="email" style="width: 20em" >
                                 </div>
 
-                                <div class="container" style="display: flex; flex-direction: row; justify-content: space-between">
+                                <div class="container" >
                                     
                                     <fieldset required id="itemTypeSelected" style="border: none; padding: 0; margin: 0;">
                                         <label>Type of Item: &nbsp; </label>
@@ -191,10 +194,10 @@
                                 <label class="container">item Description: (min:10 max:50)</label>
                                 <textarea required id="itemDescription" label="itemDescription" type="text" style="height: 5em;" minlength="10" maxlength="50"></textarea>
 
-                                <label class="container">photos .jpeg or .png (optional)</label>
+                                <label class="container">photos .jpeg or .png (max:4 - optional)</label>
                                 
                                 <!-- click here to choose file -->
-                                <input id="photos" label="photos" type="file"  accept="image/x-png,image/jpeg" >
+                                <input id="photos" label="photos" type="file" multiple="multiple" accept="image/x-png,image/jpeg" >
                                 <!-- <input type="file " name="files[] " id="files "> -->
                                 
                                 <!-- click here to upload file -->
@@ -212,7 +215,63 @@
                     </div>
                     <div class="u-align-left u-container-style u-tab-pane u-white u-tab-pane-2" id="tab-2917"
                         role="tabpanel" aria-labelledby="link-tab-2917">
-                        <div class="u-container-layout u-container-layout-2">
+                        <div id="reviewContainer" class="u-container-layout u-container-layout-2">
+
+                            <div class="container" style="justify-content: flex-start">
+                                <h3>Content Provider: </h3> 
+                                &nbsp;
+                                <h3 id="reviewContentProvider"></h3>
+                            </div>
+
+
+                            <div class="container" >
+
+                                <h3>First Name: </h3>
+                                    &nbsp;
+                                <h3 id="reviewFirstName"></h3>
+                                    &nbsp;&nbsp;
+                                <h3>Last Name: </h3>
+                                    &nbsp;
+                                <h3 id="reviewLastName"></h3>
+                                    &nbsp;&nbsp;
+                                <h3>E-Mail: </h3>
+                                    &nbsp;
+                                <h3 id="reviewEmail"></h3>
+                            </div>
+
+                            <div class="container" >
+
+                                <div>
+                                    <h3>Type of Item: &nbsp; </h3>
+                                    <h3 id="reviewItemTypeSelected"></h3>
+
+                                </div>
+                                
+                                <div>
+                                    <h3>Duration in exchange days: &nbsp; </h3>
+                                    <h3 id="reviewDurationExchangeDays"></h3>
+                                </div>
+                            </div>
+
+                            
+
+                            <h3 class="container">Item Title: </h3>
+                            <h3 id="reviewItemTitle"></h3>
+
+                            <h3 class="container">Item Description: </h3>
+                            <h3 id="reviewItemDescription"></h3>
+
+                            <h3 class="container">Photos  </h3>
+                            
+                            <div style="width: 100%;">
+                                <img id="reviewDownloadUrl1" src="" alt="" width="20%" style="margin: 0 auto; border: 1px solid black"/>
+                                <img id="reviewDownloadUrl2" src="" alt="" width="20%" style="margin: 0 auto; border: 1px solid black"/>
+                                <img id="reviewDownloadUrl3" src="" alt="" width="20%" style="margin: 0 auto; border: 1px solid black"/>
+                                <img id="reviewDownloadUrl4" src="" alt="" width="20%" style="margin: 0 auto; border: 1px solid black"/>
+                            </div>
+
+
+                            <hr>
                             <h3 class="u-align-center u-text u-text-3">
                                 <span style="font-weight: 700;">Review information:</span> [<strong class="key"></strong>]<br>
                                 <span style="font-weight: 700;">Send digital products to:</span>
@@ -224,7 +283,7 @@
                                 <br>Attn.: Receiving [<strong class="key"></strong>]<br>206 High Range Road<br>Londonderry, NH 03053
 
                             </h3>
-                            <!-- <img id="myimg" src="" alt="" width="50%" style="margin: 0 auto;"/> -->
+
                         </div>
                     </div>
                     <div class="u-align-left u-container-style u-tab-pane u-white u-tab-pane-3" id="link-tab-6ff1"
