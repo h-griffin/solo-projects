@@ -18,22 +18,27 @@
 
 # Fiverr
 
+
+### HTML & CSS
 - [html-form](fiverr/html-form/)
-- [isotope-js-filering](fiverr/isotope-js-filtering/)
 - [json-html-table](fiverr/json-html-table/)
-- [js-classes-calculator](fiverr/js-classes-calculator/)
+- [careers-page](fiverr/careers-page/)
+- [css-rounded-corners](fiverr/css-rounded-corners/)
+- [weather-app](fiverr/weather-app/)
+- [flex-grow-footer](fiverr/flex-grow-footer/)
+- [koala img ratio]()
+
 - [modal-exit](fiverr/modal-exit/)
 - [shoppingcart-modal](fiverr/shoppingcart-modal/)
 - [modal-colors](fiverr/modal-colors/)
-- [careers-page](fiverr/careers-page/)
 - [iframe-src](fiverr/iframe-src/)
 - [bio-button-click](fiverr/bio-button-click/)
-- [css-rounded-corners](fiverr/css-rounded-corners/)
-- [weather-app](fiverr/weather-app/)
 - [div-calculate-height](fiverr/div-calculate-height/)
+
+### JS
+- [isotope-js-filering](fiverr/isotope-js-filtering/)
+- [js-classes-calculator](fiverr/js-classes-calculator/)
 - [format-paragraph](fiverr/format-paragraph/)
     - 2
 - [prev-next-buttons](fiverr/prev-next-buttons/)
     - 1 - 2
-- [flex-grow-footer](fiverr/flex-grow-footer/)
-- [koala img ratio]()
