@@ -12,5 +12,6 @@
         - pro: client request
         - con: firebase expects raw file, nodejs cant handle raw file, changing file type will get passed to firebase
 
+`file.body [Object: null prototype] { field2: 'stringtext' }`
 
 
