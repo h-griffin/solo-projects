@@ -133,7 +133,7 @@
   height: 30px;
 }
 .input-group-text {
-  height: 37px;
+  height: 100%;
 }
 
 .image-upload > input {

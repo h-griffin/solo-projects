@@ -1,0 +1,64 @@
+ html{
+    font-size: 25px
+ }
+
+/* footer sit at bottom of page */
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#carousel_90c0{
+    width: 45%;
+    margin: auto;
+}
+
+
+
+footer{
+    margin-top: auto;
+}
+
+@media screen and (max-width: 2604px) {
+    #carousel_90c0{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 2133px) {
+    #carousel_90c0{
+        width: 65%;
+    }
+}
+@media screen and (max-width: 1809px) {
+    #carousel_90c0{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 1566px) {
+    #carousel_90c0{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 1440px) {
+    html{
+        font-size: 15px;
+    }
+    #carousel_90c0{
+        width: 60%;
+    }
+}
+ 
+@media screen and (max-width: 575px) {
+    html{
+        font-size: 10px;
+    }
+    #carousel_90c0{
+        width: 90%;
+    }
+}
+ 
