@@ -12,6 +12,9 @@
 - grab phrase with regex match single or double quote
 - revert styles to white bg
 
+### V3
+- display phrase and symbol 2 seconds after meaning
+
 
 <div style='display: flex; justify-content: space-between;'>
     <img width='48%' src='./images/design-final.png'>
