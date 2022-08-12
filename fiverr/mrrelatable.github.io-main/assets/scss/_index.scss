@@ -1,0 +1,66 @@
+// importing fonts
+
+// fonts import successful
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: $font-base;
+  color: $text-color;
+  scroll-behavior: smooth;
+  @include md-screen() {
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+  }
+  @include body(2000px) {
+    max-width: 1620px !important;
+    margin: auto !important;
+  }
+}
+
+.secContainer {
+  @include xl-screen() {
+    padding: 0 70px;
+  }
+  @include sm-screen() {
+    padding: 0 20px;
+  }
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 150px;
+  margin: 0 auto;
+}
+p {
+  @include sm-screen() {
+    font-size: 16px !important;
+    font-weight: normal !important;
+  }
+  color: $text-color;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $black;
+  font-weight: 700;
+}
+h6 {
+  color: #fff;
+}
+input:focus,
+.btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Link */
+a {
+  text-decoration: none;
+  color: $text-color;
+}

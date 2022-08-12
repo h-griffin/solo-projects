@@ -1,0 +1,156 @@
+#portfolioPage-header {
+  background: url("../images/learn-more-header-bg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+#portflios-p-page {
+  @include sm-screen() {
+    padding: 15px 0;
+  }
+  padding: 50px 0;
+  #portflioRow2 {
+    #portfolio-row {
+      @include sm-screen() {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+  #portflioRow1,
+  #portflioRow2,
+  #portflioRow3 {
+    @include lg-screen() {
+      margin: 50px 0 !important;
+    }
+    @include sm-screen() {
+      margin: 10px 0 !important;
+      background: transparent;
+    }
+    background: url("../images/p-bg.svg");
+    background-repeat: no-repeat;
+
+    #portfolio-row {
+      @include sm-screen() {
+        padding: 10px 0;
+      }
+      padding: 10px 30px;
+      #portfolioRowCol2-content {
+        @include lg-screen() {
+          margin-top: 10px;
+        }
+        @include sm-screen() {
+          padding-left: 0;
+          padding: 15px 0;
+        }
+
+        margin-top: 50px;
+        padding-left: 40px;
+        position: relative;
+        &::before {
+          @include sm-screen() {
+            content: "";
+          }
+          content: url("../images/portf-circle.svg");
+          position: absolute;
+          top: 5px;
+          left: 0;
+        }
+        h4 {
+          font-weight: 800;
+        }
+        p {
+          font-weight: 500;
+        }
+        #learnMoreBtn {
+          text-align: left;
+          border: none;
+          background-color: transparent;
+          margin: 5px 0;
+          @include linear-gradient-text;
+          font-weight: 700;
+          img {
+            width: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  #portflioRow2 {
+    @include sm-screen() {
+      background: transparent;
+    }
+    background: url("../images/p2-bg.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  #portflioRow3 {
+    background: transparent;
+  }
+}
+
+#more-Porfolios {
+  @include sm-screen() {
+    margin: 20px 0 20px 0;
+    background: transparent;
+  }
+  margin: 40px 30px 100px 30px;
+  background: url("../images/more-portf-bg1.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding-bottom: 120px;
+  #single-Portfolio-Card {
+    @include md-screen() {
+      text-align: center;
+      margin: 50px 0;
+    }
+    @include md-screen() {
+      text-align: center;
+      margin: 30px 0;
+    }
+    img {
+      transition: all 500ms ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    .portfolioCard-body {
+      @include md-screen() {
+        width: 400px;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      padding: 35px 10px 0 10px;
+
+      p {
+        font-weight: 500;
+        @include md-screen() {
+          margin: 20px 0;
+        }
+      }
+      button {
+        @include linear-gradient-text;
+        border: none;
+        font-weight: 700;
+        img {
+          width: 7px;
+        }
+      }
+    }
+  }
+}
+.more-Porfolios4 {
+  @include sm-screen() {
+    background: transparent;
+  }
+  background: url("../images/more-portf-bg2.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center right !important;
+}
+.more-Porfolios2,
+.more-Porfolios3,
+.more-Porfolios5 {
+  background: #fff !important;
+}

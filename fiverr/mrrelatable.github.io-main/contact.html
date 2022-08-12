@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <!-- Fav icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <!-- bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-section" id="contactPage-header">
+        <section class="navbar-section">
+            <div class="secContainer">
+                <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+                    <a class="navbar-brand" href="index">
+                        <img src="./assets/images/logo.svg" alt="Logo" class="brand-image">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbar-links" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                            </li>
+                            </li>
+                        </ul>
+                        <div class="social-container d-flex">
+                            <a href="https://twitter.com/SirRelatable" target="_blank" class="twitter">
+                              <img src="assets/images/twitter.svg" alt="Twitter">
+                            </a>
+                            <a href="https://www.youtube.com/mrrelatable" target="_blank" class="youtube">
+                              <img src="assets/images/youtube.svg" alt="Youtube">
+                            </a>
+                            <a href="mailto:contact@mrrrelatable.com" class="mail">
+                              <img src="assets/images/mail.svg" alt="Mail">
+                            </a>
+                            <a href="https://discord.com/invite/R4syWeC" target="_blank" class="icon4">
+                              <img src="assets/images/social4.svg" alt="Social icon">
+                            </a>
+                          </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section class="contactPage-header-cont">
+            <h1>Contact us</h1>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="contact-breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item item1 breadcrumbArrow"><a href="index">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">contact us</li>
+                </ol>
+            </nav>
+        </section>
+    </header>
+    <!-- Contact top / social-->
+    <section class="contactPage-top-section">
+        <div class="secContainer">
+            <div class="row contact-top-row">
+                <div class="col-12 col-md-4">
+                    <div class="contact-top-col">
+                        <img src="assets/images/con-twiiter.svg" alt="Twitter">
+                        <h4>Twitter</h4>
+                        <p>@SirRelatable</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="contact-top-col">
+                        <img src="assets/images/con-mail.svg" alt="Twitter">
+                        <h4>Email</h4>
+                        <p>contact@mrrelatable.com</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="contact-top-col">
+                        <img src="assets/images/con-location.svg" alt="Twitter">
+                        <h4>Address</h4>
+                        <p>Central New York</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form -->
+    <section class="form-section" data-aos="fade-up" data-aos-duration="1500">
+        <div class="secContainer">
+            <div class="contact-form">
+                <h4>Get In Touch</h4>
+                <form action="https://formsubmit.co/contact@mrrelatable.com" method="POST">
+                    <div class="inputsRow row">
+                        <div class="col-12 col-md-6 mb-4">
+                            <input type="text" placeholder="* First Name" class="contact-input" name="FirstName" required>
+                        </div>
+                        <div class="col-12 col-md-6 mb-4">
+                            <input type="text" placeholder="Last Name" class="contact-input" name="LastName">
+                        </div>
+                    </div>
+                    <div class="inputsRow row">
+                        <div class="col-12 col-md-6 mb-4">
+                            <input type="text" placeholder="* Email" class="contact-input" name="Email" required>
+                        </div>
+                        <div class="col-12 col-md-6 mb-4">
+                            <input type="text" placeholder="* Subject" class="contact-input" name="Subject" required>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <textarea rows="8" placeholder="* Message" class="contact-input" name="Message" required></textarea>
+                    </div>
+					<p5>* Required</p5>
+                    <button type="submit" class="contact-submit">Send</button>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://mrrelatable.com/thankyou">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer contact-footer">
+        <div class="secContainer">
+            <div class="footer-content">
+                <a class="footer-logo" href="#">
+                    <img src="assets/images/logo.svg" alt="Logo">
+                  </a>
+                <ul class="footer-menu">
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About us</a></li>
+                    <li><a href="portfolio">Portfolio</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+                <div class="footer-social d-flex flex-row justify-content-center align-items-center">
+                    <a href="https://twitter.com/SirRelatable" target="_blank" class="foo-twitter d-flex ">
+                      <img src="assets/images/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="https://www.youtube.com/mrrelatable" target="_blank" class="foo-youtube">
+                      <img src="assets/images/youtube.svg" alt="Youtube">
+                    </a>
+                    <a href="https://discord.com/invite/R4syWeC" target="_blank" class="foo-icon4">
+                      <img src="assets/images/social4.svg" alt="Social icon">
+                    </a>
+                  </div>
+                <p class="copyright-text">Copyright © 2022 TF Design, INC. All Rights reserved.</p>
+            </div>
+        </div>
+    </section>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--  Javascript cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- AOS anitialization -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

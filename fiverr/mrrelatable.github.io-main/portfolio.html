@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Fav icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+
+    <!-- bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-section  " id="portfolioPage-header">
+        <section class="navbar-section">
+            <div class="secContainer">
+                <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/images/logo.svg" alt="Logo" class="brand-image">
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbar-links" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"
+                                >Portfolio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact">Contact</a>
+                            </li>
+                            </li>
+                        </ul>
+                        <div class="social-container d-flex">
+                            <a href="https://twitter.com/SirRelatable" target="_blank" class="twitter">
+                              <img src="assets/images/twitter.svg" alt="Twitter">
+                            </a>
+                            <a href="https://www.youtube.com/mrrelatable" target="_blank" class="youtube">
+                              <img src="assets/images/youtube.svg" alt="Youtube">
+                            </a>
+                            <a href="mailto:contact@mrrrelatable.com" class="mail">
+                              <img src="assets/images/mail.svg" alt="Mail">
+                            </a>
+                            <a href="https://discord.com/invite/R4syWeC" target="_blank" class="icon4">
+                              <img src="assets/images/social4.svg" alt="Social icon">
+                            </a>
+                          </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section class="portfolioPage-header-cont ">
+            <h1>Portfolio</h1>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="portfolio-breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item item1 breadcrumbArrow"><a href="index">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
+                </ol>
+              </nav>
+        </section>
+    </header>
+
+    <!-- Portfolio -->
+    <div id="portflios-p-page">
+        <section id="portflioRow1" class=" yellow-circle-row">
+            <div class="secContainer yellow-circle-sec"  >
+                <div id="portfolio-row" class="row">
+                    <div class="col-12 col-md-6 col-xl-8 " id="portfolioRowCol1" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="hover-zoom-sml"><img src="assets/images/p1.png" alt="Portflio Game" class="img-fluid"></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div id="portfolioRowCol2-content">
+                            <h4>Nvidia Reaction Test</h4>
+                            <p>For this project, we worked with Nvidia to create a Fortnite reaction speed test! Players would find themselves in a city street where they must both click a button. Once the buttons are pressed, a barrier would drop and the first to shoot at their opponent would win!</p>
+                            <a href="nvidiareaction">
+                                <div class="hover-zoom">
+                                <button id="learnMoreBtn">
+                                    Learn more
+                                    <img src="assets/images/design-arrow.svg" alt="left arro" class="ms-1">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portflioRow2">
+            <div class="secContainer">
+                <div id="portfolio-row" class="row">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div id="portfolioRowCol2-content">
+                            <h4>Golden Token Arcade</h4>
+                            <p>We created this as a personal project in response to Epic's "No Sweat Summer" creator callout. The map features over 20 unique arcade games that players can play to earn tokens. These tokens can be used to unlock rewards like colors, trails, and the elusive VIP lounge!</p>
+                            <a href="goldentoken">
+                                <div class="hover-zoom">
+                                <button id="learnMoreBtn">
+                                    Learn more
+                                    <img src="assets/images/design-arrow.svg" alt="left arro" class="ms-1">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-8  " id="portfolioRowCol1" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="hover-zoom-sml"><img src="assets/images/p2.png" alt="Portflio Game" class="img-fluid"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portflioRow3">
+            <div class="secContainer">
+                <div id="portfolio-row" class="row">
+                    <div class="col-12 col-md-6 col-xl-8 " id="portfolioRowCol1" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="hover-zoom-sml"><img src="assets/images/p3.png" alt="Portflio Game" class="img-fluid"></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div id="portfolioRowCol2-content">
+                            <h4>Medieval Castle Hub</h4>
+                            <p>We designed and built a beautiful castle for players to explore within the Fortnite Creative Hub! Users can load into the weekly hub to experience Creative's best builds as well as join their own custom creative worlds.</p>
+                            <a href="medievalcastle">
+                                <div class="hover-zoom">                     
+                                <button id="learnMoreBtn">
+                                    Learn more
+                                    <img src="assets/images/design-arrow.svg" alt="left arro" class="ms-1">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- More Portflio 1 -->
+    <div id="more-Porfolios" class="more-Porfolios1">
+        <div class="secContainer">
+            <div class="more-portfolios-row row">
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp1.png" alt="Portfolio" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>One in the Quiver</h4>
+                            <p>This map gives a new spin to the classic gamemode "One in the Chamber!" Using a bow, the players compete to be the first...</p>
+                            <a href="learnMore">
+                                <div class="hover-zoom-sml">                           
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp2.png" alt="Portfolio" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>SnD - Grasslands</h4>
+                            <p>A fresh take on the classic "Search and Destroy" mode. This map featured a lovely grassy forest where the players could...</p>
+                            <a href="learnMore">     
+                                <div class="hover-zoom-sml">                           
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp3.png" alt="Portfolio" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>Climb & Slide Remastered</h4>
+                            <p>“Climb and Slide Remastered” is an updated, modernized version of the original that expands on the original's success.</p>
+                            <a href="learnMore">      
+                                <div class="hover-zoom-sml">                          
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- More Portflio 2 -->
+    <div id="more-Porfolios" class="more-Porfolios2">
+        <div class="secContainer">
+            <div class="more-portfolios-row row">
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp4.png" alt="Portfolio" class="img-fluid" data-aos="zoom-out" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>Escape from Edenbrooke</h4>
+                            <p>“Escape from Edenbrooke”, one of Fortnite Creative's first true adventure maps, featured never-before-seen mechanics alongside...</p>
+                            <a href="learnMore">    
+                                <div class="hover-zoom-sml">                            
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp5.png" alt="Portfolio" class="img-fluid" data-aos="zoom-out" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>Escape from Edenbrooke 2</h4>
+                            <p>Expanding on the story featured in the first map, Escape from Edenbrooke 2 finds the player exploring for magical runes whilst...</p>
+                            <a href="learnMore">      
+                                <div class="hover-zoom-sml">                          
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp6.png" alt="Portfolio" class="img-fluid" data-aos="zoom-out" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>Floor is Lava</h4>
+                            <p>In this classic reaction to the children's game "Floor is lava," players compete to be the last one standing. Continue to build or...</p>
+                            <a href="ClimbAndSlide">   
+                                <div class="hover-zoom-sml">                             
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- More Portflio 3 -->
+    <div id="more-Porfolios" class="more-Porfolios3">
+        <div class="secContainer">
+            <div class="more-portfolios-row row">
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp7.png" alt="Portfolio" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>Secrets of the Asphodel Forest</h4>
+                            <p>A whimsical adventure map in which the player must discover and solve seven puzzles in order to unlock magical crystals...</p>
+                            <a href="learnMore">      
+                                <div class="hover-zoom-sml">                          
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp8.png" alt="Portfolio" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>Climb & Slide</h4>
+                            <p>“Climb and Slide” is based on the classic board game "Chutes and Latters." The map includes a unique die, ladders, slides, and much...</p>
+                            <a href="learnMore">  
+                                <div class="hover-zoom-sml">                              
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp9.png" alt="Portfolio" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>House of Torment</h4>
+                            <p>A one-of-a-kind horror adventure in which the player finds themselves in an abandoned mansion. The players must find...</p>
+                            <a href="learnMore">      
+                                <div class="hover-zoom-sml">                          
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- More Portflio 4 -->
+    <div id="more-Porfolios" class="more-Porfolios4">
+        <div class="secContainer">
+            <div class="more-portfolios-row row">
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp10.png" alt="Portfolio" class="img-fluid" data-aos="zoom-out" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>Chinese New Year Hub</h4>
+                            <p>This project was created for the 2020 Chines New Years hub competition. The map features beatufiully created custom houses...</p>
+                            <a href="learnMore">      
+                                <div class="hover-zoom-sml">                          
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp11.png" alt="Portfolio" class="img-fluid" data-aos="zoom-out" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>Hijacked</h4>
+                            <p>A recreation of the classic Call of Duty map "Hijacked." This creation includes a variety of game modes for players to choose from.</p>
+                            <a href="learnMore">         
+                                <div class="hover-zoom-sml">                       
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp12.png" alt="Portfolio" class="img-fluid" data-aos="zoom-out" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>Mountainside Mansion Hub</h4>
+                            <p>This hub features a gorgeous mountain-side mansion on a beachfront property. The map also features a hidden mini-quest where...</p>
+                            <a href="learnMore">      
+                                <div class="hover-zoom-sml">                          
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- More Portflio 5 -->
+    <div id="more-Porfolios" class="more-Porfolios5">
+        <div class="secContainer">
+            <div class="more-portfolios-row row">
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp13.png" alt="Portfolio" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>Everlasting 1v1</h4>
+                            <p>Putting a unique spin on the classic 1v1 format, “Everlasting 1v1” revolutionized 1v1s by having players queue into pre-existing games so...</p>
+                            <a href="learnMore">      
+                                <div class="hover-zoom-sml">                          
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp14.png" alt="Portfolio" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>S2 Parkour Deathrun</h4>
+                            <p>This was the very first deathrun created in Fortnite to feature the new sprinting and mantling mechanics! This 35 level deathrun will...</p>
+                            <a href="learnMore">     
+                                <div class="hover-zoom-sml">                           
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div id="single-Portfolio-Card">
+                        <img src="assets/images/subp15.png" alt="Portfolio" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="portfolioCard-body">
+                            <h4>Easter Boxfight</h4>
+                            <p>Created for Epic's 2021 Easter callout, this map features a fun, spring-themed arena where players fight against one another to be...</p>
+                            <a href="learnMore">       
+                                <div class="hover-zoom-sml">                         
+                                <button class="">Learn More
+                                    <img src="assets/images/design-arrow.svg" alt="Right arrow" class="ms-1 img-fluid">
+                                </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Footer -->
+    <section class="footer" style="margin-top: 20px !important;">
+        <div class="secContainer">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <img src="assets/images/logo.svg" alt="Logo">
+            </div>
+            <ul class="footer-menu">
+                <li><a href="index">Home</a></li>
+                <li><a href="about">About us</a></li>
+                <li><a href="portfolio">Portfolio</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+            <div class="footer-social d-flex flex-row justify-content-center align-items-center">
+              <a href="https://twitter.com/SirRelatable" class="foo-twitter d-flex ">
+                <img src="assets/images/twitter.svg" alt="Twitter">
+              </a>
+              <a href="https://www.youtube.com/mrrelatable" class="foo-youtube">
+                <img src="assets/images/youtube.svg" alt="Youtube">
+              </a>
+              <a href="https://discord.com/invite/R4syWeC" class="foo-icon4">
+                <img src="assets/images/social4.svg" alt="Social icon">
+              </a>
+            </div>
+            <p class="copyright-text">Copyright © 2022 TF Design, INC. All Rights reserved.</p>
+          </div>
+        </div>
+    </section>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!--  Javascript cdn-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS anitialization -->
+    <script>
+        AOS.init();
+    </script>
+  </body>
+</html>
