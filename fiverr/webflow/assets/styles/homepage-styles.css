@@ -1,38 +1,13 @@
 /*! CSS Used from: http://127.0.0.1:5500/assets/styles/styles.css */
 html {
+}
+
+#home-body {
+    margin: 0;
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-}
-
-body {
-    margin: 0;
-}
-
-section {
-    display: block;
-}
-
-h1 {
-    font-size: 2em;
-    margin: .67em 0;
-}
-
-img {
-    border: 0;
-}
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-html {
-    height: 100%;
-}
-
-body {
+    
     margin: 0;
     min-height: 100%;
     background-color: #fff;
@@ -42,32 +17,42 @@ body {
     color: #333;
 }
 
-img {
-    max-width: 100%;
-    vertical-align: middle;
-    display: inline-block;
+.home-section {
+    display: block;
+    position: relative;
+    padding: 23px 30px 30px;
+    
+    background-color: #f5f7fa;
 }
-
-html.w-mod-touch * {
-    background-attachment: scroll !important;
-}
-
-h1 {
+ 
+/* h1 */
+.heading {
+    font-size: 2em;
+    margin: .67em 0;
     font-weight: bold;
     margin-bottom: 10px;
-}
 
-h1 {
-    font-size: 38px;
     line-height: 44px;
     margin-top: 20px;
 }
 
-p {
-    margin-top: 0;
-    margin-bottom: 10px;
+ 
+.welcome {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	border-radius: 10px;
 }
 
+ /* images */
+.shadow-two, .clients-image-three, .welcome {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    border: 0;
+}
+ 
+ /* iframe container */
 .w-embed:before, .w-embed:after {
     content: " ";
     display: table;
@@ -94,14 +79,9 @@ p {
     width: 100%;
     height: 100%;
     border: none;
+	border-radius: 10px;
 }
 
-.hero-heading-center {
-    position: relative;
-    padding: 23px 30px 30px;
-    border-bottom: 1px solid #e4ebf3;
-    background-color: #f5f7fa;
-}
 
 .container {
     width: 100%;
@@ -110,12 +90,10 @@ p {
     margin-left: auto;
 }
 
-.centered-heading {
+.heading {
     margin-bottom: 16px;
     text-align: center;
-}
-
-.centered-heading.margin-bottom-32px {
+	border-radius: 10px;
     margin-bottom: 32px;
     padding-right: 10px;
     padding-left: 10px;
@@ -125,7 +103,8 @@ p {
     font-weight: 400;
     text-align: left;
 }
-
+ 
+/* paragraph and video container */
 .hero-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -190,6 +169,7 @@ p {
     grid-template-rows: auto auto;
 }
 
+/* iframe placeholder */
 .shadow-two {
     max-width: 0%;
     -webkit-box-flex: 0;
@@ -197,9 +177,14 @@ p {
     -ms-flex: 0 auto;
     flex: 0 auto;
     box-shadow: 0 4px 24px 0 rgba(150, 163, 181, 0.08);
+	
 }
 
+
 .paragraph {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     position: static;
     display: block;
     overflow: visible;
@@ -228,10 +213,12 @@ p {
     object-fit: fill;
 }
 
+/* lower img gallery container */
 .logos-title-small {
     position: relative;
     padding: 5px 30px;
     border-bottom: 1px solid #e4ebf3;
+	
 }
 
 .clients-wrapper-three {
@@ -287,8 +274,10 @@ p {
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
+	border-radius: 10px;
 }
 
+/* desktop and ultra wide screens */
 @media  screen and (min-width: 1201px) {
     .container{
         max-width: 80%;
@@ -303,7 +292,7 @@ p {
     
 }
 @media  screen and (min-width: 1801px) {
-    .centered-heading.margin-bottom-32px{
+    .heading{
         height: 100px;
         font-size: 20px;
         font-size: 2.5vw;
@@ -313,7 +302,7 @@ p {
     
 }
 @media  screen and (min-width: 3201px) {
-    .centered-heading.margin-bottom-32px{
+    .heading{
         height: 150px;
  
     }
@@ -326,7 +315,7 @@ p {
         max-width: 728px;
     }
 
-    .centered-heading.margin-bottom-32px {
+    .heading {
         padding: 10px;
     }
 
@@ -363,7 +352,7 @@ p {
         padding: 60px 15px;
     }
 
-    .centered-heading.margin-bottom-32px {
+    .heading {
         padding-left: 10px;
     }
 
@@ -380,6 +369,7 @@ p {
         margin-right: 20px;
         margin-bottom: 30px;
         margin-left: 20px;
+		
     }
 }
 
@@ -388,11 +378,11 @@ p {
         max-width: none;
     }
 
-    .centered-heading {
+    .heading {
         margin-bottom: 24px;
     }
 
-    .centered-heading.margin-bottom-32px {
+    .heading {
         margin-bottom: 20px;
         padding: 10px;
         font-size: 22px;
