@@ -15,9 +15,18 @@
 - blog 01-02-03-04 +5 articles
 
 
+## aug 2022
+- tuesdays (500)
+    - 02 - trauma
+    - 09 - overdose
+    - 16 - relaxation
+    - 23 - loved one grief
+- thursday (1200)
+    - 30 - grief awareness
+
 ## july 2022
 - tuesdays (500)
-    - 05 - affirmations 
+    - 05 - affirmations
     - 12 - simplicity
     - 19 - wellness
     - 26 - workaholics
@@ -34,7 +43,7 @@
 - thursday (1200)
     - 30 - top mental health concerns in the lgbtq+ community
 
-    
+
 ## may 2022
 - tuesdays (500)
     - 03 - how to know when you are ready for counseling
