@@ -1,0 +1,147 @@
+#learnMore-header {
+  background: url("../images/learn-more-header-bg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 0;
+  .learnMorePage-header-cont {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 270px;
+    text-align: center;
+    margin: 0 auto;
+    h1 {
+      font-weight: 700;
+      font-size: 50px;
+    }
+    .about-breadcrumb {
+      .breadcrumb-item {
+        font-size: 17px;
+        font-weight: 500;
+        text-transform: uppercase;
+        a {
+          &:hover {
+            color: $text-color;
+          }
+        }
+      }
+      .active {
+        font-weight: 700;
+        color: #202020;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: gray;
+      }
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+      display: none;
+    }
+    .breadcrumbArrow::after {
+      content: url("../images/breadcrumb-arrow.svg");
+      margin: 0 10px 0 15px;
+    }
+  }
+}
+
+.backgrounImage {
+  @include lg-screen() {
+    height: 100%;
+  }
+  background: url("../images/learn-more-bg.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+#portfolio-page-top {
+  @include lg-screen() {
+    width: 100%;
+  }
+  padding: 20px 0;
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+  #video-image-pp {
+    position: relative;
+    text-align: center;
+    #video-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  .portfolio-top-content {
+    width: 680px;
+    max-width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    p {
+      font-weight: 500;
+      color: #474747;
+    }
+    h3 {
+      font-weight: 700;
+      &::after {
+        content: url("../images/portf-circle.svg");
+        margin-left: 20px;
+      }
+      &::before {
+        content: url("../images/portf-circle.svg");
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.more-portfolio {
+  margin-bottom: 150px;
+  @include sm-screen() {
+    margin-bottom: 100px;
+  }
+  @include xs-screen() {
+    margin-bottom: 50px;
+  }
+  .more-portfolio-row {
+    position: relative;
+    top:10px;
+    padding: 2em 5em;
+    width: 95%;
+    margin: auto;
+    .more-portfolio-col {
+      @include lg-screen() {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      text-align: center;
+    }
+  }
+  .backToPortfolio {
+    @include primary-button(8px);
+    margin: 0 auto;
+    width: 370px;
+    max-width: 100%;
+    height: 47px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+
+    button {
+      text-transform: uppercase !important;
+      color: #fff;
+      border: none;
+      background: transparent;
+      font-weight: 700;
+    }
+  }
+}

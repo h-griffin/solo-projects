@@ -1,0 +1,125 @@
+// primary button
+@mixin primary-button($borderRadius: 35px) {
+  width: 160px;
+  max-width: 100%;
+  height: 52px;
+  border-radius: 35px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-size: 100%;
+  background-image: linear-gradient(267.4deg, #ffb800 0.21%, #00cece 101.03%);
+  position: relative;
+  z-index: 100;
+  &:before {
+    background-image: linear-gradient(267.4deg, #00cece 21.1%, #ffb800 101.01%);
+    content: "";
+    display: block;
+    height: 100%;
+    border-radius: $borderRadius;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: opacity 300ms;
+  }
+  button {
+    color: white;
+    font-weight: 600;
+  }
+  .left-arrow {
+    width: 12px;
+    height: 12px;
+  }
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin linear-gradient-text {
+  background: linear-gradient(267.4deg, #ffb800 0.21%, #00cece 101.03%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+// @mixin video-modal {
+//   .modal-dialog {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100%;
+//     max-width: 800px;
+//     margin: 1.75rem auto;
+//   }
+//   #modal-container {
+//     position: relative;
+//     .modal-header {
+//       display: flex;
+//       justify-content: flex-end;
+//       background: rgba(255, 255, 255, 1);
+//       .btn-close {
+//         padding: 0 0.5rem;
+//         margin: 0;
+//         cursor: pointer;
+//         width: 0.7em;
+//         height: 0.7em;
+//         opacity: 1;
+//       }
+//     }
+//     .modal-body {
+//       padding: 0;
+//       line-height: 0 !important;
+//     }
+//   }
+// }
+
+// Media Queries
+@mixin xxl-screen() {
+  @media only screen and (max-width: $xxl-screen) {
+    @content;
+  }
+}
+@mixin xl-screen() {
+  @media only screen and (max-width: $xl-screen) {
+    @content;
+  }
+}
+@mixin lg-screen() {
+  @media only screen and (max-width: $lg-screen) {
+    @content;
+  }
+}
+@mixin md-screen() {
+  @media only screen and (max-width: $md-screen) {
+    @content;
+  }
+}
+@mixin sm-screen() {
+  @media only screen and (max-width: $sm-screen) {
+    @content;
+  }
+}
+@mixin xs-screen() {
+  @media only screen and (max-width: $xs-screen) {
+    @content;
+  }
+}
+@mixin custom-screen($screenSize) {
+  @media only screen and (max-width: $screenSize) {
+    @content;
+  }
+}
+// Mixin for Body
+@mixin body($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+// End

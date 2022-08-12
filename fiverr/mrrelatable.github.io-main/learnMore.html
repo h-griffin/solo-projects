@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn More</title>
+
+    <!-- bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-section" id="learnMore-header">
+        <section class="navbar-section">
+            <div class="secContainer">
+                <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+                    <a class="navbar-brand" href="index">
+                        <img src="./assets/images/logo.svg" alt="Logo" class="brand-image">
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbar-links" id="navbarSupportedContent">
+                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact">Contact</a>
+                        </li>
+                      </ul>
+                      <div class="social-container d-flex">
+                        <a href="https://twitter.com/SirRelatable" target="_blank" class="twitter">
+                          <img src="assets/images/twitter.svg" alt="Twitter">
+                        </a>
+                        <a href="https://www.youtube.com/mrrelatable" target="_blank" class="youtube">
+                          <img src="assets/images/youtube.svg" alt="Youtube">
+                        </a>
+                        <a href="mailto:contact@mrrrelatable.com" class="mail">
+                          <img src="assets/images/mail.svg" alt="Mail">
+                        </a>
+                        <a href="https://discord.com/invite/R4syWeC" target="_blank" class="icon4">
+                          <img src="assets/images/social4.svg" alt="Social icon">
+                        </a>
+                      </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section class="learnMorePage-header-cont">
+            <h1>Lorem Ipsum</h1>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="about-breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item item1 breadcrumbArrow"><a href="index">Home</a></li>
+                  <li class="breadcrumb-item item2 breadcrumbArrow"><a href="portfolio">Portfolio</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Learn More</li>
+                </ol>
+              </nav>
+        </section>
+    </header>
+
+    <!-- Portfolio section -->
+    <div id="portflio-page">
+        <div class="backgrounImage">
+            <section id="portfolio-page-top">
+                <div class="secContainer">
+                    <div id="video-image-pp">
+                      <img src="assets/images/portf1.svg" alt="Portfolio Game" class="img-fluid">
+                      <div id="video-btn" data-bs-toggle="modal" data-bs-target="#learnMoreModal">
+                        <img src="assets/images/videobtn.svg" alt="Video button">
+                      </div>
+                    </div>
+                    <div class="portfolio-top-content">
+                        <h3>0000-0000-0000</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="more-portfolio">
+            <div class="row more-portfolio-row">
+                <div class="col-12 col-lg-4 more-portfolio-col">
+                    <img src="assets/images/portf2.svg" alt="Portflio" class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-4 more-portfolio-col">
+                    <img src="assets/images/portf3.svg" alt="Portflio" class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-4 more-portfolio-col">
+                    <img src="assets/images/portf4.svg" alt="Portflio" class="img-fluid">
+                </div>
+            </div>
+            <a href="portfolio" class="backToPortfolio">
+                <button>Back To Portfolio</button>
+            </a>
+        </div>
+    </div>
+
+<!--  updated modal  -->
+<div class="modal fade" id="learnMoreModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel">New Fortnite Deathruns</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+          onclick="document.getElementById('learnmore').pause();"></button>
+      </div>
+      <div class="modal-body">
+        <video width="100%" controls id="learnmore">
+          <source src="assets/videos/newfortnite.mp4" type="video/mp4"> Your browser does not support HTML video.
+        </video>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+          onclick="document.getElementById('learnmore').pause();">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- end -->
+  <!-- Footer -->
+  <section class="footer">
+    <div class="secContainer">
+      <div class="footer-content">
+        <a class="footer-logo" href="#">
+          <img src="assets/images/logo.svg" alt="Logo">
+        </a>
+        <ul class="footer-menu">
+          <li><a href="index">Home</a></li>
+          <li><a href="about">About us</a></li>
+          <li><a href="portfolio">Portfolio</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+        <div class="footer-social d-flex flex-row justify-content-center align-items-center">
+          <a href="https://twitter.com/SirRelatable" target="_blank" class="foo-twitter d-flex ">
+            <img src="assets/images/twitter.svg" alt="Twitter">
+          </a>
+          <a href="https://www.youtube.com/mrrelatable" target="_blank" class="foo-youtube">
+            <img src="assets/images/youtube.svg" alt="Youtube">
+          </a>
+          <a href="https://discord.com/invite/R4syWeC" target="_blank" class="foo-icon4">
+            <img src="assets/images/social4.svg" alt="Social icon">
+          </a>
+        </div>
+        <p class="copyright-text">Copyright © 2022 TF Design, INC. All Rights reserved.</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--  Javascript cdn-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- owl -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
