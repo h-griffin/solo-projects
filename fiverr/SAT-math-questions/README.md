@@ -17,4 +17,4 @@
     - each new timer func
     - progress bars for each question
 
-
+![quiz screenshot](./assets/quiz.png)
