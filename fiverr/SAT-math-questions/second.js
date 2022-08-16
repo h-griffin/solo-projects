@@ -1,3 +1,6 @@
+import { globalQuizTimer, globalBreakTimer, quizActive } from './main.js'
+
+
 function reduce(numerator,denominator){
   var gcd = function gcd(a,b){
     return b ? gcd(b, a%b) : a;
@@ -2795,22 +2798,24 @@ var quiz_2 = {
 
 $(document).ready(function() {
 
-    
+    console.log("ready")
 
+// const secondQuestions = function(){
     var questionField = $("#question2");
 
-    // var totalQuestion = quiz_2.data.length;
     var totalQuestion = quiz_2.question;
     var currentIndex = 0;
-    var progressField = $("#progress2");
     var timerField = $("#timer2");
     var intervalHandle = null;
     var hint = $("#hint2");
     var answer = $(".answer2")
+    var progressBar = $("#bar-2")
+    
+    // var globalBreakTimer = 0;
+    // var globalQuizTimer = 0;
+    // var quizActive = false;
 
-
-
-    // shuffle quiz_2.data
+    // shuffle quiz2.data
     if (quiz_2.randomize) {
         for (var i = quiz_2.data.length - 1; i > 0; --i) {
             var rand = Math.floor(Math.random()*i);
@@ -2819,73 +2824,117 @@ $(document).ready(function() {
             quiz_2.data[rand] = temp;
         }
     }
-
     
+    function quizInterval () {
+        quizActive = true;
+        var countDownDate = new Date().getTime() + 1 * 60 * 1000; 
+        
+        var quizHandler = setInterval(() => {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            globalQuizTimer = distance;
+
+            // Time calculations for hours, minutes and seconds
+            // var minutes = Math.floor((globalQuizTimer % (1000 * 60 * 60)) / (1000 * 60));
+            // var seconds = Math.floor((globalQuizTimer % (1000 * 60)) / 1000);
+
+            // if (minutes < 10)
+            //     minutes = "0" + minutes;
+            // if (seconds < 10)
+            //     seconds = "0" + seconds;
+            // document.getElementById("timer1").innerHTML = minutes + ":" + seconds;
+
+            if (globalQuizTimer < 0) {
+                clearInterval(quizHandler);
+                // document.getElementById("timer1").innerHTML = " 00:00 ";
+
+                breakInterval()
+            }
+        }, 1000);
+    };
+
+    function breakInterval () {
+
+        quizActive = false;
+        
+        var breakCountDownDate = new Date().getTime() + 0.5 * 60 * 1000;
+
+        var breakHandler = setInterval(() => {
+            var now = new Date().getTime();
+            var distance = breakCountDownDate - now;
+            globalBreakTimer = distance;
+
+            // Time calculations for hours, minutes and seconds
+            // var minutes = Math.floor((globalBreakTimer % (1000 * 60 * 60)) / (1000 * 60));
+            // var seconds = Math.floor((globalBreakTimer % (1000 * 60)) / 1000);
+
+            // if (minutes < 10)
+            //     minutes = "0" + minutes;
+            // if (seconds < 10)
+            //     seconds = "0" + seconds;
+            // document.getElementById("timer1").innerHTML =  minutes + ":" + seconds;
+        
+            if (globalBreakTimer < 0) {
+                clearInterval(breakHandler);
+                // document.getElementById("timer1").innerHTML = " 00:00 ";
+
+                quizInterval()
+                loadQuestion(currentIndex);
+            }
+        }, 1000);
+    }
 
     function loadQuestion() {
-        progressField.text("Question " + (currentIndex + 1) + " of " + totalQuestion);
+        if (quizActive ){
+            dataSet = quiz.data[currentIndex].question();
 
-        var remainingSec = quiz_2.duration;
-                
-        var min = Math.floor(remainingSec / 60);
-        var sec = remainingSec % 60;
-        if (min < 10)
-            min = "0" + min;
-        if (sec < 10)
-            sec = "0" + sec;
-        timerField.text(min + ":" + sec);
+            progressBar.removeClass('playAnimation')
+            progressBar.width()
+            progressBar.addClass('playAnimation')
 
+            questionField.html(dataSet.ques);
+            hint.html(dataSet.Hint);
+            answer.html(dataSet.Answer);
         
-        dataSet = quiz_2.data[currentIndex].question();
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub, questionField[0]]);  
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub, hint[0]]);
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub, answer[0]]);
 
-        questionField.html(dataSet.ques);
-        hint.html(dataSet.Hint);
-        answer.html(dataSet.Answer);
-      
-        MathJax.Hub.Queue(["Typeset", MathJax.Hub, questionField[0]]);  
-        MathJax.Hub.Queue(["Typeset", MathJax.Hub, hint[0]]);
-        MathJax.Hub.Queue(["Typeset", MathJax.Hub, answer[0]]);
-        
-
-        setTimeout(function() {
-            if (currentIndex === 0) {
-                questionField.css("opacity", 1);
-            }
-            animateQuestion(remainingSec);
-            $('.next_question').click(function(){
-                
-            })
-        }, 500);
+            setTimeout(function() {
+                if (currentIndex === 0) {
+                    questionField.css("opacity", 1);
+                }
+                animateQuestion();
+            }, 500);
+        }
     }
 
 
-    function animateQuestion(remainingSec) {
+    function animateQuestion() {
+        console.log("animateQuestion", globalQuizTimer)
+
         questionField.removeClass("zoomOutLeft");
         questionField.addClass("zoomIn");
+
         setTimeout(function() {
             intervalHandle = setInterval(function() {
-                remainingSec -= 1;
-                if (remainingSec > 0) {
-                    var min = Math.floor(remainingSec / 60);
-                    var sec = remainingSec % 60;
-                    if (min < 10)
-                        min = "0" + min;
-                    if (sec < 10)
-                        sec = "0" + sec;
-                    timerField.text(min + ":" + sec);
-                    loadhint(sec);
-                    loadanswer(sec);
-                } else {
+                second = Math.floor((globalQuizTimer % (1000 * 60)) / 1000);
+                if (second > 0) {
+                    loadhint();
+                    loadanswer();
+                    
+                }else{
                     // unload the question
-
-                    timerField.text("00:00");
+                    // timerField.text("00:00");
                     clearInterval(intervalHandle);
 
                     questionField.removeClass("zoomIn");
                     questionField.addClass("zoomOutLeft");
+
                     setTimeout(function() {
                         if (currentIndex < totalQuestion - 1) {
-                            loadQuestion(++currentIndex);
+                            currentIndex++
+                            loadQuestion(currentIndex);
                         } else {
                             questionField.hide();
                             progressField.css("visibility", "hidden");
@@ -2898,7 +2947,9 @@ $(document).ready(function() {
         }, 1000);
     }
 
-    function loadhint(second) {
+    function loadhint() {
+        second = Math.floor((globalQuizTimer % (1000 * 60)) / 1000);
+
         if (second <= 30 && second >= 5){
             hint.fadeIn(2000);
         }else if(second >= 30){
@@ -2910,10 +2961,12 @@ $(document).ready(function() {
         }
     }
 
-    function loadanswer(secondCountAns) {
-        if (secondCountAns <= 15 && secondCountAns >= 5){
+    function loadanswer() {
+        second = Math.floor((globalQuizTimer % (1000 * 60)) / 1000);
+        
+        if (second <= 15 && second >= 5){
             answer.fadeIn(2000);
-        }else if(secondCountAns >= 15){
+        }else if(second >= 15){
             $('.check_answer').click(function(){
                 answer.fadeIn(1000);
             });
@@ -2921,23 +2974,159 @@ $(document).ready(function() {
             answer.fadeOut(2000);
         }
     }
-
-    setTimeout(() => {
-        console.log("Delayed for 17 seconds.");
-        loadQuestion(currentIndex);
-      }, 17000)
-
-    $('.choose').click(function(){
-        $('.audio_container').slideToggle();
-    });
-
-    $('.audio_one').click(function(){
-        $('#audioChange').attr('src', 'https://bluerocketacademy.com/wp-content/uploads/2020/09/Binaural.mp3');
-        $('.audio_container').slideUp();
-    })
-    $('.audio_two').click(function(){
-        $('#audioChange').attr('src', 'https://bluerocketacademy.com/wp-content/uploads/2020/09/Classical.mp3');
-        $('.audio_container').slideUp();
-    })
+ 
+    quizInterval()
+    loadQuestion(currentIndex);
+ 
 });
+
+
+
+// $(document).ready(function() {
+
+    
+
+//     var questionField = $("#question2");
+
+//     // var totalQuestion = quiz_2.data.length;
+//     var totalQuestion = quiz_2.question;
+//     var currentIndex = 0;
+//     // var progressField = $("#progress2");
+//     var timerField = $("#timer2");
+//     var intervalHandle = null;
+//     var hint = $("#hint2");
+//     var answer = $(".answer2")
+
+
+
+//     // shuffle quiz_2.data
+//     if (quiz_2.randomize) {
+//         for (var i = quiz_2.data.length - 1; i > 0; --i) {
+//             var rand = Math.floor(Math.random()*i);
+//             var temp = quiz_2.data[i];
+//             quiz_2.data[i] = quiz_2.data[rand];
+//             quiz_2.data[rand] = temp;
+//         }
+//     }
+
+    
+
+//     function loadQuestion() {
+//         // progressField.text("Question " + (currentIndex + 1) + " of " + totalQuestion);
+
+//         var remainingSec = quiz_2.duration;
+                
+//         var min = Math.floor(remainingSec / 60);
+//         var sec = remainingSec % 60;
+//         if (min < 10)
+//             min = "0" + min;
+//         if (sec < 10)
+//             sec = "0" + sec;
+//         timerField.text(min + ":" + sec);
+
+        
+//         dataSet = quiz_2.data[currentIndex].question();
+
+//         questionField.html(dataSet.ques);
+//         hint.html(dataSet.Hint);
+//         answer.html(dataSet.Answer);
+      
+//         MathJax.Hub.Queue(["Typeset", MathJax.Hub, questionField[0]]);  
+//         MathJax.Hub.Queue(["Typeset", MathJax.Hub, hint[0]]);
+//         MathJax.Hub.Queue(["Typeset", MathJax.Hub, answer[0]]);
+        
+
+//         setTimeout(function() {
+//             if (currentIndex === 0) {
+//                 questionField.css("opacity", 1);
+//             }
+//             animateQuestion(remainingSec);
+//             $('.next_question').click(function(){
+                
+//             })
+//         }, 500);
+//     }
+
+
+//     function animateQuestion(remainingSec) {
+//         questionField.removeClass("zoomOutLeft");
+//         questionField.addClass("zoomIn");
+//         setTimeout(function() {
+//             intervalHandle = setInterval(function() {
+//                 remainingSec -= 1;
+//                 if (remainingSec > 0) {
+//                     var min = Math.floor(remainingSec / 60);
+//                     var sec = remainingSec % 60;
+//                     if (min < 10)
+//                         min = "0" + min;
+//                     if (sec < 10)
+//                         sec = "0" + sec;
+//                     timerField.text(min + ":" + sec);
+//                     loadhint(sec);
+//                     loadanswer(sec);
+//                 } else {
+//                     // unload the question
+
+//                     timerField.text("00:00");
+//                     clearInterval(intervalHandle);
+
+//                     questionField.removeClass("zoomIn");
+//                     questionField.addClass("zoomOutLeft");
+//                     setTimeout(function() {
+//                         if (currentIndex < totalQuestion - 1) {
+//                             loadQuestion(++currentIndex);
+//                         } else {
+//                             questionField.hide();
+//                             progressField.css("visibility", "hidden");
+//                             timerField.css("visibility", "hidden");
+//                             $("#resultBox").fadeIn();
+//                         }
+//                     }, 1000);
+//                 }
+//             }, 1000);
+//         }, 1000);
+//     }
+
+//     function loadhint(second) {
+//         if (second <= 30 && second >= 5){
+//             hint.fadeIn(2000);
+//         }else if(second >= 30){
+//             $('.ask_hint').click(function(){
+//                 hint.fadeIn(1000);
+//             });
+//         }else{
+//             hint.fadeOut(2000);
+//         }
+//     }
+
+//     function loadanswer(secondCountAns) {
+//         if (secondCountAns <= 15 && secondCountAns >= 5){
+//             answer.fadeIn(2000);
+//         }else if(secondCountAns >= 15){
+//             $('.check_answer').click(function(){
+//                 answer.fadeIn(1000);
+//             });
+//         }else{
+//             answer.fadeOut(2000);
+//         }
+//     }
+
+//     setTimeout(() => {
+//         console.log("Delayed for 17 seconds.");
+//         loadQuestion(currentIndex);
+//       }, 17000)
+
+//     $('.choose').click(function(){
+//         $('.audio_container').slideToggle();
+//     });
+
+//     $('.audio_one').click(function(){
+//         $('#audioChange').attr('src', 'https://bluerocketacademy.com/wp-content/uploads/2020/09/Binaural.mp3');
+//         $('.audio_container').slideUp();
+//     })
+//     $('.audio_two').click(function(){
+//         $('#audioChange').attr('src', 'https://bluerocketacademy.com/wp-content/uploads/2020/09/Classical.mp3');
+//         $('.audio_container').slideUp();
+//     })
+// });
 

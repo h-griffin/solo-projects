@@ -13,19 +13,7 @@
 <body>
     <div class="context">
         <div id="quiz" class="area">
-            <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <div class="header_container">
+            <!-- <div class="header_container">
                 <div class="music_container">
                     <div class="choose">
                         Choose Study Music
@@ -50,27 +38,41 @@
                     <div class="check_answer">
                         Check Answer
                     </div>
-                    <!-- <div class="next_question">
-                        Next Question
+                     
+                </div>
+            </div> -->
+
+            <div class="timerProgressContainer"  >
+                <div  >
+                    <!-- <p id="progress1">Question 1 of 10</p> -->
+                    <p id="progress1">600+</p>
+                    <div id="progress-bar-1">
+                        <div id="bar-1"></div>
                     </div>
-                    <div class="fast_slow">
-                        <div class="fast">Fast</div>
-                        <div class="slow">Slow</div>
-                    </div> -->
+                    <!-- <div id="timer1"></div> -->
+                </div>
+
+                <div  >
+                    <!-- <p id="progress2">Question 1 of 10</p> -->
+                    <p id="progress2">700+</p>
+                    <div id="progress-bar-2">
+                        <div id="bar-2"></div>
+                    </div>
+
+                    <!-- <div id="timer2"></div> -->
                 </div>
             </div>
 
             <div class="allQuestionsContainer" style="width: 100%;">
-                <hr style="margin-bottom: 20px;">
 
                 <!-- first -->
                 <div class="firstQuestion" style="width: 40%; float: left;">
                     <div id="quizSet" >
                         <!-- <hr style="margin-bottom: 20px;"> -->
                         <h1 id="question1" class="animated"></h1>
-                        <div id="resultBox">
+                        <!-- <div id="resultBox">
                             <p id="result">Now take a 10 minute break and try this quiz again. Good luck!</p>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="hint_container" >
                         <h2 id="hint1"></h2>
@@ -82,13 +84,13 @@
                 
                 
                 <!-- second -->
-                <div class="secondQuestion" style="width: 40%; float: right;">
+                <div class="secondQuestion" style="width: 50%; float: right;">
                     <div id="quizSet" >
                         <!-- <hr style="margin-bottom: 20px;"> -->
                         <h1 id="question2" class="animated"></h1>
-                        <div id="resultBox">
+                        <!-- <div id="resultBox">
                             <p id="result">Now take a 10 minute break and try this quiz again. Good luck!</p>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="hint_container">
                         <h2 id="hint2"></h2>
@@ -102,8 +104,8 @@
             
 
             <footer >
-                <hr style="margin-bottom: 20px;">
-                <div class="timerProgressContainer" style="display: flex; justify-content: space-between;">
+                <!-- <hr style="margin-bottom: 20px;"> -->
+                <!-- <div class="timerProgressContainer" style="display: flex; justify-content: space-between;">
                     <div style="width: 35%; display: inline-block;">
                         <p id="progress1">Question 1 of 10</p>
                         <div id="timer1"></div>
@@ -113,15 +115,15 @@
                         <p id="progress2">Question 1 of 10</p>
                         <div id="timer2"></div>
                     </div>
-                </div>
+                </div> -->
                 
-                
+                <div id="timer1"></div>
             </footer>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="main.js"></script>
-    <script src="second.js"></script>
+    <!-- <script type="module" src="second.js"></script> -->
 
 </body>
 </html>
