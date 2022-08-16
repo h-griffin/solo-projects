@@ -262,7 +262,7 @@ footer {
     position: relative;
     height: 5px;
     border-radius: 10px;
-    background-color: grey;
+    /* background-color: grey; */
     width: 70%;
 }
 
@@ -275,7 +275,7 @@ footer {
 }
 
 .playAnimation{
-    animation: progressAnimation 60s forwards;
+    animation: progressAnimation 40s forwards;
 }
 
 @keyframes progressAnimation {
