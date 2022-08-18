@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        #moonCalendar{    
+            max-width: 700px;
+            margin:20px auto;
+            background-color: #333333;
+            padding: 1%;
+            color:white;
+            box-sizing: border-box;
+            font-family:sans-serif;
+            }
+            #isToday{
+            box-shadow:inset 0 0 0 1px darkgray;
+            }
+            .dayCard,.nameDay,.titleCalendar,.buttonCalendar{
+            width: calc(100% / 7);
+            display:inline-block;
+            vertical-align: top;  
+            }
+            .titleCalendar{
+            width: calc(100% / 7 * 5);
+            font-size: 24px;
+            text-align: center;
+            }
+            .buttonCalendar{
+            background-color: black;
+            text-align: center;
+            color:white;
+            border:none;
+            font-size: 18px;
+            padding:0;
+            cursor:pointer;
+            }
+            .nameDay{
+            overflow: hidden;
+            font-size: 14px;
+            padding: 1px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            text-align: center;
+            }
+            .dayCard{
+            text-align: left!important;
+            font-size: 14px;
+            background-image: linear-gradient(black, #222222); 
+            background-size: 97% 97%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            }    
+
+            .dayCard>div{
+            margin:1px;
+            padding:5%;    
+            background-repeat: no-repeat;
+            background-size: 25%;
+            background-position: 95% 95%;
+            }
+            .dayCard>div>span{
+            position:absolute;
+            color:white;
+            font-size: 1em;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            }
+            .dayCard>div>div{
+            padding:5% 15%;   
+            }
+    </style>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- <div class="TrailforksWidgetMap" data-w="800px" data-h="400px" data-rid="50718" data-activitytype="6" data-maptype="trailforks" data-trailstyle="difficulty" data-controls="1" data-list="0" data-dml="1" data-layers="labels,poi,polygon,directory,region" data-z="" data-lat="" data-lon="" data-hideunsanctioned="0"></div> -->
+        <!-- <div class="container" width="500px" height="500px"></div>
+        
+        <a href="https://www.trailforks.com/region/mount-pilchuck-state-park-50718/">Mount Pilchuck State Park</a> on <a href="https://www.trailforks.com/">Trailforks.com</a>
+
+        <script type="text/javascript">
+        var script = document.createElement("script"); script.setAttribute("src", "https://es.pinkbike.org/ttl-86400/sprt/j/trailforks/widget.js"); document.getElementsByTagName("head")[0].appendChild(script); var widgetCheck = false;
+        </script> -->
+        <div id="moonCalendar"></div>
+
+        <script src="./hike.js" async defer></script>
+    </body>
+</html>
