@@ -8,3 +8,4 @@
 - pick month and display moon phases for each day of the month
 - highlight the current day
 
+![screenshot](./screenshot.png)
