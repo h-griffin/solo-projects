@@ -15,3 +15,14 @@
 `file.body [Object: null prototype] { field2: 'stringtext' }`
 
 
+## images
+![mobile view](./images/mobile-view.png)
+![tablet view](./images/tablet-view.png)
+![firestore](./images/firestore-urls.png)
+![storage](./images/storage-images.png)
+
+
+
+
+
+

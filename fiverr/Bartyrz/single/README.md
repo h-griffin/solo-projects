@@ -11,3 +11,11 @@
 - upload up to 4 pictures
 - display all info on review tab
 - display pictures in review tab
+
+## images
+![review](./assets/second/review.png)
+![db](./assets/second/db.png)
+![images](./assets/second/images.png)
+![storage](./assets/second/storage.png)
+
+
