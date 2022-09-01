@@ -1,3 +1,5 @@
+# [MichiganPsychologicalCare.com](https://michiganpsychologicalcare.com/blog.php)
+
 # michigan psychological care
 - take in a word doc, convert to html, insert into php article card
 - add article to articles folder and link on main blog page
@@ -5,15 +7,25 @@
 - related article navigation previous and next
 
 ## edits
-
 - blog/
 - blog/article.php
     - date
+    - content
     - related articles
-- images/blog/2022/07
+- images/blog/2022/09
+- blog 01-02-03-04-05 +5 articles
 
-- blog 01-02-03-04 +5 articles
+## images
+![screenshot](./screenshot.png)
 
+## sept 2022
+- tuesdays (500)
+    - 06 - labor day
+    - 13 - world suicide
+    - 20 - national psychotherapy
+    - 27 - mental health eating
+- thursday (1200)
+    - 29 - national suicide prevention
 
 ## aug 2022
 - tuesdays (500)
