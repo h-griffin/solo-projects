@@ -7,3 +7,9 @@
 - author bio page description - button link nonclickable on mobile
 	- columns next to eachotehr on desktop, on mobile right side, second column overlapts the first column, covering the button/link
 	- added pointer events to be able to click through lop later dov/column
+
+## images
+![screenshot](./screenshot.png)
+
+
+
