@@ -12,3 +12,7 @@
     - no inline styles - style tag- or attached js file
 - mobile margins
 
+## images
+![canvas](./assets/images/screenshots/canvas.png)
+![canvas-tablet](./assets/images/screenshots/canvas-tablet.png)
+![bare](./assets/images/screenshots/bare.png)
