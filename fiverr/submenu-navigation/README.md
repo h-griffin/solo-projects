@@ -3,6 +3,7 @@
 - sidenav nested submenus mimicking shopify
 - **not a dropdown nav**
 - uses data-target and data-content to change displayed collection of navigation like tabbed content
+- css animations for sliding effect
 
 
 ## images
