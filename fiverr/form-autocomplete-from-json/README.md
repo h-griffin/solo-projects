@@ -1,4 +1,4 @@
-# autocomplete
+# form autocomplete from json
 
 - pulls from json of country city state options
 - regex matches options to start with input entry
@@ -7,7 +7,7 @@
     - one loop through all countries, then save srray of states and citys at each selection
 
 ## images
- 
+
 ![landing](./assets/landing.png)
 ![state](./assets/state.png)
 ![city](./assets/city.png)
