@@ -6,3 +6,6 @@
 - css variables to keep theme
 
 
+## images
+![desktop](./assets/desktop.png)
+![mobile](./assets/mobile.png)

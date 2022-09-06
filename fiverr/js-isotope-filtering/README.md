@@ -1,5 +1,13 @@
 #  PORTFOLIO  -  RECENT  WORK  FILTER
 
+## images
+![landing](./assets/landing.png)
+![filters](./assets/filters.png)
+
+## isotope.js
+- https://github.com/metafizzy/isotope
+- isotope is a jquery plugin utilized in this template to filter the images shown in these tabs, i have added an initial filter 'initial-filter-class' to each 'portfolio-item' with corresponding class names 'brand' and 'branding' (live cards and paw play) so that these are pre selected as the default filter.
+
 ## - isotope code in custom.js  - classes in index.html
 - website files > html > js > custom.js
     `69 filter: '.initial-filter-class'`
@@ -8,8 +16,6 @@
         <!-- portfolio item -->                       all (.brand .branding)
     `488  <div class="col-md-4 col-sm-6 grid-item brand initial-filter-class">`
 
-https://github.com/metafizzy/isotope
-- isotope is a jquery plugin utilized in this template to filter the images shown in these tabs, i have added an initial filter 'initial-filter-class' to each 'portfolio-item' with corresponding class names 'brand' and 'branding' (live cards and paw play) so that these are pre selected as the default filter.
 
 # CONTACT  FORM  SUBMIT
 
