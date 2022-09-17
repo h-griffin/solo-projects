@@ -15,3 +15,10 @@
 ### V3
 - display phrase and symbol 2 seconds after meaning
 
+### V4
+- text to speech additions with delay time slider and language selection drop down
+
+![learning](./images/ja.png)
+
+
+
