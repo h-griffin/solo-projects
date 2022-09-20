@@ -15,8 +15,10 @@
 ### V3
 - display phrase and symbol 2 seconds after meaning
 
+### V4
+- text to speech additions with delay time slider and language selection drop down
 
-<div style='display: flex; justify-content: space-between;'>
-    <img width='48%' src='./images/design-final.png'>
-    <img width='48%' src='./images/phrases.png'>
-</div>
+![learning](./images/ja.png)
+
+
+
