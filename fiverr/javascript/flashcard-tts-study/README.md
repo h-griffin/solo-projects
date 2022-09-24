@@ -18,6 +18,11 @@
 ### V4
 - text to speech additions with delay time slider and language selection drop down
 
+### V5
+- animation time 500ms - min slider 2 seconds
+- modules added to load in prewritten learning sets for past present and future tense
+
+
 
 ![learning](./images/ja.png)
 
