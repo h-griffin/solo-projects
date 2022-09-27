@@ -4,6 +4,8 @@
 
 - give the links a 'target' with the same 'name' as the iframe and have the href an embed link
 
+## demo
+![demo gif](./assets/demo.gif)
 
 ## images
 ![smarts](./assets/smarts.png)

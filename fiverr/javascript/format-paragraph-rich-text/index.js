@@ -51,13 +51,13 @@ function replace(oldtag, newtag){
         var newEl = document.createElement(newtag);
         newEl.style.fontWeight = 700;
         newEl.style.lineHeight = 1.2;
-        newEl.style.color = "#023d67";
+        // newEl.style.color = "#023d67";
         newEl.style.fontSize = "16px";
 
     } else {
         var newEl = document.createElement(newtag);
         newEl.style.lineHeight = 1.2;
-        newEl.style.color = "#023d67";
+        // newEl.style.color = "#023d67";
         newEl.style.fontSize = "16px";
     }
 
