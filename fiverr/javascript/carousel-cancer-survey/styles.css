@@ -1,0 +1,152 @@
+body{
+    background-color: rgb(101, 179, 235);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+progress {
+    -webkit-appearance: none;
+    width: 100%;
+}
+  
+::-webkit-progress-bar {
+    background-color:  rgb(101, 179, 235);
+}
+
+progress::-webkit-progress-value {
+    background: rgb(191, 228, 255);
+  }
+
+button{
+    font-weight: bold;
+    color: gray;
+    padding: 1% 3%;
+    /* margin: auto; */
+    /* border: 1px solid blue; */
+}
+
+#next{
+    margin: 0 45%;
+}
+
+#wrapper{
+    font-size: x-large;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+ul {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    list-style: none;
+}
+
+ul li {
+    position: relative; 
+    color: white;
+    font-size: 50px; 
+    font-weight: normal;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+  .animated {
+    opacity: 0.5;
+    position: absolute;
+
+    -webkit-transition: 1s ease-in-out top;
+       -moz-transition: 1s ease-in-out top;
+        -ms-transition: 1s ease-in-out top;
+         -o-transition: 1s ease-in-out top;
+            transition: 1s ease-in-out top;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .active{
+    top: 100px;
+    opacity: 1;
+  }
+
+   .waiting {
+    top: 700px;
+  }
+  
+  .slideOutUp {
+    top: -450px;
+  }
+
+#startmsg, #startmsg2{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 5%;
+} 
+
+h3{
+    align-items: center;
+    display: flex;
+    place-content: flex-start;
+}
+
+small{
+    font-size: 20px;
+}
+
+li div {
+    align-items: center;
+    display: flex;
+
+    padding-left: 40px;
+}
+ 
+input[type='radio'] { 
+    transform: scale(1.5); 
+}
+input[type='text'] { 
+    padding: 6px 7px; 
+}
+label{
+    padding:0  10px;
+}
+
+th{
+    text-align: right;
+    width: 50%;
+}
+td{
+    text-align: left;
+}
+
+table{
+    width: 70%;
+    margin: auto;
+}
+
+section{
+    width: 70%;
+    margin: auto;
+}
+
+h1{
+    margin-top: 5%;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ 

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordpress Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <progress id="progress" value="0" max="80"  ></progress>
+    
+
+    <div id="wrapper" class="clearfix">
+ 
+      <div class="survey-form" id="form">
+
+          
+          <h4 id="startmsg"> <br><br> Survey - If you will benefit from multi cancer early detection screening like OneTest</h4>
+          <p id="startmsg2">This survey is based on American Cancer Society study of 429,991 Americans for 5 years. Study can be found at
+              <small>https://acsjournals.onlinelibrary.wiley.com/doi/10.1002/cncr.34396</small></p>
+            
+              <br>
+              <button id="next">Start</button>
+              
+          <ul>
+            <li id="first">
+                <h3><small>1 &#8594;</small> Age</h3>
+        
+                <div>
+                    <input type="range" name="question-1-answers" id="question-1-answers-Age" min="18" max="99" value="18" required oninput="this.nextElementSibling.value = this.value"/>
+                    <output>18</output>
+                    <label for="question-1-answers-Age">Years </label>
+                    
+                </div>
+                <br>
+                <button class="next">OK &check;</button>
+            </li>
+
+            <li>
+                <h3><small>2 &#8594;</small> Gender</h3>
+
+                <div>
+                    <input type="radio" name="question-2-answers" id="question-2-answers-Male" value="Male" required/>
+                    <label for="question-2-answers-Male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="question-2-answers" id="question-2-answers-Female" value="Female" required/>
+                    <label for="question-2-answers-Female">Female</label>
+                    
+                </div>
+                <br>
+                <button class="next">OK &check;</button>
+            </li>
+
+            <li>
+                <h3><small>3 &#8594;</small> Height</h3>
+
+                <div>
+                    <input type="text" name="question-3-answers" id="question-3-answers-Feet" value="" required/>
+                    <label for="question-3-answers-Feet">Feet</label>
+                </div>
+                
+                <br>
+                <button class="next">OK &check;</button>
+            </li>
+            <li>
+                <h3><small>4 &#8594;</small> Height</h3>
+
+                <div>
+                    <input type="text" name="question-3-answers" id="question-3-answers-Inches" value="" required/>
+                    <label for="question-3-answers-Inches">Inches</label>
+                    
+                </div>
+                <br>
+                <button class="next">OK &check;</button>
+            </li>
+
+            <li>
+                <h3><small>5 &#8594;</small> Weight</h3>
+
+                <div>
+                    <input type="range" name="question-4-answers" id="question-4-answers-Weight" min="50" max="500" value="50" required oninput="this.nextElementSibling.value = this.value"/>
+                    <output>50</output>
+                    <label for="question-4-answers-Weight">Pounds</label>
+                    
+                </div>
+                <br>
+                <button class="next">OK &check;</button>
+            </li>
+            
+            <li>
+                <h3><small>6 &#8594;</small> Smoking History</h3>
+
+                <div>
+                    <input type="radio" name="question-5-answers" id="question-5-answers-Current" value="Current" required/>
+                    <label for="question-5-answers-Current">Current Smoker </label>
+                </div>
+                <div>
+                    <input type="radio" name="question-5-answers" id="question-5-answers-Former" value="Former" required/>
+                    <label for="question-5-answers-Former">Former Smoker </label>
+                </div>
+                <div>
+                    <input type="radio" name="question-5-answers" id="question-5-answers-Never" value="Never" required/>
+                    <label for="question-5-answers-Never">Never Smoker </label>
+                    
+                </div>
+                <br>
+                <button class="next">OK &check;</button>
+            </li>
+
+            <li>
+                <h3><small>7 &#8594;</small> Cancer among immediate family members?</h3>
+
+                <div>
+                    <input type="radio" name="question-6-answers" id="question-6-answers-Yes" value="Yes" required/>
+                    <label for="question-6-answers-Yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="question-6-answers" id="question-6-answers-No" value="No" required/>
+                    <label for="question-6-answers-No">No</label>
+                    
+                </div>
+                <br>
+                <button class="button" id="submitBtn">Submit</button>
+            </li>
+  
+          </ul>
+      </div>
+    </div>
+    
+</body>
+</html>
