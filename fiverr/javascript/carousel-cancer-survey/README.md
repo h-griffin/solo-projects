@@ -1,4 +1,4 @@
-Cancer risk survey
+## Cancer risk survey
 
 Prototype can be seen here:  https://form.typeform.com/to/cbhAd7hx
 
@@ -22,7 +22,7 @@ Save results in a table.
 
 
 Results Page:
-A results page is displayed 
+A results page is displayed
 
 A paragraph explains about how the results are calculated and references a study publication by the American Cancer Society.
 Any answers that are associated with elevated cancer risk are shown.
@@ -35,3 +35,9 @@ A logo and button are shown that redirect them to our website Onetestforcancer.c
 
 If the score <=1, a paragraph is shown,
 that explains that based on the info they provided, they are not at high risk for developing cancer but cancer screenings as recommended by their physician should still be performed.
+
+## images
+![title](./assets/title.png)
+![age](./assets/age.png)
+![history](./assets/history.png)
+![results](./assets/results.png)
