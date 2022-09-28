@@ -38,6 +38,7 @@
 - [weather-app-transparent-nav](fiverr/html-css/weather-app-transparent-nav/)
 
 ### JAVASCRIPT
+- [carousel-cancer-survey](fiverr/javascript/carousel-cancer-survey/)
 - [choose-your-own-adventure](fiverr/javascript/choose-your-own-adventure/)
 - [classes-calculator](fiverr/javascript/classes-calculator/)
 - [crossword](fiverr/javascript/crossword/)
