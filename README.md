@@ -1,23 +1,7 @@
-# HackerRank
-#### note : some challenges pass tests in hackerrank web editor but not in VScode
-
-# [griffins hackerrank](https://www.hackerrank.com/haleygriffin708)
-
-## problem Solving : Python
-- [Simple Array Sum](hackerrank/simple_array_sum)
-- [Compare The Triplets](hackerrank/compare_the_triplets)
-- [Diagonal Difference](hackerrank/diagonal_difference)
-- [A Very Big Sum](hackerrank/a_very_big_sum)
-- [Candles](hackerrank/candles)
-- [Time Conversion](hackerrank/time_conversion)
-- [Staircase](hackerrank/staircase)
-- [Print Linked List](hackerrank/print_linked_list)
-- [Weird - Not Weird (fizzbuzz)](hackerrank/not_weird)
-- [Arithmatic Operators and Division](hackerrank/arithmatic)
-- [Leap Year](hackerrank/leap_year)
+# solo - code
+- misc. projects, jobs, or code challenges
 
 # Fiverr
-
 
 ### HTML & CSS
 - [canvas-welcome](fiverr/html-css/canvas-welcome/)
@@ -60,3 +44,22 @@
 
 ### PHP
 - [michiganpsychologicalcare-blogs](fiverr/php/michiganpsychologicalcare-blogs/)
+
+
+# HackerRank
+#### note : some challenges pass tests in hackerrank web editor but not in VScode
+
+# [griffins hackerrank](https://www.hackerrank.com/haleygriffin708)
+
+## problem Solving : Python
+- [Simple Array Sum](hackerrank/simple_array_sum)
+- [Compare The Triplets](hackerrank/compare_the_triplets)
+- [Diagonal Difference](hackerrank/diagonal_difference)
+- [A Very Big Sum](hackerrank/a_very_big_sum)
+- [Candles](hackerrank/candles)
+- [Time Conversion](hackerrank/time_conversion)
+- [Staircase](hackerrank/staircase)
+- [Print Linked List](hackerrank/print_linked_list)
+- [Weird - Not Weird (fizzbuzz)](hackerrank/not_weird)
+- [Arithmatic Operators and Division](hackerrank/arithmatic)
+- [Leap Year](hackerrank/leap_year)
