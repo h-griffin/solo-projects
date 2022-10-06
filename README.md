@@ -41,6 +41,7 @@
 - [shoppingcart-modal](fiverr/javascript/shoppingcart-modal/)
 - [spotify.code](fiverr/javascript/spotify.code/)
 - [submenu-navigation](fiverr/javascript/submenu-navigation/)
+- [webGL-fluid-text-hover](fiverr/javascript/webGL-fluid-text-hover/)
 
 ### PHP
 - [michiganpsychologicalcare-blogs](fiverr/php/michiganpsychologicalcare-blogs/)
