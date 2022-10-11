@@ -1,0 +1,117 @@
+<?php 
+
+$img = '';
+$title = 'The Benefits of Play Therapy';
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>The Benefits of Play Therapy</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Oct 25, 2022</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2022/10/the-benefits-of-play-therapy.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+
+                            <h1><strong>The Benefits of Play Therapy</strong></h1>
+
+                            <p>Play is a significant piece of childhood. Because of this, play creates the perfect opportunity for understanding the inner workings of a child&rsquo;s mind. This allows therapists to understand the thoughts and feelings causing a child&rsquo;s inner turmoil and to work with the child to develop healthy coping mechanisms for getting through difficult moments.</p>
+                            <h2><strong>What is Play Therapy?</strong></h2>
+                            <p>Play therapy for children is very similar to talk therapy for adults. Talk therapy is a form of therapy that can help many adults work through their mental health struggles as they work with a therapist to take a deep dive into the thoughts and feelings they are struggling with and learn ways to cope and manage these thoughts and feelings to benefit them. Play therapy is quite similar to talk therapy but more beneficial for children.</p>
+                            <p>Play is a critical piece of a child&rsquo;s development. Because of this, many therapists will use play therapy for children in a similar manner as a therapist would use talk therapy with an adult. Through play, the therapist will be able to partner up with the child to build a trusting relationship, communicate effectively, and figure out the root causes behind the child&rsquo;s mental health struggles.</p>
+                            <h2><strong>Who Benefits from Play Therapy?</strong></h2>
+                            <p>Play therapy can benefit basically anyone at any age. However, the age group that has been found to benefit the most from this <a href="https://www.a4pt.org/page/PTMakesADifference/Play-Therapy-Makes-a-Difference.htm">form of therapy</a> is children aged between&nbsp;3 and 12. Play therapy can be used to treat a wide variety of social, emotional, and behavioral struggles, such as:</p>
+                            <ul>
+                            <li>Anxiety or stress</li>
+                            <li>Trauma</li>
+                            <li>Depression</li>
+                            <li>Attention deficit hyperactivity disorder (ADHD)</li>
+                            <li>Those on the autism spectrum</li>
+                            <li>Anger management</li>
+                            <li>Familial struggles like divorce or familial turmoil</li>
+                            <li>Divorce</li>
+                            <li>Grief or loss</li>
+                            <li>Psychical or learning disabilities</li>
+                            <li>Behavioral issues</li>
+                            <li>Social problems</li>
+                            <li>Academic issues</li>
+                            </ul>
+                            <p>These are only a fraction of the issues play therapy has helped children through in the past. Play therapy has a wide reach when it comes to helping those struggling with mental illness or other mental health struggles.</p>
+                            <h2><strong>The Many Benefits of Play Therapy</strong></h2>
+                            <p>This form of therapy has been used to provide therapy to children who have gone through a wide variety of life experiences, like mental illness, stress, traumatic events, and physical ailments. Play therapy has been found to offer a wide range of benefits to children, helping them:</p>
+                            <ul>
+                            <li>Develop healthy coping mechanisms</li>
+                            <li>Become more successful problem solvers</li>
+                            <li>Take responsibility for their own behaviors</li>
+                            <li>Develop a higher self-esteem</li>
+                            <li>Become more respectful of others</li>
+                            <li>Develop a deeper sense of empathy</li>
+                            <li>Advance their social skills</li>
+                            <li>Become more self-efficient</li>
+                            </ul>
+                            <h2><strong>We Are Here to Help</strong></h2>
+                            <p>Mental health issues can impact anyone at any age. If you worry that your child is experiencing mental health struggles, our compassionate and well-educated therapists are here for you. In play therapy, a therapist, you, and your child can work together to help your child find their way toward a healthier, happier life. Contact us&nbsp;<a href="https://michiganpsychologicalcare.com/contact.php">today</a>&nbsp;so we can work with you to get your child feeling happier and healthier.</p>
+                            <p>Keywords: play therapy, child counseling, play therapist, autism, counselor</p>
+                            <p><strong>References:</strong></p>
+                            <p><a href="https://www.a4pt.org/page/PTMakesADifference/Play-Therapy-Makes-a-Difference.htm">https://www.a4pt.org/page/PTMakesADifference/Play-Therapy-Makes-a-Difference.htm</a></p>
+								<!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/how-forgiveness-can-help-you-find-happiness.php">⇐ HOW FORGIVENESS CAN HELP YOU FIND HAPPINESS</a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/understanding-your-mental-health.php">UNDERSTANDING YOUR MENTAL HEALTH ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>
