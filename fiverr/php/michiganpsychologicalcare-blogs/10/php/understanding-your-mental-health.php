@@ -1,0 +1,135 @@
+<?php 
+
+$img = '';
+$title = 'Understanding Your Mental Health This Mental Health Literacy Month';
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>Understanding Your Mental Health This Mental Health Literacy Month</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Oct 27, 2022</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2022/10/understanding-your-mental-health.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+
+                            <h1><strong>Understanding Your Mental Health This Mental Health Literacy Month</strong></h1>
+
+                            <p>October is National Health Literacy Month&mdash;a month dedicated to fighting for greater access to health literacy for all. While it is easy for doctors, nurses, and other health and mental health professionals to understand diagnoses, statistics, and medical terms, that is not always the case for their patients.&nbsp;</p>
+                            <p>This October, we would like to help spread mental health literacy throughout our communities, which is precisely what we plan to do in this article.</p>
+                            <h2><strong>What Does Mental Health Literacy Include?</strong></h2>
+                            <p><a href="https://mentalhealthliteracy.org">Mental health literacy</a>&nbsp;includes the knowledge one needs to properly care for and understand their own mental health, as well as the mental health of those they love.&nbsp;</p>
+                            <p>Many of us have a decent understanding of our physical health. However, the subject of mental health has been brushed aside for many years. Why? Because of a debilitating stigma that encompasses the subject.&nbsp;</p>
+                            <p>Developing <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4813415/">mental health literacy</a> includes developing knowledge in a wide variety of subjects,&nbsp;including:</p>
+                            <ul>
+                            <li>Mental illness recognition. It is crucial to caring for one&rsquo;s mental health that they understand the difference between optimal mental health and mental health that is struggling.&nbsp;</li>
+                            <li>Preventing mental health struggles and maintaining optimal mental health. Preventative care is another key player in caring for your mental health.&nbsp;</li>
+                            <li>Decreasing the stigma surrounding mental illness. Learning and talking about mental health is an important part of removing the shame and misinformation that can be present in many cases of mental illness and other mental health struggles.&nbsp;</li>
+                            <li>Knowing where and when to seek the help of a health professional. This piece of information is key for the moments when you feel as though any mental health struggles you are facing may need the help of a mental health professional to find healing.&nbsp;</li>
+                            </ul>
+                            <h2><strong>Signs of Mental Illness</strong>&nbsp;</h2>
+                            <p>Mental illness can look different in everyone. Because of this, it can become challenging to determine whether one&rsquo;s mental health struggles are normal or a sign of mental illness. While each mental illness will come with its own individual symptoms, some <a href="https://nami.org/about-mental-illness/warning-signs-and-symptoms">common signs of mental illness</a>&nbsp;include:</p>
+                            <ul>
+                            <li>Excessive feelings of anxiety, worry, or fear</li>
+                            <li>Excessive feelings of sadness or numbness</li>
+                            <li>Cloudy thoughts, confusion, or struggles with learning</li>
+                            <li>Severe mood swings</li>
+                            <li>Intense feelings of anger or irritability</li>
+                            <li>Social withdrawal or extreme issues with relationships</li>
+                            <li>Changes to eating, sleeping habits, or sex drive</li>
+                            <li>Experiencing hallucinations or delusions</li>
+                            <li>Substance abuse</li>
+                            <li>Physical symptoms with no physical explanation</li>
+                            <li>Thoughts or ideations of death or suicide</li>
+                            <li>An inability to cope with problems or stress</li>
+                            </ul>
+                            <h2><strong>Caring for Your Mental Health</strong></h2>
+                            <p>While a multitude of different factors can cause mental illness, taking care of your mental health can be critical to preventing many mental health struggles. A few ways one can properly care for their mental health include:</p>
+                            <ul>
+                            <li>Taking care of your physical health. Your mental and physical health depend on each other for optimal overall health. Therefore, creating healthy sleeping, eating, and exercise habits are an important factor in caring for your mental health.</li>
+                            <li>Finding some relaxing hobbies to try. Stress can take a significant toll on one&rsquo;s mental health. Relaxing activities like yoga, meditation, breathwork, and walking can be a great way to find stress relief.</li>
+                            <li>Learning to set healthy boundaries. A huge part of taking care of your mental health is saying &ldquo;no&rdquo; to things that leave you feeling drained.</li>
+                            <li>Setting goals. Having goals and priorities in your life will help you find a sense of accomplishment and purpose.</li>
+                            <li>Working on your mindset. Sometimes, it can become easy to get caught up in a negative thinking pattern. Being mindful of the tone of your thoughts can play a significant role in caring for and maintaining optimal mental health. Practicing gratitude through a journal or meditation can be a great way to switch your mind toward focusing on the positive.</li>
+                            <li>Taking care of your social well-being. Humans are social creatures. Therefore, our relationships play a huge role in our overall well-being. So, reach out to your loved ones and surround yourself with healthy, happy relationships.</li>
+                            </ul>
+                            <h2><strong>Ways to Reduce the Stigma Around Mental Health</strong></h2>
+                            <p>The stigma surrounding mental health can be harmful in so many ways, like preventing those who need help from seeking it, spreading misinformation, and a multitude of other issues. Reducing the stigma in your community and within your own mind is a crucial piece in increasing mental health literacy. A few ways to reduce stigma around mental health include:</p>
+                            <ul>
+                            <li>Talking about it. The more open we all are with our mental health, the weaker the stigma surrounding the subject becomes.</li>
+                            <li>Educate yourself. There is a multitude of high quality articles, videos, and information on the internet to educate yourself available.</li>
+                            <li>Educate the people around you. As you become more educated yourself, work to spread high-quality information to the people around you. You can do so through word of mouth, social media, and a multitude of other avenues.</li>
+                            <li>Watching the language you use. Words matter more than you know. Cutting out language that adds to the stigma around mental illness is a critical piece in changing the mindset surrounding mental health.</li>
+                            </ul>
+                            <h2><strong>When to Get Mental Health Help and Where to Go</strong></h2>
+                            <p>Your mental health plays a significant role in your quality of life. Knowing when and where to seek help from a counselor for mental health struggles is a critical part of developing your mental health literacy. In the &ldquo;Signs of Mental Illness&rdquo; section, we covered a few signs and symptoms of mental illness. When these signs and symptoms begin to impact a person&rsquo;s overall quality of life, seeking mental health help may be just what you need.</p>
+                            <p>So, where would one go if they have determined it is time to seek mental health help? When you are ready to seek mental health help, one of the first steps you can take is to reach out to your primary care physician. They can help you ensure that there are no underlying physical ailments causing your signs and symptoms. If the doctor has determined that there are no underlying physical ailments causing your symptoms, they can then refer you to a mental health professional. Asking for a referral to more than one mental health professional will allow you to find the best fit for your personal situation.</p>
+                            <p>If you do not have a primary care provider, there are still options for you. These options can include a clergy, your local Mental Health America office, crisis centers, and your health insurance. There are other options available to those who have served in the military, are suffering from a substance abuse problem, and who work for companies that provide resources for mental health help.</p>
+                            <h2><strong>We Are Here to Help</strong></h2>
+                            <p>Mental health struggles are difficult for anyone to experience. They can take a toll on your physical health, relationships, career, and so much more. If you have found that your mental health has been struggling lately, our professional and compassionate therapists are here to help you figure out why and find coping mechanisms to get through it.&nbsp;<a href="https://michiganpsychologicalcare.com/contact.php">Contact</a>&nbsp;us today, and we will set you up with a counselor who can help you with your mental health screening, working with you to find the answers to your mental health struggles.</p>
+                            <p><strong>References:</strong></p>
+                            <p><a href="https://mentalhealthliteracy.org/">https://mentalhealthliteracy.org/</a></p>
+                            <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4813415/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4813415/</a></p>
+                            <p><a href="https://nami.org/about-mental-illness/warning-signs-and-symptoms">https://nami.org/about-mental-illness/warning-signs-and-symptoms</a></p>
+                            <p>Keywords: mental health literacy, mental health screening, therapist, counselor</p>
+								<!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/the-benefits-of-play-therapy.php">⇐ THE BENEFITS OF PLAY THERAPY</a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/9-5-labor-day.php">9/5 LABOR DAY ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>

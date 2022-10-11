@@ -18,6 +18,15 @@
 ## images
 ![screenshot](./screenshot.png)
 
+## oct 2022
+- tuesdays (500)
+    - 04 - 10 ways you can support your mental health
+    - 11 - do i have depression
+    - 18 - how forgiveness can help you find happiness
+    - 25 - the benefits of play therapy
+- thursday (1200)
+    - 27 - understanding your mental health
+
 ## sept 2022
 - tuesdays (500)
     - 06 - labor day
