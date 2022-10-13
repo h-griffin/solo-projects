@@ -22,6 +22,10 @@
 - animation time 500ms - min slider 2 seconds
 - modules added to load in prewritten learning sets for past present and future tense
 
+### V6
+- speed slider control
+- style adjustment
+- sentence queue
 
 
 ![learning](./images/ja.png)
