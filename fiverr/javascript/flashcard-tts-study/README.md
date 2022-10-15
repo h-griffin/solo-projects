@@ -27,7 +27,7 @@
 - style adjustment
 - sentence queue
 
-
+![controls](./images/controls.png)
 ![learning](./images/ja.png)
 
 
