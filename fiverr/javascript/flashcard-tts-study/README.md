@@ -27,6 +27,11 @@
 - style adjustment
 - sentence queue
 
+### V7
+- read selected ammount of sets as a group
+    - if selected set num is 3, read out 3 meanings, delay time, read out 3 phrase/scripts
+- speed only affects foreign/phrase speech (english at 1.0)
+
 ![controls](./images/controls.png)
 ![learning](./images/ja.png)
 

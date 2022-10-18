@@ -57,6 +57,9 @@ document.querySelector("#voices").addEventListener("change", () => {
 // HELPER FUNCTIONS
 // ================
 
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
 
 function pause() {
     // clear interval cycle
@@ -77,34 +80,86 @@ function pause() {
     document.getElementById("script-text").innerHTML = ' ';
 } 
 
-function phraseAndScript(allArrs) {
-    var randomIndex = Math.floor(Math.random() * allArrs[0].length);
+function phraseAndScript(allArrs, randomIndex) {
+    return new Promise(resolve => {
+        console.log('phraseAndScript()')
+    
+        document.getElementById("phrase-text").innerHTML += allArrs[1][randomIndex] ? '\n'+allArrs[1][randomIndex] : ' ';
+        document.getElementById("script-text").innerHTML += allArrs[2][randomIndex] ? '\n'+allArrs[2][randomIndex] : ' ';
+        document.getElementById("phrase-text").classList.add('load');
+        document.getElementById("script-text").classList.add('load');
 
-    document.getElementById("phrase-text").innerHTML = allArrs[1][randomIndex] ? allArrs[1][randomIndex] : ' ';
-    document.getElementById("script-text").innerHTML = allArrs[2][randomIndex] ? allArrs[2][randomIndex] : ' ';
-    document.getElementById("phrase-text").classList.add('load');
-    document.getElementById("script-text").classList.add('load');
+        // scriptSpeech.text = document.querySelector("#script-text").innerHTML;
+        scriptSpeech.text = allArrs[2][randomIndex];
+        speechSynthesis.speak(scriptSpeech);
 
-    scriptSpeech.text = document.querySelector("#script-text").innerHTML;
-    speechSynthesis.speak(scriptSpeech);
+        scriptSpeech.onerror = (event) => {
+            console.log(`(phrase speech) An error has occurred with the speech synthesis: ${event.error}`);
+        }
 
-    scriptSpeech.onerror = (event) => {
-        console.log(`(phrase speech) An error has occurred with the speech synthesis: ${event.error}`);
+
+        setTimeout(() => {
+            console.log('phrase and script resolved')
+            resolve("sucess!");
+        }, 3000);
+    })
+}
+
+function meeaning(allArrs, randomIndex) {
+    return new Promise(resolve => {
+        console.log('meaning()')
+
+        document.getElementById("meaning-text").innerHTML += allArrs[0][randomIndex] ? '\n'+allArrs[0][randomIndex] : ' ';
+        document.getElementById("meaning-text").classList.add('load');
+
+        // meaningSpeech.text = document.querySelector("#meaning-text").innerHTML;
+        meaningSpeech.text =  allArrs[0][randomIndex];
+        speechSynthesis.speak(meaningSpeech);
+
+        meaningSpeech.onerror = (event) => {
+            console.log(`(meaning speech) An error has occurred with the speech synthesis: ${event.error}`);
+        }
+
+        
+        setTimeout(() => {
+            console.log('meaning resolved')
+            resolve("sucess!");
+        }, 3000);
+    })
+}
+
+async function meaningFirst(allArrs, selectedIndexes) {
+    for (let i = 0; i < selectedIndexes.length; i++) {
+        if(!isPaused){
+            await meeaning(allArrs, selectedIndexes[i]);
+        }
+    }
+    await delay(delayTime)
+    for (let i = 0; i < selectedIndexes.length; i++) {
+        if(!isPaused){ 
+            await phraseAndScript(allArrs, selectedIndexes[i])
+        }
     }
 }
-function meeaning(allArrs) {
-    console.log('meaning')
-    var randomIndex = Math.floor(Math.random() * allArrs[0].length);
 
-    document.getElementById("meaning-text").innerHTML = allArrs[0][randomIndex] ? allArrs[0][randomIndex] : ' ';
-    document.getElementById("meaning-text").classList.add('load');
-    meaningSpeech.text = document.querySelector("#meaning-text").innerHTML;
-    speechSynthesis.speak(meaningSpeech);
 
-    meaningSpeech.onerror = (event) => {
-        console.log(`(meaning speech) An error has occurred with the speech synthesis: ${event.error}`);
+async function meaningLast(allArrs, selectedIndexes) {
+    for (let i = 0; i < selectedIndexes.length; i++) {
+        if(!isPaused){
+            await phraseAndScript(allArrs, selectedIndexes[i])
+        }
+    }
+    await delay(delayTime)
+    for (let i = 0; i < selectedIndexes.length; i++) {
+        if(!isPaused){ 
+            await meeaning(allArrs, selectedIndexes[i]);
+        }
     }
 }
+
+
+
+
 
 // =========================  
 //  DELAY TIME & SPEED RANGE SLIDER  
@@ -230,18 +285,20 @@ async function start() {
         allArrs.push(textarea.value.split('\n').filter( function(e) { return e.trim().length > 0; } ));
     })
 
+            
+    var setsToRead = document.getElementById('str-count').value ? document.getElementById('str-count').value : 3  
+    var selectedIndexes = []
+    for (let i = 0; i < setsToRead; i++) {
+        selectedIndexes.push(Math.floor(Math.random() * allArrs[0].length))
+    }
+
     //skip first delay
     if (!isPaused){ // dont show/speak if paused (settings adjusted)
         if(isMeaningFirst){
-            meeaning(allArrs);
-            setTimeout(() => {
-                if(!isPaused){ phraseAndScript(allArrs) }
-            }, delayTime); 
+            await meaningFirst(allArrs, selectedIndexes)
+
         }else{
-            phraseAndScript(allArrs)
-            setTimeout(() => {
-                if(!isPaused){ meeaning(allArrs) }
-            }, delayTime);
+            await meaningLast(allArrs, selectedIndexes)
         }
 
         // cycle all displays  
@@ -250,7 +307,8 @@ async function start() {
   
 }
 
-var updateDisplay = function(displayInterval ,allArrs){
+
+async function updateDisplay(displayInterval ,allArrs){
     console.log("== updateDisplays() ==");
     console.log("delay time:", delayTime);
     
@@ -258,22 +316,26 @@ var updateDisplay = function(displayInterval ,allArrs){
     document.getElementById("meaning-text").classList.remove('load');
     document.getElementById("phrase-text").classList.remove('load');
     document.getElementById("script-text").classList.remove('load');
+    document.getElementById("meaning-text").innerHTML = " ";
+    document.getElementById("phrase-text").innerHTML = " ";
+    document.getElementById("script-text").innerHTML = " ";
+
+
+    var setsToRead = document.getElementById('str-count').value ? document.getElementById('str-count').value : 3  
+    var selectedIndexes = []
+    for (let i = 0; i < setsToRead; i++) {
+        selectedIndexes.push(Math.floor(Math.random() * allArrs[0].length))
+    }
     
     if(!isPaused){
-        setTimeout(() => {  
-            if(isMeaningFirst){
-                meeaning(allArrs);
-                setTimeout(() => {
-                    if(!isPaused){ phraseAndScript(allArrs) }
-                }, delayTime);  
-            }else{
-                phraseAndScript(allArrs)
-                setTimeout(() => {
-                    if(!isPaused){ meeaning(allArrs) }
-                }, delayTime);
-            }
-        }, 500); // css transition duration <<< this timer waits for fade out before showing next meaning
+        await delay(500)// css transition duration <<< this timer waits for fade out before showing next meaning
+        
+        if(isMeaningFirst){
+            await meaningFirst(allArrs, selectedIndexes)
 
+        }else{
+            await meaningLast(allArrs, selectedIndexes)
+        }
     }
 
 };
