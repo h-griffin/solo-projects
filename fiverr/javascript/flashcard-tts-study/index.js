@@ -41,9 +41,8 @@ window.speechSynthesis.onvoiceschanged = () => {
 
 // update speed when selected
 document.querySelector("#slider2").addEventListener('change', () => {
-    meaningSpeech.rate = document.querySelector("#slider2").value
+    // meaningSpeech.rate = document.querySelector("#slider2").value
     scriptSpeech.rate = document.querySelector("#slider2").value
-    // console.log(meaningSpeech.rate, scriptSpeech.rate, document.querySelector("#slider2").value)
 })
 
 // update voice & language when new one is selected
@@ -62,34 +61,38 @@ function delay(ms) {
   }
 
 function pause() {
-    // clear interval cycle
-    clearInterval(displayInterval);
     isPaused = true;
+    console.log('setting changed, isPaused:', isPaused)
 
     // change button text
     document.querySelector("button").innerHTML = "Resume Learning";
-    console.log("listen button clicked, isPaused:", isPaused);
 
     // clear screen display
     document.getElementById("meaning-text").classList.remove('load');
     document.getElementById("phrase-text").classList.remove('load');
     document.getElementById("script-text").classList.remove('load'); 
 
-    document.getElementById("meaning-text").innerHTML = ' ';
-    document.getElementById("phrase-text").innerHTML = ' ';
-    document.getElementById("script-text").innerHTML = ' ';
+    setTimeout(() => {
+        document.getElementById("meaning-text").innerHTML = ' ';
+        document.getElementById("phrase-text").innerHTML = ' ';
+        document.getElementById("script-text").innerHTML = ' ';
+    }, 500); //css fade out
 } 
 
+// function to display text and read out phrase and script
 function phraseAndScript(allArrs, randomIndex) {
     return new Promise(resolve => {
         console.log('phraseAndScript()')
     
-        document.getElementById("phrase-text").innerHTML += allArrs[1][randomIndex] ? '\n'+allArrs[1][randomIndex] : ' ';
-        document.getElementById("script-text").innerHTML += allArrs[2][randomIndex] ? '\n'+allArrs[2][randomIndex] : ' ';
-        document.getElementById("phrase-text").classList.add('load');
-        document.getElementById("script-text").classList.add('load');
+        document.getElementById("phrase-text").innerHTML += allArrs[1][randomIndex] ? `<p> ${ allArrs[1][randomIndex] } </p>` : ' ';
+        document.getElementById("script-text").innerHTML += allArrs[2][randomIndex] ? `<p> ${ allArrs[2][randomIndex] } </p>` : ' ';
+        
+        // delay css fade in so js dom has access to newest word (last child)
+        setTimeout(() => {
+            document.getElementById("phrase-text").lastChild.classList.add('load')
+            document.getElementById("script-text").lastChild.classList.add('load')
+        }, 100);
 
-        // scriptSpeech.text = document.querySelector("#script-text").innerHTML;
         scriptSpeech.text = allArrs[2][randomIndex];
         speechSynthesis.speak(scriptSpeech);
 
@@ -97,37 +100,40 @@ function phraseAndScript(allArrs, randomIndex) {
             console.log(`(phrase speech) An error has occurred with the speech synthesis: ${event.error}`);
         }
 
-
         setTimeout(() => {
             console.log('phrase and script resolved')
             resolve("sucess!");
-        }, 3000);
+        }, 3000); //timer to allow for speech to finish
     })
 }
 
+// function to display text and read out meaning
 function meeaning(allArrs, randomIndex) {
     return new Promise(resolve => {
         console.log('meaning()')
 
-        document.getElementById("meaning-text").innerHTML += allArrs[0][randomIndex] ? '\n'+allArrs[0][randomIndex] : ' ';
-        document.getElementById("meaning-text").classList.add('load');
+        document.getElementById("meaning-text").innerHTML += allArrs[0][randomIndex] ? `<p> ${ allArrs[0][randomIndex] } </p>` : ' ';
 
-        // meaningSpeech.text = document.querySelector("#meaning-text").innerHTML;
+        // delay css fade in so js dom has access to newest word (last child)
+        setTimeout(() => {
+            document.getElementById("meaning-text").lastChild.classList.add('load')
+        }, 100);
+ 
         meaningSpeech.text =  allArrs[0][randomIndex];
         speechSynthesis.speak(meaningSpeech);
 
         meaningSpeech.onerror = (event) => {
             console.log(`(meaning speech) An error has occurred with the speech synthesis: ${event.error}`);
         }
-
         
         setTimeout(() => {
             console.log('meaning resolved')
             resolve("sucess!");
-        }, 3000);
+        }, 3000); //timer to allow for speech to finish
     })
 }
 
+// function to order displays and speech
 async function meaningFirst(allArrs, selectedIndexes) {
     for (let i = 0; i < selectedIndexes.length; i++) {
         if(!isPaused){
@@ -140,9 +146,10 @@ async function meaningFirst(allArrs, selectedIndexes) {
             await phraseAndScript(allArrs, selectedIndexes[i])
         }
     }
+    await delay(delayTime)
 }
 
-
+// function to order displays and speech
 async function meaningLast(allArrs, selectedIndexes) {
     for (let i = 0; i < selectedIndexes.length; i++) {
         if(!isPaused){
@@ -155,6 +162,7 @@ async function meaningLast(allArrs, selectedIndexes) {
             await meeaning(allArrs, selectedIndexes[i]);
         }
     }
+    await delay(delayTime)
 }
 
 
@@ -167,10 +175,11 @@ async function meaningLast(allArrs, selectedIndexes) {
 
 var canPlay = false;
 var isPaused = false;
-let displayInterval; // global access to interval handle
 
-var delayTime = 5000; // default
-var speechspeed = 1.0; // default
+// default settings
+var delayTime = 5000;  
+var speechspeed = 1.0;  
+var setsToRead = 3   
 
 function delaySlider() {
     var slider = document.getElementById("slider"); 
@@ -227,13 +236,17 @@ function setBubble(range, bubble) {
 }
  
 // =========================  
-//  SET DISPLAY ORDER  
+//  PAUSE WHEN SETTINGS UPDATE  
 // ========================= 
 var isMeaningFirst = true;
 
 document.getElementById("listen").addEventListener("click", () => {
     isMeaningFirst = !isMeaningFirst;
+    pause();
+})
 
+document.getElementById("str-count").addEventListener("click", () => {
+    setsToRead = document.getElementById("str-count").value;
     pause();
 })
 
@@ -285,57 +298,45 @@ async function start() {
         allArrs.push(textarea.value.split('\n').filter( function(e) { return e.trim().length > 0; } ));
     })
 
-            
-    var setsToRead = document.getElementById('str-count').value ? document.getElementById('str-count').value : 3  
-    var selectedIndexes = []
-    for (let i = 0; i < setsToRead; i++) {
-        selectedIndexes.push(Math.floor(Math.random() * allArrs[0].length))
-    }
-
-    //skip first delay
-    if (!isPaused){ // dont show/speak if paused (settings adjusted)
-        if(isMeaningFirst){
-            await meaningFirst(allArrs, selectedIndexes)
-
-        }else{
-            await meaningLast(allArrs, selectedIndexes)
-        }
-
-        // cycle all displays  
-        displayInterval = setInterval(() => {updateDisplay(displayInterval, allArrs)}, delayTime*2);
-    }
-  
+    // start
+    updateDisplay(allArrs);
 }
 
 
-async function updateDisplay(displayInterval ,allArrs){
+async function updateDisplay(allArrs){
     console.log("== updateDisplays() ==");
     console.log("delay time:", delayTime);
+    console.log("sets to read:", setsToRead);
     
     // reset previous display
-    document.getElementById("meaning-text").classList.remove('load');
-    document.getElementById("phrase-text").classList.remove('load');
-    document.getElementById("script-text").classList.remove('load');
+    document.querySelectorAll(".text").forEach( tag => {
+        tag.classList.remove('load')
+    })
+
+    await delay(500) //css fade out ^^
     document.getElementById("meaning-text").innerHTML = " ";
     document.getElementById("phrase-text").innerHTML = " ";
     document.getElementById("script-text").innerHTML = " ";
 
-
-    var setsToRead = document.getElementById('str-count').value ? document.getElementById('str-count').value : 3  
+    // pre gather indexes to match meaning and phrases together
     var selectedIndexes = []
     for (let i = 0; i < setsToRead; i++) {
         selectedIndexes.push(Math.floor(Math.random() * allArrs[0].length))
     }
     
+    // display and speak sets
     if(!isPaused){
-        await delay(500)// css transition duration <<< this timer waits for fade out before showing next meaning
-        
         if(isMeaningFirst){
             await meaningFirst(allArrs, selectedIndexes)
-
         }else{
             await meaningLast(allArrs, selectedIndexes)
         }
+    }
+
+    // recursively call cycle again 
+    if(!isPaused){
+        await delay(delayTime) 
+        updateDisplay(allArrs);
     }
 
 };
@@ -347,6 +348,7 @@ async function updateDisplay(displayInterval ,allArrs){
 var acc = document.getElementsByClassName("accordion");
 var i;
 
+// attach styles to all accordion bars
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -359,9 +361,8 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-
-var loadBtn = document.querySelectorAll('.banner div p')
 // append prewritten text to text area
+var loadBtn = document.querySelectorAll('.banner div p')
 loadBtn.forEach(btn => {
     btn.addEventListener('click', () => { 
         // load only text from module selected
