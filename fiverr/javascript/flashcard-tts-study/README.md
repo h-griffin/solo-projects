@@ -32,8 +32,13 @@
     - if selected set num is 3, read out 3 meanings, delay time, read out 3 phrase/scripts
 - speed only affects foreign/phrase speech (english at 1.0)
 
-![controls](./images/controls.png)
-![learning](./images/ja.png)
+
+### V8
+- convert interval cycle to recursive cycle
+- convert helper functions to promises to keep everything dynamic
+
+
+![sets](./images/sets.png)
 
 
 
