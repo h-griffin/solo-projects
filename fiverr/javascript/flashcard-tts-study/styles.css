@@ -39,6 +39,15 @@ button:enabled {
     color: white;
 }
 
+/* ===  === */
+#listen{
+    width: 40%;
+}
+#str-count{
+    width: 5%;
+    padding-left: 15px;
+    margin-left: 40px;
+}
 
 /* === DISPLAY CONTENT === */
 .container {
@@ -70,12 +79,14 @@ button:enabled {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    align-items: flex-start;
 
 }
 
-.display p {
+/* .display p  {
     color: red;
-}
+} */
 
 /* === PASTE AREA === */
 #meaning, #phrase, #script {
@@ -102,12 +113,13 @@ label {
 
 
 /* === ANIMATIONS === */
-.display p {
+.display p p {
     opacity: 0;
     font-size: 21px;
-    margin-top: 25px;
+    margin: 0;
     text-align: center;
-
+    color: red;
+    
     -webkit-transition: opacity 500ms ease-in;
     -moz-transition: opacity 500ms ease-in;
     -ms-transition: opacity 500ms ease-in;
@@ -115,7 +127,7 @@ label {
     transition: opacity 500ms ease-in;
 }
 
-.display p.load {
+.display p p.load {
     opacity: 1;
 }
 
