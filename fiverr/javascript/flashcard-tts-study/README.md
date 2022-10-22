@@ -35,7 +35,7 @@
 
 ### V8
 - convert interval cycle to recursive cycle
-- convert helper functions to promises to keep everything dynamic
+- convert helper functions to promises to keep everything dynamicc
 
 
 ![sets](./images/sets.png)
