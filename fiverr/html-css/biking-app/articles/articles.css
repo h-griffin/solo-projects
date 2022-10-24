@@ -1,0 +1,56 @@
+
+/* 
+
+======================================
+
+        articles styles
+           ( <main> )
+
+======================================
+
+*/
+
+main{
+    margin: 10vh auto;
+}
+ 
+.articles-list {
+    list-style-type: none;
+    padding-left: 0;
+    
+}
+
+.articles-list LI{
+    background-color: white;
+    margin-bottom: 10vh;
+    border-radius: 30px;
+}
+
+article{
+    border-radius: 30px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+
+}
+
+img{
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/* TABLET AND DESKTOP  */
+@media screen and  (min-width: 600px){
+    .articles-list{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10%;
+    }
+    .articles-list li{
+        flex: 0 0 45%; /* two columns */
+        
+    }
+ }
+
+ 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://www.alexandrehsaad/derailleur-web.github.io/articles</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <lastmod>2022-10-17</lastmod>
+    </url>
+    <url>
+        <loc>https://www.alexandrehsaad/derailleur-web.github.io/articles/how-to-choose-the-right-gear-ratio-for-your-bicycle</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <lastmod>2022-10-17</lastmod>
+    </url>
+    <url>
+        <loc>https://www.alexandrehsaad/derailleur-web.github.io/articles/what-are-fixed-gear-bicycles</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <lastmod>2022-10-17</lastmod>
+    </url>
+    <url>
+        <loc>https://www.alexandrehsaad/derailleur-web.github.io/articles/bicycle-wheel-sizes-explained</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <lastmod>2022-10-17</lastmod>
+    </url>
+    <url>
+        <loc>https://www.alexandrehsaad/derailleur-web.github.io/overview</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <lastmod>2022-10-17</lastmod>
+    </url>
+    <url>
+        <loc>https://www.alexandrehsaad/derailleur-web.github.io/releases</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <lastmod>2022-10-17</lastmod>
+    </url>
+</urlset>

@@ -1,0 +1,33 @@
+/* 
+
+======================================
+
+        releases styles
+           ( <main> )
+
+======================================
+
+*/
+
+ 
+
+.releases-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10vh 0;
+}
+
+.release-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+    margin-top: 5vh;
+}
+
+
+
+
+
+
+
+ 
