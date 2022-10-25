@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- made by eav -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple Texts Typing Animation | eav</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<!--Kleingeld-->
+<!--Zeitstress-->
+<!--Papierticket-->
+<!--Automaten-->
+<!--Parkplatzsuche-->
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Slab', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 750px;
+            background-color: rgb(245, 245, 245);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .container .text {
+            position: relative;
+            color: #4e6eda;
+            font-size: 5vw;
+            font-weight: 600;
+
+        }
+
+        .container .text.first-text {
+            font-size: 5vw;
+            color: #27376D;
+        }
+
+        .text.sec-text:before {
+            content: "";
+            font-size: 5vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            animation: animate 4s steps(12) infinite;
+        }
+
+
+
+        
+        .wrapper{
+            box-sizing: content-box;
+            background-color: #ffffff;
+            height: 7vw;
+            display: flex;
+            border-radius: 8px;
+            box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+
+            width: 60%;
+            top: 0;
+            right: 0;
+            margin: 0;
+            float: right;
+        }
+        .words{
+            overflow: hidden;
+            font-size: 5vw;
+            font-weight: 900;
+
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+        }
+        .words span{
+            padding-top: 1vw;
+            display: block;
+            height: 100%;
+            padding-left: 10px;
+            color: #0e6ffc;
+            animation: spin_words 6s infinite;
+        }
+
+        @media screen and (min-width: 1000px) {
+            .wrapper, .words, .container .text.first-text,  .text.sec-text:before {
+                font-size: 57px;
+            }
+        }
+
+
+
+        @keyframes spin_words{
+            10%{
+                transform: translateY(-112%);
+            }
+            25%{
+                transform: translateY(-100%);
+            }
+            35%{
+                transform: translateY(-212%);
+            }
+            50%{
+                transform: translateY(-200%);
+            }
+            60%{
+                transform: translateY(-312%);
+            }
+            75%{
+                transform: translateY(-300%);
+            }
+            85%{
+                transform: translateY(-412%);
+            }
+            100%{
+                transform: translateY(-400%);
+            }
+        }
+    </style>
+    <div>
+        <div class="container">
+            <span class="text first-text">Einfach per App parken<br>ganz ohne</span>
+ 
+
+            <span class="text sec-text">
+                <div class="wrapper">
+                    <div class="words">
+                        <span>Kleingeld</span>
+                        <span>Zeitstress</span>
+                        <span>Papierticket</span>
+                        <span>Automaten</span>
+                        <span>Parkplatzsuche</span>
+                    </div>
+                </div>
+            </span>
+
+             
+        </div>
+ 
+ 
+
+    </div>
+</body>
+
+
+
+</html>
