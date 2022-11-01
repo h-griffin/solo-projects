@@ -4,6 +4,7 @@
 # Fiverr
 
 ### HTML & CSS
+- [biking-app](fiverr/html-css/biking-app/)
 - [canvas-welcome](fiverr/html-css/canvas-welcome/)
 - [careers-page](fiverr/html-css/careers-page/)
 - [div-calculate-height](fiverr/html-css/div-calculate-height/)
@@ -17,6 +18,7 @@
 - [pixel-only-beauty](fiverr/html-css/pixel-only-beauty/)
 - [pointer-events-bio-button](fiverr/html-css/pointer-events-bio-button/)
 - [responsive-reviewbox-cod](fiverr/html-css/responsive-reviewbox-cod/)
+- [rotating-text](fiverr/html-css/rotating-text/)
 - [rounded-side-panel](fiverr/html-css/rounded-side-panel/)
 - [wallet.dero.io](fiverr/html-css/wallet.dero.io/)
 - [weather-app-transparent-nav](fiverr/html-css/weather-app-transparent-nav/)
