@@ -4,21 +4,21 @@ body{
 
 /* frame */
 section{
-    /* background-color: white; */
+    /* background-color: darkgray; */
     border: 1px solid grey;
     width: 700px;
     height: 700px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 25px;
 
-    z-index: 0;
+    z-index: -5;
 
-    background-image: url(./ref.png);
-    opacity: 0.5;
-    background-size: cover;
+    /* background-image: url(./ref.png); */
+    /* opacity: 0.5; */
+    /* background-size: cover; */
 }
 
-section::before{
+/* section::before{
     content: " ";
     z-index: 1;
     background-color: red;
@@ -27,7 +27,7 @@ section::before{
     position: relative;
     top: 0;
     bottom: 0;
-}
+} */
 
 *{
     /* background-color: lightgray;
@@ -40,10 +40,12 @@ section::before{
 /*  ===  */
 
 #table-line{
-    position: relative;
+    position: absolute;
     top: 450px;
-    border: 1px solid black;
-    z-index: -9000;
+    height: 275px;
+    background-color: beige;
+    z-index: -2;
+    width: 700px;
 }
 
 .kettle{
@@ -130,6 +132,19 @@ section::before{
     top: 100px;
     left: 0px;
     z-index: 0;
+    overflow: hidden;
+}
+
+#silver-base::after{
+    border-radius: 100%;
+    position: absolute;
+    background: green;
+    right: -500px;
+    left: -500px;
+    top: -200px;
+    content: '';
+    bottom: -210px;
+    z-index: 0;
 }
 
 
@@ -147,7 +162,7 @@ section::before{
     height: 115px;
     width: 130px;
 
-    top: -75px;
+    top: -60px;
     left: 265px;
 }
 
@@ -180,17 +195,18 @@ section::before{
     border-radius: 10px;
     top: 5px;
     left: 10px;
-    z-index: -10;
+    z-index: 0;
 }
 
 
 /* blue stripes */
 #mug-flag{
-    height : 100px;
+    height : 95px;
     width  : 120px;
     border-radius: 0px;
     left: 10px;
-    top: 5px;
+    top: 10px;
+    z-index: 1;
     position: relative;
     background: linear-gradient(to bottom, 
         blue    0%, blue  20%, 
@@ -207,10 +223,11 @@ section::before{
     display: block;
     content: ' ';
     border-left: 60px solid red;
-    border-top: 50px solid transparent;
+    border-top: 45px solid transparent;
     border-bottom: 50px solid transparent;
 }
 
+/* mug flag star */
 #mug-flag p{
     color: white;
     position: relative;
@@ -221,9 +238,147 @@ section::before{
 
 
 
+/* solo mug */
+#stripped-mug.turned{
+    position: relative;
+    top: -530px;
+    left: 500px;
+}
+/* hide red triangle */
+#stripped-mug.turned #mug-flag::before{
+    display: none;
+}
+/* blue stripes */
+#stripped-mug.turned #mug-flag{
+    width: 130px;
+    left: 0px;
+}
+/* mug handle space */
+#stripped-mug.turned::before{
+    width: 35px;
+    border-radius: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 20px solid white;
+    transform: unset;
+    height: 100px;
+    top: 5px;
+    left: 180px;
+    z-index: 2;
+}
+
 
 #coffee-jar{
+    /* background-color: green; */
+    position: relative;
+    z-index: -1;
+
+    width: 300px;
+    height: 370px;
+
+    top: -530px;
+    left: 390px;
+    overflow: hidden;
+}
+
+/* yellow lid */
+#coffee-jar::before{
+    border-radius: 100%;
+    position: absolute;
+    background: gold;
+    right: -500px;
+    left: -500px;
+    top: -200px;
+    content: '';
+    bottom: 340px;
+    z-index: 1;
+}
+
+#yellow-label{
     background-color: yellow;
+    width: 300px;
+    height: 235px;
+
+    top: -550px;
+    left: 390px;
+}
+
+
+
+/* rounded bottom */
+#yellow-label::after{
+    border-radius: 100%;
+    position: absolute;
+    background: yellow;
+    right: -500px;
+    left: -500px;
+    top: -200px;
+    content: '';
+    bottom: 100px;
+    z-index: 0;
+}
+
+#red-label{
+    background-color: red;
+    z-index: -2;
+    height: 115px;
+}
+#red-label::before{
+    border-radius: 100%;
+    position: absolute;
+    background: red;
+    right: -500px;
+    left: -500px;
+    top: -200px;
+    content: '';
+    bottom: 10px;
+    z-index: -1;
+    
+}
+#red-label::after{
+    border-radius: 100%;
+    position: absolute;
+    background: lightgrey;
+    right: -500px;
+    left: -500px;
+    top: -200px;
+    content: '';
+    bottom: 0px;
+    z-index: -2;
+    
+}
+
+
+#yellow-label h3{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    position: relative;
+    width: 50px;
+    text-align: left;
+    top: 100px;
+    left: 50px;
+    font-size: 50px;
+}
+#yellow-label p{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    position: relative;
+    top: 125px;
+    left: 20px;
+}
+
+#red-label p{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    position: relative;
+    top: 50px;
+    font-size: 12px;
 }
 
 
