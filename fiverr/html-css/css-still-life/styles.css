@@ -4,14 +4,14 @@ body{
 
 /* frame */
 section{
-    /* background-color: darkgray; */
+    background-color: darkgray;
     border: 1px solid grey;
     width: 700px;
     height: 700px;
     margin: 0 auto;
     margin-top: 25px;
 
-    z-index: -5;
+    z-index: 0;
 
     /* background-image: url(./ref.png); */
     /* opacity: 0.5; */
@@ -43,8 +43,8 @@ section{
     position: absolute;
     top: 450px;
     height: 275px;
-    background-color: beige;
-    z-index: -2;
+    background-color: saddlebrown;
+    z-index: 0;
     width: 700px;
 }
 
@@ -73,20 +73,27 @@ section{
 /* spout */
 #black-cap::after{
     content: ' ';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 /* rounded lid */
 #red-kettle::before{
     content: ' ';
     display: block;
-    background-color: pink;
-    height: 40px;
-    width:  250px;
+    background-color: red;
+    height: 70px;
+    width:  273px;
     position: relative;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 
-    top: 200px;
-    left: 0px;
+    top: 175px;
+    left: -12px;
 }
 
 /* kettle body */
@@ -109,13 +116,13 @@ section{
 #red-kettle::after{
     content: ' ';
     display: block;
-    background-color: pink;
+    background-color: red;
     height: 50px;
     width:  220px;
     position: relative;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 
-    top: -90px;
+    top: -115px;
     left: 15px;
 }
 
@@ -152,6 +159,7 @@ section{
     position: relative;
     top:0px;
     left: 20px;
+    z-index: 1;
 }
 
 /* white mug body */
@@ -208,11 +216,11 @@ section{
     top: 10px;
     z-index: 1;
     position: relative;
-    background: linear-gradient(to bottom, 
-        blue    0%, blue  20%, 
-        white   0%, white 40%,        
-        blue    0%, blue  60%, 
-        white   0%, white 80%,        
+    background: linear-gradient(to bottom,
+        blue    0%, blue  20%,
+        white   0%, white 40%,
+        blue    0%, blue  60%,
+        white   0%, white 80%,
         blue 0%);
 }
 
@@ -243,6 +251,7 @@ section{
     position: relative;
     top: -530px;
     left: 500px;
+    z-index: 1;
 }
 /* hide red triangle */
 #stripped-mug.turned #mug-flag::before{
@@ -271,7 +280,7 @@ section{
 #coffee-jar{
     /* background-color: green; */
     position: relative;
-    z-index: -1;
+    z-index: 0;
 
     width: 300px;
     height: 370px;
@@ -333,7 +342,7 @@ section{
     content: '';
     bottom: 10px;
     z-index: -1;
-    
+
 }
 #red-label::after{
     border-radius: 100%;
@@ -345,7 +354,7 @@ section{
     content: '';
     bottom: 0px;
     z-index: -2;
-    
+
 }
 
 
@@ -357,28 +366,118 @@ section{
     position: relative;
     width: 50px;
     text-align: left;
-    top: 100px;
-    left: 50px;
-    font-size: 50px;
+    top: 80px;
+    left: 60px;
+
+    font-size: 60px;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Limelight', cursive;
+    /* font-family: 'Notable', sans-serif; */
+
+
 }
+
 #yellow-label p{
     text-align: center;
     padding: 0;
     margin: 0;
     z-index: 100;
     position: relative;
-    top: 125px;
+    top: 90px;
     left: 20px;
+
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Limelight', cursive;
+    font-family: 'Notable', sans-serif;
+    font-family: 'Poller One', cursive;
+
 }
 
 #red-label p{
+    color: white;
     text-align: center;
     padding: 0;
     margin: 0;
     z-index: 100;
     position: relative;
     top: 50px;
+    left: 25px;
     font-size: 12px;
+    font-family:sans-serif;
+    font-weight: bold;
 }
 
+svg{
+    /* font-family: 'Luckiest Guy', cursive; */
+  font-size: 35px;
+  position: absolute;
+  z-index: 10;
 
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+  position: relative;
+
+
+  font-size: 98px;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Limelight', cursive;
+
+  transform: rotate(-1deg) scaleX(1);
+}
+
+#cafe{
+    top: -50px;
+}
+#bustelo{
+    top: -280px;
+}
+#always{
+    top: -120px;
+    font-size: 20px;
+}
+#always text {
+    fill: white;
+    font-family:sans-serif;
+    font-weight: bold;
+
+}
+#netwt {
+    top: -365px;
+    left: 50px;
+    font-family:sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+#netwt text{
+    fill: white;
+    transform: rotate(-2.5deg) scaleX(1);
+}
+#espresso{
+    top: -530px;
+    font-size: 22px;
+    left: 20px;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Limelight', cursive;
+    font-family: 'Notable', sans-serif;
+    font-family: 'Poller One', cursive;
+    transform: rotate(-2deg) scaleX(1);
+}
+
+path {
+    fill: transparent;
+  }
+
+  text {
+    fill: black;
+  }
+
+ text:nth-child(1){
+    top: 20px;
+    position: absolute;
+    margin-top: 20px;
+    padding-top: 20px;
+      transform: rotate(-1deg) scaleX(1);
+ }
