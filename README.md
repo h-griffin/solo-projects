@@ -7,6 +7,7 @@
 - [biking-app](fiverr/html-css/biking-app/)
 - [canvas-welcome](fiverr/html-css/canvas-welcome/)
 - [careers-page](fiverr/html-css/careers-page/)
+- [css-still-life](fiverr/html-css/css-still-life/)
 - [div-calculate-height](fiverr/html-css/div-calculate-height/)
 - [flex-grow-footer](fiverr/html-css/flex-grow-footer/)
 - [hamburger-menu](fiverr/html-css/hamburger-menu/)
