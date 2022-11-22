@@ -1,0 +1,121 @@
+<?php 
+
+$img = '';
+$title = 'Recognizing the Signs of Gender-Based Violence - International Day for the Elimination of Violence Against Women (November 25)';
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>Recognizing the Signs of Gender-Based Violence - International Day for the Elimination of Violence Against Women (November 25)</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Nov 22, 2022</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2022/11/recognizing-the-signs-of-gender-based-violence.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+
+                                <h1><strong>Recognizing the Signs of Gender-Based Violence - International Day for the Elimination of Violence Against Women (November 25)</strong></h1>
+                                
+                                <p>November 25 is the&nbsp;<a href="https://www.un.org/en/observances/ending-violence-against-women-day">International Day for the Elimination of Violence Against Women.</a>&nbsp;According to the United Nations, nearly 1 in 3 women will have been abused at one point in their lives. However, those numbers appeared to be on the rise during the pandemic. Any instances of violence are unacceptable, which is why the United Nations has created this day to raise awareness and fight against gender-based violence.</p>
+                                <h2><strong>What is the International Day for the Elimination of Violence Against Women?</strong></h2>
+                                <p>November 25 has been deemed the International Day for the Elimination of Violence Against Women, the beginning of a 16-day event full of activism that ends on December 10, also known as International Human Rights Day. The International Day for the Elimination of Violence Against Women has been campaigned by the UN Secretary-General and UN Women since 2008. It acts as a day to raise awareness, advocate, and discuss ways to decrease acts of violence against women around the world.</p>
+                                <h2><strong>What is Gender-Based Violence?</strong></h2>
+                                <p>Gender-based violence is an act of violence geared toward a person due to their gender. These violent acts find themselves deeply rooted in gender inequality and misogyny. While men can find themselves the victims of gender-based violence, women and girls most commonly fall victim to the phenomenon.</p>
+                                <h2><strong>The Types of Gender-Based Violence</strong></h2>
+                                <p>There are a few different types of gender-based violence, as the term covers any gender-based discriminatory act that leaves a person&rsquo;s human rights violated. A few types of&nbsp;<a href="https://www.api-gbv.org/about-gbv/types-of-gbv/">gender-based violence</a>&nbsp;can include:</p>
+                                <ul>
+                                <li>Sexual assault, sexual harassment, and other forms of sexual violence</li>
+                                <li>Human trafficking</li>
+                                <li>Intimate partner violence</li>
+                                <li>Forced marriage</li>
+                                <li>Domestic violence and domestic violence related homicide</li>
+                                <li>Elder or child abuse</li>
+                                </ul>
+                                <h2><strong>Recognizing the Signs of Gender-Based Violence</strong></h2>
+                                <p>It can be difficult for the victims of gender-based violence to admit to anyone, let alone themselves, that they have fallen victim to these acts of violence. However, the better understanding one has of the signs of gender-based violence, the better chance they have to identify whether they or another person are experiencing the phenomenon. Potential signs can include:</p>
+                                <ul>
+                                <li>Appearing fearful or worried&nbsp;</li>
+                                <li>Seeming afraid of a specific person or going home</li>
+                                <li>Struggling to concentrate</li>
+                                <li>Suspicious injuries or medical conditions</li>
+                                <li>Social withdrawal</li>
+                                <li>Mood swings, aggression, acting out, or rebellion</li>
+                                <li>Extreme startle response</li>
+                                <li>Sudden changes to a person&rsquo;s confidence, personality, and behaviors</li>
+                                <li>STI&rsquo;s and infections in the genital areas</li>
+                                <li>Sleep disturbances</li>
+                                <li>Acting sexually inappropriately, having age-inappropriate sexual knowledge, or taking a sudden and seemingly unusual interest in sexual topics</li>
+                                <li>Overdependence or fear of adults</li>
+                                <li>Fear of medical examinations</li>
+                                <li>Attachment issues</li>
+                                <li>Substance use</li>
+                                <li>Loss of control over bladder or bowel movements</li>
+                                <li>Drawing violent or sexual acts</li>
+                                </ul>
+                                <h2><strong>We Are Here to Help</strong></h2>
+                                <p>The trauma one experiences after falling victim to gender-based violence or witnessing a loved one fall victim can quickly feel immense. If you need mental health help after experiencing gender-based violence, we are here for you.&nbsp;<a href="http://michiganpsychologicalcare.com/contact.php">Contact us</a>&nbsp;today, and we will work to set you up with a counselor who can help you through the complex thoughts and emotions you have about your experience.</p>
+                                <p>Keywords: gender-based violence, abuse, violence against women, therapist near me, therapy, trauma</p>
+                                <p><strong>References:</strong></p>
+                                <p><a href="https://www.un.org/en/observances/ending-violence-against-women-day">https://www.un.org/en/observances/ending-violence-against-women-day</a></p>
+                                <p><a href="https://www.api-gbv.org/about-gbv/types-of-gbv/">https://www.api-gbv.org/about-gbv/types-of-gbv/</a></p>
+
+								<!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/decluttering-your-social-media.php">⇐ DECLUTTERING YOUR SOCIAL MEDIA</a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/how-stress-impacts-your-mental-health.php">HOW STRESS IMPACTS YOUR MENTAL HEALTH ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>

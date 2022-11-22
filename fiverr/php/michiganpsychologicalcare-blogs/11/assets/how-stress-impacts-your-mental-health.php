@@ -1,0 +1,167 @@
+<?php 
+
+$img = '';
+$title = 'How Stress Impacts Your Mental Health- National Stress Awareness Day (November 2)';
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>How Stress Impacts Your Mental Health- National Stress Awareness Day (November 2)</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Nov 24, 2022</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2022/11/how-stress-impacts-your-mental-health.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+
+                                <h1><strong>How Stress Impacts Your Mental Health- National Stress Awareness Day (November 2)</strong></h1>
+                                
+                                <p>This year, November 2 is <a href="https://nationaltoday.com/national-stress-awareness-day/">National Stress Awareness Day</a>, a day started by the International Stress Management Association in 1998. The holiday was created to raise awareness to help people recognize when they are feeling stressed and learn healthy coping mechanisms for stress management and reductions. The day was started by Carole Spiers and was chosen to fall on the first Wednesday of November because mid-week tends to be the most exhausting and stressful day of the week.</p>
+                                <p>We experience feelings of stress for good reason. Short-term stress our bodies have developed to keep us safe in dangerous or challenging situations. It works by temporarily increasing our <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5964013/#:~:text=Short%2Dterm%20stress%20may%20also,training%2Dinduced%20stress%2Doptimization.">physical, cognitive, and mental functioning</a>. However, chronic stress can begin to take its toll on a person&rsquo;s mental and physical health, functioning, and overall wellbeing. Chronic stress can be defined as consistent feelings of stress, worry, and overwhelm. When one cannot seem to escape the stress response, they may begin to experience a multitude of negative impacts.&nbsp;</p>
+                                <h2><strong>The Impacts of Stress on Your Mental Health</strong></h2>
+                                <p>Experiencing stress for an extended amount of time can begin to have serious impacts on one&rsquo;s mental health. A few ways in which stress can impact mental health include:</p>
+                                <h3><strong>Irritability or Aggression</strong></h3>
+                                <p>When one is feeling overwhelmed, stressed, anxious, or worried, they may find that they have less control over their emotions. This can lead to them acting more aggressive or irritable, lashing out at others, and generally struggling to manage their emotions.&nbsp;</p>
+                                <h3><strong>Burnout</strong></h3>
+                                <p>Extended periods of stress can leave one feeling burnt out. Burnout is typically related to stress experienced at work and can be associated with feeling lost, unmotivated, lacking focus, and the development of a ton of other mental health issues like anxiety and depression.</p>
+                                <h3><strong>Anxiety</strong></h3>
+                                <p>Chronic stress means increased levels of the stress hormone, cortisol. This hormone has been related to a number of mental health issues- particularly anxiety disorders.</p>
+                                <h3><strong>Depression</strong></h3>
+                                <p>Stress has been connected to depression in a multitude of different studies. However, there is no clear reason why the two appear to cause one another just yet.&nbsp;</p>
+                                <h3><strong>Physical Health Issues</strong></h3>
+                                <p>One&rsquo;s mental health depends on their physical health in order to maintain its best shape. However, chronic stress can <a href="https://www.apa.org/topics/stress/body">deteriorate physical health</a>, potentially causing issues like:</p>
+                                <ul>
+                                    <li>Muscle tension</li>
+                                    <li>Tension headaches</li>
+                                    <li>Increased risk of hypertension, heart attack, or stroke</li>
+                                    <li>Gut discomfort</li>
+                                    <li>And a multitude of other issues&nbsp;</li>
+                                </ul>
+                                <h3><strong>Decreased Cognitive Functioning</strong></h3>
+                                <p>Stress can begin to negatively impact your brain&rsquo;s working memory, focus, attention, and decision-making skills. The more your brain is exposed to stress, the more your cognitive functioning will be impacted.&nbsp;&nbsp;</p>
+                                <h2><strong>Symptoms of Stress</strong></h2>
+                                <p>Stress can look and feel different for different people. However, there are a few telltale signs and symptoms one ca watch out for if they believe they are experiencing stress. These signs and symptoms include:</p>
+                                <ul>
+                                    <li>Feeling worried or overwhelmed</li>
+                                    <li>Feeling anxious and depressed</li>
+                                    <li>Restlessness</li>
+                                    <li>Changes to sleeping patterns</li>
+                                    <li>Changes to eating patterns</li>
+                                    <li>Changes to sex drive</li>
+                                    <li>An inability to make decisions</li>
+                                    <li>Panic attacks</li>
+                                    <li>Self-doubt</li>
+                                    <li>Decreased empathy</li>
+                                    <li>Social withdrawal</li>
+                                    <li>Irritability and aggression</li>
+                                    <li>Mood swings</li>
+                                    <li>Struggling to focus</li>
+                                    <li>Social withdrawal</li>
+                                    <li>Substance use</li>
+                                    <li>Lower levels of productivity</li>
+                                    <li>Lower quality performance</li>
+                                </ul>
+                                <h2><strong>Tips for Preventing and Coping with Stress</strong></h2>
+                                <p>Learning new ways to prevent and manage your stress levels can be critical to ensuring your mental health does not take a hit during stressful life events. A few ways you can prevent and cope with stress include:</p>
+                                <h3><strong>Taking Care of Your Physical Health</strong></h3>
+                                <p>As I said earlier, your mental health depends on your physical health in order to be at its best. Because of this, taking care of your physical health can be critical when experiencing stress. Take care of your physical health through:</p>
+                                <h3><strong>Exercising</strong></h3>
+                                <p>Exercise has been associated with <a href="https://adaa.org/understanding-anxiety/related-illnesses/other-related-conditions/stress/physical-activity-reduces-st">decreased tension, a boosted mood, better quality sleep, and higher levels of self-esteem</a>. So set aside some time every day to get your heart rate pumping, your blood flowing, and those endorphins flowing.&nbsp;&nbsp;</p>
+                                <h3><strong>Eating Enough</strong></h3>
+                                <p>Have you ever heard the term &ldquo;hangry&rdquo;? Our body and mind respond to a lack of food as they work to keep us safe, happy, and healthy. Eating enough nutritious and filling foods is crucial to preventing and managing stress.</p>
+                                <h3><strong>Getting Enough Sleep</strong></h3>
+                                <p>Sleep gives our brains and body the chance to recuperate, recharge, and rest, allowing them to function to their best and highest abilities. Reports have suggested that those who experience <a href="https://www.apa.org/news/press/releases/stress/2013/sleep">lower quality or less sleep</a> than usual experience higher levels of stress. We need rest in order to properly combat stress.</p>
+                                <h3><strong>Getting Organized</strong></h3>
+                                <p>Getting organized will allow you to experience fewer feelings of overwhelm. Knowing where your things are, your priorities for the day, and important dates can be crucial to reducing stress. Begin getting organized by:</p>
+                                <h3><strong>Setting Goals and Priorities</strong></h3>
+                                <p>Knowing your big goals will help you set your smaller goals, which will also allow you to set your daily goals and priorities. You will feel less stressed knowing what you need to get done for the day in order to get yourself closer to your big dreams and goals.&nbsp;</p>
+                                <h3>Keeping Your Space Clean and Decluttered</h3>
+                                <p>A cluttered space can often make for a cluttered mind. Keeping your space clean and organized can be a great way of decreasing stress and ensuring you know where everything is as you need it.</p>
+                                <h3><strong>Having a Support System</strong></h3>
+                                <p>We, as humans, are meant to be social. This is why we all feel our best when we feel connected, loved, and supported. Cultivate your own support system by reaching out to loved ones and opening up to those you trust about issues that may have you feeling stressed.</p>
+                                <h3><strong>Making Time for the Things That Bring You Joy</strong></h3>
+                                <p>Making time for fun in your everyday life can be a great way to reduce or even prevent stress. Having something fun to take your mind off the daily stresses of life can be extremely beneficial in your stress-reduction. It&rsquo;s time to join that recreation sports team, take up that new hobby, or give that friend a call.</p>
+                                <h3><strong>Practicing Relaxation Techniques</strong></h3>
+                                <p>There are many relaxation techniques one can incorporate throughout their day to reduce stress and tension. A few techniques include:</p>
+                                <ul>
+                                    <li>Meditation</li>
+                                    <li>Walking</li>
+                                    <li>Breathwork</li>
+                                    <li>Yoga</li>
+                                    <li>Journaling</li>
+                                </ul>
+                                <h3><strong>Understanding What is Leaving You Feeling Stressed</strong></h3>
+                                <p>Understanding your stress triggers can help you avoid or cope through them in a more effective manner. Keep track of the moments you have found yourself feeling stressed. What caused your stress? The more you understand your stress triggers, the more effectively you can work through them.</p>
+                                <h3><strong>Seek the Help of a Therapist</strong></h3>
+                                <p>Therapists can be extremely helpful in teaching you new ways to work through stressful situations in a productive and healthy manner. Turning to a therapist to learn new ways to cope with stress can be a great way to help you live a happier, more peaceful life.&nbsp;</p>
+                                <h2><strong>We Are Here to Help</strong></h2>
+                                <p>If you have found that the stress in your life has quickly become overwhelming, know that you are not alone. Our therapists are here to provide you with mental health counseling, guiding you toward a happier, healthier life. <a href="http://michiganpsychologicalcare.com/contact.php">Contact us</a> today, and we will help you find a caring and compassionate mental health professional to help you understand why you are feeling this way and develop coping techniques to reduce your feelings of stress.</p>
+                                <p>Keywords: symptoms of stress, stress awareness, mental health counseling, burnout, therapists near me</p>
+                                <p><strong>References:</strong></p>
+                                <p><a href="https://nationaltoday.com/national-stress-awareness-day/">https://nationaltoday.com/national-stress-awareness-day/</a></p>
+                                <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5964013/#:~:text=Short%2Dterm%20stress%20may%20also,training%2Dinduced%20stress%2Doptimization">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5964013/#:~:text=Short%2Dterm%20stress%20may%20also,training%2Dinduced%20stress%2Doptimization</a>.</p>
+                                <p><a href="https://www.apa.org/topics/stress/body">https://www.apa.org/topics/stress/body</a></p>
+                                <p><a href="https://adaa.org/understanding-anxiety/related-illnesses/other-related-conditions/stress/physical-activity-reduces-st">https://adaa.org/understanding-anxiety/related-illnesses/other-related-conditions/stress/physical-activity-reduces-st</a></p>
+                                <p><a href="https://www.apa.org/news/press/releases/stress/2013/sleep">https://www.apa.org/news/press/releases/stress/2013/sleep</a></p>
+                                
+
+								<!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/recognizing-the-signs-of-gender-based-violence.php">⇐ RECOGNIZING THE SIGNS OF GENDER BASED VIOLENCE</a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/interview-Jackson-TV-202210.php">INTERVIEWS WITH JACKSON TELEVISION (JTV) ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>
