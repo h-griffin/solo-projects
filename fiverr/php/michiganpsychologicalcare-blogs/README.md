@@ -18,6 +18,15 @@
 ## images
 ![screenshot](./screenshot.png)
 
+## nov 2022
+- tuesdays (500)
+    - 01 - 5 ways you can practive gratitude
+    - 08 - coping with survivors guilt
+    - 15 - decluttering your social media
+    - 22 - recodnizing the signs of gender based violence
+- thursday (1200)
+    - 24 - how stress impacts your mental health
+
 ## oct 2022
 - tuesdays (500)
     - 04 - 10 ways you can support your mental health
