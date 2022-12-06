@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+
+  <body class="row justify-content-md-center mb-5">
+    <h1><%= title %></h1>
+    <p>Your Name</p>
+
+    <div class="border p-5 bg-light col-10  ">
+      <h1>One listing</h1>
+      <form action="/airbnb/find-one">
+        <label for="bedrooms">Minimum number of bedrooms</label>
+        <input type="text" id="bedrooms" name="bedrooms" value="1"><br><br>
+        <label for="guests">Maximum number of guests</label>
+        <input type="text" id="guests" name="guests" value="1"><br><br>
+        <label for="price">Maximum price per night</label>
+        <input type="text" id="price" name="price" value="1"><br><br>
+        <h2>Amenities</h2>
+            <input type="checkbox" name="amenities[]" id="wifi" value="49fcaedc-481a-4e05-934f-4867988c8ec5">
+            <label for="wifi">Wireless Internet</label><br>
+            <input type="checkbox" name="amenities[]" id="pool" value="f4e98f0a-053a-42e2-9633-0cca2a587410">
+            <label for="pool">Pool</label><br>
+            <input type="checkbox" name="amenities[]" id="breakfast" value="9c54e3ed-48b3-4438-bb2c-304e14a9bde4">
+            <label for="breakfast">Breakfast</label><br>
+            <input type="checkbox" name="amenities[]" id="cable" value="017ec502-e84a-4a0f-92d6-d97e27bb6bdf">
+            <label for="cable">Cable TV</label><br>
+            <input type="checkbox" name="amenities[]" id="gym" value="416cddd7-746e-4715-821c-3ad30b9bc3c3">
+            <label for="gym">Gym</label><br>
+  
+        <br><br>
+        <input type="submit" value="Send Query">
+      </form>
+    </div>
+
+    <div class="border p-5 mt-5 bg-light col-10 ">
+      <h1>Many listings</h1>
+      <form action="/airbnb/find-many">
+        <label for="bedrooms">Minimum number of bedrooms</label>
+        <input type="text" id="bedrooms" name="bedrooms"><br><br>
+
+        <select name="state" id="state" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value) ;">
+
+            <option value="">-- Select State --</option>
+            
+            <% if (results ) { %>
+
+                <% if (results[0].id) { %>
+                    <!-- if no state selected : create options -->
+                    <% results.forEach(function(state){ %>
+                            <option value="<%- state.id %>" > <%- state.name %> </option>
+                    <% }); %>
+
+                <% }   else   { %>
+                    <option value="<%- results[0].state_id %>" selected > <%- results[0].state_name %> </option>
+                <% } %>
+                
+            <% } %>  
+ 
+        </select><br><br>
+
+        <select name="city" id="city">
+            <option value="">-- Select City --</option>
+ 
+            <% if (results ) { %>
+
+                <% if (results[0].city_id) { %>
+                     
+                    <% results.forEach(function(city){ %>
+                            <option value="<%- city.city_id %>" > <%- city.city_name %> </option>
+                    <% }); %>
+
+                <% }  %>
+                
+            <% } %> 
+        </select><br><br>
+
+        <input type="submit" value="Send Query">
+      </form>
+    </div>
+    
+  </body>
+</html>
