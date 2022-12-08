@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+
+ 
+
+
+  <body class="row justify-content-md-center mb-5 text-center">
+    <h1><%= title %></h1>
+    <p>Your Name</p>
+
+ 
+
+    <div class="border p-5 bg-light col-10  ">
+        <form action="/find-by" class="d-flex flex-column">
+
+            <div class="d-flex justify-content-around align-items-center">
+
+                <h2>Filter by: </h2>
+    
+                    <div>
+                        <label for="no-filter">No Filter</label>
+                        <input type="radio" id="no-filter" name="filter" value="" onchange="handleNoFilter(this)"  checked > 
+                    </div>
+    
+                    <div>
+                        <label for="country">Country</label>
+                        <input type="radio" id="country" name="filter" value="country" onchange="handleCountryChange(this)" >
+                    </div>
+    
+                    <div>
+                        <label for="city">City</label>
+                        <input type="radio" id="city" name="filter" value="city" onchange="handleCityChange(this)" >
+                    </div>
+    
+                    <div>
+                        <label for="cuisine">Cuisine</label>
+                        <input type="radio" id="cuisine" name="filter" value="cuisine" onchange="handleCuisineChange(this)" >
+                    </div>
+            
+                    <br><br><br> 
+            </div>
+            <div class="d-flex justify-content-around">
+
+                <% if (countries ) { %>
+                    <select id="country-select" name="select" class="w-25" disabled>
+                        <option value="">--select country--</option>
+                        <% countries.forEach(function(country){ %>
+                            <option value="<%- country %>"> <%- country  %> </option>
+                        <% }); %>
+                    </select>
+                <% } %> 
+                <% if (cities ) { %>
+                    <select id="city-select" name="select" class="w-25" disabled >
+                        <option value="">--select city--</option>
+                        <% cities.forEach(function(city){ %>
+                            <option value="<%- city %>"> <%- city  %> </option>
+                        <% }); %>
+                    </select>
+                <% } %> 
+        
+                <% if (cuisines ) { %>
+                    <select id="cuisine-select" name="select" class="w-25" disabled >
+                        <option value="">--select cuisine--</option>
+                        <% cuisines.forEach(function(cuisine){ %>
+                            <option value="<%- cuisine %>"> <%- cuisine  %> </option>
+                        <% }); %>
+                    </select>
+                <% } %> 
+    
+            </div>
+            <br> 
+
+            <div class="d-flex justify-content-center">
+                <input type="submit" value="Apply Filters" class="m-2">
+                <input type="reset" value="Clear Filters" class="m-2" id="clear" onclick="handleClear(this)" disabled>
+            </div>
+            <br> 
+
+        </form>
+
+
+
+
+        <table>
+            <tr> 
+                <th>Name</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>Cuisine</th>
+            </tr>
+            
+            <% if (restaurants ) { %>
+                <% restaurants.forEach(function(restaurant){ %>
+
+                    <tr>
+                        <td> <%- restaurant.name %> </td>
+                        <td> <%- restaurant.country %> </td>
+                        <td> <%- restaurant.city %> </td>
+                        <td> <%- restaurant.cuisine %> </td>
+                    </tr>
+
+                <% }); %>
+            <% } %>  
+        </table>
+ 
+    </div>
+
+ 
+    <script>
+        function handleNoFilter(e) {
+            document.getElementById('clear').disabled = e.checked;
+            disableAllSelects();
+        }
+        function handleClear(e) {
+            document.getElementById('no-filter').checked = true;
+            document.getElementById('clear').disabled = true;
+            disableAllSelects();
+        }
+
+        function handleCountryChange(e) {
+            document.getElementById('clear').disabled = !e.checked;
+            disableAllSelects();
+            document.getElementById('country-select').disabled = !e.checked;
+        }
+        function handleCityChange(e) {
+            document.getElementById('clear').disabled = !e.checked;
+            disableAllSelects();
+            document.getElementById('city-select').disabled = !e.checked;
+        }
+        function handleCuisineChange(e) {
+            document.getElementById('clear').disabled = !e.checked;
+            disableAllSelects();
+            document.getElementById('cuisine-select').disabled = !e.checked;
+        }
+
+        function disableAllSelects() {
+            document.getElementById('country-select').disabled = true;
+            document.getElementById('city-select').disabled = true;
+            document.getElementById('cuisine-select').disabled = true;
+        }
+    </script>
+    
+  </body>
+</html>

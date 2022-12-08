@@ -1,0 +1,1631 @@
+﻿$(document).ready(function () {
+    if (typeof FullPageInitialise === 'function') { FullPageInitialise(); };
+});
+
+function Configure_DropDownButtons() {
+    $('.dropdownActionButton').on("click", function () {
+        $('#' + $(this).attr('data-field')).val($(this).attr('data-value'));
+        $(this).closest("form").submit();
+        return false;
+    });
+}
+
+function IsNullOrEmpty(value) {
+    return (value == null || value.length === 0);
+}
+
+// Cookies
+function createCookie(name, value, days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        var expires = "; expires=" + date.toGMTString();
+    }
+    else var expires = "";
+
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+function eraseCookie(name) {
+    createCookie(name, "", -1);
+}
+
+function Configure_RememberMe() {
+    if ($('#rememberMe').length) {
+        var _rememberMe = readCookie("rememberMe");
+
+        if (_rememberMe == "true") {
+            $('#rememberMe').prop('checked', true);
+            $('#username').val(localStorage.usrname);
+            $('#password').val(localStorage.pass);
+        } else {
+            $('#rememberMe').prop('checked', false);
+            $('#username').val('');
+            $('#password').val('');
+        }
+
+        $('#rememberMe').click(function () {
+            if ($('#rememberMe').is(':checked')) {
+                createCookie("rememberMe", "true");
+                // save username and password
+                if ($('#username').length) {
+                    localStorage.usrname = $('#username').val();
+                }
+                if ($('#password').length) {
+                    localStorage.pass = $('#password').val();
+                }
+            }
+            else {
+                eraseCookie("rememberMe");
+                localStorage.usrname = '';
+                localStorage.pass = '';
+            }
+        });
+    };
+}
+
+function FullPageInitialise() {
+    // Hide the missing answer warning
+    $('#PromptWarning').hide();
+
+    if ($('.motd').length) {
+        $(".motd").load($(".motd").attr('data-url'));
+    }
+
+    if ($('.alerts').length) {
+        $(".alerts").load($(".alerts").attr('data-url'));
+    }
+
+    if ($('.async-data-load').length) {
+        $('.async-data-load').each(function () { if (!IsNullOrEmpty($(this).attr('data-url'))) { $(this).load($(this).attr('data-url')); } });
+    }
+
+    Configure_DropDownButtons();
+
+    Configure_RememberMe();
+
+    Configure_DisabledBackValidation();
+
+    Configure_LineScore();
+
+    $('.copyvalue').click(function () {
+        var _parent = $(this).parent('tr');
+        var _name = '#' + $(this).attr('formfieldname');
+        var _formfield = _parent.find(_name);
+
+        if (_formfield !== null) {
+            if ($(this).is(":checked")) {
+                _formfield.val('true');
+            } else {
+                _formfield.val('false');
+            }
+        }
+    });
+
+    $('#externalUserRemember').click(function () { StoreRememberMe(); });
+
+    PopulateRememberMe();
+
+    $('.onActionButtonClicked').click(function () { return onActionButtonClicked(this); });
+
+    $('.changeFontSize').click(function () { ChangeFontSize(this); });
+
+    if (typeof Configure_Flash === 'function') { Configure_Flash(); };
+
+    if (typeof Configure_MouseTracking === 'function') { Configure_MouseTracking(); };
+
+    if (typeof InitTinyMCE === 'function') { InitTinyMCE(); };
+
+    if (typeof InitLocalPageFunctionality === 'function') { InitLocalPageFunctionality(); };
+
+    if (typeof InitGraph === 'function') { InitGraph(); };
+
+    if (typeof configureToolTipModal === 'function') { configureToolTipModal(); }
+
+    // if (typeof configureTouchSpin == 'function') { configureTouchSpin(); }
+
+    if (typeof Configure_LineBisection == 'function') { Configure_LineBisection(); }
+
+    if (typeof Configure_EmbeddedElements == 'function') { Configure_EmbeddedElements(); }
+
+    if (typeof imageFlash === 'function') { imageFlash(); };
+
+    if (typeof Configure_FadeAlert === 'function') { Configure_FadeAlert(); };
+
+    // Start the timer.
+    if (typeof startTimer === 'function') { startTimer(); }
+}
+
+function Configure_FadeAlert() {
+    $(".alert.fade-fast").fadeTo(2000, 500).slideUp(500, function () {
+        $(".alert.fade-fast").slideUp(500);
+    });
+
+    $(".alert.fade-slow").fadeTo(7000, 1000).slideUp(1000, function () {
+        $(".alert.fade-fast").slideUp(1000);
+    });
+}
+
+function BindLeftRightKeys(slider) {
+    $(document).off('keydown');
+
+    $(document).keydown(function (e) {
+        if (e.keyCode === 37) {
+            // Previous
+            var _t = slider.data('slider').getValue();
+            _t = _t - 0.1;
+
+            if (_t < 0) {
+                _t = 0;
+            }
+
+            slider.slider('setValue', _t, null);
+            return false;
+        }
+        if (e.keyCode === 39) {
+            // Next
+            var _t = slider.data('slider').getValue();
+            _t = _t + 0.1;
+
+            if (_t > 100) {
+                _t = 100;
+            }
+
+            slider.slider('setValue', _t, null);
+            return false;
+        }
+    });
+}
+
+function HighlightHandle(slider) {
+    $('.slider-handle.slider-handle-selected').removeClass('slider-handle-selected');
+    $(slider).parent().find('.slider-handle.min-slider-handle').addClass('slider-handle-selected');
+}
+
+function Configure_EmbeddedElements() {
+    $('a.embeddedAudio').on('click', function () { repeatAudio($(this).attr('href')); return false; });
+
+    $('a.embeddedAudio').each(function () { this.innerHTML = "<i class='fas fa-assistive-listening-systems'></i> " + this.innerHTML; });
+}
+
+function configureToolTipModal() {
+    $('.tooltipmodal').on('click', function () {
+        var _tooltipfield = $(this).attr('tooltipfield');
+
+        if (_tooltipfield == undefined || _tooltipfield == null)
+            _tooltipfield = $(this).attr('for');
+
+        if (!(_tooltipfield == undefined || _tooltipfield == null)) {
+            var _url = '/Assets/Tooltips/' + _tooltipfield;
+
+            $.ajax({
+                url: _url,
+                type: 'GET',
+                success: function (data) {
+                    $('#ToolTipModal .modal-title').text(data.title);
+                    $('#ToolTipModal .modal-body').html(data.contents);
+                    $('#ToolTipModal').find("#tooltipid").val(data.id);
+                    $('#ToolTipModal').find("#tooltipfieldname").val(data.fieldname);
+
+                    $('#ToolTipModal').modal('show');
+                }
+            });
+        };
+    });
+}
+
+function Configure_DisabledBackValidation() {
+    //Check for validation
+    $(":button[value=Previous]").click(function () {
+        $(this).parent("form").attr("novalidate", "novalidate");
+        $(":input:not([type=hidden]):not(:button[value=Previous])").attr("disabled", "disabled");
+        return true;
+    });
+
+    $(":input[value=Previous]").click(function () {
+        $(this).parent("form").attr("novalidate", "novalidate");
+        $(":input:not([type=hidden]):not(:button[value=Previous])").attr("disabled", "disabled");
+        return true;
+    });
+}
+
+function InitTinyMCE() {
+    0 < $(".tinymce").length && tinymce.init({
+        selector: "textarea.tinymce",
+        height: 300,
+        plugins: ["advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker", "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking", "save table contextmenu directionality emoticons template paste textcolor"],
+        toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | l      ink image | print preview media fullpage | forecolor backcolor emoticons",
+        style_formats: [{ title: "Bold text", inline: "b" }, { title: "Red text", inline: "span", styles: { color: "#ff0000" } }, { title: "Red header", block: "h1", styles: { color: "#ff0000" } }, { title: "Example 1", inline: "span", classes: "example1" }, { title: "Example 2", inline: "span", classes: "example2" }, { title: "Table styles" }, { title: "Table row 1", selector: "tr", classes: "tablerow1" }]
+    })
+}
+
+var currentMousePos = { x: -1, y: -1 };
+
+function Configure_MouseTracking() {
+    $(document).mousemove(function (event) {
+        currentMousePos.x = event.pageX;
+        currentMousePos.y = event.pageY;
+    });
+}
+
+function IncreaseAttemptCount() {
+    var _attemptCount = $('.Attempts');
+
+    if (_attemptCount.length) {
+        if ($.isNumeric(_attemptCount.val())) {
+            _attemptCount.val(parseInt(_attemptCount.val()) + 1);
+        } else {
+            _attemptCount.val(1);
+        }
+    }
+}
+
+var imagesLoaded = 0;
+var totalImages;
+
+function hideImagesUntilLoaded() {
+    if ($('#loadingimages').length && $('#allimages').length) {
+        $('#loadingimages').show();
+        $('#allimages').hide();
+        imagesLoaded = 0;
+        totalImages = $('.selectable, .nonselectable').length;
+
+        if (totalImages > 0) {
+            $('.selectable, .nonselectable').each(function (idx, img) {
+                $('<img>').on('load', imageLoaded).attr('src', $(img).attr('src'));
+            });
+        } else {
+            $('#loadingimages').hide();
+            $('#allimages').show();
+        };
+    }
+}
+
+function imageLoadingComplete() {
+    if (typeof automateNext === 'function') { automateNext(); };
+    if (typeof startTimer === 'function') { startTimer(); }
+}
+
+function imageLoaded() {
+    imagesLoaded++;
+    if (imagesLoaded == totalImages) {
+        $('#loadingimages').hide();
+        $('#allimages').show();
+
+        if (typeof imageLoadingComplete === 'function') { imageLoadingComplete(); };
+    }
+}
+
+function Configure_OnItemChanged() {
+    $('.onItemChanged').change(function () {
+        raiseItemChanged(this);
+    });
+}
+
+//function onItemChanged(itemChanged) {
+//    if (itemChanged != null) {
+//        if (typeof onItemAction === 'function') {
+//            var _updatedElement = $(itemChanged);
+//            if (_updatedElement.is(':checkbox')) {
+//                var _name = _updatedElement.prop('name');
+//                if (_name != '') {
+//                    _updatedElement = $("input:checkbox[name='" + _name + "']");
+//                }
+//            }
+//            onItemAction("OnItemChanged", _updatedElement);
+//        };
+//    };
+//}
+
+function Configure_RaiseHoverEvent() {
+    if (typeof raiseHoverEvent === 'function') {
+        $('img.selectable,div.selectable,img.multiselectable,div.multiselectable').hover(
+            function () {
+                raiseHoverEvent(this, null);
+            }, function () {
+                raiseHoverEvent(null, this);
+            });
+    }
+}
+
+function getDataField(item) {
+    var _fieldName = $(item).attr("data-field");
+
+    if (_fieldName == '' || _fieldName == undefined) {
+        _fieldName = $(item).attr("name");
+    }
+
+    if (_fieldName == '' || _fieldName == undefined) {
+        _fieldName = "SelectedValue";
+    }
+
+    return "dataField=" + _fieldName;
+}
+
+function getDataValue(item) {
+    var _dataValue = $(item).attr('data-value');
+
+    if (_dataValue == '' || _dataValue == undefined) {
+        _dataValue = $(item).val();
+    }
+
+    return "dataValue=" + _dataValue;
+}
+
+function getDataFieldValue(item) {
+    return getDataField(item) + '&' + getDataValue(item);
+}
+
+function Configure_RaiseSelectedEvent() {
+    $('img.selectable,div.selectable').click(function () {
+        $('img.selectable,div.selectable').removeClass('selected');
+
+        if ($(this).hasClass('selected')) {
+            $(this).removeClass('selected');
+        }
+        else {
+            $(this).addClass('selected');
+
+            var _fieldName = $(this).attr("data-field");
+
+            if (_fieldName == '' || _fieldName == undefined) {
+                _fieldName = "SelectedValue";
+            }
+
+            $("#" + _fieldName).val($(this).attr("data-value"));
+
+            IncreaseAttemptCount();
+            if (typeof endTimer === 'function') { endTimer(); };
+            if (typeof raiseSelectedEvent === 'function') { raiseSelectedEvent(this); };
+        }
+    });
+
+    $('img.multiselectable,div.multiselectable').click(function () {
+        $(this).toggleClass('selected');
+
+        var _selected = '';
+
+        $('img.multiselectable.selected,div.multiselectable.selected').each(function (index, item) {
+            _selected = _selected + $(item).attr("data-value") + ';';
+        });
+
+        var _fieldName = $(this).attr("data-field");
+
+        if (_fieldName == '' || _fieldName == undefined) {
+            _fieldName = "SelectedValue";
+        }
+
+        var _element = $("#" + _fieldName);
+
+        _element.val(_selected);
+        _element.attr("data-value", _selected);
+        _element.attr("data-field", _fieldName);
+
+        if (typeof raiseSelectedEvent === 'function') { raiseSelectedEvent(_element); };
+    });
+}
+
+function Configure_Flash() {
+    //  $(".pulsate .slider-handle").pulsate({ color: "#eb3434", repeat: 11 })
+    if ($(".pulsate").length) {
+        $(".pulsate").pulsate({ color: "#eb3434", repeat: 11 })
+    }
+}
+
+function Configure_LineScore() {
+    $('.score').each(function () {
+        if ($(this).attr('data-slider-value').indexOf('.0') > 0)
+            $(this).attr('data-slider-value', parseInt($(this).attr('data-slider-value')));
+    });
+
+    $('.score').each(function () {
+        $(this).slider({
+            min: 0.5,
+            max: 7.5,
+            step: 0.5,
+            precision: 1,
+            tooltip: 'hide'
+        });
+    });
+
+    $('.score').each(function () {
+        $(this).slider().on('slideStop', function (ev) {
+            var _inputElement = $(this);
+            var _t = _inputElement.data('slider').getValue();
+            if (_t > 7) {
+                _t = 7;
+                _inputElement.slider('setValue', _t, null);
+            }
+
+            if (typeof raiseItemChangedEvent === 'function') {
+                var _itemChanged = _inputElement.parent().find("input.onItemChanged.score");
+                raiseItemChangedEvent(_itemChanged);
+            }
+
+            playDynamicAudioFromFileFormat('scoreAudio', _t);
+        });
+    });
+}
+
+function BindLeftRightKeys(slider) {
+    $(document).off('keydown');
+
+    $(document).keydown(function (e) {
+        if (e.keyCode === 37) {
+            // Previous
+            var _t = slider.data('slider').getValue();
+            _t = _t - 0.1;
+
+            if (_t < 0) {
+                _t = 0;
+            }
+
+            slider.slider('setValue', _t, null);
+            return false;
+        }
+        if (e.keyCode === 39) {
+            // Next
+            var _t = slider.data('slider').getValue();
+            _t = _t + 0.1;
+
+            if (_t > 100) {
+                _t = 100;
+            }
+
+            slider.slider('setValue', _t, null);
+            return false;
+        }
+    });
+}
+
+function HighlightHandle(slider) {
+    $('.slider-handle.slider-handle-selected').removeClass('slider-handle-selected');
+    $(slider).parent().find('.slider-handle.min-slider-handle').addClass('slider-handle-selected');
+}
+
+function Configure_LineBisection() {
+    if ($('.linebisection').length > 0) {
+        BindLeftRightKeys();
+    }
+
+    $('.linebisection').each(function () {
+        $(this).slider({
+            min: 0,
+            max: 100,
+            step: 0.1,
+            precision: 1,
+            tooltip: 'hide'
+        });
+
+        if ($(this).data('slider').getValue() <= 0) {
+            $(this).parent().find('.slider-handle.min-slider-handle').hide();
+        }
+    });
+
+    $('.linebisection').each(function () {
+        $(this).slider().on('slideStop', function (ev) {
+            var _inputElement = $(this);
+            _inputElement.parent().find('.slider-handle.min-slider-handle').show();
+
+            if (typeof raiseItemChangedEvent === 'function') {
+                var _itemChanged = _inputElement.parent().find("input.onItemChanged.linebisection");
+                raiseItemChangedEvent(_itemChanged);
+            }
+
+            BindLeftRightKeys(_inputElement);
+            HighlightHandle(_inputElement);
+        });
+    });
+};
+
+function PopulateRememberMe() {
+    var _checkbox = $('#externalUserRemember');
+    var _textbox = $('#externalUserCode');
+
+    if (_checkbox.length && _textbox.length) {
+        if (localStorage.rememberMeCheckBox && localStorage.rememberMeCheckBox !== "" && localStorage.therapistCodeTextbox !== "") {
+            _checkbox.prop("checked", true);
+            _textbox.val(localStorage.therapistCodeTextbox);
+        } else {
+            _checkbox.removeProp("checked");
+            _textbox.val("");
+        }
+
+        if (localStorage.therapistCodeTextbox == "") {
+            _textbox.focus();
+        }
+        else {
+            $('#externalUserPIN').focus();
+        }
+    }
+}
+
+function StoreRememberMe() {
+    var _checkbox = $('#externalUserRemember');
+    var _textbox = $('#externalUserCode');
+
+    if (_checkbox.length && _textbox.length) {
+        if (_checkbox.prop("checked") == true && _textbox.val() !== "") {
+            localStorage.therapistCodeTextbox = _textbox.val();
+            localStorage.rememberMeCheckBox = true;
+        } else {
+            localStorage.therapistCodeTextbox = "";
+            localStorage.rememberMeCheckBox = false;
+            if (_checkbox.length) {
+                _checkbox.removeProp("checked");
+            }
+        }
+
+        if (_textbox.val() == "") {
+            _textbox.focus();
+        }
+        else {
+            $('#externalUserPIN').focus();
+        }
+    }
+}
+
+function playDynamicAudioFromFileFormat(elementName, variation) {
+    var _audio = document.getElementById(elementName);
+    var _oldFileName = _audio.getAttribute('src');
+    var _newFileName = _audio.getAttribute('fileformat').replace(/\#/g, ('' + variation).replace(/\./g, '_'));
+
+    if (_newFileName != '' && _oldFileName != _newFileName) {
+        resetAudio();
+
+        _audio.setAttribute('src', _newFileName);
+        _audio.currentTime = 0;
+
+        if (!IsAudioMuted()) {
+            _audio.play();
+        }
+    }
+}
+
+function IsAudioMuted(muteElementID) {
+    if (muteElementID == undefined)
+        muteElementID = "MuteAudio";
+
+    var _muted = $('#' + muteElementID).val() == 'true';
+
+    return _muted;
+}
+
+function updateAudioToggleButton(button, muteElementID) {
+    if (muteElementID == undefined)
+        muteElementID = "MuteAudio";
+
+    var _muted = $('#' + muteElementID).val() != 'false';
+
+    $(button).find('.muteaudioicon').toggleClass('fa-volume-up', !_muted).toggleClass('fa-volume-mute', _muted);
+    $(button).find('.muteaudiotext').text((_muted ? " Sound Off" : " Sound On"));
+}
+
+function muteAudioToggle(button, muteElementID) {
+    if (muteElementID == undefined)
+        muteElementID = "MuteAudio";
+
+    var _muteElement = $('#' + muteElementID);
+
+    _muteElement.val(_muteElement.val() == 'true' ? 'false' : 'true');
+
+    if ($(_muteElement.val() == 'true')) {
+        resetAudio();
+    }
+
+    updateAudioToggleButton(button);
+
+    if (typeof raiseToggleAudio === 'function') { raiseToggleAudio($(_muteElement.val() == 'true') ? '1' : '0'); }
+}
+
+function resetAudio() {
+    $('audio').each(function () {
+        if (this != undefined) {
+            this.pause();
+            this.currentTime = 0;
+        }
+    });
+}
+
+function OnRemotePollSuccess(data) {
+    $(".communicationError.showorhideme").addClass("hideme").removeClass("showme");
+    $(".participantToolbar.showorhideme").addClass("showme").removeClass("hideme");
+
+    if (data.action != 'None') {
+        switch (data.action) {
+            case "MuteAudio":
+                $("#muteaudio").trigger('click');
+                break;
+
+            case "Cue1":
+                playElement('cue1');
+                break;
+
+            case "Cue2":
+                playElement('cue2');
+                break;
+
+            case "Cue3":
+                playElement('cue3');
+                break;
+
+            case "Cue4":
+                playElement('cue4');
+                break;
+
+            case "RepeatInstructions":
+                playElement('instructions');
+                break;
+
+            case "RepeatQuestion":
+                playElement('questionAudio');
+                break;
+
+            case "Jump":
+                $('#ActionIdentifier').val(data.actionidentifier);
+                $("#ActionButton[value='Next']").trigger('click');
+                break;
+
+            case "Hold":
+                ToggleHold();
+                break;
+
+            case "Abort":
+                break;
+
+            default:
+
+                $('#ActionIdentifier').val(data.actionidentifier);
+                if ($("#ActionButton[value='" + data.action + "']") == undefined || $("#ActionButton[value='" + data.action + "']") == null || !$("#ActionButton[value='" + data.action + "']").length) {
+                    alert('Unknown action: ' + data.action);
+                }
+
+                $("#ActionButton[value='" + data.action + "']").trigger('click');
+                break;
+        }
+    }
+}
+
+function ToggleHold() {
+    if ($('#onHold').val() == 'true') {
+        $('#OnHold').val('false');
+    } else {
+        $('#OnHold').val('true');
+    }
+
+    $('.showorhideme.onHold').toggleClass('hideme', IsAssessmentOnHold()).toggleClass('showme', !IsAssessmentOnHold());
+    $('.showorhideme.participantToolbar').toggleClass('hideme', !IsAssessmentOnHold()).toggleClass('showme', IsAssessmentOnHold());
+}
+
+function IsAssessmentOnHold() {
+    return $('#OnHold').val() == 'true';
+}
+
+function IsParticipantControlEnabled() {
+    return $('#ParticipantControlEnabled').val() == 'true';
+}
+
+function ToggleParticipantControl() {
+    if (!IsAssessmentOnHold()) {
+        if ($('#ParticipantControlEnabled').val() == 'true') {
+            $('#ParticipantControlEnabled').val('false');
+        } else {
+            $('#ParticipantControlEnabled').val('true');
+        }
+
+        $('.showorhideme.participantToolbar').toggleClass('hideme', !IsParticipantControlEnabled()).toggleClass('showme', IsParticipantControlEnabled());
+    }
+}
+
+function OnRemotePollFailure(data) {
+    $(".participantToolbar.showorhideme").addClass("hideme").removeClass("showme");
+    $(".communicationError.showorhideme").addClass("showme").removeClass("hideme");
+}
+
+function resetVideo() {
+    $('video').each(function () {
+        if (this != undefined) {
+            this.pause();
+            this.currentTime = 0;
+
+            $(this).hide();
+            $(this).unbind('ended');
+        }
+    });
+}
+
+function resetAudioVideo() {
+    resetAudio();
+    resetVideo();
+}
+
+function playElement(elementID) {
+    var _element = $('#' + elementID);
+
+    if ($(_element).length) {
+        switch ($(_element).prop('tagName').toLowerCase()) {
+            case "audio":
+                repeatAudio(elementID);
+                break;
+
+            case "video":
+                playVideo(elementID);
+                break;
+        }
+    }
+}
+
+function playVideo(videoElementID) {
+    resetAudioVideo();
+
+    if ($('#' + videoElementID).length) {
+        $('#questionPanel').fadeOut(300, function () { $('#videoPanel').fadeIn(300); });
+
+        $('#' + videoElementID).show();
+
+        var _video = document.getElementById(videoElementID);
+
+        $('#' + videoElementID).on("ended", function () {
+            $(this).hide();
+            $('#videoPanel').fadeOut(300, function () { $('#questionPanel').fadeIn(300); });
+        });
+
+        _video.play();
+    }
+}
+
+function endVideo(e) {
+    //alert("event end");
+    $(e).hide();
+}
+
+function startTimer() {
+    timer = new Date().getTime();
+};
+
+function endTimer() {
+    if ($('.TimeTaken').length && timer != undefined && timer != null) {
+        if ($('.TimeTaken').val() == '' || $('.TimeTaken').val() == undefined) {
+            $('.TimeTaken').val(new Date().getTime() - timer);
+        }
+    }
+}
+
+function repeatAudio(audioElementID) {
+    resetAudioVideo();
+
+    if (audioElementID.startsWith('#')) {
+        audioElementID = audioElementID.substring(1);
+    }
+
+    if ($('#' + audioElementID).length) {
+        var _audio = document.getElementById(audioElementID);
+        _audio.currentTime = 0;
+        _audio.play();
+
+        if (typeof raisePlayingAudio === 'function') { raisePlayingAudio("TODO"); }
+    }
+}
+
+function onActionButtonClickedAjax(button) {
+    if (typeof endTimer === 'function') { endTimer(); };
+
+    var _checkBoxesValid = true;
+
+    if (typeof checkMinimumCheckboxes === 'function') {
+        _checkBoxesValid = checkMinimumCheckboxes();
+    }
+
+    resetAudioVideo();
+
+    if (_checkBoxesValid && PromptForNoAnswers()) {
+        PostForm($(button));
+    }
+
+    return false;
+}
+
+function onActionButtonClicked(button) {
+    if (typeof endTimer === 'function') { endTimer(); };
+
+    var _checkBoxesValid = true;
+
+    if (typeof checkMinimumCheckboxes === 'function') {
+        _checkBoxesValid = checkMinimumCheckboxes();
+    }
+
+    resetAudioVideo();
+
+    if (_checkBoxesValid && PromptForNoAnswers()) {
+        PostForm($(button));
+    }
+
+    return false;
+}
+
+function checkMinimumCheckboxes() {
+    var _checkBoxesValid = true;
+
+    $('.CheckBoxGroupValidation').each(function () {
+        var _minCount = $(this).attr("mincheckboxcount");
+
+        if (_minCount == undefined) {
+            _minCount = 0;
+        }
+
+        var _maxCount = $(this).attr("maxcheckboxcount");
+
+        if (_maxCount == undefined) {
+            _maxCount = 99;
+        }
+
+        var _checked = $('input[validationgroup="' + $(this).attr("value") + '"]:checked').length;
+
+        if (_checked == undefined) {
+            _checked = 0;
+        }
+
+        if (_checked < _minCount || _checked > _maxCount) {
+            _checkBoxesValid = false;
+            $('.CheckBoxGroupValidationMessage[validationgroup="' + $(this).attr("value") + '"]').show();
+        } else {
+            $('.CheckBoxGroupValidationMessage[validationgroup="' + $(this).attr("value") + '"]').hide();
+        }
+    });
+
+    return _checkBoxesValid;
+}
+
+function PromptForNoAnswers() {
+    var _promptElement = $('#HasNoAnswerPrompt');
+
+    if (_promptElement.val() == "1") {
+        _promptElement.val("0");
+
+        var _promptClass = '.' + _promptElement.attr("fieldClass");
+
+        if (_promptClass != undefined && _promptClass != '' && $(_promptClass).length > 0) {
+            var _promptUser = true;
+
+            $(_promptClass).each(function () {
+                if (_promptUser == true && !($(this).val() == '' || $(this).val() <= 0)) {
+                    _promptUser = false;
+                };
+            });
+
+            if (_promptUser == true) {
+                event.preventDefault();
+                $('#PromptWarning').show();
+
+                if (!IsAudioMuted()) {
+                    repeatAudio('dataPromptAudio');
+                }
+
+                return false;
+            }
+        }
+    };
+
+    return true;
+}
+
+function doesBrowserSupportHtml5() {
+    return (typeof document.createElement('canvas').getContext === "function");
+}
+
+function poll(url, onSuccess, onFailure) {
+    if (url == '' || url == undefined) {
+        return;
+    }
+
+    if (onSuccess == null || onSuccess == undefined)
+        onSuccess = function (data) { alert("Missing success action"); };
+
+    if (onFailure == null || onFailure == undefined)
+        onFailure = function (data) { alert("Missing failure action"); };
+
+    $.ajax({
+        url: url,
+        type: "GET",
+        success: function (data) {
+            onSuccess(data);
+        },
+        error: function (data) {
+            onFailure(data);
+        },
+        dataType: "json",
+        complete: setTimeout(function () { poll(url, onSuccess, onFailure) }, 1000),
+        timeout: 900
+    })
+};
+
+function PostForm(button, onSuccess, onFailure) {
+    var _form = $(button).parents('form');
+    var _data = $(_form).serialize() + '&' + $(button).attr('name') + '=' + $(button).attr('value');
+
+    var _url = $(_form).attr('action');
+    //var _token = $('input[name="__RequestVerificationToken"]').val();
+
+    if (onSuccess == null) {
+        onSuccess = function (data) {
+            $(_form).replaceWith($(data).find('form').parent().html());
+            if (typeof FullPageInitialise === 'function') { FullPageInitialise(); };
+        }
+    }
+
+    var ajax = {
+        type: 'POST',
+        url: _url,
+        data: _data,
+        processData: false,
+        success: onSuccess,
+        error: function (reponse) {
+            console.log(reponse);
+            alert("error : " + reponse);
+        }
+    };
+
+    $.ajax(ajax);
+}
+
+function SendPost(action, data, url, token, onSuccess) {
+    if (url == '' || url == undefined) {
+        return;
+    }
+
+    if (token == undefined || token == null) {
+        token = $('input[name="__RequestVerificationToken"]').val();
+    }
+
+    var post = {
+        "action": action,
+        "data": data
+    };
+
+    var ajax = {
+        type: 'POST',
+        url: url,
+        data: JSON.stringify(post),
+        processData: false,
+        contentType: 'application/json',
+        success: onSuccess,
+        error: function (reponse) {
+            console.log(reponse);
+            alert("error : " + reponse);
+        }
+    };
+
+    ajax.headers = {
+        "__RequestVerificationToken": token
+    };
+
+    $.ajax(ajax);
+};
+
+function SendPatch(action, data, url, token, onSuccess, onError) {
+    if (url == '' || url == undefined) {
+        return;
+    }
+
+    if (token == undefined) {
+        token = $('input[name="__RequestVerificationToken"]').val();
+    }
+
+    var patch = {
+        "action": action,
+        "data": data
+    };
+
+    var ajax = {
+        type: 'PATCH',
+        url: url,
+        data: JSON.stringify(patch),
+        processData: false,
+        contentType: 'application/json',
+        success: onSuccess,
+        error: onError
+    };
+
+    ajax.headers = {
+        "RequestVerificationToken": token
+    };
+
+    $.ajax(ajax);
+};
+
+function OnRemoteAdminPollFailure(data) {
+    $('.RemotePollFailure').show();
+    $('.ParticipantOffline').hide();
+    $('.ParticipantOnline').hide();
+    $('.ParticipantReady').hide();
+}
+
+function OnRemoteAdminPollSuccess(data) {
+    $('.RemotePollFailure').hide();
+
+    if (data.participantReady == true) {
+        if (_disabledPagesUpdated = 0) {
+            _disabledPagesUpdated = 1;
+            RemoteAdministrationCheckbox(null);
+        }
+
+        if (data.participantOnline == true) {
+            $('.ParticipantReady').hide();
+            $('.ParticipantOffline').hide();
+            $('.ParticipantOnline').show();
+        } else {
+            $('.ParticipantReady').hide();
+            $('.ParticipantOnline').hide();
+            $('.ParticipantOffline').show();
+        }
+    }
+    else {
+        $('.ParticipantOffline').hide();
+        $('.ParticipantOnline').hide();
+        $('.ParticipantReady').show();
+    }
+
+    var _position = 1;
+
+    // Reset the display counters
+    //$('.timetaken').show();
+    //$('.countDownTimerSmall').hide();
+
+    $.each(data.answers, function (key, value) {
+        var _icon = "#PageIcon_" + value.position;
+        $(_icon).toggleClass("noAnswer", false).toggleClass("Answered", true).toggleClass("AnswerShown", false);
+
+        if (value.timeTaken > 0) {
+            $('#TimeTaken_' + value.position).show();
+            $('#TimeTaken_' + value.position).text(value.timeTaken);
+        }
+
+        if (value.answer != null && value.answer != '') {
+            $('#SelectedAnswer_' + value.position).html(value.answer);
+        }
+
+        if (value.answers != undefined && value.answers != null) {
+            $.each(value.answers, function (fieldName, fieldValue) {
+                // Need to work out if this is part of a block
+
+                var _elementName = '.' + fieldName; // + '_' + value.position;
+
+                $(_elementName).each(function (index, item) {
+                    var _localElement = $(this);
+
+                    if (_localElement.is("input") || _localElement.is("select")) {
+                        if (_localElement.is("input:checkbox")) {
+                            if (~fieldValue.indexOf(_localElement.val())) {
+                                if (!_localElement.is(':checked')) {
+                                    _localElement.prop("checked", true);
+                                }
+                            } else {
+                                if (_localElement.is(':checked')) {
+                                    _localElement.prop("checked", false);
+                                }
+                            }
+                        }
+                        else {
+                            _localElement.val(fieldValue);
+                        }
+                    }
+                    else {
+                        _localElement.html(fieldValue);
+                    }
+                });
+            });
+        }
+
+        if (value.scores != undefined && value.scores != null) {
+            $.each(value.scores, function (fieldName, scoreValue) {
+                var _elementName = '.SCORE_' + fieldName; // + '_' + value.position;
+
+                $(_elementName).each(function (index, item) {
+                    var _localElement = $(this);
+
+                    if (_localElement.is("input")) {
+                        _localElement.val(scoreValue);
+                    }
+                    else {
+                        _localElement.html(scoreValue);
+                    }
+                });
+            });
+        }
+    });
+
+    $.each(data.summaryValues, function (key, value) {
+        $('.' + value.scoreName).each(function (index, item) {
+            $(this).html(value.scoreValue);
+
+            $('.' + value.scoreName + '_Max').html(value.ScoreMaxValue);
+        });
+    });
+
+    try {
+        $.each(data.summary, function (key, value) {
+            var _span = $(".SectionCount[data-value='" + value.section + "']");
+
+            if (_span.length) {
+                _span.text(value.answerCount);
+            }
+        });
+    } catch (e) {
+    }
+
+    if (data.buttons != undefined) {
+        togglebutton("Cue1", data.buttons.cue1, 'btn-success');
+        togglebutton("Cue2", data.buttons.cue2, 'btn-success');
+        togglebutton("Cue3", data.buttons.cue3, 'btn-success');
+        togglebutton("Cue4", data.buttons.cue4, 'btn-success');
+
+        toggleButtonType("Cue1", data.buttons.cue1Type);
+        toggleButtonType("Cue2", data.buttons.cue2Type);
+        toggleButtonType("Cue3", data.buttons.cue3Type);
+        toggleButtonType("Cue4", data.buttons.cue4Type);
+
+        togglebutton("NextSection", data.buttons.nextSection, 'btn-success');
+        togglebutton("PreviousSection", data.buttons.previousSection, 'btn-success');
+        togglebutton("Next", data.buttons.next, 'btn-success');
+        togglebutton("PreviousPage", data.buttons.previousPage, 'btn-success');
+        togglebutton("NextPage", data.buttons.nextPage, 'btn-warning');
+
+        togglebutton("RepeatInstructions", data.buttons.instructions, 'btn-success');
+        togglebutton("RepeatQuestion", data.buttons.question, 'btn-success');
+        togglebutton("MuteAudio", data.buttons.muteAudio, 'btn-success');
+    }
+
+    if (data.currentPage > 0 && (_lastMoveTo != data.currentPage || data.refreshPreviewUrl)) {
+        _lastMoveTo = data.currentPage;
+
+        if ($('#PageLock').is(':checked') == false) {
+            moveToPage(data.currentPage);
+        } else {
+            resetTimingFields(data.currentPage);
+        }
+
+        if (typeof RefreshScoreData === 'function') {
+            RefreshScoreData(data.charts);
+        }
+
+        if (data.previewURL.length) {
+            $('#ParticipantPreview').load(data.previewURL, function () {
+                if (typeof InitSubPageFunctionality === 'function') {
+                    InitSubPageFunctionality();
+                }
+            });
+        }
+    }
+};
+
+function RemoteAdministrationDownloadData(button, url, token) {
+    if ($(button).hasClass("btn-default")) {
+        return;
+    }
+
+    if (token == undefined) {
+        token = $('input[name="__RequestVerificationToken"]').val();
+    };
+
+    var patch = {
+        "action": 'DownloadData',
+        "data": ""
+    };
+
+    var ajax = {
+        type: "PATCH",
+        url: url,
+        data: JSON.stringify(patch),
+        processData: false,
+        contentType: 'application/json',
+        xhrFields: {
+            responseType: 'blob' // to avoid binary data being mangled on charset conversion
+        },
+        success: function (blob, status, xhr) {
+            // check for a filename
+            var filename = "";
+            var disposition = xhr.getResponseHeader('Content-Disposition');
+            if (disposition && disposition.indexOf('attachment') !== -1) {
+                var filenameRegex = /filename[^;=\n]*=((['"]).*?\2|[^;\n]*)/;
+                var matches = filenameRegex.exec(disposition);
+                if (matches != null && matches[1]) filename = matches[1].replace(/['"]/g, '');
+            }
+
+            if (typeof window.navigator.msSaveBlob !== 'undefined') {
+                // IE workaround for "HTML7007: One or more blob URLs were revoked by closing the blob for which they were created. These URLs will no longer resolve as the data backing the URL has been freed."
+                window.navigator.msSaveBlob(blob, filename);
+            } else {
+                var URL = window.URL || window.webkitURL;
+                var downloadUrl = URL.createObjectURL(blob);
+
+                if (filename) {
+                    // use HTML5 a[download] attribute to specify filename
+                    var a = document.createElement("a");
+                    // safari doesn't support this yet
+                    if (typeof a.download === 'undefined') {
+                        window.location.href = downloadUrl;
+                    } else {
+                        a.href = downloadUrl;
+                        a.download = filename;
+                        document.body.appendChild(a);
+                        a.click();
+                    }
+                } else {
+                    window.location.href = downloadUrl;
+                }
+
+                setTimeout(function () { URL.revokeObjectURL(downloadUrl); }, 100); // cleanup
+            }
+        }
+    };
+
+    ajax.headers = {
+        "__RequestVerificationToken": token
+    };
+
+    $.ajax(ajax);
+
+    return false;
+}
+
+function RemoteAdministrationEmailParticipant(button, url) {
+    if ($(button).hasClass("btn-default") || $(button).hasClass("btn-warning")) {
+        return;
+    }
+
+    $(button).toggleClass("btn-primary", false).toggleClass("btn-success", false).toggleClass("btn-warning", true).toggleClass("btn-danger", false);
+
+    var _action = "SendEmail";
+    var _data = $(button).parents('.headerBar').find(':input').serialize();
+
+    if (_data == undefined || _data == '') {
+        alert("Missing email address");
+        return;
+    }
+
+    var _success = function (data) {
+        if (data.success == true) {
+            $(button).toggleClass("btn-primary", false).toggleClass("btn-success", true).toggleClass("btn-warning", false).toggleClass("btn-danger", false);
+        } else {
+            $(button).toggleClass("btn-primary", false).toggleClass("btn-success", false).toggleClass("btn-warning", false).toggleClass("btn-danger", true);
+        }
+    };
+
+    SendPatch(_action, _data, url, null, _success);
+
+    return false;
+}
+
+function RemoteAdministrationAction(button, url) {
+    if ($(button).hasClass("btn-default")) {
+        return;
+    }
+
+    var _action = $(button).attr("value");
+
+    SendPatch(_action, "", url);
+};
+
+function ChangeFontSize(button) {
+    var _currentSize = parseInt($('#FontSize').val());
+    var _offset = 0;
+
+    if (_currentSize == undefined)
+        _currentSize = 0;
+
+    switch ($(button).attr("value")) {
+        case "+":
+            _currentSize += 8;
+            _offset = 8;
+
+            if (_currentSize > 40) {
+                _currentSize = 40;
+                _offset = 0;
+            }
+
+            if (typeof raiseFontSizeIncrease === 'function') { raiseFontSizeIncrease(_currentSize); }
+
+            break;
+
+        case "-":
+            _currentSize -= 8;
+            _offset = -8;
+
+            if (_currentSize < 16) {
+                _currentSize = 16;
+                _offset = 0;
+            }
+
+            if (typeof raiseFontSizeIncrease === 'function') { raiseFontSizeDecrease(_currentSize); }
+
+            break;
+
+        case "*":
+        default:
+            _offset = (_currentSize - 16) * -1
+            _currentSize = 16;
+            break;
+    }
+
+    $('#FontSize').val(_currentSize);
+
+    var _form = $(button).closest('form');
+
+    if (_form != undefined) {
+        $(_form).css('font-size', parseInt($(_form).css("font-size")) + _offset);
+
+        $(_form).find('h1, h2, h3, h4, h5, h6').each(function () {
+            $(this).css('font-size', parseInt($(this).css("font-size")) + _offset);
+        });
+    }
+}
+
+function increaseFontSize(id, increaseFactor) {
+    txt = document.getElementById(id);
+    style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+    currentSize = parseFloat(style);
+    txt.style.fontSize = (currentSize + increaseFactor) + 'px';
+}
+
+function GetParticipantPollUrl() {
+    return $('#ParticipantPollUrl').val();
+}
+
+function GetParticipantEventUrl() {
+    return $('#ParticipantEventUrl').val();
+}
+
+//function onItemAction(action, fields) {
+//    if (fields == '' || fields == undefined || action == '' || action == undefined) {
+//        return;
+//    }
+
+//    SendPatch(action, fields.serialize(), GetParticipantEventUrl(), null, null);
+//}
+
+var countDownTimer;
+
+function timerCountDown(time, update, complete) {
+    clearInterval(countDownTimer);
+
+    var start = new Date().getTime();
+    countDownTimer = setInterval(function () {
+        var now = time - (new Date().getTime() - start);
+        if (now <= 0) {
+            clearInterval(countDownTimer);
+            complete();
+        }
+        else update(Math.floor(now / 1000));
+    }, 100); // the smaller this number, the more accurate the timer will be
+}
+
+function InitGraph() {
+    if ($(".apex-charts.bar_chart").length) {
+        var _chartElement = $(".apex-charts.bar_chart");
+
+        var _source = _chartElement.attr('data-value-source');
+
+        $.ajax({
+            url: _source,
+            cache: false,
+            type: "GET",
+            success: function (data) {
+                //console.log(data);
+                if (data.success) {
+                    if (data.series.length > 0) {
+                        LoadChart(".apex-charts.bar_chart", data.series, data.labels, data.maxvalue);
+                    } else {
+                    }
+                } else {
+                    alert(data.message);
+                }
+            },
+            error: function (reponse) {
+                console.log(reponse);
+                alert("error : " + reponse);
+            }
+        });
+    }
+
+    if ($(".apex-charts.radial-chart").length) {
+        var _radialBar = $(".apex-charts.radial-chart");
+        var _data = _radialBar.attr('data-value');
+
+        var options = {
+            series: [_data],
+            chart: {
+                height: 150,
+                type: "radialBar",
+                sparkline: { enabled: !0 }
+            },
+            colors: ["#556ee6"],
+            plotOptions: {
+                radialBar: {
+                    startAngle: -90,
+                    endAngle: 90,
+                    track: {
+                        background: "#e7e7e7",
+                        strokeWidth: "97%",
+                        margin: 5
+                    },
+                    hollow: {
+                        size: "60%"
+                    },
+                    dataLabels: {
+                        name: {
+                            show: !1
+                        },
+                        value: {
+                            offsetY: -2,
+                            fontSize: "16px"
+                        }
+                    }
+                }
+            },
+            grid: {
+                padding: {
+                    top: -10
+                }
+            },
+            stroke: {
+                dashArray: 3
+            },
+            labels: ["Storage"]
+        };
+        chart = new ApexCharts(document.querySelector(".apex-charts.radial-chart"), options);
+        chart.render();
+    }
+}
+
+function LoadChart(chart, series, labels, maxvalue) {
+    options = {
+        chart: {
+            height: 350,
+            type: "bar",
+            toolbar: {
+                show: !1
+            }
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 6,
+                horizontal: !0
+            }
+        },
+        dataLabels: {
+            enabled: !1
+        },
+        series: [{
+            data: series
+        }
+        ],
+        colors: ["#34c38f"],
+        grid: {
+            borderColor: "#f1f1f1"
+        },
+        xaxis: {
+            categories: labels
+        },
+        yaxis: {
+            max: maxvalue,
+        },
+        tooltip: {
+            enabled: false,
+        }
+    };
+
+    //options = {
+    //    chart: {
+    //        height: 350,
+    //        type: "bar",
+    //        toolbar: {
+    //            show: !1
+    //        }
+    //    },
+    //    plotOptions: {
+    //        bar: {
+    //            horizontal: !0
+    //        }
+    //    },
+    //    dataLabels: {
+    //        enabled: !1
+    //    },
+    //    series: [{
+    //        data: [380, 430, 450, 475, 550, 584, 780, 1100, 1220, 1365]
+    //    }
+    //    ],
+    //    colors: ["#34c38f"],
+    //    grid: {
+    //        borderColor: "#f1f1f1"
+    //    },
+    //    xaxis: {
+    //        categories: ["South Korea", "Canada", "United Kingdom", "Netherlands", "Italy", "France", "Japan", "United States", "China", "Germany"]
+    //    }
+    //};
+
+    (chart = new ApexCharts(document.querySelector(chart), options)).render();
+}
+
+function ClearRecords(btn) {
+    $(btn).parents('.table').find('tr.record').remove();
+}
+
+function DeleteRecord(btn) {
+    $(btn).closest('tr').remove();
+}
+
+function AddRecord(btn) {
+    var _table = $(btn).parents('.table');
+    var _tempID = _table.find('#tempID');
+
+    // Get a new ID for the field
+    var _i = parseInt(_tempID.val()) + 1;
+    _tempID.val(_i);
+    var _newID = 'z' + _i;
+
+    // Build the relevant hidden identifier
+    var _idf = _table.find('#IdentityFieldName').val();
+    var _identityField = '<input type="hidden" class="form-control" id="' + _idf + '" name="' + _idf + '" value="' + _newID + '" />';
+
+    // Work out the columns and
+    var _fields = _table.find('#RecordColumns').val().split(',');
+    var _tableColumns = '';
+
+    $.each(_fields, function (i, fieldName) {
+        if (fieldName != '#') {
+            var _elementName = fieldName + '_' + _newID;
+
+            switch ($('#' + fieldName).prop('nodeName')) {
+                case "SELECT":
+                    _tableColumns = _tableColumns + '<td><input readonly="readonly" disabled="disabled" type="text" class="form-control" value="' + $('#' + fieldName + ' option:selected').text() + '" /><input type="hidden" class="form-control" id="' + _elementName + '" name="' + _elementName + '" value="' + $('#' + fieldName).val() + '" /></td>';
+                    break;
+
+                default:
+
+                    switch ($('#' + fieldName).prop('type')) {
+                        case "checkbox":
+                            if ($('#' + fieldName).is(':checked')) {
+                                _tableColumns = _tableColumns + '<td><input type="checkbox" id="' + _elementName + '" name="' + _elementName + '" value="true" checked="checked" /></td>';
+                                $('#' + fieldName).prop("checked", false);
+                            }
+                            else {
+                                _tableColumns = _tableColumns + '<td><input type="checkbox" id="' + _elementName + '" name="' + _elementName + '" value="true" /></td>';
+                            }
+
+                            break;
+                        default:
+                            _tableColumns = _tableColumns + '<td><input type="text" class="form-control" id="' + _elementName + '" name="' + _elementName + '" value="' + $('#' + fieldName).val() + '" /></td>';
+                            break;
+                    }
+
+                    //if $('#' + fieldName) { }
+
+                    break;
+            }
+
+            $('#' + fieldName).val('');
+        } else {
+            _tableColumns = _tableColumns + '<td></td>';
+        }
+    });
+
+    // Concatinate the data and append it to the table.
+    var _recordRow = '<tr class="record">' + _tableColumns + '<td> <div class="text-sm-end">' + _identityField + '<button type="button" title="Remove the record" href="#" onclick="javascript:DeleteRecord(this);return false;" class="btn btn-danger btn-rounded waves-effect waves-light mb-2 me-2"><i class="fas fa-minus-square"></i></button></div></td></tr>';
+
+    _table.find('tr').eq(1).after(_recordRow);
+}
+
+$.fn.hasAttr = function (name) {
+    return this.attr(name) !== undefined;
+};
