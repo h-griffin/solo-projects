@@ -18,6 +18,15 @@
 ## images
 ![screenshot](./screenshot.png)
 
+## dec 2022
+- tuesdays (500)
+    - 05 - 5 ways you can voulenteer your teme
+    - 12 - greif and christmas time
+    - 19 - the mental health benefits of meditation
+    - 26 - why we all need a friend
+- thursday (1200)
+    - 29 - the relationship between spirituality and mental health
+
 ## nov 2022
 - tuesdays (500)
     - 01 - 5 ways you can practive gratitude
