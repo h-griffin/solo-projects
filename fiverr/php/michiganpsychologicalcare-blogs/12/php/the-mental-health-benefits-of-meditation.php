@@ -1,0 +1,106 @@
+<?php 
+
+$img = '';
+$title = 'The Mental Health Benefits of Meditation';
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>The Mental Health Benefits of Meditation</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Dec 19, 2022</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2022/12/the-mental-health-benefits-of-meditation.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+
+                                <h1><strong>The Mental Health Benefits of Meditation</strong></h1>
+                                
+                                <p>Meditation is a mindfulness practice rich in cultural history. Having been around for thousands of years, the practice has offered spiritual, mental, physical, and social benefits to millions. There are tons of ways to practice meditation, including:</p>
+                                <ul>
+                                    <li>mindfulness meditation</li>
+                                    <li>loving-kindness meditation</li>
+                                    <li>spiritual meditation</li>
+                                </ul>
+                                <p>December 31 is National World Peace Meditation Day, offering the perfect opportunity to learn more about meditation's plentiful mental health benefits.&nbsp;&nbsp;</p>
+                                <h2><strong>Stress Reduction</strong></h2>
+                                <p>Mindfulness meditation has been suggested to be such a beneficial method for&nbsp;<a href="https://www.apa.org/topics/mindfulness/meditation">reducing stress</a>&nbsp;that therapists have begun to implement the practice, along with other mindfulness practices into their therapy toolbox. Stress can have significantly negative impacts on a person's overall health and wellbeing, leading to health issues like anxiety, increased blood pressure, and heart disease.</p>
+                                <h2><strong>You Can Practice It Anywhere, At Any Time.</strong></h2>
+                                <p>It is always great to have a relaxation method you can use anywhere you need it. Meditation is a perfect option for those in need of relaxation techniques while on the go. This is because you need nothing more than a comfortable place to set up and your own mind to begin practicing.</p>
+                                <h2><strong>May Decrease Blood Pressure</strong></h2>
+                                <p>Meditation techniques like transcendental meditation and mindfulness-based stress reduction have been suggested to significantly&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3303565/">reduce blood pressure</a>. According to the CDC,&nbsp;<a href="https://www.cdc.gov/bloodpressure/facts.htm">hypertension</a>, otherwise known as high blood pressure, impacts almost half of the adults in the United States. That is a significant number of adults struggling to maintain healthy blood pressure levels.</p>
+                                <h2><strong>May Improve Compassion and Kindness</strong></h2>
+                                <p>Research has suggested that while meditation has great intrapersonal benefits for those who practice, it may have some truly valuable interpersonal benefits, as well. Specific forms of meditation have been suggested to improve a person's&nbsp;<a href="https://journals.sagepub.com/doi/abs/10.1177/0956797613485603?journalCode=pssa">compassion and kindness</a>&nbsp;toward those surrounding them.</p>
+                                <h2><strong>Creates a Deeper Sense of Self-Awareness</strong></h2>
+                                <p>Many forms of meditation aim to allow a person to better understand themselves in order to allow them to grow. These meditation practices offer a deeper sense of self-awareness, allowing one to catch negative thinking patterns, better understand their intrapersonal and interpersonal relationships, and become more conscious of their self-talk.</p>
+                                <h2><strong>Promotes Emotional Intelligence and Health</strong></h2>
+                                <p>Becoming more aware of your inner thoughts, emotions, and feelings is a crucial step toward building emotional intelligence that ultimately allows you to better care for your emotional health. Many forms of meditation help create the sense of self-awareness we discussed in the previous section, which is important to understand your emotional triggers, which can allow you to gain more control over your mental, social, and emotional health.</p>
+                                <h2><strong>If You Need Mental Health Help</strong></h2>
+                                <p>Meditation is great for offering a multitude of mental health benefits. However, it is not a magical cure for mental illness or mental health struggles. Sometimes, mental health counseling is needed in order for one to live their happiest, healthiest life. If you have found your mental health struggling, we are here to help.&nbsp;<a href="http://michiganpsychologicalcare.com/contact.php">Contact</a>&nbsp;us today, and we will work to get you the therapy and treatment you need.</p>
+                                <p><strong>References:</strong></p>
+                                <p><a href="https://www.apa.org/topics/mindfulness/meditation">https://www.apa.org/topics/mindfulness/meditation</a></p>
+                                <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3303565/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3303565/</a></p>
+                                <p><a href="https://www.cdc.gov/bloodpressure/facts.htm">https://www.cdc.gov/bloodpressure/facts.htm</a></p>
+                                <p><a href="https://journals.sagepub.com/doi/abs/10.1177/0956797613485603?journalCode=pssa">https://journals.sagepub.com/doi/abs/10.1177/0956797613485603?journalCode=pssa</a></p>
+                                <p>Keywords: improve mental health, counseling, meditation benefits, therapy</p>
+                                                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/grief-and-christmas-time.php">⇐ GREIF AND CHRISTMAS TIME</a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/why-we-all-need-a-friend.php">WHY WE ALL NEED A FRIEND ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>
