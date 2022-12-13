@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+
+    tr {
+        display: block;
+        float: left;
+    }
+
+    th,
+    td {
+        display: block;
+    }
+
+    th {
+        background-color: grey;
+    }
+</style>
+
+
+
+
+<body class="row justify-content-md-center mb-5 text-center">
+    <h1>
+        <%= title %>
+    </h1>
+    <p>Your Name</p>
+
+    <nav class="d-flex flex-column">
+
+        <a href="/weather">weather</a>
+        <a href="/weather/kingston">weather/kingston</a>
+        <a href="/weather/kingston/monday">weather/kingston/monday</a>
+
+    </nav>
+
+    <div class="border p-5 bg-light col-10  ">
+
+        <table>
+            <tr>
+                <th style="padding: 56.5px 0px;">Day</th>
+                <th>feelsLike</th>
+                <th>night</th>
+                <th>pop</th>
+                <th>wind</th>
+                <th>windGust</th>
+                <th>hrsOfSun</th>
+                <th>rain</th>
+                <th>snow</th>
+            </tr>
+
+            <% if (forecast ) { %>
+
+                <tr>
+                    <td>
+                        <h4><%- forecast.days[0].day %></h4> <%- forecast.days[0].dayNum %> <br> <%-
+                                forecast.days[0].forecast %> <br>
+                                <h4> <%- forecast.days[0].temp %> </h4>
+                    </td>
+
+                    <td> <%- forecast.days[0].feelsLike %> </td>
+                    <td> <%- forecast.days[0].night %> </td>
+                    <td> <%- forecast.days[0].pop %> </td>
+                    <td> <%- forecast.days[0].wind %> </td>
+                    <td> <%- forecast.days[0].windGust %> </td>
+                    <td> <%- forecast.days[0].hrsOfSun %> </td>
+                    <td> <%- forecast.days[0].rain %> </td>
+                    <td> <%- forecast.days[0].snow %> </td>
+                </tr>
+
+                <% } %>
+        </table>
+
+    </div>
+
+
+</body>
+
+</html>
