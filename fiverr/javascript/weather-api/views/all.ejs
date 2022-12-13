@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+
+    tr {
+        display: block;
+        float: left;
+    }
+
+    th,
+    td {
+        display: block;
+    }
+
+    th {
+        background-color: grey;
+    }
+</style>
+
+
+
+
+<body class="row justify-content-md-center mb-5 text-center">
+    <h1>
+        <%= title %>
+    </h1>
+    <p>Your Name</p>
+
+    <nav class="d-flex flex-column">
+
+        <a href="/weather">weather</a>
+        <a href="/weather/kingston">weather/kingston</a>
+        <a href="/weather/kingston/monday">weather/kingston/monday</a>
+
+    </nav>
+
+    <div class="border p-5 bg-light col-10  ">
+        <h4>Warmest Location on Sunday</h4>
+        <h2><%- warmestLocation %></h2>
+    </div>
+
+    <br>
+
+    <div class="border p-5 bg-light col-10  ">
+
+        <h1>Kingston</h1>
+        <p>Week Avg Temp: <%- avgTemps[0] %></p>
+        <table>
+            <tr>
+                <th style="padding: 56.5px 0px;">Day</th>
+
+                <th>feelsLike</th>
+                <th>night</th>
+                <th>pop</th>
+                <th>wind</th>
+                <th>windGust</th>
+                <th>hrsOfSun</th>
+                <th>rain</th>
+                <th>snow</th>
+            </tr>
+
+            <% if (kingston ) { %>
+                <% kingston.days.forEach(function(day){ %>
+
+                    <tr>
+                        <td>
+                            <h4><%- day.day %></h4> <%- day.dayNum %> <br> <%- day.forecast %> <br>
+                                    <h4> <%- day.temp %> </h4>
+                        </td>
+
+                        <td> <%- day.feelsLike %> </td>
+                        <td> <%- day.night %> </td>
+                        <td> <%- day.pop %> </td>
+                        <td> <%- day.wind %> </td>
+                        <td> <%- day.windGust %> </td>
+                        <td> <%- day.hrsOfSun %> </td>
+                        <td> <%- day.rain %> </td>
+                        <td> <%- day.snow %> </td>
+                    </tr>
+
+                    <% }); %>
+                        <% } %>
+        </table>
+
+    </div>
+    <br>
+    <div class="border p-5 bg-light col-10  ">
+
+
+        <h1>Ottawa</h1>
+        <p>Week Avg Temp: <%- avgTemps[1] %></p>
+        <table>
+            <tr>
+                <th style="padding: 56.5px 0px;">Day</th>
+
+                <th>feelsLike</th>
+                <th>night</th>
+                <th>pop</th>
+                <th>wind</th>
+                <th>windGust</th>
+                <th>hrsOfSun</th>
+                <th>rain</th>
+                <th>snow</th>
+            </tr>
+
+            <% if (ottawa ) { %>
+                <% ottawa.days.forEach(function(day){ %>
+
+                    <tr>
+                        <td>
+                            <h4><%- day.day %></h4> <%- day.dayNum %> <br> <%- day.forecast %> <br>
+                                    <h4> <%- day.temp %> </h4>
+                        </td>
+
+                        <td> <%- day.feelsLike %> </td>
+                        <td> <%- day.night %> </td>
+                        <td> <%- day.pop %> </td>
+                        <td> <%- day.wind %> </td>
+                        <td> <%- day.windGust %> </td>
+                        <td> <%- day.hrsOfSun %> </td>
+                        <td> <%- day.rain %> </td>
+                        <td> <%- day.snow %> </td>
+                    </tr>
+
+                    <% }); %>
+                        <% } %>
+        </table>
+
+    </div>
+    <br>
+    <div class="border p-5 bg-light col-10  ">
+
+
+        <h1>Toronto</h1>
+        <p>Week Avg Temp: <%- avgTemps[2] %></p>
+        <table>
+            <tr>
+                <th style="padding: 56.5px 0px;">Day</th>
+
+                <th>feelsLike</th>
+                <th>night</th>
+                <th>pop</th>
+                <th>wind</th>
+                <th>windGust</th>
+                <th>hrsOfSun</th>
+                <th>rain</th>
+                <th>snow</th>
+            </tr>
+
+            <% if (toronto ) { %>
+                <% toronto.days.forEach(function(day){ %>
+
+                    <tr>
+                        <td>
+                            <h4><%- day.day %></h4> <%- day.dayNum %> <br> <%- day.forecast %> <br>
+                                    <h4> <%- day.temp %> </h4>
+                        </td>
+
+                        <td> <%- day.feelsLike %> </td>
+                        <td> <%- day.night %> </td>
+                        <td> <%- day.pop %> </td>
+                        <td> <%- day.wind %> </td>
+                        <td> <%- day.windGust %> </td>
+                        <td> <%- day.hrsOfSun %> </td>
+                        <td> <%- day.rain %> </td>
+                        <td> <%- day.snow %> </td>
+                    </tr>
+
+                    <% }); %>
+                        <% } %>
+        </table>
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>
