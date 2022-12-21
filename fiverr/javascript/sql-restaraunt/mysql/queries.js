@@ -1,29 +1,54 @@
 const mysql = require("./config.js");
 
 
-function findRestaurants() {
-    let query = `SELECT name, country, city, cuisine 
+function findAllFilters( ) {
+    let query = `SELECT country, city, cuisine  
         FROM restaurants
-        ORDER BY name ASC`;
+        ORDER BY name ASC
+        `;
+    let safeQuery = mysql.functions.format(query );
 
-    let safeQuery = mysql.functions.format(query);
+    return querySql(safeQuery);
+}
+
+function findRestaurants(criteria) {
+    let query = `SELECT name, country, city, cuisine , COUNT(*) OVER() as total_count
+        FROM restaurants
+        ORDER BY name ASC
+        LIMIT ? OFFSET ?
+        `;
+
+    let safeQuery = mysql.functions.format(query, [
+        criteria.pageSize,
+        criteria.offset,
+    ]);
+
     return querySql(safeQuery);
 }
 
 function findRestaurantsByFilter(criteria) {
-    let query = `SELECT name, country, city, cuisine 
+ 
+    let query = `SELECT name, country, city, cuisine, COUNT(*) OVER() as total_count
         FROM restaurants 
         WHERE ?? = ?
-        ORDER BY name ASC`; 
-
+        ORDER BY name ASC
+        LIMIT ? OFFSET ?
+        `;
+           
     // ?? for identifiers (table), ? for values "Name"
-    let safeQuery = mysql.functions.format(query, [criteria.filter,  criteria.select]); 
+    let safeQuery = mysql.functions.format(query, [
+        criteria.filter,  
+        criteria.select,
+        criteria.pageSize,
+        criteria.offset, 
+    ]); 
     return querySql(safeQuery);
 }
 
  
 
 module.exports = {
+    "findAllFilters": findAllFilters, 
     "findRestaurants": findRestaurants, 
     "findRestaurantsByFilter": findRestaurantsByFilter, 
 };

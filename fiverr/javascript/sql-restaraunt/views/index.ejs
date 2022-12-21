@@ -23,19 +23,14 @@
     }
     </style>
 
- 
-
-
   <body class="row justify-content-md-center mb-5 text-center">
     <h1><%= title %></h1>
     <p>Your Name</p>
 
- 
-
     <div class="border p-5 bg-light col-10  ">
         <form action="/find-by" class="d-flex flex-column">
 
-            <div class="d-flex justify-content-around align-items-center">
+            <div class="d-flex justify-content-around align-items-center mb-4">
 
                 <h2>Filter by: </h2>
     
@@ -59,49 +54,75 @@
                         <input type="radio" id="cuisine" name="filter" value="cuisine" onchange="handleCuisineChange(this)" >
                     </div>
             
-                    <br><br><br> 
             </div>
+                
             <div class="d-flex justify-content-around">
 
-                <% if (countries ) { %>
-                    <select id="country-select" name="select" class="w-25" disabled>
-                        <option value="">--select country--</option>
-                        <% countries.forEach(function(country){ %>
-                            <option value="<%- country %>"> <%- country  %> </option>
-                        <% }); %>
-                    </select>
-                <% } %> 
-                <% if (cities ) { %>
-                    <select id="city-select" name="select" class="w-25" disabled >
-                        <option value="">--select city--</option>
-                        <% cities.forEach(function(city){ %>
-                            <option value="<%- city %>"> <%- city  %> </option>
-                        <% }); %>
-                    </select>
-                <% } %> 
-        
-                <% if (cuisines ) { %>
-                    <select id="cuisine-select" name="select" class="w-25" disabled >
-                        <option value="">--select cuisine--</option>
-                        <% cuisines.forEach(function(cuisine){ %>
-                            <option value="<%- cuisine %>"> <%- cuisine  %> </option>
-                        <% }); %>
-                    </select>
-                <% } %> 
+                <select id="country-select" name="select" class="w-25" disabled>
+                    <option value="">--select country--</option>
+                    <% countries.forEach(function(country){ %>
+                        <option value="<%- country %>"> <%- country  %> </option>
+                    <% }); %>
+                </select>
+
+                <select id="city-select" name="select" class="w-25" disabled >
+                    <option value="">--select city--</option>
+                    <% cities.forEach(function(city){ %>
+                        <option value="<%- city %>"> <%- city  %> </option>
+                    <% }); %>
+                </select>
+    
+                <select id="cuisine-select" name="select" class="w-25" disabled >
+                    <option value="">--select cuisine--</option>
+                    <% cuisines.forEach(function(cuisine){ %>
+                        <option value="<%- cuisine %>"> <%- cuisine  %> </option>
+                    <% }); %>
+                </select>
     
             </div>
-            <br> 
 
+            <div class="d-flex flex-column justify-content-around align-items-center mt-4" style="margin: 0 auto;" >
+                <label>page: </label>
+ 
+                <div class="d-flex ">
+
+                    <button type="button" class=" " id="prev-button" title="Previous page" aria-label="Previous page"> &lt; prev </button>
+                    
+                    <div class="d-flex m-5 mt-0 mb-0">
+                        <select id="pageNum"  name="pageNum">
+                            <%  for (let i = 0; i < numPages; i++) { %>
+                                <option value="<%- i %>"> <%- i+1  %> / <%- numPages  %> </option>
+                            <% }; %>
+                        </select> 
+
+                        <div style="display: none;" id="numpages"><%- numPages  %></div>
+                    </div>
+    
+                    <button type="button" class=" " id="next-button" title="Next page" aria-label="Next page"> next &gt; </button>
+                </div>
+            </div>
+
+
+            <p class="mt-4">
+                <label>Restaurants Per page: </label>
+                <select id="pageSize"  name="pageSize">
+                    <option value="5" selected>5</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                </select>
+            </p>
+
+            
             <div class="d-flex justify-content-center">
                 <input type="submit" value="Apply Filters" class="m-2">
                 <input type="reset" value="Clear Filters" class="m-2" id="clear" onclick="handleClear(this)" disabled>
             </div>
-            <br> 
+            <div id="total_count" class="m-2" > total results: <%- restaurants[0].total_count  %> </div>
 
         </form>
 
-
-
+ 
 
         <table>
             <tr> 
@@ -110,25 +131,113 @@
                 <th>City</th>
                 <th>Cuisine</th>
             </tr>
+
+            <% restaurants.forEach(function(restaurant){ %>
+                <tr>
+                    <td> <%- restaurant.name %> </td>
+                    <td> <%- restaurant.country %> </td>
+                    <td> <%- restaurant.city %> </td>
+                    <td> <%- restaurant.cuisine %> </td>
+                </tr>
+            <% }); %>
             
-            <% if (restaurants ) { %>
-                <% restaurants.forEach(function(restaurant){ %>
-
-                    <tr>
-                        <td> <%- restaurant.name %> </td>
-                        <td> <%- restaurant.country %> </td>
-                        <td> <%- restaurant.city %> </td>
-                        <td> <%- restaurant.cuisine %> </td>
-                    </tr>
-
-                <% }); %>
-            <% } %>  
         </table>
- 
+
     </div>
 
  
     <script>
+
+        const nextButton = document.getElementById("next-button");
+        const prevButton = document.getElementById("prev-button");
+        const numberOfPages = document.getElementById("numpages");
+        const pageNumSelect = document.getElementById("pageNum");
+
+
+        window.addEventListener("load", (event) => {
+            console.log("page is fully loaded");
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const pageNum = urlParams.get('pageNum');
+            const pageSize = urlParams.get('pageSize');
+            const filter = urlParams.get('filter');
+            const select = urlParams.get('select');
+
+            // update select for current pageNum
+            var pn_select = document.getElementById('pageNum') ;
+            for(let i = 0; i < pn_select.length; i++) {
+                let option = pn_select[i];
+                if (option.value === pageNum) {
+                    option.selected = "Selected" 
+                }
+            }
+
+            // update select for current pageSize
+            var ps_select = document.getElementById('pageSize') ;
+            for(let i = 0; i < ps_select.length; i++) {
+                let option = ps_select[i];
+                if (option.value === pageSize) {
+                    option.selected = "Selected" 
+                }
+            }
+
+            if (filter == "country") {
+               
+                 document.getElementById('country').checked = true
+                
+                // update select for current pageSize
+                var country_select = document.getElementById('country-select');
+                country_select.disabled = false
+                for(let i = 0; i < country_select.length; i++) {
+                    let option = country_select[i];
+                    if (option.value === select) {
+                        option.selected = "Selected" 
+                    }
+                }
+            } else if (filter == "city"){
+                document.getElementById('city').checked = true
+                city_select.disabled = false
+                // update select for current pageSize
+                var city_select = document.getElementById('city-select') ;
+                for(let i = 0; i < city_select.length; i++) {
+                    let option = city_select[i];
+                    if (option.value === select) {
+                        option.selected = "Selected" 
+                    }
+                }
+            } else if(filter == "cuisine"){
+                document.getElementById('checked').checked = true
+                cuisine_select.disabled = false
+                // update select for current pageSize
+                var cuisine_select = document.getElementById('cuisine-select') ;
+                for(let i = 0; i < cuisine_select.length; i++) {
+                    let option = cuisine_select[i];
+                    if (option.value === select) {
+                        option.selected = "Selected" 
+                    }
+                }
+            }
+            
+
+            if (pageNumSelect.selectedIndex <= 0) { prevButton.disabled = "Disabled" }
+            if (pageNumSelect.selectedIndex >= Number(numberOfPages.innerHTML) -1) { nextButton.disabled = "Disabled" }
+
+        });
+ 
+        prevButton.addEventListener('click', () => {
+            pageNum.options[pageNum.selectedIndex-1].selected = "Selected"
+            
+            if (pageNumSelect.selectedIndex <= 0) { prevButton.disabled = "Disabled" }
+            nextButton.disabled = false 
+        })
+
+        nextButton.addEventListener('click', () => {
+            pageNum.options[pageNum.selectedIndex+1].selected = "Selected"
+
+            prevButton.disabled = false  
+            if (pageNumSelect.selectedIndex >= Number(numberOfPages.innerHTML) -1) { nextButton.disabled = "Disabled" }
+        })
+
         function handleNoFilter(e) {
             document.getElementById('clear').disabled = e.checked;
             disableAllSelects();
@@ -160,7 +269,11 @@
             document.getElementById('city-select').disabled = true;
             document.getElementById('cuisine-select').disabled = true;
         }
-    </script>
+
+ 
+
+
+</script>
     
   </body>
 </html>
