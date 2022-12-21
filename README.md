@@ -43,6 +43,8 @@
 - [SAT-math-questions](fiverr/javascript/SAT-math-questions/)
 - [shoppingcart-modal](fiverr/javascript/shoppingcart-modal/)
 - [spotify.code](fiverr/javascript/spotify.code/)
+- [sql-airbnb](fiverr/javascript/sql-airbnb/)
+- [sql-restaurant](fiverr/javascript/sql-restaurant/)
 - [submenu-navigation](fiverr/javascript/submenu-navigation/)
 - [webGL-fluid-text-hover](fiverr/javascript/webGL-fluid-text-hover/)
 
