@@ -40,6 +40,7 @@
 - [moon-phase-api](fiverr/javascript/moon-phase-api/)
 - [mrrelatable.github.io-main](fiverr/javascript/mrrelatable.github.io-main/)
 - [prev-next-buttons-tabs](fiverr/javascript/prev-next-buttons-tabs/)
+- [react-json](fiverr/javascript/react-json/)
 - [SAT-math-questions](fiverr/javascript/SAT-math-questions/)
 - [shoppingcart-modal](fiverr/javascript/shoppingcart-modal/)
 - [spotify.code](fiverr/javascript/spotify.code/)
