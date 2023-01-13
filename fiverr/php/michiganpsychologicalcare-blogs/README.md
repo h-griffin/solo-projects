@@ -18,6 +18,15 @@
 ## images
 ![screenshot](./screenshot.png)
 
+## jan 2023
+- tuesdays (500)
+    - 03 - how substance abuse impacts your brain
+    - 10 - mental health benefits of physical affection
+    - 17 - relationship between your mental health and physical health
+    - 24 - signs of codependency
+- thursday (1200)
+    - 26 - new year new me
+
 ## dec 2022
 - tuesdays (500)
     - 05 - 5 ways you can voulenteer your teme

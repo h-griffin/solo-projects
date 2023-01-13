@@ -1,0 +1,101 @@
+<?php 
+
+$img = '';
+$title = 'How Substance Use Impacts Your Brain- National Drug and Alcohol Facts Week (January 21-28)';
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>How Substance Use Impacts Your Brain- National Drug and Alcohol Facts Week (January 21-28)</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Jan 03, 2023</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2023/01/how-substance-use-impacts-your-brain.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+
+                                <h1><strong>How Substance Use Impacts Your Brain- National Drug and Alcohol Facts Week (January 21-28)</strong></h1>
+
+                                <p>January 21 through the 28th has been deemed National Drug and Alcohol Facts Week. This week can be an incredibly important week to spread facts about the effects of drugs and alcohol on the brain. Why? Because the more one knows about how drugs and alcohol can impact their cognitive and mental health, the more informed decisions they can make regarding substance use.&nbsp;&nbsp;</p>
+                                <h2><strong>How Substance Use Impacts Your Brain</strong></h2>
+                                <p>There are three main areas of the brain that are impacted by drugs and alcohol:</p>
+                                <ul>
+                                    <li>The brain stem</li>
+                                    <li>The limbic system</li>
+                                    <li>The cerebral cortex</li>
+                                </ul>
+                                <p>As the substance makes its way through the brain, the normal operating systems are disrupted and changed. These changes can drastically impact the neurons and brain circuits- and can have lasting effects that stick around long after the substance is out of one&rsquo;s system.</p>
+                                <h2><strong>How Do Substances Impact the Brain&rsquo;s Functioning?</strong></h2>
+                                <p>As mentioned, substance use can alter the way a person&rsquo;s brain works. The effect we feel when using substances is not one that comes without a price. This is because that &ldquo;high&rdquo; we feel when consuming drugs or alcohol is caused by the substance activating, and often times overloading, the brain&rsquo;s reward systems, like sending a shot of the neurotransmitter dopamine through our systems.</p>
+                                <h3><strong>What is Dopamine?</strong></h3>
+                                <p>Dopamine is a neurotransmitter produced by the body that plays a significant role in how we experience pleasure and happiness. The neurotransmitter is also a key player in the brain&rsquo;s reward system, rewarding us with feelings of pleasure in order to reinforce specific behaviors.</p>
+                                <h3><strong>Drugs and Dopamine</strong></h3>
+                                <p>As stated, dopamine is activated when one behaves in a manner the body considers to be beneficial. It allows us to feel a sense of pleasure in order to reinforce good behaviors. Substance use, however, can allow drugs or alcohol to take over the brain&rsquo;s reward system. As the substances travel through the body, they can cause massive amounts of dopamine to release into the system, which creates that sense of &ldquo;high.&rdquo; That feeling can quickly become addictive and impact the brain&rsquo;s ability to create and spread dopamine on its own, building a dependency on the substance.</p>
+                                <h2><strong>We Are Here to Help</strong></h2>
+                                <p>The more one uses substances, the more likely they are to develop a substance use disorder. A substance use disorder is a mental illness in which one&rsquo;s addiction to a substance begins to negatively impact their overall quality of life. Those experiencing a&nbsp;<a href="https://www.samhsa.gov/find-help/disorders#:~:text=Substance%20use%20disorders%20occur%20when,work%2C%20school%2C%20or%20home.">substance use disorder</a>&nbsp;will likely find themselves unable to resist their cravings, regardless of the consequences giving in to them may have. A substance use disorder will begin to take its toll on a person&rsquo;s mental health, physical wellness, relationships, career, and overall sense of happiness and wellbeing.</p>
+                                <p>If you believe you may be experiencing a substance use disorder, know that you do not have to suffer in silence. Finding a substance abuse program that works for you can be incredibly helpful for getting your life back on track.</p>
+                                <p>As you work through your addiction, you may find yourself struggling with difficult feelings, emotions, and thoughts. Our therapists can be here to help you rebuild your relationships with your loved ones and yourself.&nbsp;<a href="http://michiganpsychologicalcare.com/contact.php">Contact</a>&nbsp;us today.</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://www.samhsa.gov/find-help/disorders#:~:text=Substance%20use%20disorders%20occur%20when,work%2C%20school%2C%20or%20home">https://www.samhsa.gov/find-help/disorders#:~:text=Substance%20use%20disorders%20occur%20when,work%2C%20school%2C%20or%20home</a>.</p>
+                                <p>Keywords: substance abuse programs, substance use disorder, alcohol counseling near me, mental health</p>                              
+                                    
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<!-- <a href="/blog/coping-with-survivors-guilt.php">⇐ THE BENEFITS OF PLAY THERAPY</a> -->
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/mental-health-benefits-of-physical-affection.php">THE MENTAL HEALTH BENEFITS OF PHYSICAL AFFECTION ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>

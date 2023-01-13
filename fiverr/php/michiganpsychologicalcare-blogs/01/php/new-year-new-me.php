@@ -1,0 +1,168 @@
+<?php 
+
+$img = '';
+$title = 'New Year, New Me: Ways You Can Care for Your Mental Health in the New Year';
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>New Year, New Me: Ways You Can Care for Your Mental Health in the New Year</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Jan 26, 2023</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2023/01/new-year-new-me.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+
+                                <h1><strong>New Year, New Me: Ways You Can Care for Your Mental Health in the New Year</strong></h1>
+                                
+                                <p>The New Year is a time that many of us feel the most motivated to finally make those changes we have been dreaming of for what feels like forever. It has become a tradition for many to sit and plan out goals, dreams, and resolutions as the holiday season begins to wrap up. This year, as you dream up your game plan for 2023, remember to factor in goals and habits for your mental health and wellbeing. Why? Because caring for your mental health will bring with it a ton of benefits that will leave you maintaining your motivation and living a happier, healthier life in the new year. These&nbsp;<a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health#:~:text=When%20it%20comes%20to%20your,Get%20regular%20exercise.">mental health benefits</a>&nbsp;can include:</p>
+                                <ul>
+                                    <li>Reduced feelings of stress, depression, and anxiety</li>
+                                    <li>Lower risk of physical ailments and mental illness</li>
+                                    <li>Increased energy</li>
+                                    <li>Experiencing boosted moods</li>
+                                    <li>And so much more</li>
+                                </ul>
+                                <p>Now that you know just how beneficial caring for your mental health and wellbeing can be, you may need guidance on where to begin with setting your mental health goals. This article will provide you with some ideas for taking care of your mental health to add to your new year&rsquo;s resolution list.</p>
+                                <h2><strong>Educate Yourself About Mental Health</strong></h2>
+                                <p>The more you know about mental health, the better you can take care of it. There are many ways you can learn more about mental health, whether you are curious about ways to take care of it, signs of a mental health disorder, or how you can help fight the stigma surrounding the topic. You can seek information from books, articles, videos, movies, and other educated individuals. The most important thing to remember when doing your research is to ensure the source you are learning from is reliable.</p>
+                                <h3><strong>Know the Signs of Struggling Mental Health</strong></h3>
+                                <p>One of the most important things you can learn about mental health is the signs that you or a friend may need to seek help for a potential mental health disorder or illness. A few signs that one should seek the help of a doctor for struggling mental health include:</p>
+                                <ul>
+                                    <li>Dependence on substances like drugs or alcohol for coping</li>
+                                    <li>Struggling to keep up with responsibilities at work, home, or school</li>
+                                    <li>An inability to cope with stress</li>
+                                    <li>Significant changes to eating or sleeping habits</li>
+                                    <li>Behaving in a risky manner or self-harming behaviors</li>
+                                    <li>Experiencing a foggy mind</li>
+                                    <li>A loss of interest in the things that once brought them joy</li>
+                                    <li>Social isolation</li>
+                                    <li>Panic attacks</li>
+                                    <li>Irritability, violent outbursts</li>
+                                    <li>Consistent low moods</li>
+                                    <li>Paranoia or a sudden mistrust in those they once trusted</li>
+                                    <li>Feeling guilty, worthless, or hopeless</li>
+                                    <li>Low self-esteem</li>
+                                    <li>Hallucinations or delusions</li>
+                                    <li>Extreme mood swings</li>
+                                    <li>Suicidal thoughts or ideation</li>
+                                </ul>
+                                <p>If you or a loved one are experiencing these signs and symptoms, talking to a doctor will help you rule out any physical health issues that may be causing the problem and find the help you need to get your mental health back on track.</p>
+                                <h2><strong>Take Care of Your Physical Health</strong></h2>
+                                <p>Yes, your physical health plays a significant role in your mental wellbeing. Adding some physical health goals to your new year&rsquo;s resolutions will benefit both your physical and mental health.</p>
+                                <h3><strong>Exercise More Often</strong></h3>
+                                <p>Exercise has been associated with many mental health benefits, like&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1470658/#:~:text=Exercise%20improves%20mental%20health%20by,self%2Desteem%20and%20cognitive%20function.&amp;text=Exercise%20has%20also%20been%20found,self%2Desteem%20and%20social%20withdrawal.">lower anxiety levels, fewer feelings of depression, a boosted mood, improved self-esteem, and better cognitive functioning</a>.</p>
+                                <h3><strong>Eat Enough and Eat Nutritiously</strong></h3>
+                                <p>Have you ever heard of the term &ldquo;hangry&rdquo;? There&rsquo;s a reason that term has come to be. When your body does not have the nutrients it needs to function, your mental health will begin to suffer. The foods you eat matter, too. Whole foods with fiber, antioxidants, folate, vitamin D, magnesium, and probiotics have all been suggested to improve one&rsquo;s overall wellbeing.</p>
+                                <h3><strong>Develop Good Sleep Hygiene</strong></h3>
+                                <p>Your sleep plays a crucial role in your mental health and overall wellbeing. Sleep allows your brain to rest and recuperate, so you can wake up feeling refreshed and ready to take on the day. Those who do not get enough high-quality sleep may struggle with low moods and negative thoughts. A lack of sleep has also been associated with a higher risk of developing a mental health disorder. To improve your sleep this year, a few resolutions you can make include:</p>
+                                <ul>
+                                    <li>Scheduling a regular sleep schedule</li>
+                                    <li>Avoiding screens and dimming lights up to an hour before bedtime</li>
+                                    <li>Developing a relaxing night routine to help you wind down</li>
+                                    <li>Exposing yourself to natural light as much as possible during the daytime</li>
+                                    <li>Exercising regularly</li>
+                                    <li>Investing in high-quality bedding, mattress, and pillows to ensure you are comfortable in your sleep</li>
+                                </ul>
+                                <h2><strong>Nurture and Build Relationships with Others</strong></h2>
+                                <p>Social relationships significantly affect a person&rsquo;s mental health and wellbeing. Those with healthy social relationships tend to experience lower stress levels,&nbsp;<a href="http://www.asanet.org/wp-content/uploads/savvy/press/JHSB_March_2012_Idler_News_Release.pdf">higher resilience</a>&nbsp;to both mental and physical health struggles, a greater sense of purpose, higher self-esteem, and even&nbsp;<a href="https://pubmed.ncbi.nlm.nih.gov/425958/">live longer</a>! This year, make a resolution to build stronger, healthier relationships. You won&rsquo;t regret it.</p>
+                                <h2><strong>Practice Mindfulness More Often</strong></h2>
+                                <p>Mindfulness is the practice of being fully present at the moment you are currently living in, without judgment or ridicule. The act of mindfulness has been associated with many mental health benefits, including granting one clarity in their thoughts, becoming more emotionally intelligent, stress relief, improved social health, and greater resilience to negative thoughts and emotions.</p>
+                                <p>There are many ways one can practice mindfulness, including:</p>
+                                <ul>
+                                    <li>Making an effort to notice your surroundings in everyday life</li>
+                                    <li>Taking a mindful walk</li>
+                                    <li>Sitting and observing your thoughts without judgment</li>
+                                    <li>Mindfulness meditation</li>
+                                </ul>
+                                <h3><strong>What is Mindfulness Meditation?</strong></h3>
+                                <p>Mindfulness meditation is a meditative practice in which one slows down their thoughts and brings them to the present moment, lets go of judgment and ridicule, and focuses on relaxing the mind and body. The benefits of this practice are so great that it has been a tool used to help many cognitive therapy patients work through their mental health struggles.</p>
+                                <h2><strong>Make Gratitude a Priority</strong></h2>
+                                <p>Gratitude allows us to focus on the positive aspects of our every day, granting us a more optimistic outlook on our lives. Those who practice gratitude have found themselves experiencing&nbsp;<a href="https://www.health.harvard.edu/healthbeat/giving-thanks-can-make-you-happier#:~:text=In%20positive%20psychology%20research%2C%20gratitude,adversity%2C%20and%20build%20strong%20relationships.">more positive emotions, enjoying the happy moments of life more, improved physical health and mental wellbeing, stronger relationships, and greater resilience to tough times</a>. A few ways you can begin practicing gratitude this year include:</p>
+                                <ul>
+                                    <li>Begin a Gratitude Journal</li>
+                                    <li>Compliment Yourself</li>
+                                    <li>Show Your Gratitude Toward Others</li>
+                                </ul>
+                                <h2><strong>Decrease Your Screen Time</strong></h2>
+                                <p>Screen time has been associated with a lower quality of life. Studies have found that those who spent less time staring at their phones, a television screen, or their computer screen were significantly happier and experienced&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6214874/">greater psychological wellbeing</a>&nbsp;than those who spent a large amount of time on their screens. This year, consider setting stricter boundaries around your screen time to allow you to enjoy your life more fully.</p>
+                                <h2><strong>Build a Healthy Work/ Life Balance</strong></h2>
+                                <p>All work and no play can certainly begin to take its toll on anyone&rsquo;s mental health. Those who struggle to create a healthy work-life balance may find themselves struggling with burnout. This year, resolve to separate your work and home life more efficiently. You can do so by:</p>
+                                <ul>
+                                    <li>Setting a work schedule and sticking to it</li>
+                                    <li>Learning how to say no</li>
+                                    <li>Keeping work at work</li>
+                                    <li>Taking your breaks</li>
+                                </ul>
+                                <h2><strong>Give Therapy a Try</strong></h2>
+                                <p>Caring for your mental health is essential to living your happiest and healthiest life. Sometimes, we need extra help to get our mental health to thrive. If you believe your mental health could use a little professional help, our educated and dedicated therapists are here for you. Through counseling, you can receive a mental health assessment, a listening ear, and treatment as needed.&nbsp;<a href="http://michiganpsychologicalcare.com/contact.php">Contact</a>&nbsp;us today.</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health#:~:text=When%20it%20comes%20to%20your,Get%20regular%20exercise">https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health#:~:text=When%20it%20comes%20to%20your,Get%20regular%20exercise</a>.</p>
+                                <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1470658/#:~:text=Exercise%20improves%20mental%20health%20by,self%2Desteem%20and%20cognitive%20function.&amp;text=Exercise%20has%20also%20been%20found,self%2Desteem%20and%20social%20withdrawal">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1470658/#:~:text=Exercise%20improves%20mental%20health%20by,self%2Desteem%20and%20cognitive%20function.&amp;text=Exercise%20has%20also%20been%20found,self%2Desteem%20and%20social%20withdrawal</a>.</p>
+                                <p><a href="http://www.asanet.org/wp-content/uploads/savvy/press/JHSB_March_2012_Idler_News_Release.pdf">http://www.asanet.org/wp-content/uploads/savvy/press/JHSB_March_2012_Idler_News_Release.pdf</a></p>
+                                <p><a href="https://pubmed.ncbi.nlm.nih.gov/425958/">https://pubmed.ncbi.nlm.nih.gov/425958/</a></p>
+                                <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6214874/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6214874/</a></p>
+                                <p>Keywords: self-development, mental health goals, counseling, therapy, mental health assessment</p>
+                                
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/signs-of-codependency">⇐ SIGNS OF CODEPENDENCY</a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/5-ways-you-can-volunteer-your-time.php">5 WAYS YOU CAN VOLUNTEER YOUR TIME ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>
