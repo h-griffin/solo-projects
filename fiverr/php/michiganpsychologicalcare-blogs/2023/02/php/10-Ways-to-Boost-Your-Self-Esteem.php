@@ -36,7 +36,7 @@ $meta_desc = '';
 							<!-- Entry Image
 							============================================= -->
 							<div class="entry-image bottommargin">
-								<a href="#"><img src="/images/blog/2023/02/10-Ways-to-Boost-Your-Self-Esteem.jpg" alt="Blog Single"></a>
+								<a href="#"><img src="/images/blog/2023/02/10-ways-to-boost-your-self-esteem.jpg" alt="Blog Single"></a>
 							</div><!-- .entry-image end -->
 
 							<!-- Entry Content

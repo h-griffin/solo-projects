@@ -36,7 +36,7 @@ $meta_desc = '';
 							<!-- Entry Image
 							============================================= -->
 							<div class="entry-image bottommargin">
-								<a href="#"><img src="/images/blog/2023/02/5-Self-Care-Practices-Proven-to-Improve-Your-Mental-Health.jpg" alt="Blog Single"></a>
+								<a href="#"><img src="/images/blog/2023/02/5-self-care-practices-proven-to-improve-your-mental-health.jpg" alt="Blog Single"></a>
 							</div><!-- .entry-image end -->
 
 							<!-- Entry Content
