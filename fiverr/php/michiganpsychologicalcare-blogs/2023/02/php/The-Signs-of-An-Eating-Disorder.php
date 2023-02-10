@@ -36,7 +36,7 @@ $meta_desc = '';
 							<!-- Entry Image
 							============================================= -->
 							<div class="entry-image bottommargin">
-								<a href="#"><img src="/images/blog/2023/02/The-Signs-of-An-Eating-Disorder.jpg" alt="Blog Single"></a>
+								<a href="#"><img src="/images/blog/2023/02/the-signs-of-an-eating-disorder.jpg" alt="Blog Single"></a>
 							</div><!-- .entry-image end -->
 
 							<!-- Entry Content

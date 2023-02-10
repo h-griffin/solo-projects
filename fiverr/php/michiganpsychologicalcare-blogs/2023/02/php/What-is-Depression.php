@@ -36,7 +36,7 @@ $meta_desc = '';
 							<!-- Entry Image
 							============================================= -->
 							<div class="entry-image bottommargin">
-								<a href="#"><img src="/images/blog/2023/02/What-is-Depression.jpg" alt="Blog Single"></a>
+								<a href="#"><img src="/images/blog/2023/02/what-is-depression.jpg" alt="Blog Single"></a>
 							</div><!-- .entry-image end -->
 
 							<!-- Entry Content
@@ -103,7 +103,7 @@ $meta_desc = '';
 							</div>
 
 							<div class="col-12 col-md-auto text-center">
-								<a href="/blog/how-substance-use-impacts-your-brain.php.php"> HOW SUBSTANCE ABUSE IMPACTS YOUR BRAIN ⇒</a>
+								<a href="/blog/how-substance-use-impacts-your-brain.php"> HOW SUBSTANCE ABUSE IMPACTS YOUR BRAIN ⇒</a>
 							</div>
 						</div><!-- .post-navigation end -->
 						<div class="line"></div>

@@ -36,7 +36,7 @@ $meta_desc = '';
 							<!-- Entry Image
 							============================================= -->
 							<div class="entry-image bottommargin">
-								<a href="#"><img src="/images/blog/2023/02/Ways-to-Improve-Your-Romantic-Relationship.jpg" alt="Blog Single"></a>
+								<a href="#"><img src="/images/blog/2023/02/ways-to-improve-your-romantic-relationship.jpg" alt="Blog Single"></a>
 							</div><!-- .entry-image end -->
 
 							<!-- Entry Content
