@@ -13,7 +13,10 @@
 <body>
 
     <div class="button-container">
+
         <button disabled>Start Learning</button>
+
+        <p id="score" style="display: none;">0</p>
 
         <div style="display: flex; flex-direction: column; ">
             <!-- <input type="range" name="slider" id="slider" value="10" min="1" max="20" oninput="sliderFunction()"  > -->
@@ -22,22 +25,28 @@
             <div style=" display: flex; justify-content: space-between;">
                 <div class="range-wrap" style="width: 49%;">
                     <input type="range" class="range" name="slider" id="slider" value="5" min="2" max="20" oninput="delaySlider()">
-                    <output class="bubble"></output>
+                    <output class="bubble" id="delay-bubble"></output>
                     <label style="padding: 0;" for="slider">Delay</label>
                 </div>
                 <div class="range-wrap2" style="width: 49%;">
                     <input type="range" class="range2" name="slider2" id="slider2" value="1.0" min="0.2" max="1.5" step="0.1" oninput="speedSlider()">
                     <output class="bubble2"></output>
-                    <label style="padding: 0;" for="slider2">Script Speed</label>
+                    <label style="padding: 0;" for="slider2">Speed</label>
                 </div>
             </div>
             
             <select style="margin-top: 10px; padding: 5px 0px" id="voices" class="form-select bg-secondary text-light"></select>
             
-            <div>
-                <button id="listen" style="height: 4vh; margin-top: 10px; border-radius: 10px;">Toggle Order</button>
-                <input type="text" name="str-count" id="str-count" placeholder="3">
-                <label for="str-count" style="padding: 0;">Sets to Read</label>
+            
+            <div class="mode-container">
+                <button id="toggle-order" style="height: 4vh; margin-top: 10px; border-radius: 10px; width: 45%">Toggle Order: 1-2</button>
+                <button id="toggle-quiz" style="height: 4vh; margin-top: 10px; border-radius: 10px; width: 45%"> Toggle Quiz Mode: I</button>
+            </div>
+
+            <div class="shortcuts">
+                <p id="a">A-show answer</p>
+                <p id="s">S-skip question</p>
+                <p id="p">P-pause/play</p>
             </div>
 
         </div>
@@ -45,6 +54,7 @@
     </div>
  
     <div class="container">
+
         <div class="display-area">
 
             <div class="display">
@@ -53,6 +63,14 @@
 
             <div class="display">
                 <p id="phrase-text"></p>
+                
+                <div id="status"  >
+                    <div class="timer" style="--duration: 7;--size: 30;">
+                        <div class="mask"></div>
+                    </div>
+                </div>
+                <p id="icon">&#128066;</p>  
+                <p id="speech-text"></p>
             </div>
 
             <div class="display">
@@ -79,7 +97,7 @@
 
         
         <div class="banner">
-            <h3>Present Tense</h3>
+            <h3>Present Tense </h3>
 
             <div>
                 <p>load &#8593;</p>  
@@ -91,31 +109,31 @@
             <div id="meaning-container">
                 <h3 for="present-meaning">Meaning</h3>
                 <div type="text" class="preload">
-                    <small>present tense1</small>
-                    <small>present tense2</small>
-                    <small>present tense3</small>
+                    <small>present tense 1</small>
+                    <small>present tense 2</small>
+                    <small>present tense 3</small>
                 </div>
             </div>
             <div id="phrase-container">
                 <h3 for="present-phrase">Phrase</h3>
                 <div type="text" class="preload">
-                    <small>present tense1</small>
-                    <small>present tense2</small>
-                    <small>present tense3</small>
+                    <small>present tense 1</small>
+                    <small>present tense 2</small>
+                    <small>present tense 3</small>
                 </div>
             </div>
             <div id="script-container">
                 <h3 for="present-script">Script</h3>
                 <div type="text" class="preload">
-                    <small>present tense1</small>
-                    <small>present tense2</small>
-                    <small>present tense3</small>
+                    <small>present tense 1</small>
+                    <small>present tense 2</small>
+                    <small>present tense 3</small>
                 </div>
             </div>
         </div>
     
         <div class="banner">
-            <h3>Future Tense</h3>
+            <h3>Future Tense </h3>
 
             <div>
                 <p>load &#8593;</p>  
@@ -126,31 +144,31 @@
             <div id="meaning-container">
                 <h3 for="future-meaning">Meaning</h3>
                 <div type="text" class="preload">
-                    <small>future tense1</small>
-                    <small>future tense2</small>
-                    <small>future tense3</small>
+                    <small>future tense 1</small>
+                    <small>future tense 2</small>
+                    <small>future tense 3</small>
                 </div>
             </div>
             <div id="phrase-container">
                 <h3 for="future-phrase">Phrase</h3>
                 <div type="text" class="preload">
-                    <small>future tense1</small>
-                    <small>future tense2</small>
-                    <small>future tense3</small>
+                    <small>future tense 1</small>
+                    <small>future tense 2</small>
+                    <small>future tense 3</small>
                 </div>
             </div>
             <div id="script-container">
                 <h3 for="future-script">Script</h3>
                 <div type="text" class="preload">
-                    <small>future tense1</small>
-                    <small>future tense2</small>
-                    <small>future tense3</small>
+                    <small>future tense 1</small>
+                    <small>future tense 2</small>
+                    <small>future tense 3</small>
                 </div>
             </div>    
         </div>
     
         <div class="banner">
-            <h3>Past Tense</h3>
+            <h3>Past Tense </h3>
 
             <div>
                 <p>load &#8593;</p>  
@@ -161,25 +179,25 @@
             <div id="meaning-container">
                 <h3 for="past-meaning">Meaning</h3>
                 <div type="text" class="preload">
-                    <small>past tense1</small>
-                    <small>past tense2</small>
-                    <small>past tense3</small>
+                    <small>past tense 1</small>
+                    <small>past tense 2</small>
+                    <small>past tense 3</small>
                 </div>
             </div>
             <div id="phrase-container">
                 <h3 for="past-phrase">Phrase</h3>
                 <div type="text" class="preload">
-                    <small>past tense1</small>
-                    <small>past tense2</small>
-                    <small>past tense3</small>
+                    <small>past tense 1</small>
+                    <small>past tense 2</small>
+                    <small>past tense 3</small>
                 </div>
             </div>
             <div id="script-container">
                 <h3 for="past-script">Script</h3>
                 <div type="text" class="preload">
-                    <small>past tense1</small>
-                    <small>past tense2</small>
-                    <small>past tense3</small>
+                    <small>past tense 1</small>
+                    <small>past tense 2</small>
+                    <small>past tense 3</small>
                 </div>
             </div>    
         </div>
@@ -188,6 +206,9 @@
 
 
     <script src="index.js"></script>
+ 
+ 
+
 </body>
 
 </html>
