@@ -1,6 +1,5 @@
  
-
-
+ 
 // ====================
 //  TEXT TO SPEECH  
 // ====================
@@ -10,6 +9,13 @@ if ('speechSynthesis' in window) {
 }else{
     // Speech Synthesis Not Supported 
     alert("Sorry, your browser doesn't support text to speech!");
+}
+
+if ("webkitSpeechRecognition" in window) {
+
+} else {
+    alert("Speech Recognition Not Available")
+    document.getElementById("toggle-quiz").disabled = true;
 }
 
 let meaningSpeech = new SpeechSynthesisUtterance();
@@ -41,7 +47,7 @@ window.speechSynthesis.onvoiceschanged = () => {
 
 // update speed when selected
 document.querySelector("#slider2").addEventListener('change', () => {
-    // meaningSpeech.rate = document.querySelector("#slider2").value
+    meaningSpeech.rate = document.querySelector("#slider2").value
     scriptSpeech.rate = document.querySelector("#slider2").value
 })
 
@@ -58,128 +64,114 @@ document.querySelector("#voices").addEventListener("change", () => {
 
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-  }
+}
+
+function play() {
+    var audio = new Audio('./assets/ping-82822.mp3');
+    audio.play();
+}
 
 function pause() {
+    // clear interval cycle
+    clearInterval(displayInterval);
     isPaused = true;
-    console.log('setting changed, isPaused:', isPaused)
+    questionNumber = 0;
 
     // change button text
     document.querySelector("button").innerHTML = "Resume Learning";
+    console.log("control button clicked, isPaused:", isPaused);
 
     // clear screen display
     document.getElementById("meaning-text").classList.remove('load');
     document.getElementById("phrase-text").classList.remove('load');
     document.getElementById("script-text").classList.remove('load'); 
 
-    setTimeout(() => {
-        document.getElementById("meaning-text").innerHTML = ' ';
-        document.getElementById("phrase-text").innerHTML = ' ';
-        document.getElementById("script-text").innerHTML = ' ';
-    }, 500); //css fade out
+    document.getElementById("meaning-text").innerHTML = ' ';
+    document.getElementById("phrase-text").innerHTML = ' ';
+    document.getElementById("script-text").innerHTML = ' ';
+
+    document.querySelector("#icon").style.display = "none";
+    document.querySelector("#status").style.display = "none";
+
+    recognition.abort();
 } 
 
-// function to display text and read out phrase and script
-function phraseAndScript(allArrs, randomIndex) {
+function phraseAndScript(randomIndex) {
     return new Promise(resolve => {
-        console.log('phraseAndScript()')
-    
-        document.getElementById("phrase-text").innerHTML += allArrs[1][randomIndex] ? `<p> ${ allArrs[1][randomIndex] } </p>` : ' ';
-        document.getElementById("script-text").innerHTML += allArrs[2][randomIndex] ? `<p> ${ allArrs[2][randomIndex] } </p>` : ' ';
-        
-        // delay css fade in so js dom has access to newest word (last child)
-        setTimeout(() => {
-            document.getElementById("phrase-text").lastChild.classList.add('load')
-            document.getElementById("script-text").lastChild.classList.add('load')
-        }, 100);
-
-        scriptSpeech.text = allArrs[2][randomIndex];
-        speechSynthesis.speak(scriptSpeech);
+        console.log(randomIndex, questionNumber)
+        // set/display next set and speek phrase
+        if (randomIndex === questionNumber && !isDelaySkipped) {
+            
+            document.getElementById("speech-text").innerHTML =  " "; 
+            document.getElementById("phrase-text").innerHTML = allArrs[1][randomIndex] ? allArrs[1][randomIndex] : ' ';
+            document.getElementById("script-text").innerHTML = allArrs[2][randomIndex] ? allArrs[2][randomIndex] : ' ';
+            document.getElementById("phrase-text").classList.add('load');
+            document.getElementById("script-text").classList.add('load');
+            
+            scriptSpeech.text = document.querySelector("#script-text").innerHTML;
+            speechSynthesis.speak(scriptSpeech);
+        }
 
         scriptSpeech.onerror = (event) => {
             console.log(`(phrase speech) An error has occurred with the speech synthesis: ${event.error}`);
         }
 
         setTimeout(() => {
-            console.log('phrase and script resolved')
             resolve("sucess!");
         }, 3000); //timer to allow for speech to finish
     })
 }
 
-// function to display text and read out meaning
-function meeaning(allArrs, randomIndex) {
+
+function meeaning(randomIndex) {
     return new Promise(resolve => {
-        console.log('meaning()')
 
-        document.getElementById("meaning-text").innerHTML += allArrs[0][randomIndex] ? `<p> ${ allArrs[0][randomIndex] } </p>` : ' ';
-
-        // delay css fade in so js dom has access to newest word (last child)
-        setTimeout(() => {
-            document.getElementById("meaning-text").lastChild.classList.add('load')
-        }, 100);
- 
-        meaningSpeech.text =  allArrs[0][randomIndex];
-        speechSynthesis.speak(meaningSpeech);
+        
+        if (randomIndex === questionNumber && !isDelaySkipped) {
+            // set/display next set and speek phrase
+            document.getElementById("meaning-text").innerHTML = allArrs[0][randomIndex] ? allArrs[0][randomIndex] : ' ';
+            document.getElementById("meaning-text").classList.add('load');
+            meaningSpeech.text = document.querySelector("#meaning-text").innerHTML;
+            speechSynthesis.speak(meaningSpeech);
+        }
 
         meaningSpeech.onerror = (event) => {
             console.log(`(meaning speech) An error has occurred with the speech synthesis: ${event.error}`);
         }
-        
+
         setTimeout(() => {
-            console.log('meaning resolved')
             resolve("sucess!");
         }, 3000); //timer to allow for speech to finish
     })
 }
 
-// function to order displays and speech
-async function meaningFirst(allArrs, selectedIndexes) {
-    for (let i = 0; i < selectedIndexes.length; i++) {
-        if(!isPaused){
-            await meeaning(allArrs, selectedIndexes[i]);
-        }
-    }
-    await delay(delayTime)
-    for (let i = 0; i < selectedIndexes.length; i++) {
-        if(!isPaused){ 
-            await phraseAndScript(allArrs, selectedIndexes[i])
-        }
-    }
-    await delay(delayTime)
-}
-
-// function to order displays and speech
-async function meaningLast(allArrs, selectedIndexes) {
-    for (let i = 0; i < selectedIndexes.length; i++) {
-        if(!isPaused){
-            await phraseAndScript(allArrs, selectedIndexes[i])
-        }
-    }
-    await delay(delayTime)
-    for (let i = 0; i < selectedIndexes.length; i++) {
-        if(!isPaused){ 
-            await meeaning(allArrs, selectedIndexes[i]);
-        }
-    }
-    await delay(delayTime)
-}
 
 
 
 
+ 
 
 // =========================  
 //  DELAY TIME & SPEED RANGE SLIDER  
 // =========================
 
-var canPlay = false;
-var isPaused = false;
+var canPlay = false;        // ensures all input sets have pairs
+var isPaused = false;       // interval cycle control
+let displayInterval;        // global access to interval handle
+let allArrs = [];           // global access to input text
 
-// default settings
+let questionNumber = 0;     // match randomIndex pairs for pause/play/skip (when resumed it does not continue phrase for previous meaning skipped)
+let isDelaySkipped = false; // cancel promise when skipping to answer
+
+// defualt control settings
 var delayTime = 5000;  
 var speechspeed = 1.0;  
-var setsToRead = 3   
+let isQuizMode = false;     // quizmode control
+var isMeaningFirst = true;  // order control
+
+// quiz mode settings
+let final_transcript = "";  // speech to text result
+let quizscore = 0;          // quiz mode session score
 
 function delaySlider() {
     var slider = document.getElementById("slider"); 
@@ -236,17 +228,38 @@ function setBubble(range, bubble) {
 }
  
 // =========================  
-//  PAUSE WHEN SETTINGS UPDATE  
+//  SET DISPLAY ORDER  
 // ========================= 
-var isMeaningFirst = true;
 
-document.getElementById("listen").addEventListener("click", () => {
+// onclick toggle meaning/phrase order
+document.getElementById("toggle-order").addEventListener("click", () => {
     isMeaningFirst = !isMeaningFirst;
+    isMeaningFirst ? document.getElementById("toggle-order").innerHTML = "Toggle Order: 1-2" : document.getElementById("toggle-order").innerHTML = "Toggle Order: 2-1"
+
     pause();
 })
 
-document.getElementById("str-count").addEventListener("click", () => {
-    setsToRead = document.getElementById("str-count").value;
+// onclick toggle quiz mode
+document.getElementById("toggle-quiz").addEventListener("click", () => {
+    isQuizMode = !isQuizMode;
+    if (isQuizMode) {
+        document.getElementById("toggle-quiz").innerHTML = "Toggle Quiz Mode: O";
+        document.getElementById("a").style.display = 'none';
+        document.getElementById("s").style.display = 'none';
+    } else {
+        document.getElementById("toggle-quiz").innerHTML = "Toggle Quiz Mode: I";
+        document.getElementById("a").style.display = 'block';
+        document.getElementById("s").style.display = 'block';
+    }
+    
+    // disable controls when in quizMode
+    document.getElementById("toggle-order").disabled = !document.getElementById("toggle-order").disabled;
+    document.getElementById("slider").disabled = !document.getElementById("slider").disabled;
+    
+    // show score counter when in quizMode 
+    isQuizMode ? document.getElementById("score").style.display = 'block' : document.getElementById("score").style.display = 'none'
+    isQuizMode ? document.getElementById("delay-bubble").style.display = 'none' : document.getElementById("delay-bubble").style.display = 'block'
+    
     pause();
 })
 
@@ -271,6 +284,7 @@ document.querySelectorAll("textarea").forEach( textarea => {
 function canStart() {
     console.log("== canStart() ==");
  
+    // clear whitespace
     meaningText = meaning.value.replace(/^\s+/, '').replace(/\s+$/, '');
     phraseText = phrase.value.replace(/^\s+/, '').replace(/\s+$/, '');
     scriptText = script.value.replace(/^\s+/, '').replace(/\s+$/, '');
@@ -278,10 +292,11 @@ function canStart() {
     if (meaningText !== '' && phraseText !== '' && scriptText !== ''){
         document.querySelector("button").disabled = false;
         canPlay = true;
-    } 
+    }
+
 }
 
-// start cycle display
+// start display cycle 
 async function start() {
     isPaused = false;
     document.querySelector("button").innerHTML = "Learning";
@@ -292,54 +307,153 @@ async function start() {
         textarea.removeEventListener("change", () => {canStart()});
     })
 
-    var allArrs = []
+    allArrs = []
     // split all textarea inputs by line break  
     document.querySelectorAll("textarea").forEach( textarea => {
         allArrs.push(textarea.value.split('\n').filter( function(e) { return e.trim().length > 0; } ));
     })
 
-    // start
-    updateDisplay(allArrs);
+    // select index to match meaning and phrases
+    var randomIndex = Math.floor(Math.random() * allArrs[0].length);
+    questionNumber = randomIndex;
+
+    //skip first delay
+    if (!isPaused){ // dont show/speak if paused (settings adjusted)
+        if ( isQuizMode ){
+            quizOrder();
+        }else if(isMeaningFirst && !isQuizMode){
+            meeaning(randomIndex);
+            setTimeout(() => {
+                if(!isPaused){ phraseAndScript(randomIndex) }
+            }, delayTime); 
+        }else{
+            phraseAndScript(randomIndex);
+            setTimeout(() => {
+                if(!isPaused){ meeaning(randomIndex) }
+            }, delayTime);
+        }
+
+        // cycle all displays 
+        if (!isQuizMode) { displayInterval = setInterval(() => {updateDisplay(displayInterval)}, delayTime*2); } 
+    }
+  
+}
+
+var updateDisplay = function(displayInterval){
+    console.log("== updateDisplays() ==");
+    console.log("delay time:", delayTime);
+    
+    isDelaySkipped = false; // reset skip for new cycle
+    // reset previous display
+    document.getElementById("meaning-text").classList.remove('load');
+    document.getElementById("phrase-text").classList.remove('load');
+    document.getElementById("script-text").classList.remove('load');
+
+    // select index to match meaning adn phrases
+    var randomIndex = Math.floor(Math.random() * allArrs[0].length);
+    questionNumber = randomIndex;
+    if(!isPaused){
+        setTimeout(() => {  
+            if(isMeaningFirst){
+                meeaning( randomIndex);
+                setTimeout(() => {
+                    if(!isPaused){ phraseAndScript( randomIndex) }
+                }, delayTime);  
+            }else{
+                phraseAndScript( randomIndex)
+                setTimeout(() => {
+                    if(!isPaused){ meeaning( randomIndex) }
+                }, delayTime);
+            }
+        }, 500); // css transition duration <<< this timer waits for fade out before showing next meaning
+    }
+};
+
+ 
+async function quizOrder() {
+    console.log('== quiz order ==')
+
+    var randomIndex = Math.floor(Math.random() * allArrs[0].length);
+    // questionNumber = randomIndex;
+
+    // reset previous display
+    document.getElementById("meaning-text").classList.remove('load');
+    document.getElementById("phrase-text").classList.remove('load');
+    document.getElementById("script-text").classList.remove('load');
+    
+    await meeaning(randomIndex);
+
+    await listen(); 
+
+    if (final_transcript.includes(allArrs[2][randomIndex])) {   
+        play();
+        quizscore++;
+        document.getElementById("score").innerHTML = quizscore;
+        document.getElementById("icon").innerHTML = "&#9989;" // check
+
+    } else {
+        document.getElementById("icon").innerHTML = "&#10060;" // x
+        await delay(1000);
+    }
+
+    await phraseAndScript(randomIndex);
+    document.getElementById("icon").style.display = 'none'; // clear status icon
+
+    // loop
+    if (!isPaused){ quizOrder(); }
 }
 
 
-async function updateDisplay(allArrs){
-    console.log("== updateDisplays() ==");
-    console.log("delay time:", delayTime);
-    console.log("sets to read:", setsToRead);
+window.SpeechRecognition = window.webkitSpeechRecognition;
+const recognition = new SpeechRecognition();
+recognition.interimResults = true;
+recognition.lang = scriptSpeech.lang; // match script/speech lang with speech recodnition language 
+
+async function listen() {
+    // reset previous speech result
+    document.getElementById("speech-text").innerHTML =  "";
+    document.getElementById("speech-text").style.opacity = "0";
+    document.querySelector("#icon").style.display = "none";
+
+    final_transcript = '';
+
+    return new Promise(resolve => {
     
-    // reset previous display
-    document.querySelectorAll(".text").forEach( tag => {
-        tag.classList.remove('load')
+        document.querySelector("#icon").innerHTML = "&#128066;"; // ear
+        document.querySelector("#status").style.display = "block";
+        document.querySelector("#icon").style.display = "block";
+        recognition.start();
+        
+        setTimeout(() => {
+            recognition.stop();
+            document.querySelector("#status").style.display = "none"; // clear css timer
+            resolve("sucess!");
+        }, 7000); //timer to allow for speech to finish
     })
+}
 
-    await delay(500) //css fade out ^^
-    document.getElementById("meaning-text").innerHTML = " ";
-    document.getElementById("phrase-text").innerHTML = " ";
-    document.getElementById("script-text").innerHTML = " ";
 
-    // pre gather indexes to match meaning and phrases together
-    var selectedIndexes = []
-    for (let i = 0; i < setsToRead; i++) {
-        selectedIndexes.push(Math.floor(Math.random() * allArrs[0].length))
-    }
-    
-    // display and speak sets
-    if(!isPaused){
-        if(isMeaningFirst){
-            await meaningFirst(allArrs, selectedIndexes)
-        }else{
-            await meaningLast(allArrs, selectedIndexes)
+recognition.onresult = (event) => {
+    let interim_transcript = "";
+
+    for (let i = event.resultIndex; i < event.results.length; ++i) {
+        if (event.results[i].isFinal) {
+            final_transcript = event.results[i][0].transcript;
+            // recognition.stop();
+        } else {
+            interim_transcript += event.results[i][0].transcript;
         }
     }
 
-    // recursively call cycle again 
-    if(!isPaused){
-        await delay(delayTime) 
-        updateDisplay(allArrs);
-    }
-
+    document.getElementById("speech-text").innerHTML = final_transcript;
+    document.getElementById("speech-text").style.color = "red";
+    document.getElementById("speech-text").style.opacity = "1";
 };
+
+recognition.onerror = (event) => {
+    console.log(`(speech recodnition) An error has occurred with the speech recodnition: ${event.error}`);
+}
+
 
 // ================
 // ACCORDION
@@ -348,7 +462,6 @@ async function updateDisplay(allArrs){
 var acc = document.getElementsByClassName("accordion");
 var i;
 
-// attach styles to all accordion bars
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -361,8 +474,9 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// append prewritten text to text area
+
 var loadBtn = document.querySelectorAll('.banner div p')
+// append prewritten text to text area
 loadBtn.forEach(btn => {
     btn.addEventListener('click', () => { 
         // load only text from module selected
@@ -399,5 +513,62 @@ loadBtn.forEach(btn => {
 
 
 
+// keyboard shortcuts
+document.addEventListener("keypress", function(event) {
+    // P - pause/play
+    if (event.key == 'p' ) {
+        if (isPaused){
+            console.log('P - Play');
+            start();
+        } else {
+            console.log('P - Pause');
+            pause();
+        }
+    }
+    // S - skip
+    if (event.key == 's' ) {
+        if(!isPaused && !isQuizMode){
+            console.log('S - Skip')
+            pause();
+            start();
+        }
+    }
+    // A - answer
+    if (event.key == 'a' ) {
+        if(!isPaused && !isQuizMode){
+            console.log('A - Answer')
+            isDelaySkipped = true;
+
+            if (isMeaningFirst) {
+                document.getElementById("speech-text").innerHTML =  " "; 
+                document.getElementById("phrase-text").innerHTML = allArrs[1][questionNumber] ? allArrs[1][questionNumber] : ' ';
+                document.getElementById("script-text").innerHTML = allArrs[2][questionNumber] ? allArrs[2][questionNumber] : ' ';
+                document.getElementById("phrase-text").classList.add('load');
+                document.getElementById("script-text").classList.add('load');
+                
+                scriptSpeech.text = document.querySelector("#script-text").innerHTML;
+                speechSynthesis.speak(scriptSpeech);
+
+                scriptSpeech.onerror = (event) => {
+                    console.log(`(phrase speech) An error has occurred with the speech synthesis: ${event.error}`);
+                }
+                questionNumber++; // temp increase so the original promise does not match key and play (this is reset for new/next question pair)
+            } else {
+                document.getElementById("meaning-text").innerHTML = allArrs[0][questionNumber] ? allArrs[0][questionNumber] : ' ';
+                document.getElementById("meaning-text").classList.add('load');
+                meaningSpeech.text = document.querySelector("#meaning-text").innerHTML;
+                speechSynthesis.speak(meaningSpeech);
+        
+                meaningSpeech.onerror = (event) => {
+                    console.log(`(meaning speech) An error has occurred with the speech synthesis: ${event.error}`);
+                }
+                questionNumber++;
+            }
+
+        }
+    }
+
+
+});
 
 
