@@ -118,6 +118,7 @@ function phraseAndScript(randomIndex) {
 
         setTimeout(() => {
             resolve("sucess!");
+            console.log("resolved")
         }, 3000); //timer to allow for speech to finish
     })
 }
@@ -141,6 +142,7 @@ function meeaning(randomIndex) {
 
         setTimeout(() => {
             resolve("sucess!");
+            console.log("resolved")
         }, 3000); //timer to allow for speech to finish
     })
 }
@@ -162,6 +164,7 @@ let allArrs = [];           // global access to input text
 
 let questionNumber = 0;     // match randomIndex pairs for pause/play/skip (when resumed it does not continue phrase for previous meaning skipped)
 let isDelaySkipped = false; // cancel promise when skipping to answer
+let isAnswerDisplayed = false; // disable skipping to answer when asnwer is showing
 
 // defualt control settings
 var delayTime = 5000;  
@@ -324,13 +327,21 @@ async function start() {
         }else if(isMeaningFirst && !isQuizMode){
             meeaning(randomIndex);
             setTimeout(() => {
-                if(!isPaused){ phraseAndScript(randomIndex) }
+                if(!isPaused && !isDelaySkipped){ 
+                    isAnswerDisplayed = true;
+                    phraseAndScript(randomIndex); 
+                }
             }, delayTime); 
+            isAnswerDisplayed = false;
         }else{
             phraseAndScript(randomIndex);
             setTimeout(() => {
-                if(!isPaused){ meeaning(randomIndex) }
+                if(!isPaused && !isDelaySkipped){ 
+                    isAnswerDisplayed = true;
+                    meeaning(randomIndex); 
+                }
             }, delayTime);
+            isAnswerDisplayed = false;
         }
 
         // cycle all displays 
@@ -357,13 +368,19 @@ var updateDisplay = function(displayInterval){
             if(isMeaningFirst){
                 meeaning( randomIndex);
                 setTimeout(() => {
-                    if(!isPaused){ phraseAndScript( randomIndex) }
+                    if(!isPaused && !isDelaySkipped){ 
+                        isAnswerDisplayed = true;
+                        phraseAndScript( randomIndex) }
                 }, delayTime);  
+                isAnswerDisplayed = false;
             }else{
                 phraseAndScript( randomIndex)
                 setTimeout(() => {
-                    if(!isPaused){ meeaning( randomIndex) }
+                    if(!isPaused && !isDelaySkipped){ 
+                        isAnswerDisplayed = true;
+                        meeaning( randomIndex) }
                 }, delayTime);
+                isAnswerDisplayed = false;
             }
         }, 500); // css transition duration <<< this timer waits for fade out before showing next meaning
     }
@@ -528,18 +545,20 @@ document.addEventListener("keypress", function(event) {
     // S - skip
     if (event.key == 's' ) {
         if(!isPaused && !isQuizMode){
-            console.log('S - Skip')
+            console.log('S - Skip');
             pause();
             start();
         }
     }
     // A - answer
     if (event.key == 'a' ) {
-        if(!isPaused && !isQuizMode){
-            console.log('A - Answer')
+        if(!isPaused && !isQuizMode && !isAnswerDisplayed){
+            console.log('A - Answer');
             isDelaySkipped = true;
+            isAnswerDisplayed = true;
 
             if (isMeaningFirst) {
+                // answer - phrase & script
                 document.getElementById("speech-text").innerHTML =  " "; 
                 document.getElementById("phrase-text").innerHTML = allArrs[1][questionNumber] ? allArrs[1][questionNumber] : ' ';
                 document.getElementById("script-text").innerHTML = allArrs[2][questionNumber] ? allArrs[2][questionNumber] : ' ';
@@ -554,6 +573,7 @@ document.addEventListener("keypress", function(event) {
                 }
                 questionNumber++; // temp increase so the original promise does not match key and play (this is reset for new/next question pair)
             } else {
+                // answer - meaning
                 document.getElementById("meaning-text").innerHTML = allArrs[0][questionNumber] ? allArrs[0][questionNumber] : ' ';
                 document.getElementById("meaning-text").classList.add('load');
                 meaningSpeech.text = document.querySelector("#meaning-text").innerHTML;
