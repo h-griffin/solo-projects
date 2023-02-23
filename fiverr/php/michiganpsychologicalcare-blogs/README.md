@@ -18,6 +18,18 @@
 ## images
 ![screenshot](./screenshot.png)
 
+
+
+## feb 2023
+- tuesdays (500)
+    - 07 - 5 self care practices proven to improve your mental health
+    - 14 - 10 ways to boost your self esteem
+    - 21 - the signs of an eating disorder
+    - 23 - ways to improve your romantic relationship
+- thursday (1200)
+    - 28 - nwhat is depression
+
+
 ## jan 2023
 - tuesdays (500)
     - 03 - how substance abuse impacts your brain
