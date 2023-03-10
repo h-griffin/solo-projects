@@ -1,0 +1,276 @@
+<style>
+    select {
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        border: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        appearance: none;
+        background-image: url('data:image/svg+xml;utf8,<svg fill="red" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+    }
+
+    input[type="number"] {
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        border: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        appearance: none;
+    }
+
+    input[type="submit"] {
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        border: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        appearance: none;
+        cursor: pointer;
+    }
+</style>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Growing Horse Nutrition Calculator</title>
+</head>
+<style>
+    .calWrapper {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .calWrapper .heading {
+        width: 70%;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .calWrapper .heading h2 {
+        font-size: 46px;
+    }
+
+    .calWrapper .heading p {
+        font-size: 25px;
+        font-weight: bold;
+        color: #979797;
+    }
+
+    .calWrapper .calBody {
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .calWrapper .calBody .calRow {
+        display: flex;
+        margin: 10px 0;
+        align-items: center;
+    }
+
+    .calWrapper .calBody .calRow .calLeft {
+        flex-basis: 70%;
+        font-size: 25px;
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+
+    .calWrapper .calBody .calRow .calRight {
+        flex-basis: 60%;
+        font-size: 25px;
+    }
+
+    .calWrapper .calBody .calRow .calRight select {
+        font-size: 18px;
+        text-transform: capitalize;
+        width: 100%;
+        outline: none;
+        padding: 5px 10px;
+        border: 2px solid #888;
+    }
+
+    .calWrapper .calBody .calRow .twoInput {
+        display: flex;
+    }
+
+    .calWrapper .calBody .calRow .twoInput input {
+        font-size: 18px;
+        outline: none;
+        padding: 5px 10px;
+        width: 50% !important;
+        border: 2px solid #888;
+    }
+
+    .calWrapper .calBody .calRow .twoInput input::placeholder {
+        font-size: 14px;
+    }
+
+    .calWrapper .calBody .calRow .twoInput select {
+        margin-left: 20px;
+        font-size: 18px;
+        width: 50% !important;
+    }
+
+    .calWrapper .calBody .resultSec {
+        width: 40%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .calWrapper .calBody .resultSec button {
+        font-size: 24px;
+        padding: 15px 50px;
+        border-radius: 10px;
+        border: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        background: #f2f2f2;
+        color: #222;
+        transition: all linear .2s;
+        box-shadow: 0 0 20px #BAB7B7;
+        margin: 0 auto;
+    }
+
+    .calWrapper .calBody .resultSec button:hover {
+        cursor: pointer;
+        background: #222;
+        color: #f2f2f2;
+    }
+
+
+    .calWrapper .resultArea {
+        width: 90%;
+        margin: 50px 0;
+        padding: 50px 20px;
+        text-align: center;
+        font-size: 28px;
+        text-transform: capitalize;
+        box-shadow: 0 0 50px #888;
+        border-radius: 25px;
+    }
+
+    .calWrapper .resultArea span {
+        color: #CE0606;
+        font-weight: bold;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .calWrapper .calBody .calRow {
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .calWrapper .calBody .calRow .calLeft {
+            margin-bottom: 10px;
+        }
+
+        .calWrapper .calBody .calRow .calRight select {
+            width: 150px;
+        }
+
+        .calWrapper .resultArea {
+            width: 90%;
+            padding: 50px 20px;
+            box-sizing: border-box;
+        }
+
+        .calWrapper .heading {
+            width: 90%;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .calWrapper .heading h2 {
+            font-size: 25px;
+        }
+    }
+</style>
+
+<body>
+    <form action="" method="post">
+        <div class="calWrapper">
+            <div class="heading">
+                <h2>Growing Horse Nutrition Calculator</h2>
+                <p>Answer the following questions:</p>
+            </div>
+            <div class="calBody">
+                <div class="calRow">
+                    <div class="calLeft">
+                        <b>What is your horse's weight?</b>
+                    </div>
+                    <div class="calRight twoInput">
+                        <input type="number" id="weight" placeholder="Enter Weight" required>
+                        <select name="wUnit" id="wUnit" required>
+                            <option value="kg" selected>KG</option>
+                            <option value="pound">Pound</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calRow">
+                    <div class="calLeft">
+                        <b>What is your horse's age?</b>
+                    </div>
+                    <div class="calRight">
+                        <select name="age" id="age" required>
+                            <option value="Yearling">Yearling</option>
+                            <option value="2 year old">2 year old</option>
+                            <option value="3 year old">3 year old</option>
+                            <option value="4 year old">4 year old</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="calRow">
+                    <div class="calLeft">
+                        <b>In training?</b>
+                    </div>
+                    <div class="calRight">
+                        <select name="activityLVL" id="activityLVL" required>
+                            <option value="none">Not in training</option>
+                            <option value="training">In training</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calRow">
+                    <div class="calLeft">
+                        <b>Breed size?</b>
+                    </div>
+                    <div class="calRight">
+                        <select name="breedSize" id="breedSize" required>
+                            <option value="small">Small breed</option>
+                            <option value="large">Large breed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="resultSec">
+                    <button id="calResult" class="" type="button">Submit</button>
+                </div>
+            </div>
+            <div id="resultArea" class="resultArea">
+                Your <span id="hAge">X</span> <span id="hExercise">Y</span> requires <span id="hMCAL">Z</span> Mcal
+                daily. <br>
+                Crude Protein Requirements: <span id="hProtein">N%</span>
+            </div>
+    </form>
+    <!-- <script src="{{ 'GrowingHorse.js' | asset_url }}"></script> -->
+    <script src="GrowingHorse.js"></script>
+</body>
+
+</html>
