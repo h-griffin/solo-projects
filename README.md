@@ -33,6 +33,7 @@
 - [flashcard-tts-study](fiverr/javascript/flashcard-tts-study/)
 - [form-autocomplete-from-json](fiverr/javascript/form-autocomplete-from-json/)
 - [format-paragraph-rich-text](fiverr/javascript/format-paragraph-rich-text/)
+- [horse-colorie-counter](fiverr/javascript/horse-colorie-counter/)
 - [img-flip-page-hover](fiverr/javascript/img-flip-page-hover/)
 - [isotope-js-filtering](fiverr/javascript/isotope-js-filtering/)
 - [json-html-table](fiverr/javascript/json-html-table/)
