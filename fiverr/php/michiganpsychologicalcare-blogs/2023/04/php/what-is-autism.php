@@ -1,0 +1,119 @@
+<?php 
+
+$img = '';
+$title = 'What is Autism?';
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>What is Autism?</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>April 25, 2023</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2023/04/what-is-autism.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+
+                                <h1>What is Autism?</h1>
+                                
+                                <p>According to the&nbsp;<a href="https://www.autismspeaks.org/press-release/autism-speaks-pledges-make-world-difference-autism-prevalence-rises-27-children-us">Autism Speaks</a>&nbsp;organization, autism, otherwise known as Autism Spectrum Disorder (ASD), is estimated to impact 1 in 36 U.S. children today. Considering the significant number of individuals impacted by the developmental health condition, raising awareness is crucial. This is why we are choosing to use our platform to educate people about ASD this World Autism Awareness Day.</p>
+                                <h2><strong>The Definition of Autism Spectrum Disorder</strong></h2>
+                                <p>Autism spectrum disorder is a developmental health disorder that defines a wide range of social challenges, such as:</p>
+                                <ul>
+                                    <li>repetitive behaviors</li>
+                                    <li>speech issues</li>
+                                    <li>nonverbal communication struggles</li>
+                                </ul>
+                                <p>Autism Spectrum Disorder is a broad term used to define many different developmental health issues. The reason ASD is considered a spectrum disorder is because those experiencing it tend to have a specific set of strengths and limitations. Like many other disorders, Autism Spectrum Disorder tends to effect individuals in varying severity, with some experiencing mild symptoms and others more severe.</p>
+                                <h2><strong>Signs and Symptoms of Autism Spectrum Disorder</strong></h2>
+                                <p>The earlier one is able to seek treatment for Autism Spectrum Disorder, the greater chance they have of a successful intervention. The signs of autism typically begin to show around the age of two and can include:</p>
+                                <ul>
+                                    <li>not hitting developmental milestones, like making eye contact or smiling by six months, babbling by twelve months, or speaking at least a few words by sixteen months</li>
+                                    <li>avoiding eye contact</li>
+                                    <li>losing speech, babbling, or social skills</li>
+                                    <li>appearing to prefer solitude</li>
+                                    <li>severe or strange reactions to specific sensory stimulations</li>
+                                    <li>repetitive behaviors</li>
+                                    <li>limited interests</li>
+                                    <li>an intense need for routine</li>
+                                    <li>delayed language or social skill development</li>
+                                    <li>constant repetition of certain words or phrases</li>
+                                </ul>
+                                <h2><strong>How You Can Raise Awareness About Autism in Your Community</strong></h2>
+                                <p>The more aware we all are of the signs and symptoms of autism, the greater chance those experiencing Autism Spectrum Disorder will have of getting the treatment they need in a timely manner. Putting in the effort to raise awareness about autism in your community may help someone experiencing autism reach out to their doctor about their symptoms. A few ways you can raise awareness about autism include:</p>
+                                <ul>
+                                    <li>educating yourself about autism</li>
+                                    <li>sharing accurate and reliable resources about autism on your social media</li>
+                                    <li>attend and support local autism events</li>
+                                    <li>speak up for those experiencing autism</li>
+                                    <li>reach out to your local political leaders about legislation that impacts those with autism</li>
+                                    <li>be mindful of how your actions and words can impact those experiencing autism</li>
+                                </ul>
+                                <h2><strong>We Are Here to Help</strong></h2>
+                                <p>The earlier one seeks treatment for Autism Spectrum Disorder, the greater chance of positive outcomes they have for their future. Whether you or a loved one are experiencing the symptoms of autism, seeking the help of a medical professional can be critical for you or your loved one to receive the treatment needed. Michigan Psychological Care can provide ASD testing and our <a href="https://michiganpsychologicalcare.com/michigan-autism-care-aba-services.php">Michigan Autism Care &amp; ABA Services</a> can provide ABA services. These services help bring those with ASD to the neurotypical level of their peers within their same age group.&nbsp;</p>
+                                <p>If you need a mental health professional to talk to, our trained and compassionate therapists are here for you.&nbsp;<a href="http://michiganpsychologicalcare.com/contact.php">Contact</a>&nbsp;us today, and we will work to set you up with a therapist who can help you,</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://www.autismspeaks.org/press-release/autism-speaks-pledges-make-world-difference-autism-prevalence-rises-27-children-us">https://www.autismspeaks.org/press-release/autism-speaks-pledges-make-world-difference-autism-prevalence-rises-27-children-us</a></p>
+                                <p>Keywords: autism, autism spectrum disorder, therapy, therapist</p>
+
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/what-is-ASMR.php">⇐ WHAT IS ASMR?</a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/how-stress-impacts-your-quality-of-life.php"> HOW STRESS IMPACTS YOUR QUALITY OF LIFE ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>
