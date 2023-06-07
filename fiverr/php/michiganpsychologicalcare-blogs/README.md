@@ -20,7 +20,25 @@
 
 
 
- 
+
+
+## apr 2023
+- tuesdays (500)
+    - 03 - dealing with greif in college
+    - 10 - do i have an anxiety disorder
+    - 17 - what is amr
+    - 24 - what is autism
+- thursday (1200)
+    - 27 - how stress impacts your quality of life
+
+## mar 2023
+- tuesdays (500)
+    - 06 - the impact of caffine on your brain
+    - 13 - the importance of caring for your employees
+    - 20 - what is color therapy
+    - 27 - what is dimentia
+- thursday (1200)
+    - 30 - whays to tell if your teen is struggling mentally
 
 ## feb 2023
 - tuesdays (500)
