@@ -1,0 +1,115 @@
+<?php 
+
+$img = '';
+$title = "Ways to Be There for a Grieving Friend";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>Ways to Be There for a Grieving Friend</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Aug 15, 2023</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2023/08/ways-to-support-grieving-friend.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>Ways to Be There for a Grieving Friend</strong></h1>
+
+                                <p>Losing something that means a lot to a person can bring up really painful and complex feelings. Seeing a loved one going through these feelings can ignite a desire to be there and help them through their difficult time.&nbsp;</p>
+                                <p>However, many people struggle to know what to do or say when a person they care about is grieving- especially if they have not experienced grief themselves. There are many ways you can be there for a grieving friend, and we are here to help you figure them out.&nbsp;</p>
+                                <h2><strong>Don&rsquo;t Let the Fear of Saying or Doing the Wrong Thing Keep You from Offering Your Support</strong></h2>
+                                <p>Many people avoid those who are grieving out of fear that they will say the wrong thing. However, grief is incredibly <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8158955/">isolating</a> as it is. Your friend needs support. Just knowing that they have it in you will be incredibly valuable to them. It is perfectly okay to say something like, &ldquo;I don&rsquo;t know exactly what to say, but I am here for you in whatever way you need me to be.&rdquo;</p>
+                                <h2><strong>Be a Listening Ear</strong></h2>
+                                <p>Sometimes, all a grieving person needs is somebody to vent to. Don&rsquo;t try to offer advice or put a positive spin on their grief. Just be there to offer a listening ear. It will be more valuable to them than you would ever know.</p>
+                                <h2><strong>Validate Their Feelings</strong></h2>
+                                <p>Your friend does not need to hear that it could be worse. Let them know that their feelings about the loss they are facing are valid and you are there to support them as they navigate the complex emotions they are working through.</p>
+                                <h2><strong>Offer Help with Daily Tasks Where You Can</strong></h2>
+                                <p>One of the most helpful things you can do for a person who is grieving is to aid in daily tasks, chores, and responsibilities. Doing this will allow them the space and time they need to grieve without having to worry about their everyday lives falling apart.</p>
+                                <p>A few ways you can help with daily tasks include:</p>
+                                <ul>
+                                    <li>bringing them a meal</li>
+                                    <li>helping with pet care</li>
+                                    <li>taking care of housework and chores</li>
+                                    <li>offering babysitting help or doing school pick up</li>
+                                    <li>helping with groceries or running errands</li>
+                                    <li>aiding in making funeral arrangements</li>
+                                </ul>
+                                <h2><strong>Be Prepared to See Them at Their Worst</strong></h2>
+                                <p>Everybody grieves in their own way. Understand that your loved one is experiencing a roller coaster of emotions as they process their loss. However, it is also important to remember that you can hold your own boundaries while still offering support.&nbsp;</p>
+                                <h2><strong>Respect Their Way of Grieving</strong></h2>
+                                <p>If your loved one asks for space, needs to cry, or is handling their grief in a way you do not quite understand, let them. We all have different ways of grieving. Your grieving friend does not need a how-to guide for grief. All they need from you is your support.&nbsp;</p>
+                                <h2><strong>Continue to Let Them Know You Are There for Them</strong></h2>
+                                <p>Grief can be incredibly isolating. Continuing to show up for your loved one will be crucial to letting them know that they are loved and supported. You can do so by:</p>
+                                <ul>
+                                    <li>going with them on a walk</li>
+                                    <li>bringing lunch</li>
+                                    <li>inviting them out</li>
+                                    <li>sharing a fun activity with them</li>
+                                </ul>
+                                <h2><strong>We are Here to Help</strong></h2>
+                                <p>If you are experiencing grief, know that you do not have to go through it alone. Our dedicated and compassionate therapists are here to help you work through the complex emotions associated with loss. <a href="http://michiganpsychologicalcare.com/contact.php">Contact</a> us today.</p>
+                                <p><strong>References</strong></p>
+                                <p>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8158955/</p>
+                                <p>Keywords: grief, loss, depression, therapist, counseling</p>
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/ways-to-cope-with-grief-of-divorce.php">⇐ WAYS TO COPE WITH GRIEF OF DIVORCE </a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/why-people-leave-therapy-before-theyre-ready.php"> WHY PEOPLE LEAVE THERAPY BEFORE THEY'RE READY ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>
