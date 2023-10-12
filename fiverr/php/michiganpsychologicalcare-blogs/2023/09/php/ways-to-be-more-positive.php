@@ -1,0 +1,121 @@
+<?php 
+
+$img = '';
+$title = "Ways to Be More Positive";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>Ways to Be More Positive</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Sept 26, 2023</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2023/09/ways-to-be-more-positive.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>Ways to Be More Positive</strong></h1>
+                                
+                                <p>Not all of us are programmed to see our glass as half-full naturally. However, those who can see the world through a more optimistic lens have been found to experience more benefits to their mental health, overall wellbeing, and satisfaction with life.</p>
+                                <p>Does that mean all hope is lost if you are not a natural optimist? Of course not! In today&rsquo;s article, we will cover ways that you can begin to see the world with more positivity and optimism than ever before!</p>
+                                <h2><strong>The Benefits of Positivity</strong></h2>
+                                <p>Positivity allows you to view the world from a better stance, which can increase your overall life satisfaction and offer some great mental health benefits. These benefits include:</p>
+                                <ul>
+                                    <li>Improved self-esteem and confidence</li>
+                                    <li>Lower risk of&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4940613/">mortality</a></li>
+                                    <li>More resiliency in hard or stressful times</li>
+                                    <li>Greater cardiovascular health</li>
+                                    <li>A stronger immune system</li>
+                                    <li>Lower risk of depression</li>
+                                </ul>
+                                <h2><strong>How to Be More Optimistic</strong></h2>
+                                <p>Being optimistic doesn&rsquo;t come easy for everyone, but that doesn&rsquo;t mean you are not capable of viewing the world from a more positive perspective. A few ways to be more optimistic include:</p>
+                                <h3><strong>Learn to Catch Your Negative Thoughts</strong></h3>
+                                <p>Becoming more conscious of your negative thoughts will be the first step to change them into neutral or positive ones.</p>
+                                <h3><strong>Stop Blaming Yourself</strong></h3>
+                                <p>Approach shortcomings with compassion and patience. Treat yourself the way you would a friend. Viewing yourself in a more positive light is the first step to viewing the world more optimistically.</p>
+                                <h3><strong>Practice Mindfulness and Intentionality</strong></h3>
+                                <p>When you are mindful and intentional with your thoughts, you can have greater control over them. Journaling and meditation are some of the most popular forms of mindfulness, but there are many different methods you can use.</p>
+                                <h3><strong>Work to Make Negative Thoughts More Neutral or Positive</strong></h3>
+                                <p>Part of being more optimistic involves making a conscious effort to change your thoughts. This can certainly take some time and practice, but catching negative thoughts and learning to change them to more neutral or positive ones will be a huge step toward approaching life more optimistically.</p>
+                                <h3><strong>Try to Face Life with More Humor</strong></h3>
+                                <p>Sometimes, laughter really is the greatest medicine. When you make a mistake, face a failure, or are having a hard day, choosing to view the situation through the lens of humor can be a great way to prevent you from spiraling down a negative rabbit hole.</p>
+                                <h3><strong>Take Care of Your Health</strong></h3>
+                                <p>When your physical health is thriving, your mental health will thrive, too. A few ways to take care of your physical health include:</p>
+                                <ul>
+                                    <li>Sleeping enough</li>
+                                    <li>Eating well</li>
+                                    <li>Exercising daily</li>
+                                    <li>Drinking enough water</li>
+                                </ul>
+                                <h3><strong>Surround Yourself with Optimists</strong></h3>
+                                <p>The people you surround yourself with have a huge role in the way you approach the world. Surrounding yourself with positive people will help you become more positive, too!</p>
+                                <h3><strong>Practice Makes Perfect</strong></h3>
+                                <p>The more you practice thinking positively&mdash;whether through changing your thoughts, positive meditation, journaling, or practicing gratitude&mdash;the better chance you will have at developing a more positive affect.</p>
+                                <h2><strong>We Are Here for You</strong></h2>
+                                <p>Do you feel like you&rsquo;ve done everything to become a more positive person with little to no success? Sometimes, a person struggling with mental health issues can have a more difficult time viewing the world through the eyes of an optimist. If you have found your mental health struggling, we are here for you.&nbsp;<a href="http://michiganpsychologicalcare.com/contact.php">Contact</a>&nbsp;us today, and we will work with you to begin your journey to a happier, healthier life.</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4940613/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4940613/</a>&nbsp;</p>
+                                <p>Keywords: optimistic, positivity, CBT, therapy</p>
+                                
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/tips-for-picking-the-best-therapist-for-you.php">⇐ TIPS FOR PICKING THE BEST THERAPIST FOR YOU </a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/what-is-psychotherapy.php"> WHAT IS PSYCHOTHERAPY ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>
