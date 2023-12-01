@@ -1,0 +1,75 @@
+<script>
+    if (document.location.href.includes("pl")) {
+        let checkForContent = setInterval(() => {
+            if (document.querySelector("table[id='productForm:apparel_pricing_items']")) {
+                clearInterval(checkForContent);
+                setup()
+            }
+        }, 100);
+    }
+    function setup() {
+        let tableEl = document.querySelector("table[id='productForm:apparel_pricing_items']");
+        tableEl.firstElementChild.firstElementChild.lastElementChild.remove()
+        Array.from(tableEl.firstElementChild.nextElementSibling.children).forEach((item) => {
+            Array.from(item.children).forEach((innerItem, innerIndex) => {
+                if (item.children.length > 2) {
+                    if (innerIndex > 1) {
+                        innerItem.remove()
+                    }
+                }
+                else if (item.children.length = 2) {
+                    if (innerIndex > 0) {
+                        innerItem.remove()
+                    }
+                }
+            })
+        })
+        let gridHeaderEls = document.querySelectorAll(".gridHeader");
+        gridHeaderEls.forEach((el) => {
+            if (el.innerHTML.trim() === "<b>Inventory (on hand now)</b>") {
+                el.parentElement.parentElement.parentElement.remove();
+            }
+        })
+    }        
+</script>
+<script>
+    if (document.location.href.includes("/pl/")) {
+        let counter = 0;
+        let checkForError = setInterval(() => {
+            counter += 250;
+            if (counter >= 60000) {
+                clearInterval(checkForError)
+            }
+            if (document.querySelector("ul.error")) {
+                let productTitle = document.querySelector(".productTitle").innerHTML;
+                productTitle = productTitle.slice(0, productTitle.indexOf("(")).trim()
+                if (document.querySelector("ul.error").innerHTML.includes("On Demand")) {
+                    clearInterval(checkForError)
+                    document.querySelector("ul.error").firstElementChild.innerHTML = `
+                    ${productTitle} is an on demand item. There is a 2-4 week turnaround time
+                    `;
+                }
+            }
+        }, 100)
+    }
+</script>
+<script>
+    if (document.location.href.includes("/pl/")) {
+        let counter = 0;
+        let checkForError = setInterval(() => {
+            counter += 250;
+            if (counter >= 60000) {
+                clearInterval(checkForError)
+            }
+            if (document.querySelector("ul.error")) {
+                let productTitle = document.querySelector("div.jumbotron.jumbotron-fluid h1").innerHTML;
+                if (document.querySelector("ul.error").innerHTML.includes("below the available amount")) {
+                    clearInterval(checkForError)
+                    document.querySelector("ul.error").firstElementChild.innerHTML = `
+                    Your order of ${productTitle} has exceeded our in stock quantity. Please try again
+                    `;
+                }
+            }
+        }, 100)
+    }
+</script>
