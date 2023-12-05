@@ -1,0 +1,13 @@
+<script>
+    var myAccountLink = document.querySelector("div.userTool > div > div > ul > li:nth-child(1) > a")   
+    console.log(myAccountLink)
+    myAccountLink.style.display = "none"
+    if (document.title.includes("Shopping Cart - VASA")) {
+        var text = document.querySelector("#orderForm > div.container > div:nth-child(1) > div.col-md-6.order-md-1 > h5")
+        text.style.display = "none"
+
+        var select = document.querySelector("select")
+        select.style.display = "none"
+    }
+ 
+</script>
