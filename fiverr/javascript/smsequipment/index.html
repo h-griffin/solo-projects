@@ -1,0 +1,150 @@
+<script type="text/javascript">
+
+    function googleTranslateElementInit() {
+
+        new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,fr' }, 'google_translate_element');
+
+    }
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<style>
+    #google_translate_element {
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .goog-te-banner-frame {
+        display: none;
+        top: -300px;
+    }
+
+    body[style] {
+        top: 0px !important;
+    }
+</style>
+
+<script>
+
+    // load images for last selected lang after page refresh
+    function readCookie(name) { 
+        var c = document.cookie.split('; '),
+            cookies = {}, i, C;
+
+        for (i = c.length - 1; i >= 0; i--) {
+            C = c[i].split('=');
+            cookies[C[0]] = C[1];
+        }
+
+        // slice '/en/' preface  ( /en/en or /en/fr )
+        return cookies[name].slice(4);
+    }
+    var cookieLang = readCookie('googtrans');
+    
+    // let page load for google script elements (select) to be available
+    window.onload = function () { 
+        var bannerImg = document.querySelector("#j_id_46 > div.heroSlider.clearfix > div > div > div:nth-child(1) > div > div > img")
+        var logoImg = document.querySelector("#headerForm > div.siteLogo > a > img")
+
+        function updateImages(lang) {
+            if (lang === "fr") {
+                bannerImg.src = "https://ipromoteu-imgvault.s3.amazonaws.com/file_resources/store_387/banner_french.jpg"
+                logoImg.src = "https://ipromoteu-imgvault.s3.amazonaws.com/file_resources/store_387/logo_french.jpg"
+            } else if (lang === "en") {
+                bannerImg.src = "https://ipromoteu-imgvault.s3.amazonaws.com/file_resources/store_387/banner_english.jpg"
+                logoImg.src = "https://ipromoteu-imgvault.s3.amazonaws.com/file_resources/store_387/logo_english.jpg"
+            } else {
+                console.log("updateImages() else -> lang: ", lang)
+            }
+        }
+
+        var select = document.querySelector("#google_translate_element > div > div > select")
+        select.addEventListener("change", function () {
+            updateImages(select.value)
+        })
+
+        updateImages(cookieLang); //initialize images for last selected lang
+    }
+
+
+    document.getElementById('myAccount:j_id_6q:billingState').nextElementSibling.textContent = 'Province';
+    const selectElement = document.querySelector("#address\\:billingStateId");
+    if (selectElement) {
+        const allowedValues = ["Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador", "Northwest Territories", "Nova Scotia", "Nunavut", "Ontario", "Prince Edward Island", "Québec", "Saskatchewan", "Yukon"];
+        for (let i = 0; i < selectElement.options.length; i++) {
+            const optionValue = selectElement.options[i].innerHTML;
+            if (!allowedValues.includes(optionValue)) {
+                selectElement.remove(i);
+                i--;
+            }
+        }
+        const opt = document.createElement("option");
+        opt.value = "";
+        opt.text = "Choose Province";
+        selectElement.add(opt, selectElement.options[0]);
+    }
+    const label = document.querySelector("#address > div.container > div > div > div:nth-child(8) > label");
+    if (label) label.innerHTML = "Province";
+    const countrySelectElement = document.querySelector("#address\\:billingCountryId");
+    if (countrySelectElement) {
+        for (let i = 0; i < countrySelectElement.options.length; i++) {
+            const optionValue = countrySelectElement.options[i].innerHTML;
+            if (optionValue == "Canada") {
+                countrySelectElement.options[i].selected = 'selected'
+            } else {
+                countrySelectElement.options[i].selected = ''
+            }
+        }
+    }
+
+    const targetNode = document.getElementsByTagName("BODY")[0];
+
+    const config = { childList: true };
+
+    const callback = (mutationList, observer) => {
+        for (const mutation of mutationList) {
+            if (mutation.type === "childList") {
+                mutation.addedNodes.forEach((node) => {
+                    if (node.id == "orderForm:j_id_6c_dlg" || node.id == "orderForm:j_id_6b_dlg") {
+                        let iframe = node.querySelector("div.ui-dialog-content.ui-widget-content.ui-df-content > iframe");
+                        iframe.addEventListener("load", function () {
+                            var script_tag = document.createElement("script");
+                            script_tag.type = "text/javascript";
+                            script_tag.text = `const selectElement = document.getElementById("shipping-popup\:shippingStateId");
+                                const countrySelectElement = document.getElementById("shipping-popup\:shippingCountryId");
+                                const allowedValues = ["Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador", "Northwest Territories", "Nova Scotia", "Nunavut", "Ontario", "Prince Edward Island", "Québec", "Saskatchewan", "Yukon"];
+                                
+                                for (let i = 0; i < selectElement.options.length; i++) {
+                                    const optionValue = selectElement.options[i].innerHTML;
+                                    if (!allowedValues.includes(optionValue)) {
+                                        selectElement.remove(i);
+                                        i--; // decrease index because we removed an option
+                                    }
+                                }
+                                document.querySelector("#shipping-popup > div:nth-child(8) > label").innerHTML = "Province";
+                                const opt = document.createElement("option");
+                                opt.value = "";
+                                opt.text = "Choose Province";
+                                selectElement.add(opt, selectElement.options[0])
+                                
+                                for (let i = 0; i < countrySelectElement.options.length; i++) {
+                                    const optionValue = countrySelectElement.options[i].innerHTML;
+                                    if(optionValue == "Canada"){
+                                        countrySelectElement.options[i].selected = 'selected'
+                                    }else{
+                                        countrySelectElement.options[i].selected = ''
+                                    }
+                                }
+                                `;
+                            $(iframe).contents().find("body").append(script_tag);
+                        });
+                    }
+                });
+            }
+        }
+    };
+
+    const observer = new MutationObserver(callback);
+
+    observer.observe(targetNode, config);
+</script>
