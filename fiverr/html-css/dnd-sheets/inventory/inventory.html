@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inventory</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+</head>
+<style> 
+body {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+table td input, textarea {
+    width: 85%;
+    background-color: aliceblue;
+    border: none;
+    padding: 3px 0px;
+    padding-left: 5px;
+    margin-right: 5px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* top table width */
+#ac-items, #properties {
+    width: 30%;
+}
+
+table td:first-child input,
+table td:last-child input {
+    width: 95% !important;
+}
+
+table {
+    border: 3px solid black;
+}
+
+/* middle tables */
+#middle, #left table {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#left, #right {
+    width: 49.5%;
+}
+
+#left .item {
+    width: 30%;
+}
+
+#left table td:first-child input,
+#left table td:nth-child(3) input {
+    width: 90% !important;
+}
+
+/* load */
+.load-input {
+    width: 15% !important;
+}
+
+.load-input input {
+    width: 80%;
+}
+
+#credits {
+    border: 3px solid black;
+    display: flex;
+    margin-top: 20px;
+}
+
+#credits div, #credits input {
+    width: 50%;
+}
+
+#credits input {
+    background-color: aliceblue;
+}
+
+/* right */
+#right {
+    margin-top: 20px;
+}
+
+#right table {
+    width: 100%;
+}
+
+#right table td div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+#right textarea {
+    width: 95%;
+}
+
+#right p {
+    margin: 0;
+}
+</style>
+
+<body>
+    <section id="top">
+            <table>
+                <tbody>
+
+                    <tr>
+                        <th id="ac-items"><h2>AC Items</h2> </th>
+                        <th>Bonus</th>
+                        <th>Type Mod</th>
+                        <th>Check Penalty</th>
+                        <th>Spell Fail</th>
+                        <th>WT</th>
+                        <th id="properties">Properties</th>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" name="ac-item-1"></td>
+                        <td> <input type="text" name="ac-item-bonus-1"></td>
+                        <td> <input type="text" name="ac-item-type-1"></td>
+                        <td> <input type="text" name="ac-item-penalty-1"></td>
+                        <td> <input type="text" name="ac-item-fail-1"></td>
+                        <td> <input type="text" name="ac-item-wt-1"></td>
+                        <td> <input type="text" name="ac-item-properties-1"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="ac-item-2"></td>
+                        <td> <input type="text" name="ac-item-bonus-2"></td>
+                        <td> <input type="text" name="ac-item-type-2"></td>
+                        <td> <input type="text" name="ac-item-penalty-2"></td>
+                        <td> <input type="text" name="ac-item-fail-2"></td>
+                        <td> <input type="text" name="ac-item-wt-2"></td>
+                        <td> <input type="text" name="ac-item-properties-2"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="ac-item-3"></td>
+                        <td> <input type="text" name="ac-item-bonus-3"></td>
+                        <td> <input type="text" name="ac-item-type-3"></td>
+                        <td> <input type="text" name="ac-item-penalty-3"></td>
+                        <td> <input type="text" name="ac-item-fail-3"></td>
+                        <td> <input type="text" name="ac-item-wt-3"></td>
+                        <td> <input type="text" name="ac-item-properties-3"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="ac-item-4"></td>
+                        <td> <input type="text" name="ac-item-bonus-4"></td>
+                        <td> <input type="text" name="ac-item-type-4"></td>
+                        <td> <input type="text" name="ac-item-penalty-4"></td>
+                        <td> <input type="text" name="ac-item-fail-4"></td>
+                        <td> <input type="text" name="ac-item-wt-4"></td>
+                        <td> <input type="text" name="ac-item-properties-4"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="ac-item-5"></td>
+                        <td> <input type="text" name="ac-item-bonus-5"></td>
+                        <td> <input type="text" name="ac-item-type-5"></td>
+                        <td> <input type="text" name="ac-item-penalty-5"></td>
+                        <td> <input type="text" name="ac-item-fail-5"></td>
+                        <td> <input type="text" name="ac-item-wt-5"></td>
+                        <td> <input type="text" name="ac-item-properties-5"></td>
+                    </tr> 
+
+                    <tr>
+                        <td> Totals</td>
+                        <td> <input type="text" name="totals-bonus"></td>
+                        <td> <input type="text" name="totals-type"></td>
+                        <td> <input type="text" name="totals-penalty"></td>
+                        <td> <input type="text" name="totals-fail"></td>
+                        <td> <input type="text" name="totals-wt"></td>
+                        <td> <input type="text" name="totals-properties"></td>
+                    </tr>
+                     
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+    <section id="middle">
+        <div id="left">
+            <table>
+                <tbody>
+                    <tr>
+                        <th colspan="4"><h2>Gear</h2> </th>
+                    </tr>
+                    <tr>
+                        <th class="item">Item</th>
+                        <th>WT</th>
+                        <th class="item">Item</th>
+                        <th>WT</th>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" name="gear-item1-1"></td>
+                        <td> <input type="text" name="gear-wt1-1"></td>
+                        <td> <input type="text" name="gear-item2-1"></td>
+                        <td> <input type="text" name="gear-wt2-1"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="gear-item1-2"></td>
+                        <td> <input type="text" name="gear-wt1-2"></td>
+                        <td> <input type="text" name="gear-item2-2"></td>
+                        <td> <input type="text" name="gear-wt2-2"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="gear-item1-3"></td>
+                        <td> <input type="text" name="gear-wt1-3"></td>
+                        <td> <input type="text" name="gear-item2-3"></td>
+                        <td> <input type="text" name="gear-wt2-3"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="gear-item1-4"></td>
+                        <td> <input type="text" name="gear-wt1-4"></td>
+                        <td> <input type="text" name="gear-item2-4"></td>
+                        <td> <input type="text" name="gear-wt2-4"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="gear-item1-5"></td>
+                        <td> <input type="text" name="gear-wt1-5"></td>
+                        <td> <input type="text" name="gear-item2-5"></td>
+                        <td> <input type="text" name="gear-wt2-5"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="gear-item1-6"></td>
+                        <td> <input type="text" name="gear-wt1-6"></td>
+                        <td> <input type="text" name="gear-item2-6"></td>
+                        <td> <input type="text" name="gear-wt2-6"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="gear-item1-7"></td>
+                        <td> <input type="text" name="gear-wt1-7"></td>
+                        <td> <input type="text" name="gear-item2-7"></td>
+                        <td> <input type="text" name="gear-wt2-7"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="gear-item1-8"></td>
+                        <td> <input type="text" name="gear-wt1-8"></td>
+                        <td> <input type="text" name="gear-item2-8"></td>
+                        <td> <input type="text" name="gear-wt2-8"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="gear-item1-9"></td>
+                        <td> <input type="text" name="gear-wt1-9"></td>
+                        <td> <input type="text" name="gear-item2-9"></td>
+                        <td> <input type="text" name="gear-wt2-9"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="gear-item1-10"></td>
+                        <td> <input type="text" name="gear-wt1-10"></td>
+                        <td> <input type="text" name="gear-item2-10"></td>
+                        <td> <input type="text" name="gear-wt2-10"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="gear-item1-11"></td>
+                        <td> <input type="text" name="gear-wt1-11"></td>
+                        <td> <input type="text" name="gear-item2-11"></td>
+                        <td> <input type="text" name="gear-wt2-11"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="gear-item1-12"></td>
+                        <td> <input type="text" name="gear-wt1-12"></td>
+                        <td> <input type="text" name="gear-item2-12"></td>
+                        <td> <input type="text" name="gear-wt2-12"></td>
+                    </tr> 
+                    <tr>
+                        <td> <input type="text" name="gear-item1-13"></td>
+                        <td> <input type="text" name="gear-wt1-13"></td>
+                        <td> <input type="text" name="gear-item2-13"></td>
+                        <td> <input type="text" name="gear-wt2-13"></td>
+                    </tr> 
+                    <tr>
+                        <td style="text-align: center;" colspan="2"> <div>
+                            (STR + STR + STR) <br> (Heavy x 1 x 2 x 5)
+                        </div> </td>
+                        <td> Total Weight </td>
+                        <td> <input type="text" name="gear-totalweight"></td>
+                    </tr>
+                </tbody>
+            </table>
+             
+            <table>
+                <tbody> 
+                    <tr>
+                        <td>Light Load </td>
+                        <td class="load-input"> <input type="text" name="lightload"></td>
+                        <td>Medium Load </td>
+                        <td class="load-input"> <input type="text" name="mediumload"></td>
+                        <td>Heavy Load </td>
+                        <td class="load-input"> <input type="text" name="heavyload"></td>
+                    </tr>
+                    <tr>
+                        <td>Lift Over Head</td>
+                        <td class="load-input"> <input type="text" name="liftoverhead"></td>
+                        <td>Lift Off Ground </td>
+                        <td class="load-input"> <input type="text" name="liftoffground"></td>
+                        <td>Drag or Push </td>
+                        <td class="load-input"> <input type="text" name="dragorpush"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="credits">
+                <div>Credits</div>
+                <input type="text" name="credits">
+            </div>  
+        </div>
+        <div id="right">
+            <table>
+                <tbody> 
+
+                    <tr>
+                        <th colspan="2"> <h2>Mutation</h2> </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div><p>Head</p><p>10% Max</p></div>
+                            <textarea rows="4" type="text" name="head"></textarea>
+                        </td>
+                        <td>
+                            <div><p>Chest</p><p>10% Max</p></div>
+                            <textarea rows="4" type="text" name="chest"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div><p>Stomach</p><p>10% Max</p></div>
+                            <textarea rows="4" type="text" name="stomach"></textarea>
+                        </td>
+                        <td>
+                            <div><p>Pelvis</p><p>10% Max</p></div>
+                            <textarea rows="4" type="text" name="pelvis"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div><p>Left Arm</p><p>10% Max</p></div>
+                            <textarea rows="4" type="text" name="leftarm"></textarea>
+                        </td>
+                        <td>
+                            <div><p>Right Arm</p><p>10% Max</p></div>
+                            <textarea rows="4" type="text" name="rightarm"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div><p>Left Hand</p><p>10% Max</p></div>
+                            <textarea rows="4" type="text" name="lefthand"></textarea>
+                        </td>
+                        <td>
+                            <div><p>Right Hand</p><p>10% Max</p></div>
+                            <textarea rows="4" type="text" name="righthand"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div><p>Left Leg</p><p>10% Max</p></div>
+                            <textarea rows="4" type="text" name="leftleg"></textarea>
+                        </td>
+                        <td>
+                            <div><p>Right Leg</p><p>10% Max</p></div>
+                            <textarea rows="4" type="text" name="rightleg"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div><p>Left Foot</p><p>10% Max</p></div>
+                            <textarea rows="4" type="text" name="leftfoot"></textarea>
+                        </td>
+                        <td>
+                            <div><p>Right Foot</p><p>10% Max</p></div>
+                            <textarea rows="4" type="text" name="rightfoot"></textarea>
+                        </td>
+                    </tr>
+                     
+                        
+                        
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <script src="" async defer></script>
+</body>
+
+</html>
