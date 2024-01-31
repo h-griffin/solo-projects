@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Companion</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+    body {
+        width: 1000px;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+
+    input,
+    textarea {
+        width: 96%;
+        background-color: aliceblue;
+        border: none;
+        padding: 3px 0px;
+        padding-left: 5px;
+        margin-right: 5px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .container {
+        border: 3px solid black;
+        padding: 2px;
+        margin-top: 10px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    /* companion */
+    #companion {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    #companion input {
+        border-bottom: 3px solid black;
+    }
+
+    #companionLeft {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #companionLeftTop {
+        width: 100%;
+        display: flex;
+    }
+
+    #companionLeftBottom {
+        display: flex;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    #companionRight {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* stats */
+    #stats {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    #statsLeft {
+        width: 60%;
+    }
+
+    #statsTop {
+        display: flex;
+        gap: 10px;
+    }
+
+    #statsBottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    #statsBottomLeft {
+        width: 40%;
+    }
+
+    #statsBottomLeft .container {
+        border: 3px solid black;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 8px 5px;
+    }
+
+    #statsBottomLeft div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #statsBottomLeft input {
+        width: 100px;
+        border-bottom: 3px solid black;
+    }
+
+    #statsBottomRight {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 5px;
+        width: 50%;
+    }
+
+    #statsBottomRight .container {
+        border: 3px solid red !important;
+        padding: 5px;
+
+    }
+
+    #statsBottomRightTop {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 11px;
+    }
+
+    #statsBottomRightBottom {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 11px;
+    }
+
+    #statsBottomRightBottom input,
+    #statsBottomRightTop input {
+        border: 1px solid black;
+        width: 100px;
+    }
+
+    #statsRight {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 40%;
+    }
+
+    #statsRight div {
+        margin: 0;
+    }
+
+    #statsRight div:first-child {
+        width: 30%;
+    }
+
+    /* armor */
+    #armor {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    #armorLeft {
+        display: flex;
+        flex-direction: column;
+        width: 22.1%;
+    }
+
+    #armorLeftTopLeft .container {
+        margin-top: 0 !important;
+    }
+
+    #armorLeftBottomLeft {
+        margin-top: 10px;
+    }
+
+    #armorLeftBottomLeft input {
+        border: 3px solid black;
+        padding: 10px 0;
+    }
+
+
+
+
+    #armorMiddle {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        margin-top: 20px;
+    }
+
+    #armorMiddleTopTop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #armorMiddleTopBottom .container,
+    #armorMiddleTopTop .container {
+        max-width: 60px;
+    }
+
+    #armorMiddleTopBottom {
+        display: flex;
+        justify-content: flex-end;
+        gap: 25px;
+        margin-top: 10px;
+    }
+
+    #armorMiddleBottom {
+        margin-top: 33px;
+        position: relative;
+    }
+
+    #upgradeSlots {
+        position: absolute;
+        top: -83px;
+        left: -25px;
+        width: 30%;
+    }
+
+    #upgradeSlots p {
+        padding-left: 10px;
+
+    }
+
+    #upgradeSlots input {
+        width: 100%;
+        padding: 8.5px 0;
+    }
+
+
+    #armorRight {
+        width: 39.5%;
+        margin-top: 10px;
+    }
+
+    #armorRight table {
+        width: 100%;
+        border: 3px solid black;
+    }
+
+    /* bottom */
+
+    #bottom {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #bottomLeft {
+        width: 21.5%;
+    }
+
+    #bottomLeftTop table {
+        border: 3px solid black;
+    }
+
+    #bottomLeftTop table input {
+        width: 90%;
+    }
+
+    #bottomSkill {
+        display: flex;
+    }
+
+    #bottomLeftBottom {
+        margin-top: 10px;
+    }
+
+    #bottomLeftBottom .container {
+        margin: 0;
+    }
+
+    #bottomMiddle {
+        width: 20%;
+        border: 3px solid black;
+    }
+
+    #bottomRight {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #bottomRightTop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #bottomRightTopLeft {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bottomRightTopRight {
+        /* border: 3px solid green; */
+        position: absolute;
+        right: 0px;
+        margin-top: -128px;
+        width: 69%;
+    }
+
+    #bottomRightBottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bottomRightBottom .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .weaponTop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .weaponBottom {
+        display: flex;
+        gap: 10px;
+    }
+</style>
+
+<body>
+    <section id="companion">
+        <div id="companionLeft">
+            <div id="companionLeftTop">
+                <div class="container">
+                    <h2>Companion</h2>
+                </div>
+                <input type="text" name="companion">
+            </div>
+            <div id="companionLeftBottom">
+                <div>
+                    <input type="text" name="chassis">
+                    <p>Chassis</p>
+                </div>
+                <div>
+                    <input type="text" name="totalAC">
+                    <p>Total AC</p>
+                </div>
+                <div>
+                    <input type="text" name="Size">
+                    <p>Size</p>
+                </div>
+                <div>
+                    <input type="text" name="Speed">
+                    <p>Speed</p>
+                </div>
+            </div>
+        </div>
+        <div id="companionRight">
+            <div class="container">
+                <p>Drone Levels</p>
+                <textarea type="text" name="droneLevels"></textarea>
+            </div>
+            <div class="container">
+                <p>Exocortex Lvls</p>
+                <textarea type="text" name="exocortexlvls"></textarea>
+            </div>
+        </div>
+    </section>
+    <section id="stats">
+        <div id="statsLeft">
+
+            <div id="statsTop">
+                <div class="container">
+                    <p>Str</p>
+                    <input type="text" name="str">
+                </div>
+                <div class="container">
+                    <p>Dex</p>
+                    <input type="text" name="dex">
+                </div>
+                <div class="container">
+                    <p>Con</p>
+                    <input type="text" name="con">
+                </div>
+                <div class="container">
+                    <p>Int</p>
+                    <input type="text" name="int">
+                </div>
+                <div class="container">
+                    <p>Wis</p>
+                    <input type="text" name="wis">
+                </div>
+                <div class="container">
+                    <p>Cha</p>
+                    <input type="text" name="cha">
+                </div>
+            </div>
+            <div id="statsBottom">
+                <div id="statsBottomLeft">
+                    <div class="container">
+                        <div>
+                            <p>Fortitude</p>
+                            <input type="text" name="fortitude">
+                        </div>
+                        <div>
+                            <p>Reflex</p>
+                            <input type="text" name="reflex">
+                        </div>
+                        <div>
+                            <p>Will</p>
+                            <input type="text" name="will">
+                        </div>
+                    </div>
+                </div>
+                <div class="statsBottomRight">
+                    <div class="container">
+                        <div id="statsBottomRightTop">
+                            <div>
+                                <p>Max Hit Points</p>
+                                <input type="text" name="maxHitPoints">
+                            </div>
+                            <div>
+                                <p>Max Resolve</p>
+                                <input type="text" name="maxResolve">
+                            </div>
+                        </div>
+                        <div id="statsBottomRightBottom">
+                            <div>
+                                <p>Current</p>
+                                <input type="text" name="current">
+                            </div>
+                            <div>
+                                <p>Temporary</p>
+                                <input type="text" name="temporary">
+                            </div>
+                            <div>
+                                <p>Current Resolve</p>
+                                <input type="text" name="currentResolve">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="statsRight">
+            <div class="container">
+                <h2>Description</h2>
+            </div>
+            <div class="container">
+                <textarea type="text" name="description" rows="8"></textarea>
+            </div>
+        </div>
+    </section>
+    <section id="armor">
+        <div id="armorLeft">
+            <div id="armorLeftTopLeft">
+                <div class="container">
+                    <p>Dr</p>
+                    <input type="text" name="dr">
+                </div>
+                <div class="container">
+                    <p>Resistance</p>
+                    <input type="text" name="resistance">
+                </div>
+            </div>
+            <div id="armorLeftBottomLeft">
+                <p>Armor Upgrades</p>
+                <div id="armorUpgrades">
+                    <div class="containter"><input type="text" name="armorUpgrades1"></div>
+                    <div class="containter"><input type="text" name="armorUpgrades2"></div>
+                    <div class="containter"><input type="text" name="armorUpgrades3"></div>
+                    <div class="containter"><input type="text" name="armorUpgrades4"></div>
+
+                </div>
+            </div>
+        </div>
+        <div id="armorMiddle">
+            <div id="armorMiddleTopTop">
+                <div class="container">
+                    <p>KAC</p>
+                    <input type="text" name="KAC">
+                </div>
+                <div class="container">
+                    <p>EAC</p>
+                    <input type="text" name="EAC">
+                </div>
+                <div class="container">
+                    <p>BAB</p>
+                    <input type="text" name="BAB">
+                </div>
+                <div class="container">
+                    <p>Melee</p>
+                    <input type="text" name="melee">
+                </div>
+            </div>
+            <div id="armorMiddleTopBottom">
+
+                <div class="container">
+                    <p>Ranged</p>
+                    <input type="text" name="ranged">
+                </div>
+                <div class="container">
+                    <p>Thrown</p>
+                    <input type="text" name="thrown">
+                </div>
+            </div>
+            <div id="armorMiddleBottom">
+                <div id="upgradeSlots">
+                    <p>Upgrade Slots</p>
+                    <div class="container">
+                        <input type="text" name="upgradeSlots">
+                    </div>
+                </div>
+                <p>Special Abilities</p>
+                <div class="container">
+                    <textarea type="text" name="specialAbilities" rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+        <div id="armorRight">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h2>Exocortex Mods</h2>
+                        </td>
+                        <td>
+                            <p>Mod Slots</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="exocortexMods1"> </td>
+                        <td><input type="text" name="modSlots1">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="exocortexMods2"> </td>
+                        <td><input type="text" name="modSlots2">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h2>Exocortex Armor Upgrades</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="exocortexUpgrades1"> </td>
+                        <td><input type="text" name="modSlots3">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="exocortexUpgrades2"> </td>
+                        <td><input type="text" name="modSlots4">
+                        <td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="bottom">
+        <div id="bottomLeft">
+            <div id="bottomLeftTop">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td style="width: 30%;">
+                                <h2>Skills</h2>
+                            </td>
+                            <td id="bottomSkill">
+                                <p>Skill <br> Units</p>
+                                <input type="text" name="skillUnits">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="Acrobatics"> </td>
+                            <td>
+                                <p>Acrobatics (Dex)</p>
+                            <td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="Athletics"> </td>
+                            <td>
+                                <p>Athletics (Str)</p>
+                            <td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="Computers"> </td>
+                            <td>
+                                <p>Computers (Int)</p>
+                            <td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="Engineering"> </td>
+                            <td>
+                                <p>Engineering (Int)</p>
+                            <td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="Perception"> </td>
+                            <td>
+                                <p>Perception (Wis)</p>
+                            <td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="Stealth"> </td>
+                            <td>
+                                <p>Stealth (Dex)</p>
+                            <td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="otherSkill"> </td>
+                            <td><input type="text" name="other"> </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div id="bottomLeftBottom">
+                <div class="container">
+                    <h2>Feats</h2>
+                </div>
+                <div class="container">
+                    <textarea name="feats" rows="14"></textarea>
+                </div>
+            </div>
+        </div>
+        <div id="bottomMiddle">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>Mod Slot</p>
+                            <input type="text" name="modsModSlot">
+                        </td>
+                        <td>
+                            <p>Initial Proficiency</p>
+                            <input type="text" name="initialProficiency">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h2>Mods</h2>
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod1">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod2">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod3">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod4">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod5">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod6">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod7">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod8">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod9">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod10">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod11">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod12">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod13">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod14">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod15">
+                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="mod16">
+                        <td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div id="bottomRight">
+            <div id="bottomRightTop">
+                <div id="bottomRightTopLeft">
+                    <div class="container">
+                        <p>Unencumbered</p>
+                        <input type="text" name="unencumbered">
+                    </div>
+                    <div class="container">
+                        <p>Encumbered</p>
+                        <input type="text" name="encumbered">
+                    </div>
+                    <div class="container">
+                        <p>Overburdened</p>
+                        <input type="text" name="Overburdened">
+                    </div>
+                </div>
+                <div id="bottomRightTopRight">
+                    <div class="container">
+                        <p>Equipment</p>
+                        <textarea name="equipment" rows="14"></textarea>
+                        <div>
+                            <p>Total Bulk</p>
+                            <input type="text" name="totalBulk">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottomRightBottom">
+                <div class="container">
+                    <div class="weaponTop">
+                        <div>
+                            <h2>Weapon</h2>
+                            <input type="text" name="weapon1">
+                        </div>
+                        <div>
+                            <p>Attack Bonus</p>
+                            <input type="text" name="attackBonus1">
+                        </div>
+                        <div>
+                            <p>Critical</p>
+                            <input type="text" name="critical1">
+                        </div>
+                    </div>
+                    <div class="weaponBottom">
+                        <div>
+                            <p>type</p>
+                            <input type="text" name="type1">
+                        </div>
+                        <div>
+                            <p>Range</p>
+                            <input type="text" name="range1">
+                        </div>
+                        <div>
+                            <p>Ammunition</p>
+                            <input type="text" name="ammunition1">
+                        </div>
+                        <div>
+                            <p>Damage</p>
+                            <input type="text" name="damage1">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="weaponTop">
+                        <div>
+                            <h2>Weapon</h2>
+                            <input type="text" name="weapon2">
+                        </div>
+                        <div>
+                            <p>Attack Bonus</p>
+                            <input type="text" name="attackBonus2">
+                        </div>
+                        <div>
+                            <p>Critical</p>
+                            <input type="text" name="critical2">
+                        </div>
+                    </div>
+                    <div class="weaponBottom">
+                        <div>
+                            <p>type</p>
+                            <input type="text" name="type2">
+                        </div>
+                        <div>
+                            <p>Range</p>
+                            <input type="text" name="range2">
+                        </div>
+                        <div>
+                            <p>Ammunition</p>
+                            <input type="text" name="ammunition2">
+                        </div>
+                        <div>
+                            <p>Damage</p>
+                            <input type="text" name="damage2">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="weaponTop">
+                        <div>
+                            <h2>Weapon</h2>
+                            <input type="text" name="weapon3">
+                        </div>
+                        <div>
+                            <p>Attack Bonus</p>
+                            <input type="text" name="attackBonus3">
+                        </div>
+                        <div>
+                            <p>Critical</p>
+                            <input type="text" name="critical3">
+                        </div>
+                    </div>
+                    <div class="weaponBottom">
+                        <div>
+                            <p>type</p>
+                            <input type="text" name="type3">
+                        </div>
+                        <div>
+                            <p>Range</p>
+                            <input type="text" name="range3">
+                        </div>
+                        <div>
+                            <p>Ammunition</p>
+                            <input type="text" name="ammunition3">
+                        </div>
+                        <div>
+                            <p>Damage</p>
+                            <input type="text" name="damage3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="" async defer></script>
+</body>
+
+</html>

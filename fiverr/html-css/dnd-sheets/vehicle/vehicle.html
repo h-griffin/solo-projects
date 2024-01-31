@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vehicle</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    body {
+        width: 1000px;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+
+    input,
+    textarea {
+        width: 96%;
+        background-color: aliceblue;
+        border: none;
+        padding: 3px 0px;
+        padding-left: 5px;
+        margin-right: 5px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .container {
+        border: 3px solid black;
+        padding: 2px;
+        margin-top: 10px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    #vehicle,
+    #sizeFrame,
+    #driftRating,
+    #notes,
+    #bottom {
+        margin-top: 20px;
+    }
+
+
+    /* vehicle */
+    #vehicle {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #vehicleMiddle,
+    #vehicleRight {
+        width: 30%;
+    }
+
+    #vehicleLeft {
+        width: 35%;
+    }
+
+    #vehicleMiddle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #vehicleMiddleTop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #vehicleMiddleTop div {
+        width: 20%;
+    }
+
+    #vehicleMiddleBottom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #vehicleRightTop {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #vehicleRightTop div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+    }
+
+    #vehicleRightBottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    /* size frame */
+    #sizeFrame {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #sizeFrameLeft {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sizeFrameLeftTop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #sizeFrameMiddleTop {
+        display: flex;
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    #sizeFrameMiddleBottom {
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    #sizeFrameRight {
+        width: 30%;
+    }
+
+    /* drift rating */
+    #driftRating {
+        display: flex;
+    }
+
+    #driftRatingLeft {
+        width: 35.5%;
+    }
+
+    #driftRatingRight {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    #driftRatingRightTop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #driftRatingRightTop div,
+    #driftRatingRightBottom div {
+        width: 31%;
+    }
+
+    #driftRatingRightBottom {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    /* notes */
+    #notesTop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #notesLeft {
+        width: 35%;
+    }
+
+    #notesLeft .container {
+        margin: 0;
+        display: flex;
+    }
+
+    #notesLeft .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #notesLeft input {
+        width: 220px;
+    }
+
+    #notesRight {
+        width: 64%;
+    }
+
+    #notesRight .container {
+        margin-top: 0;
+        height: 160px;
+    }
+
+    #notesBottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    #notesBottom .container:nth-child(1) {
+        width: 34%;
+    }
+
+    #notesBottom .container {
+        width: 30.5%;
+    }
+
+    /* bottom */
+    #bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #bottomLeft {
+        width: 35%;
+    }
+
+    #bottomLeft table {
+        border: 0;
+    }
+
+    #bottomLeft table td {
+        padding: 2px;
+        border: 0;
+    }
+
+    #bottomLeft table input {
+        width: 20%;
+    }
+
+    #bottomRight {
+        width: 63%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bottomRight hr {
+        width: 100%;
+    }
+
+    #weapons {
+        display: flex;
+        gap: 10px;
+    }
+
+    #glitching div,
+    #malfunctioning div {
+        display: flex;
+    }
+
+    #glitchingMiddle,
+    #malfunctioningMiddle,
+    #wreckedMiddle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #glitchingLeft,
+    #glitchingRight,
+    #malfunctioningLeft,
+    #malfunctioningRight,
+    #wreckedLeft,
+    #wreckedRight {
+        margin: auto;
+    }
+
+    #glitchingContainer,
+    #malfunctioningContainer,
+    #wreckedContainer {
+        display: flex;
+    }
+
+    #glitching .container,
+    #malfunctioning .container,
+    #wrecked .container {
+        width: 60%;
+        position: relative;
+        margin: 10px 2px;
+        max-height: 300px;
+        padding: 8px 2px;
+    }
+
+    #malfunctioning .container p,
+    #wrecked .container p,
+    #glitching .container p {
+        top: -20px;
+        position: absolute;
+    }
+</style>
+
+<body>
+    <section id="vehicle">
+
+        <div id="vehicleLeft">
+            <div class="container">
+                <p>Vehicle name</p>
+                <input type="text" name="vehicleName">
+            </div>
+            <div class="container">
+                <p>Make and Model</p>
+                <input type="text" name="nameandModel">
+            </div>
+        </div>
+
+        <div id="vehicleMiddle">
+            <div id="vehicleMiddleTop">
+                <div class="container">
+                    <p>Tier</p>
+                    <input type="number" name="tier">
+                </div>
+                <div class="container">
+                    <p>AC</p>
+                    <input type="number" name="ac">
+                </div>
+                <div class="container">
+                    <p>TL</p>
+                    <input type="number" name="tl">
+                </div>
+            </div>
+            <div id="vehicleMiddleBottom">
+                <div class="container">
+                    <p>Forward Shields</p>
+                    <input type="text" name="forwardShields">
+                </div>
+            </div>
+
+        </div>
+        <div id="vehicleRight">
+            <div id="vehicleRightTop" class="container">
+                <p>Hull Points</p>
+                <div>
+                    <div>
+                        <p>Current</p>
+                        <input type="number" name="current">
+                    </div>
+                    <div>
+                        <p>Total</p>
+                        <input type="number" name="total">
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="vehicleRightBottom">
+                <div class="container">
+                    <p>Damage Threshold</p>
+                    <input type="text" name="damageThreshold">
+                </div>
+                <div class="container">
+                    <p>Critical Threshold</p>
+                    <input type="text" name="criticalThreshold">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="sizeFrame">
+        <div id="sizeFrameLeft">
+            <div id="sizeFrameLeftTop">
+                <div class="container">
+                    <p>Size</p>
+                    <input type="text" name="size">
+                </div>
+                <div class="container">
+                    <p>Frame</p>
+                    <input type="text" name="frame">
+                </div>
+            </div>
+            <div class="container">
+                <p>Speed</p>
+                <input type="text" name="speed">
+            </div>
+            <div class="container">
+                <p>Maneuverability</p>
+                <input type="text" name="maneuverability">
+            </div>
+        </div>
+        <div id="sizeFrameMiddle">
+            <div id="sizeFrameMiddleTop">
+                <div class="container">
+                    <p>Port Shields</p>
+                    <input type="text" name="portShields">
+                </div>
+                <div class="container">
+                    <p>StarboardShields</p>
+                    <input type="text" name="starboardShields">
+                </div>
+            </div>
+            <div id="sizeFrameMiddleBottom" class="container">
+                <p>Aft Sheilds</p>
+                <input type="text" name="aftSheilds">
+            </div>
+        </div>
+        <div id="sizeFrameRight">
+            <div class="container">
+                <p>Shield Total</p>
+                <input type="text" name="shieldTotal">
+            </div>
+            <div class="container">
+                <p>Modifiers</p>
+                <input type="text" name="modifiers">
+            </div>
+        </div>
+
+    </section>
+    <section id="driftRating">
+        <div id="driftRatingLeft">
+            <div class="container">
+                <p>Drift Rating</p>
+                <input type="text" name="driftRating" style="height: 30px;">
+            </div>
+            <div class="container">
+                <p>Power Core</p>
+                <input type="text" name="powerCore">
+            </div>
+            <div class="container">
+                <p>Drift Engine</p>
+                <input type="text" name="driftEngine">
+            </div>
+        </div>
+        <div id="driftRatingRight">
+            <div id="driftRatingRightTop">
+                <div class="container">
+                    <p>Weapons (Forward)</p>
+                    <textarea type="text" name="weaponsForward" rows="3"></textarea>
+                </div>
+                <div class="container">
+                    <p>Weapons (Turret)</p>
+                    <textarea type="text" name="weaponsTurret" rows="3"></textarea>
+                </div>
+                <div class="container">
+                    <p>Weapons (Aft)</p>
+                    <textarea type="text" name="weaponsAft" rows="3"></textarea>
+                </div>
+            </div>
+            <div id="driftRatingRightBottom">
+                <div class="container">
+                    <p>Weapons (Port)</p>
+                    <textarea type="text" name="weaponsPort" rows="3"></textarea>
+                </div>
+                <div class="container">
+                    <p>Weapons (Starboard)</p>
+                    <textarea type="text" name="weaponsStarboard" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="notes">
+        <div id="notesTop">
+            <div id="notesLeft">
+                <div class="container">
+                    <p>Crew <br> Captain</p>
+                    <input type="text" name="captain">
+                </div>
+                <div class="container">
+                    <p>Enginneers</p>
+                    <input type="text" name="enginneers">
+                </div>
+                <div class="container">
+                    <p>Gunners</p>
+                    <input type="text" name="gunners">
+                </div>
+                <div class="container">
+                    <p>Pilot</p>
+                    <input type="text" name="pilot">
+                </div>
+                <div class="container">
+                    <p>Science Officers</p>
+                    <input type="text" name="scienceOfficers">
+                </div>
+            </div>
+            <div id="notesRight">
+                <div class="container">
+                    <p>notes</p>
+                    <textarea type="text" name="notes" rows="8"></textarea>
+                </div>
+            </div>
+
+        </div>
+        <div id="notesBottom">
+            <div class="container">
+                <p>Systems</p>
+                <textarea type="text" name="systems" rows="5"></textarea>
+            </div>
+            <div class="container">
+                <p>Expansion Bays</p>
+                <textarea type="text" name="expansionBays" rows="5"></textarea>
+            </div>
+            <div class="container">
+                <p>Cargo/Passengers</p>
+                <textarea type="text" name="cargoPassengers" rows="5"></textarea>
+            </div>
+        </div>
+
+    </section>
+    <section id="bottom">
+        <div id="bottomLeft">
+            <table>
+                <tbody>
+                    <tr>
+                        <p>Critical Damage</p>
+                        <hr>
+                        <p colspan="3">Life Support (1-10)</p>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" name="Glitching">Glitching</td>
+                        <td> <input type="text" name="Malfunction">Malfunction</td>
+                        <td> <input type="text" name="Wrecked">Wrecked</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Sensors (11-30)</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" name="Glitching">Glitching</td>
+                        <td> <input type="text" name="Malfunction">Malfunction</td>
+                        <td> <input type="text" name="Wrecked">Wrecked</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Engines (61-80)</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" name="Glitching">Glitching</td>
+                        <td> <input type="text" name="Malfunction">Malfunction</td>
+                        <td> <input type="text" name="Wrecked">Wrecked</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Power Core (81-100)</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" name="Glitching">Glitching</td>
+                        <td> <input type="text" name="Malfunction">Malfunction</td>
+                        <td> <input type="text" name="Wrecked">Wrecked</td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        <div id="bottomRight">
+            <p>Weapons Array</p>
+            <hr>
+            <div id="weapons">
+                <div id="glitching">
+                    <p>Glitching</p>
+                    <hr>
+                    <div id="glitchingContainer">
+                        <div id="glitchingLeft">
+                            <div class="container">
+                                <p>P</p>
+                                <input type="text" name="glitchingP">
+                            </div>
+                        </div>
+                        <div id="glitchingMiddle">
+                            <div class="container">
+                                <p>F</p>
+                                <input type="text" name="glitchingF">
+                            </div>
+                            <div class="container">
+                                <p>A</p>
+                                <input type="text" name="glitchingA">
+                            </div>
+                        </div>
+                        <div id="glitchingRight">
+                            <div class="container">
+                                <p>S</p>
+                                <input type="text" name="glitchingS">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="malfunctioning">
+                    <p>Malfunctioning</p>
+                    <hr>
+                    <div id="malfunctioningContainer">
+                        <div id="malfunctioningLeft">
+                            <div class="container">
+                                <p>P</p>
+                                <input type="text" name="malfunctioningP">
+                            </div>
+                        </div>
+                        <div id="malfunctioningMiddle">
+                            <div class="container">
+                                <p>F</p>
+                                <input type="text" name="malfunctioningF">
+                            </div>
+                            <div class="container">
+                                <p>A</p>
+                                <input type="text" name="malfunctioningA">
+                            </div>
+                        </div>
+                        <div id="malfunctioningRight">
+                            <div class="container">
+                                <p>S</p>
+                                <input type="text" name="malfunctioningS">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="wrecked">
+                    <p>Wrecked</p>
+                    <hr>
+                    <div id="wreckedContainer">
+                        <div id="wreckedLeft">
+                            <div class="container">
+                                <p>P</p>
+                                <input type="text" name="wreckedP">
+                            </div>
+                        </div>
+                        <div id="wreckedMiddle">
+                            <div class="container">
+                                <p>F</p>
+                                <input type="text" name="wreckedF">
+                            </div>
+                            <div class="container">
+                                <p>A</p>
+                                <input type="text" name="wreckedA">
+                            </div>
+                        </div>
+                        <div id="wreckedRight">
+                            <div class="container">
+                                <p>S</p>
+                                <input type="text" name="wreckedS">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="" async defer></script>
+</body>
+
+</html>

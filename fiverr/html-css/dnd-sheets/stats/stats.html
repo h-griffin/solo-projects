@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stats</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    body {
+        width: 1000px;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    /* character info */
+    section#characterInfo {
+        display: flex;
+        align-items: center;
+    }
+
+    section#characterInfo section div {
+        margin-right: 20px;
+    }
+
+    div#rows {
+        width: 100%;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        height: 175px;
+        justify-content: space-between;
+    }
+
+    section#characterInfo section {
+        display: flex;
+        margin-left: 10px;
+    }
+
+    section#characterInfo section input {
+        width: 100%;
+        background-color: aliceblue;
+        border: none;
+        border-bottom: 2px solid black;
+        padding: 3px 0px;
+        padding-left: 5px;
+    }
+
+    /* stats */
+    div#stat-container {
+        display: flex;
+
+    }
+
+    section#scores {
+        display: flex;
+        width: 35%;
+    }
+
+    section#scores input {
+        width: 65%;
+        margin: 0 auto;
+        margin-left: 10px;
+        background-color: aliceblue;
+        padding: 3px 0px;
+        padding-left: 5px;
+        height: 42.5px;
+    }
+
+    section#scores div div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    section#scores div div p {
+        border: 2px solid black;
+        padding: 15px 5px;
+        margin: 0;
+    }
+
+    section#scores div label {
+        display: block;
+        height: 40px;
+        width: 65%;
+        margin-left: 10px;
+    }
+
+    /* notes */
+    section#notes {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        padding-top: 30px;
+        justify-content: space-between;
+    }
+
+    section#notes div#top-row {
+        display: flex;
+        flex-direction: row;
+        height: 175px;
+    }
+
+    /* armor class */
+    div#armorclass {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div#armorclass div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    div#armorclass div label {
+        border: 3px solid black;
+        width: 75px;
+        text-align: center;
+
+    }
+
+    div#armorclass div input {
+        background-color: aliceblue;
+        padding: 3px 0px;
+        padding-left: 5px;
+        width: 55px;
+    }
+
+    div#top-row div#stats {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+
+    div#stats div#hp {
+        display: flex;
+        border: 3px solid black;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    div#hp div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    div#hp p {
+        margin: 0;
+        padding: 10px;
+    }
+
+    div#hp input,
+    div#armor input,
+    div#statusEffects input,
+    div#wounds textarea,
+    div#calorie textarea,
+    div#acModifiers input,
+    section#savingThrows input {
+        width: 40%;
+        background-color: aliceblue;
+        padding: 3px 0px;
+        padding-left: 5px;
+        border: none;
+    }
+
+    div#stats div#armor,
+    div#stats div#statusEffects {
+        border: 3px solid black;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    div#top-row div#wounds,
+    div#top-row div#calorie {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    div#top-row div#calorie {
+        border: 3px solid black;
+        margin-right: 0;
+    }
+
+
+    div#top-row textarea {
+        width: 90%;
+    }
+
+    /* ac modifiers */
+    div#acModifiers {
+        display: flex;
+    }
+
+    div#acModifiers div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div#acModifiers input,
+    div#fortitude div input,
+    div#reflex div input,
+    div#will div input,
+    div#cmb div input, 
+    div#cmd div input {
+        border: 1px solid black;
+        height: 25px;
+    }
+
+    div#acModifiers p {
+        margin: 0;
+    }
+
+    div#acModifiers div#total {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+
+    div#acModifiers div#total div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#acModifiers div#total p:first-child {
+        border: 3px solid black;
+        padding: 5px 10px;
+    }
+
+    div#total input {
+        width: 25px;
+        padding-right: 5px;
+    }
+
+    section#bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    /* left */
+    div#left {
+        width: 49%;
+    }
+
+    /* saving throws */
+    section#savingThrows {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#savingThrows div#fortitude div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    section#savingThrows div#fortitude div:first-child {
+        align-items: self-end;
+    }
+
+    div#reflex,
+    div#will {
+        display: flex;
+        align-items: center;
+    }
+
+    div#fortitude {
+        display: flex;
+        /* align-items: self-end; */
+    }
+
+    div#fortitude div:first-child,
+    div#reflex div:first-child,
+    div#will div:first-child {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
+    div#reflex div,
+    div#will div {
+        display: flex;
+        justify-content: center;
+    }
+
+    div#fortitude p {
+        padding: 0;
+    }
+
+    div#fortitude div#title {
+        flex-direction: row !important;
+    }
+
+    div#fortitude div#title p,
+    div#reflex p:first-child,
+    div#will p:first-child {
+        border: 3px solid black;
+        padding: 5px 10px;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+    }
+
+    div#reflex p:first-child,
+    div#will p:first-child {
+        padding: 5px 10px;
+        width: 100px;
+    }
+
+    div#fortitude div#title input {
+        width: 25px;
+    }
+
+    /* weapons */
+
+    section#weapons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    div.weapon {
+        border: 3px solid black;
+        padding: 5px;
+    }
+
+    div.weapon div#top-weapon,
+    div.weapon div#bottom-weapon {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div#top-weapon div,
+    div#bottom-weapon div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#top-weapon input,
+    div#bottom-weapon input {
+        width: 90%;
+        background-color: aliceblue;
+        border: none;
+        padding: 3px 0px;
+        padding-left: 5px;
+        margin-right: 5px;
+    }
+
+
+    /* right */
+    div#right {
+        width: 49%;
+    }
+
+    table td input {
+        width: 85%;
+        background-color: aliceblue;
+        border: none;
+        padding: 3px 0px;
+        padding-left: 5px;
+        margin-right: 5px;
+    }
+
+    table td:first-child input {
+        width: unset;
+        margin: 6.5px 10px;;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    tr td:first-child {
+        display: flex;
+        border: none;
+    }
+
+    div#cmd,
+    div#cmb {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    div#cmd div#total,
+    div#cmb div#total {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        text-align: center;
+    }
+
+    div#cmd div#total p,
+    div#cmb div#attack p,
+    div#cmb div#total p {
+        border: 3px solid black;
+        padding: 5px 10px;
+    }
+    div#cmb div#attack p{
+        margin: 0;
+    }
+
+    div#cmd div,
+    div#cmb div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <section id="characterInfo">
+        <img src="./aftermath.png" width="35%">
+        <div id="rows">
+            <section id="top">
+                <div width="50%">
+                    <input type="text" name="CharacterName">
+                    <label for="CharacterName">Character Name</label>
+                </div>
+                <div width="20%">
+                    <input type="text" name="Alignment">
+                    <label for="Alignment">Alignment</label>
+                </div>
+                <div width="30%">
+                    <input type="text" name="PlayerName">
+                    <label for="PlayerName">Player Name</label>
+                </div>
+            </section>
+            <section id="middle">
+                <div>
+                    <input type="text" name="Home">
+                    <label for="Home">Home</label>
+                </div>
+                <div>
+                    <input type="text" name="Race">
+                    <label for="Race">Race</label>
+                </div>
+                <div>
+                    <input type="text" name="Gender">
+                    <label for="Gender">Gender</label>
+                </div>
+                <div>
+                    <input type="text" name="Size">
+                    <label for="Size">Size</label>
+                </div>
+            </section>
+            <section id="bottom">
+                <div>
+                    <input type="text" name="Speed">
+                    <label for="Speed">Speed</label>
+                </div>
+                <div>
+                    <input type="text" name="Age">
+                    <label for="Age">Age</label>
+                </div>
+                <div>
+                    <input type="text" name="Eyes">
+                    <label for="Eyes">Eyes</label>
+                </div>
+                <div>
+                    <input type="text" name="Hair">
+                    <label for="Hair">Hair</label>
+                </div>
+                <div>
+                    <input type="text" name="Height">
+                    <label for="Height">Height</label>
+                </div>
+                <div>
+                    <input type="text" name="Weight">
+                    <label for="Weight">Weight</label>
+                </div>
+
+            </section>
+        </div>
+    </section>
+    <section id="stats">
+        <div id="stat-container">
+            <section id="scores">
+                <div id="abiltiy">
+                    <label>Ability</label>
+                    <div>
+                        <p>STR</p>
+                        <p>DEX</p>
+                        <p>CON</p>
+                        <p>INT</p>
+                        <p>WIS</p>
+                        <p>CHA</p>
+                    </div>
+                </div>
+                <div id="score">
+                    <label for="">Ability Score</label>
+                    <div>
+                        <input type="number" name="STR">
+                        <input type="number" name="DEX">
+                        <input type="number" name="CON">
+                        <input type="number" name="INT">
+                        <input type="number" name="WIS">
+                        <input type="number" name="CHA">
+                    </div>
+                </div>
+                <div id="modifier">
+                    <label for="">Ability Modifier</label>
+                    <div>
+                        <input type="number" name="STR">
+                        <input type="number" name="DEX">
+                        <input type="number" name="CON">
+                        <input type="number" name="INT">
+                        <input type="number" name="WIS">
+                        <input type="number" name="CHA">
+                    </div>
+                </div>
+                <div id="TempAdj">
+                    <label for="">Temp Adj</label>
+                    <div>
+                        <input type="number" name="STR">
+                        <input type="number" name="DEX">
+                        <input type="number" name="CON">
+                        <input type="number" name="INT">
+                        <input type="number" name="WIS">
+                        <input type="number" name="CHA">
+                    </div>
+                </div>
+                <div id="TempModifier">
+                    <label for="">Temp Modifier</label>
+                    <div>
+                        <input type="number" name="STR">
+                        <input type="number" name="DEX">
+                        <input type="number" name="CON">
+                        <input type="number" name="INT">
+                        <input type="number" name="WIS">
+                        <input type="number" name="CHA">
+                    </div>
+                </div>
+            </section>
+            <section id="notes">
+                <div id="top-row">
+                    <div id="stats">
+                        <div id="hp">
+                            <p>HP </p>
+                            <div>
+                                <label for="Total">Total</label>
+                                <input type="text" name="Total">
+                            </div>
+                            <div>
+                                <label for="RP">RP</label>
+                                <input type="text" name="RP">
+                            </div>
+                        </div>
+                        <div id="armor">
+                            <label for="Armor">Armor</label>
+                            <input type="text" name="Armor">
+                        </div>
+                        <div id="statusEffects">
+                            <label for="Status Effect">Status Effect</label>
+                            <input type="text" name="Status Effect">
+                        </div>
+                    </div>
+                    <div id="wounds">
+                        <p>Current HP/Wounds</p>
+                        <textarea name="currentHP" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div id="calorie">
+                        <p>Calorie Intake</p>
+                        <textarea name="calorieIntake" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div id="armorclass">
+                    <div>
+                        <label for="Touch AC">Touch <br>AC</label>
+                        <input type="number" name="Touch AC">
+                    </div>
+                    <div>
+                        <label for="Flat-Footed AC">Flat-Footed <br>AC</label>
+                        <input type="number" name="Flat-Footed AC">
+                    </div>
+                    <div>
+                        <label for="Kenetic AC">Kenetic <br>AC</label>
+                        <input type="number" name="Kenetic AC">
+                    </div>
+                    <div>
+                        <label for="Energy AC">Energy <br>AC</label>
+                        <input type="number" name="Energy AC">
+                    </div>
+                </div>
+                <div id="acModifiers">
+                    <div id="total">
+                        <p>AC </p>
+                        <div>
+                            <input type="number" name="Total">
+                            <label for="Total">Total</label>
+                        </div>
+                        <p>&nbsp;&nbsp;=&nbsp;&nbsp;</p>
+                        <p>10&nbsp;&nbsp; </p>
+                    </div>
+                    <p>+</p>
+                    <div>
+                        <input type="number" name="Armor Bonus">
+                        <label for="Armor Bonus">Armor Bonus</label>
+                    </div>
+                    <p>+</p>
+                    <div>
+                        <input type="number" name="Sheild Bonus">
+                        <label for="Sheild Bonus">Sheild Bonus</label>
+                    </div>
+                    <p>+</p>
+                    <div>
+                        <input type="number" name="Dex Mod">
+                        <label for="Dex Mod">Dex<br> Mod</label>
+                    </div>
+                    <p>+</p>
+                    <div>
+                        <input type="number" name="Size Mod">
+                        <label for="Size Mod">Size<br> Mod</label>
+                    </div>
+                    <p>+</p>
+                    <div>
+                        <input type="number" name="Natural Armor">
+                        <label for="Natural Armor">Natural Armor</label>
+                    </div>
+                    <p>+</p>
+                    <div>
+                        <input type="number" name="Deflect Mod">
+                        <label for="Deflect Mod">Deflect Mod</label>
+                    </div>
+                    <p>+</p>
+                    <div>
+                        <input type="number" name="Misc Mod">
+                        <label for="Misc Mod">Misc<br> Mod</label>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section id="bottom">
+            <div id="left">
+                <section id="savingThrows">
+                    <div id="fortitude">
+                        <div id="title">
+                            <p>Fortitude <br> <small>(Constitution)</small> </p>
+                        </div>
+                        <div>
+                            <label for="Total">Total</label>
+                            <input type="number" name="Total">
+                        </div>
+                        <p>&nbsp;&nbsp;=&nbsp;&nbsp;</p>
+                        <div>
+                            <label for="Base Save">Base Save</label>
+                            <input type="number" name="Base Save">
+                        </div>
+                        <p>+</p>
+                        <div>
+                            <label for="Ability Mod">Ability Mod</label>
+                            <input type="number" name="Ability Mod">
+                        </div>
+                        <p>+</p>
+                        <div>
+                            <label for="Magic Mod">Magic Mod</label>
+                            <input type="number" name="Magic Mod">
+                        </div>
+                        <p>+</p>
+                        <div>
+                            <label for="Misc Mod"> Misc Mod </label>
+                            <input type="number" name="Misc Mod">
+                        </div>
+                        <p>+</p>
+                        <div>
+                            <label for="Temp Mod">Temp Mod</label>
+                            <input type="number" name="Temp Mod">
+                        </div>
+                    </div>
+                    <div id="reflex">
+                        <div id=" title">
+                            <p>Reflex <br> <small>(Dexterity)</small> </p>
+                        </div>
+                        <div>
+                            <input type="number" name="Total">
+                        </div>
+                        <p>&nbsp;&nbsp;=&nbsp;&nbsp;</p>
+                        <div>
+                            <input type="number" name="Base Save">
+                        </div>
+                        <p>+</p>
+                        <div>
+                            <input type="number" name="Ability Mod">
+                        </div>
+                        <p>+</p>
+                        <div>
+                            <input type="number" name="Magic Mod">
+                        </div>
+                        <p>+</p>
+                        <div>
+                            <input type="number" name="Misc Mod">
+                        </div>
+                        <p>+</p>
+                        <div>
+                            <input type="number" name="Temp Mod">
+                        </div>
+                    </div>
+                    <div id="will">
+                        <div id=" title">
+                            <p>Will <br> <small>(Wisdom)</small> </p>
+                        </div>
+                        <div>
+                            <input type="number" name="Total">
+                        </div>
+                        <p>&nbsp;&nbsp;=&nbsp;&nbsp;</p>
+                        <div>
+                            <input type="number" name="Base Save">
+                        </div>
+                        <p>+</p>
+                        <div>
+                            <input type="number" name="Ability Mod">
+                        </div>
+                        <p>+</p>
+                        <div>
+                            <input type="number" name="Magic Mod">
+                        </div>
+                        <p>+</p>
+                        <div>
+                            <input type="number" name="Misc Mod">
+                        </div>
+                        <p>+</p>
+                        <div>
+                            <input type="number" name="Temp Mod">
+                        </div>
+                    </div>
+                    <div id="cmb">
+                        <div id="total">
+                            <p>CMB </p>
+                        </div>
+                        <div>
+                            <input type="number" name="Total">
+                            <label for="Total">Total</label>
+                        </div>
+                        <div>
+                            <input type="number" name="BAB">
+                            <label for="BAB">B.A.B.</label>
+                        </div>
+                        <div>
+                            <input type="number" name="Str Mod">
+                            <label for="Str Mod">Str Mod</label>
+                        </div>
+                        <div>
+                            <input type="number" name="Size Mod">
+                            <label for="Size Mod"> Size Mod</label>
+                        </div>
+                        <div id="attack">
+                            <p>Base Attack <br> Bonus </p>
+                        </div>
+                        <div>
+                            <input type="number" name="Base Attack">
+                            <label for="Base Attack">Total</label>
+                        </div>
+                    </div>
+                    <div id="cmd">
+                        <div id="total">
+                            <p>CMD </p>
+                        </div>
+                        <div>
+                            <input type="number" name="Total">
+                            <label for="Total">Total</label>
+                        </div>
+                        <div>
+                            <input type="number" name="BAB">
+                            <label for="BAB">B.A.B.</label>
+                        </div>
+                        <div>
+                            <input type="number" name="Str Mod">
+                            <label for="Str Mod">Str Mod</label>
+                        </div>
+                        <div>
+                            <input type="number" name="Dex Mod">
+                            <label for="Dex Mod"> Dex Mod</label>
+                        </div>
+                        <div>
+                            <input type="number" name="Size Mod">
+                            <label for="Size Mod"> Size Mod</label>
+                        </div>
+                        <p>+ 10</p>
+                        <div></div>
+                        <div></div>
+
+                    </div>
+                </section>
+                <section id="weapons">
+                    <div class="weapon">
+                        <div id="top-weapon">
+                            <div width="50%">
+                                <label for="Weapon">Weapon</label>
+                                <input type="text" name="Weapon">
+                            </div>
+                            <div width="30%">
+                                <label for="Attack Bonus">Attack Bonus</label>
+                                <input type="number" name="Attack Bonus">
+                            </div>
+                            <div width="20%">
+                                <label for="Critical">Critical</label>
+                                <input type="number" name="Critical">
+                            </div>
+                        </div>
+                        <div id="bottom-weapon">
+                            <div>
+                                <label for="Type">Type</label>
+                                <input type="text" name="Type">
+                            </div>
+                            <div>
+                                <label for="Range">Range</label>
+                                <input type="number" name="Range">
+                            </div>
+                            <div>
+                                <label for="Ammunition">Ammunition</label>
+                                <input type="number" name="Ammunition">
+                            </div>
+                            <div>
+                                <label for="Damage">Damage</label>
+                                <input type="number" name="Damage">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="weapon">
+                        <div id="top-weapon">
+                            <div width="50%">
+                                <label for="Weapon">Weapon</label>
+                                <input type="text" name="Weapon">
+                            </div>
+                            <div width="30%">
+                                <label for="Attack Bonus">Attack Bonus</label>
+                                <input type="number" name="Attack Bonus">
+                            </div>
+                            <div width="20%">
+                                <label for="Critical">Critical</label>
+                                <input type="number" name="Critical">
+                            </div>
+                        </div>
+                        <div id="bottom-weapon">
+                            <div>
+                                <label for="Type">Type</label>
+                                <input type="text" name="Type">
+                            </div>
+                            <div>
+                                <label for="Range">Range</label>
+                                <input type="number" name="Range">
+                            </div>
+                            <div>
+                                <label for="Ammunition">Ammunition</label>
+                                <input type="number" name="Ammunition">
+                            </div>
+                            <div>
+                                <label for="Damage">Damage</label>
+                                <input type="number" name="Damage">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="weapon">
+                        <div id="top-weapon">
+                            <div width="50%">
+                                <label for="Weapon">Weapon</label>
+                                <input type="text" name="Weapon">
+                            </div>
+                            <div width="30%">
+                                <label for="Attack Bonus">Attack Bonus</label>
+                                <input type="number" name="Attack Bonus">
+                            </div>
+                            <div width="20%">
+                                <label for="Critical">Critical</label>
+                                <input type="number" name="Critical">
+                            </div>
+                        </div>
+                        <div id="bottom-weapon">
+                            <div>
+                                <label for="Type">Type</label>
+                                <input type="text" name="Type">
+                            </div>
+                            <div>
+                                <label for="Range">Range</label>
+                                <input type="number" name="Range">
+                            </div>
+                            <div>
+                                <label for="Ammunition">Ammunition</label>
+                                <input type="number" name="Ammunition">
+                            </div>
+                            <div>
+                                <label for="Damage">Damage</label>
+                                <input type="number" name="Damage">
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="right">
+                <section id="skills">
+                    <table>
+                        <tbody>
+
+                            <tr>
+                                <th>Skills</th>
+                                <th>Total</th>
+                                <th>Ability Mod</th>
+                                <th>Ranks</th>
+                                <th>Spent Ranks</th>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Acrobatics (Dex)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Athletics (Str)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Bluff (Cha)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Computers (Int)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Culture (Int)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Diplomacy (Cha)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Disguise (Cha)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Engineering (Int)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Immunity (Con)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Intimidate (Cha)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Life Science (Int)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Medicine (Int)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Mysticism (Wis)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Perception (Wis)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Physical Science (Int)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Piloting (Dex)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td style="height: 20px; align-items: center;"> <input type="checkbox"> Profession
+                                    <input type="text">
+                                </td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Sense Motive (Wis)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Sleight of Hand (Dex)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Stealth (Dex)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Survival (Wis)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"> Vitality (Con)</td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                                <td> <input type="number"></td>
+                            </tr>
+                    </table>
+                    </tbody>
+                </section>
+            </div>
+        </section>
+    </section>
+    <script src="" async defer></script>
+</body>
+
+</html>
