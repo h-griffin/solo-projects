@@ -1,0 +1,138 @@
+<?php 
+
+$img = '';
+$title = "What is Schizophrenia?";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>What is Schizophrenia?</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>May 27, 2024</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2024/05/what-is-schizophrenia.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1>What is Schizophrenia?</h1>
+    
+                                <p>May 24 is World Schizophrenia Awareness Day, a day dedicated to raising awareness around mental illness, educating people about the disorder, and combatting the stigma surrounding it.&nbsp;</p>
+                                <p>Those who experience schizophrenia face a wide array of difficulties, obstacles, and challenges every single day. A great battle they find themselves facing is the stigma and miseducation surrounding the mental disorder in society.&nbsp;</p>
+                                <p>On this World Schizophrenia Awareness Day, we encourage everyone to take some time to educate themselves about the illness. The more we know, the better chance we have of helping our peers who are facing schizophrenia live a higher quality life.&nbsp;</p>
+                                <p>That is why we have written this comprehensive guide to help you learn the basics about schizophrenia today!&nbsp;</p>
+                                <h2>What is Schizophrenia?</h2>
+                                <p><a href="https://www.apa.org/topics/schizophrenia">Schizophrenia</a> is a severe mental health disorder defined by disturbances in a person's thoughts, perceptions, emotions, and behavior. Those experiencing schizophrenia may find themselves hallucinating, having delusions, and suffering from disorganized thinking and behavior.&nbsp;</p>
+                                <p>The symptoms of the mental disorder can significantly impair a person's quality of life, impacting areas such as their work, relationships, and self-care.</p>
+                                <p>Schizophrenia has been known to emerge around late adolescence or early adulthood, but it can pop up at any age.&nbsp;</p>
+                                <p>To this day, scientists are unsure of the exact cause of schizophrenia, although it is believed to be due to a combination of the person's genes, brain chemistry, and environment. Treatment for this illness will typically require a combination of medication, psychotherapy, and other forms of professional support to aid in managing symptoms and improving the person's overall quality of life. Early intervention and lifetime ongoing support play a crucial role in managing schizophrenia effectively.</p>
+                                <h2>Defining Hallucinations and Delusions&nbsp;</h2>
+                                <p>Hallucinations and delusions are symptoms commonly associated with severe mental health disorders like schizophrenia.&nbsp;</p>
+                                <p>A hallucination involves seeing or believing that things are in the person's environment when they are not actually there.&nbsp;</p>
+                                <p>While hallucinations can impact any of the senses, schizophrenic hallucinations commonly impact the auditory symptoms. Hallucinations can be vivid and lifelike, which can lead the person to believe they are true and feel distressed or confused.&nbsp;</p>
+                                <p>Delusions, on the other hand, are defined as beliefs a person persists in despite any evidence disproving them. Commonly, the beliefs a person experiencing delusions holds are not held by those around them or within their culture.&nbsp;</p>
+                                <p>Schizophrenic delusions can take on many different forms, like paranoia or a sense of grandiosity. They can lead to many disruptions in functioning and significantly impact a person's social health.&nbsp;</p>
+                                <h2>The Signs and Symptoms of Schizophrenia&nbsp;</h2>
+                                <p>Schizophrenic symptoms can manifest in a variety of ways and with different levels of severity. Some of the main signs and symptoms of the mental illness include:</p>
+                                <ul>
+                                    <li>Hallucinations and delusions</li>
+                                    <li>Disorganized thinking patterns- this can make it difficult to communicate and properly convey thoughts.</li>
+                                    <li>Abnormal behaviors- this can include an increase in irritability and agitation, unusual movements, and other unpredictable behaviors.</li>
+                                    <li>Appearing emotionally numb or decreasing emotional expression</li>
+                                    <li>Social withdrawal</li>
+                                    <li>A significant decrease in motivation</li>
+                                    <li>Difficulty experiencing feelings of pleasure</li>
+                                    <li>Difficulty with cognitive functions like planning, problem-solving, memory, attention, and decision-making</li>
+                                    <li>A lack of awareness of their illness</li>
+                                </ul>
+                                <p>Not everyone with schizophrenia experiences every one of these symptoms, and the severity of each will vary greatly from case to case.</p>
+                                <p>The symptoms can come and go throughout a person's lifetime, with one person's experience ranging from more severe bouts of the symptoms to moments of remission. The earlier a person is able to get help for schizophrenia, the better they can manage symptoms.&nbsp;&nbsp;</p>
+                                <h2>Who is At Risk for Developing Schizophrenia?</h2>
+                                <p>There are a variety of factors that may increase a person's risk of developing schizophrenia. These include:</p>
+                                <ul>
+                                    <li>Genetics: Those with a family history of the mental illness are at an increased risk of developing the disorder. However, many people with a family history of schizophrenia do not experience the illness themselves.&nbsp;</li>
+                                    <li>Imbalances within the brain: Imbalances within the brain's structure and chemistry have been linked to schizophrenia.&nbsp;</li>
+                                    <li>Stress or trauma: Stressful and traumatic experiences have been linked to the development of mental illness.&nbsp;</li>
+                                    <li>Drug use: The use of drugs like cannabis and hallucinogens has been linked to schizophrenia.&nbsp;</li>
+                                    <li>Environment: Some studies have suggested that those living in an urban area are at a higher risk of developing schizophrenia.&nbsp;</li>
+                                </ul>
+                                <h2>Treatment Options for Schizophrenia&nbsp;</h2>
+                                <p>Treatment plans for schizophrenia typically involve a combination of medication, psychotherapy, and continued professional support. Some common treatment options used for those experiencing schizophrenia include:</p>
+                                <ol>
+                                    <li>Antipsychotic medications: Antipsychotic medications are the main form of treatment for those with schizophrenia. The medication is intended to help alleviate symptoms such as hallucinations, delusions, disorganized thinking, and abnormal behaviors. There are generally two classes of antipsychotics: typical, otherwise known as first-generation, and atypical, otherwise referred to as second-generation. Atypical antipsychotics are often preferred due to the lower risk they present of adverse side effects like movement disorders.</li>
+                                    <li>Psychotherapy: Various forms of psychotherapy, otherwise known as talk therapy, can be a useful treatment option for helping those with schizophrenia manage their symptoms, improve their coping skills, and enhance their social health. There are many different options for psychotherapy that may be useful, such as cognitive-behavioral therapy (CBT) and supportive therapy. Family therapy has also been suggested to be beneficial for improving communication amongst the family as a whole and providing support for both the individual with schizophrenia and their family members.</li>
+                                    <li>Social support services: Support services like vocational rehabilitation, social skills training, and housing assistance can help those with schizophrenia better integrate into their community, find and maintain employment, achieve greater independence, and boost their overall quality of life.</li>
+                                    <li>Raising awareness and teaching coping skills: Educating those with schizophrenia and the people around them about the mental illness can empower them to take a more active role in managing their symptoms and caring for themselves. The more the individual with the illness and their loved ones know about schizophrenia, the better chance they have at receiving the treatment they need to lead a healthy, happy life. Learning about the early warning signs of relapse and developing coping strategies to help the individual until they can receive professional assistance can help them stay on track with their treatment, ultimately reducing and possibly preventing setbacks.</li>
+                                    <li>Hospitalization: When acute episodes of psychosis or severe symptoms rear their head, hospitalization may be a necessary measure to ensure the patient's safety, stabilize symptoms, and initiate the necessary treatment.</li>
+                                </ol>
+                                <h2>Coping with Schizophrenia</h2>
+                                <p>Learning that you are experiencing schizophrenia is the first step toward living a happier, healthier life. After diagnosis, you will benefit from pairing your recommended treatment plan with healthy habits and coping mechanisms. Coping with schizophrenia often involves a combination of therapy, support from your loved ones, and self-care.&nbsp;</p>
+                                <p>It's essential to your health and the well-being of your loved ones to work closely with healthcare professionals to find the right treatment plan and coping mechanisms for you.</p>
+                                <p>Alongside treatment, support groups can be a great way to find support from individuals experiencing the illness as well. Practicing stress-reduction techniques like mindfulness and breathwork can also be beneficial for those experiencing schizophrenia and their loved ones. It is critical to remember that you're not alone. There are resources out there ready to support you.</p>
+                                <h2>We Are Here for You</h2>
+                                <p>Schizophrenia is a difficult mental illness to face. Whether you are facing it yourself or witnessing a loved one combat the illness, your mental health and overall well-being may begin to suffer.&nbsp;</p>
+                                <p>We are here for you. Our competent and caring counselors can provide you with high-quality therapy to help you process the difficult emotions surrounding a schizophrenia diagnosis. <a href="https://www.michiganpsychologicalcare.com/contact.php">Contact</a> us today.&nbsp;</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://www.apa.org/topics/schizophrenia">https://www.apa.org/topics/schizophrenia</a>&nbsp;</p>
+                                <p>Keywords: Schizophrenia, stigma, therapy, mental disorder&nbsp;</p>
+                                
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/why-your-family-plays-such-a-big-role-in-your-mental-health.php">⇐ WHY YOUR FAMILY PLAYS SUCH A BIG ROLE IN YOUR MENTAL HEALTH </a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/tips-for-coping-with-a-divorce.php"> TIPS FOR COPING WITH A DIVORCE ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>
