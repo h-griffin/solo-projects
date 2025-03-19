@@ -1,0 +1,89 @@
+<?php 
+
+$img = '';
+$title = "How Medication Can Help in Your Mental Health Journey";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>How Medication Can Help in Your Mental Health Journey</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Oct 1, 2024</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2024/10/how-medication-can-help-in-your-mental-health-journey.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>How Medication Can Help in Your Mental Health Journey</strong></h1>
+                                
+                                <p>Many mental health treatments come attached with a stigma that can prevent people from receiving treatment. Some examples of these stigmas are assuming someone is weak, broken, or damaged for needing to work on their mental health. But these stigmas couldn&rsquo;t be further from the truth. Mental health is just as important as physical health, and it should be treated that way more often.</p>
+                                <p>For several mental health conditions, medication can be used as a tool (in conjunction with other forms of treatment) to help patients recover. Medication can help to address the symptoms of a specific mental health condition. Depending on the type of medication, it can be taken daily, as needed, or for the remainder of the patient&rsquo;s life. There are a variety of mental health medications that can be used to treat patients. The most common ones include SSRIs, SNRIs, anti-anxiety medications, stimulants, antipsychotics, and mood stabilizers.</p>
+                                <p>When a client is looking to utilize medication for their mental health condition, they will need to find a psychiatric provider to be a part of their treatment team. The psychiatric provider will help evaluate and treat the condition to the best of their ability. They will complete screeners, ask questions, and evaluate the client in an attempt to find the best treatment or diagnosis possible.</p>
+                                <p>When you are looking for a psychiatric provider near you, it&rsquo;s important to find someone that you trust and feel comfortable with. This process is similar to when you are looking for a therapist. You want to find someone that will make you feel safe and supported.</p>
+                                <p>Medications that are used for mental health conditions can be helpful for many purposes, but there are also some things to stay mindful of. Medications can have challenging side effects. It&rsquo;s important to educate yourself with the possible risks that come with taking a specific medication. By doing so, you will know what to look out for if the medication causes any adverse effects. Because most of these medications work through our brains, it&rsquo;s important not to stop taking them cold turkey. This can cause dangerous side effects and lasting effects on your body. It&rsquo;s also imperative that you tell your psychiatric provider all the medications or supplements you are taking. There are many interactions with medications that could cause side effects. If you and your treatment team feel like medication is not working for you, your psychiatric provider will help with medication management. Through this management, they can develop a plan to help you taper off the medication.</p>
+                                <p>Taking medication is never something to be ashamed of. Taking medication for mental health conditions is just as valid as taking them for physical illnesses. If you need to take medication to have a better quality of life, there is absolutely nothing wrong with doing so. Mental health medications have helped great quantities of people live happier and healthier lives. If you are interested in starting the process of finding a psychiatric provider, we are here for you.&nbsp;<a href="https://www.michiganpsychologicalcare.com/contact.php">Contact</a>&nbsp;us today.</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://www.nimh.nih.gov/health/topics/mental-health-medications">https://www.nimh.nih.gov/health/topics/mental-health-medications</a></p>
+                                <p><a href="https://my.clevelandclinic.org/health/articles/22702-psychiatrist">https://my.clevelandclinic.org/health/articles/22702-psychiatrist</a>&nbsp;&nbsp;</p>
+                                <p><strong>Keywords</strong>: Psychiatrist, Psychiatry, Psychiatry near me, Psychiatrist near me, Medication Management, ADHD medication, ADHD meds, anxiety medication, depression medication, psychiatric nurse</p>
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<!-- <a href="/blog/what-is-more-effective-teletherapy-or-in-person-therapy.php">⇐ WHAT IS MORE EFFECTIVE TELETHERAPY OR IN PERSON THERAPY </a> -->
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/the-benefits-of-teletherapy-for-people-experiencing-an-anxiety-disorder.php"> THE BENEFITS OF TELETHERAPY FOR PEOPLE EXPERIENCING AN ANXIETY DISORDER ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>
