@@ -1,0 +1,102 @@
+<?php 
+
+$img = '';
+$title = "Why Sleep is Important for Your Mental Health";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+<!-- Page Title
+============================================= -->
+<section id="content">
+    <div class="content-wrap">
+        <div class="container clearfix">
+            <div class="single-post mb-0">
+
+                <!-- Single Post
+                ============================================= -->
+                <div class="entry clearfix">
+
+                    <!-- Entry Title
+                    ============================================= -->
+                    <div class="entry-title">
+                        <h2>Why Sleep is Important for Your Mental Health</h2>
+                    </div><!-- .entry-title end -->
+
+                    <!-- Entry Meta
+                    ============================================= -->
+                    <div class="entry-meta">
+                        <ul>
+                            <li><i class="icon-calendar3"></i>Dec 28, 2024</li>
+                        </ul>
+                    </div><!-- .entry-meta end -->
+
+                    <!-- Entry Image
+                    ============================================= -->
+                    <div class="entry-image bottommargin">
+                        <a href="#"><img src="/images/blog/2024/12/why-sleep-is-important-for-your-mental-health.jpg" alt="Blog Single"></a>
+                    </div><!-- .entry-image end -->
+
+                    <!-- Entry Content
+                    ============================================= -->
+                    <div class="entry-content mt-0">
+                        
+                        <h1><strong>Why Sleep is Important for Your Mental Health</strong></h1>
+                        
+                        <p>Sleep and mental health are closely tied together. Having healthy sleep hygiene can ensure quality sleep that helps both mental and physical health. We live in a fast-paced world filled with stressful situations. Sleep is our body's way of recharging for the next day. <a href="https://www.mayoclinic.org/healthy-lifestyle/adult-health/expert-answers/how-many-hours-of-sleep-are-enough/faq-20057898">Experts</a> recommend that adults should get between 7-9 hours of sleep per night. Every person is different, and different people will need varying amounts of sleep.</p>
+                        <h2><strong>Sleep and The Brain</strong></h2>
+                        <p>Our quality of sleep affects the way that our brain functions and stores information. If a person is not getting enough sleep, their focus, memory, and decision-making will be damaged. Lack of sleep can also lead to less productivity because the brain will take longer to process information. In addition to this, some studies have <a href="https://www.nih.gov/news-events/nih-research-matters/lack-sleep-middle-age-may-increase-dementia-risk">found</a> that not getting enough sleep can lead to dementia.</p>
+                        <h2><strong>Sleep and Mood</strong></h2>
+                        <p>Lack of sleep can also affect a person&rsquo;s mood. This is because not getting enough sleep can lead to more stress and an overall negative outlook. If someone is not getting enough sleep, they may be less efficient in managing the stressors in their life. When a person is lacking sleep, they may be more irritable, which could lead to a negative life outlook. When someone has a negative outlook, their mood will also likely suffer. In addition to this, not getting enough sleep can lead to serious mental health issues such as depression. Depression and sleep are closely connected, and both depend on each other.&nbsp;</p>
+                        <h2><strong>Sleep and Emotions</strong></h2>
+                        <p>When a person isn&rsquo;t getting enough sleep, they may have a difficult time managing their emotions. The National Institute of Health <a href="https://www.nih.gov/news-events/nih-research-matters/lack-sleep-disrupts-brains-emotional-controls#:~:text=Both%20groups%20had%20greater%20amygdala,day's%20challenges%20and%20social%20interactions.%22">found</a> that the emotional centers of a person&rsquo;s brain that are lacking sleep are 60% more reactive than someone who is getting enough sleep. This doesn&rsquo;t mean that people getting enough sleep will not experience emotions, but they will likely have an easier time regulating them.</p>
+                        <h2><strong>Sleep and Physical Health</strong></h2>
+                        <p>Quality sleep is a way for your body to rest, which will improve your overall well-being. Getting enough rest can keep our bodies strong and functioning to the best of their ability. However, poor sleep <a href="https://www.nhlbi.nih.gov/health/sleep-deprivation/health-effects#:~:text=Sleep%20plays%20an%20important%20role,pressure,%20obesity,%20and%20stroke.">can lead</a> to an increased risk for health problems such as heart disease, high blood pressure, and stroke.</p>
+                        <h2><strong>Tips for Healthy Sleep Hygiene</strong></h2>
+                        <p><a href="https://www.nhlbi.nih.gov/health/sleep-deprivation/health-effects#:~:text=Sleep%20plays%20an%20important%20role,pressure,%20obesity,%20and%20stroke">Sleep hygiene</a> is a set of habits that a person creates to improve their sleep. Having healthy sleep hygiene can help to decrease the negative effects of lack of sleep that we mentioned above.</p>
+                        <ul>
+                            <li>Create a nighttime routine that includes going to sleep around the same time every day.</li>
+                            <li>Limit the amount of caffeine you have after a certain time of day.</li>
+                            <li>Limit napping during the day. When a person naps throughout the day, this can disrupt their body&rsquo;s internal clock and can lead to disturbances in sleep at night.</li>
+                            <li>Try practicing mindfulness before bed. <a href="https://www.mindful.org/meditation/mindfulness-getting-started/">Mindfulness</a> is the practice of being fully present in the moment without judging our thoughts. Partaking in mindfulness meditations may help calm a person&rsquo;s mind and body, which will allow them to fall asleep earlier.</li>
+                        </ul>
+                        <p><strong>References</strong></p>
+                        <p><a href="https://www.mayoclinic.org/healthy-lifestyle/adult-health/expert-answers/how-many-hours-of-sleep-are-enough/faq-20057898">https://www.mayoclinic.org/healthy-lifestyle/adult-health/expert-answers/how-many-hours-of-sleep-are-enough/faq-20057898</a>&nbsp;</p>
+                        <p><a href="https://www.nih.gov/news-events/nih-research-matters/lack-sleep-middle-age-may-increase-dementia-risk">https://www.nih.gov/news-events/nih-research-matters/lack-sleep-middle-age-may-increase-dementia-risk</a></p>
+                        <p><a href="https://www.nih.gov/news-events/nih-research-matters/lack-sleep-disrupts-brains-emotional-controls#:~:text=Both%20groups%20had%20greater%20amygdala,day's%20challenges%20and%20social%20interactions.%22">https://www.nih.gov/news-events/nih-research-matters/lack-sleep-disrupts-brains-emotional-controls</a>&nbsp;</p>
+                        <p><a href="https://www.nhlbi.nih.gov/health/sleep-deprivation/health-effects">https://www.nhlbi.nih.gov/health/sleep-deprivation/health-effects</a>&nbsp;</p>
+                        <p><a href="https://www.healthline.com/health/sleep-hygiene#monitor-caffeine">https://www.healthline.com/health/sleep-hygiene</a>&nbsp;</p>
+                        <p><a href="https://www.mindful.org/meditation/mindfulness-getting-started/">https://www.mindful.org/meditation/mindfulness-getting-started/</a>&nbsp;</p>
+                        <p><strong>Keywords</strong>: sleep, mental health, depression, mindfulness</p>
+                        <!-- Post Single - Content End -->
+
+                        <div class="clear"></div>
+
+                        <!-- Post Single - Share
+                        ============================================= -->
+                        <?php
+                        include('../include/share_button.php');
+                        ?>
+                        <!-- Post Single - Share End -->
+                    </div>
+                </div><!-- .entry end -->
+
+                    <!-- Post Navigation
+                    ============================================= -->
+                    <div class="row justify-content-between col-mb-30 post-navigation">
+                    <div class="col-12 col-md-auto text-center">
+                        <a href="/blog/how-journaling-can-improve-your-mental-health.php">⇐ HOW JOURNALING CAN IMPROVE YOUR MENTAL HEALTH </a>
+                    </div>
+
+                    <div class="col-12 col-md-auto text-center">
+                        <a  href="/blog/ways-therapy-can-help-with-sad-seasonal-affective-disorder.php"> WAYS THERAPY CAN HELP WITH SAD SEASONAL AFFECTIVE DISORDER ⇒</a>
+                    </div>
+                </div><!-- .post-navigation end -->
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>
