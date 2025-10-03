@@ -1,0 +1,97 @@
+<?php 
+
+$img = '';
+$title = "Ways to Improve Your Brain Health (Brain Awareness Week, March 11-17)";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>Ways to Improve Your Brain Health (Brain Awareness Week, March 11-17)</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Feb 25, 2025</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2025/02/ways-to-improve-your-brain-health.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>Ways to Improve Your Brain Health (Brain Awareness Week, March 11-17)</strong></h1>
+    
+                                <p>Brain Health Awareness Week takes place in <a href="https://www.sfn.org/outreach/brain-awareness-campaign">March</a>. This week is aimed at bringing awareness to neuroscience and tips on brain health. Brain health is important to maintaining overall well-being and positive mental health. Having good brain health is also imperative in preventing brain-related problems later on in life.&nbsp;</p>
+                                <h2><strong>Ways to Improve Brain Health</strong></h2>
+                                <ul>
+                                <li>Nutrition: One way to improve brain health is to focus on nutrition. Staying hydrated is a great way to improve brain health and make sure that our brains are working efficiently. Dehydration can be <a href="https://www.alzdiscovery.org/cognitive-vitality/blog/can-dehydration-impair-cognitive-function">linked</a> to damaging cognitive abilities. Omega-3 fatty acids also help with increasing cognitive functions in the brain. Omega-3 fatty acids can even help reduce the risks of mental health concerns such as depression. These fatty acids can be found in foods such as fish, flaxseeds, walnuts, and eggs. If a person has difficulty incorporating these foods into their diet, they can consider getting an Omega-3 supplement. In addition to Omega-3s, antioxidants are also helpful in maintaining brain health. This is because antioxidants can reduce inflammation in parts of the body including the brain. Reducing inflammation in general can promote physical well-being all around.<br /><br /></li>
+                                <li>Sleep Habits: Sleep habits can also have a large impact on<a href="https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-understanding-sleep"> brain health</a>. Sleep is essential to helping our brains repair themselves and strengthen memory. Having healthy sleeping habits gives our brains the time they need to regroup. When a person struggles with having quality sleep, they may want to consider developing a sleep routine. This means the person will try to incorporate habits that can improve their sleep quality, such as going to sleep at the same time each night or not going on your phone before bed.<br /><br /></li>
+                                <li>Reduce Stress: Brain health can be improved by reducing the levels of <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9170771/">stress</a> in a person&rsquo;s life. Stress can damage brain functions and cognitive abilities. In some cases, high levels of stress can lead to mental health conditions. In these cases, psychiatric care might be needed to help treat these mental health concerns.&nbsp;</li>
+                                </ul>
+                                <ul>
+                                <li>Cognitive Exercises: Another way to maintain brain health is to partake in <a href="https://www.apdaparkinson.org/community/missouri/mo-resources-support-2/exercise-5/cognitive-exercises/">exercises</a> that challenge your brain. When a person partakes in these exercises, they are strengthening their brain health as well as decreasing the likelihood of brain health decline later in life. Some of these exercises include doing puzzles, memory games, yoga, reading, or learning something new. These exercises help to promote <a href="https://www.ncbi.nlm.nih.gov/books/NBK557811/">neuroplasticity</a>, which is the brain's ability to create new neural pathways in the brain.&nbsp;</li>
+                                </ul>
+                                <p>Taking care of our brains is a lifelong practice. Having a healthy brain decreases the likelihood of someone struggling with their mental health. Improving brain health can help people thrive in all areas of their lives. By improving cognitive functioning, people can improve their relationships, work or school life, and their relationship with themselves.&nbsp;</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://www.sfn.org/outreach/brain-awareness-campaign">https://www.sfn.org/outreach/brain-awareness-campaign</a></p>
+                                <p><a href="https://www.alzdiscovery.org/cognitive-vitality/blog/can-dehydration-impair-cognitive-function">https://www.alzdiscovery.org/cognitive-vitality/blog/can-dehydration-impair-cognitive-function</a>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9641984/#:~:text=Eicosapentaenoic%20acid%20(EPA)%2C%20docosahexaenoic%20acid%20(DHA)%2C%20and,the%20effects%20of%20omega%2D3%20on%20brain%20functions">https://pmc.ncbi.nlm.nih.gov/articles/PMC9641984/</a>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9170771/">https://pmc.ncbi.nlm.nih.gov/articles/PMC9170771/</a></p>
+                                <p><a href="https://www.apdaparkinson.org/community/missouri/mo-resources-support-2/exercise-5/cognitive-exercises/">https://www.apdaparkinson.org/community/missouri/mo-resources-support-2/exercise-5/cognitive-exercises/</a>&nbsp;</p>
+                                <p><strong>Keywords</strong>: brain health, mental health, physical well-being, psychiatric care</p>
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/how-to-increase-self-compassion.php">⇐ how to increase self compassion </a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/what-is-self-harm.php">what is self harm? ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>
