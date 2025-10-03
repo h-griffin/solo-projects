@@ -1,0 +1,114 @@
+<?php 
+
+$img = '';
+$title = "The Science Behind Changing Your Mindset";
+$meta_desc = '';
+ 
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>The Science Behind Changing Your Mindset</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>April 24, 2025</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2025/04/the-science-behind-changing-your-mindset.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>The Science Behind Changing Your Mindset</strong></h1>
+                                
+                                <p>Our mindsets affect the way we see ourselves and the world around us. The right mindset can drastically change people&rsquo;s situations, struggles, and lives. Our mindset is a collection of beliefs that influence how people see the world. Different types of mindsets can have different effects on mental health. Two common types of mindsets are fixed mindsets and <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9046553/#sec10">growth mindsets</a>. We will discuss these in the remainder of the article and other ways to change your mindset.&nbsp;</p>
+                                <h2><strong>Why Mindset Is Important for Mental Health</strong></h2>
+                                <p>Our thoughts affect our mental health in many different ways. For example, if someone has a negative mindset and experiences a high amount of stress in their life, this will increase their <a href="https://www.ncbi.nlm.nih.gov/books/NBK538239/">cortisol</a> levels. Cortisol is a stress hormone that is released in response to stress. Higher levels of cortisol over time can lead to a variety of biological and mental health problems. Another example of this is when a person is struggling with negative thoughts. These negative thoughts can become thought loops that lead to symptoms of anxiety and depression.&nbsp;</p>
+                                <h2><strong>Different Types of Mindsets</strong></h2>
+                                <p>The two most common types of mindsets are a fixed mindset and a growth mindset. A fixed mindset believes that changes cannot be made to how we are or our situations. On the other hand, a <a href="https://www.themarginalian.org/2014/01/29/carol-dweck-mindset/">growth mindset</a> believes that challenges can be used to help and that change is always possible. <a href="https://dailydose.ttuhsc.edu/2023/march/growth-mindset.aspx#:~:text=Studies%20found%20that%20individuals%20with,that%20accompanies%20a%20growth%20mindset.">Research</a> shows that growth mindsets help improve people&rsquo;s well-being and lead to a lower chance of them developing mental health conditions.&nbsp;</p>
+                                <h2><strong>Neuroplasticity and Changing Your Mindset</strong></h2>
+                                <p>The science behind changing your mindset can be explained through neuroplasticity. <a href="https://www.psychologytoday.com/us/basics/neuroplasticity">Neuroplasticity</a> is the brain&rsquo;s ability to change and rewire itself. When people have repetitive thoughts or beliefs, the brain creates pathways for these thoughts. When a person is experiencing a mindset shift, their new thoughts and beliefs can create new pathways. Neuroplasticity helps strengthen these pathways in the brain. These pathways can help support long-term changes in a person&rsquo;s mindset.</p>
+                                <h2><strong>Tools to Rewire Your Brain</strong></h2>
+                                <p>When a person is trying to rewire their brain, several tools can be used that help the process further.</p>
+                                <ul>
+                                    <li>Journaling can be used to help process thoughts and feelings and track progress. Developing a journaling practice gives our brains the time to reframe thoughts and process difficult emotions. When a person is trying to start a journaling practice, they may be tempted to focus on the final product of their writing. Journaling tends to be the most therapeutic when the person practicing focuses on the process of journaling as a whole. <a href="https://newsroom.ucla.edu/releases/Putting-Feelings-Into-Words-Produces-8047">Research</a> done at UCLA found that when a person journals, they are labeling their emotions. When a person can label their emotions, they reduce activity in their amygdala and increase activity in the prefrontal cortex of the brain. Both of these activities help regulate emotions and can, in turn, improve a person&rsquo;s mental health. <br /><br /></li>
+                                    <li>Gratitude Practices can be helpful for people when they are trying to change their mindset. Gratitude helps our minds focus on the good things in our lives and increases positivity. <a href="https://greatergood.berkeley.edu/article/Item/how_gratitude_changes_you_and_your_brain#:~:text=We%20found%20that%20across%20the,of%20our%20Expanding%20Gratitude%20project.">Research</a> shows that gratitude practice can increase activity in the prefrontal cortex, which suggests it can be a helpful practice when a person is focusing on long-term rewiring.&nbsp;</li>
+                                    <li>Cognitive Reframing is one of the core concepts of <a href="https://www.ncbi.nlm.nih.gov/books/NBK470241/">cognitive behavioral therapy</a> (CBT). This type of therapy teaches people how to identify their automatic negative thoughts and reframe them to be more accurate and positive. Cognitive reframing also includes identifying cognitive distortions in our thinking. These distortions can cause negative thought loops over time, which can lead to mental health symptoms. <a href="https://www.science.org/doi/10.1126/sciadv.adk3222">Research</a> shows that cognitive reframing produces changes in brain activity. The research also explained that reframing was associated with emotional regulation.&nbsp;</li>
+                                    <li>Affirmations help us improve our self-esteem and see our future differently. When people practice using affirmations, they are also simulating reward systems in their brains. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4814782/#sec19">Research</a> shows that affirmations can activate the neural pathways that are associated with self-worth and rewards. This neural activity is often associated with positive behavioral changes in the person&rsquo;s life. An example of an affirmation is &ldquo;I am enough&rdquo; or &ldquo;I don&rsquo;t have to be perfect to be happy&rdquo;.&nbsp;</li>
+                                    <li>Mindfulness helps our brain's ability to stay in the moment and observe our thoughts without reacting to them. When a person engages in regular mindfulness practices, this helps strengthen the prefrontal cortex and decrease the size of the amygdala. This activity also strengthens the connection between the emotional and rational parts of the brain. Mindfulness also helps to strengthen the neural pathways focused on remaining calm and self-compassion. A study done at <a href="https://www.health.harvard.edu/mind-and-mood/mindfulness-meditation-practice-changes-the-brain">Harvard</a> shows that 8 weeks of practicing mindfulness can have significant effects on memory and emotion regulation.</li>
+                                </ul>
+                                <h2><strong>Obstacles to Changing Your Mindset</strong></h2>
+                                <p>Sometimes when people make a mindset shift, they may experience some obstacles. Our brains are protective and sometimes can resist change even when it&rsquo;s for good reason. Brains are wired to keep us safe, which often means that they will reject ideas of growth. Our brains are focused on survival and see change as unnecessary. The part of our brain that responds to <a href="https://www.psychologytoday.com/us/blog/spellbound/202011/is-your-threat-brain-always-on#:~:text=Our%20threat%20brain%20evolved%20to,to%20a%20short-term%20crisis.">threats</a> is meant to protect us. However, when someone is struggling with their mental health, they may consider threats to be anxious thoughts. Our brains see both in the same way and thus cause it to remain resistant to change. When a person is trying to work through a mindset shift, they will need to be consistent and practice their efforts. Our brains are always going to try to protect us from change, whether we like it or not.&nbsp;&nbsp;</p>
+                                <p>Our brains may be wired to protect us from danger, and sometimes changes can be helpful for our mental health. Having a growth mindset can help people live more successful and happy lives. Developing a growth mindset can sometimes be challenging, however, our brains use neuroplasticity to support our cognitive reframes we make in our mindset. Gratitude, journaling, cognitive reframing, affirmations, and mindfulness can all be used to change how our brain is wired. These changes in our brains have the power to change whatever will help each person live a happier and fuller life. This kind of change requires consistent practice and dedication. But the results will always be worth it. Developing an optimistic, growth mindset has the power to change the things that a person achieves in their lives. It has the power to change how their relationships are in their lives. These mindset changes also have the power to change one of the most important relationships of all: the one with yourself.</p>
+                                <p>If you are ready to work with a therapist on changing your mindset, <a href="https://michiganpsychologicalcare.com/contact.php">reach out to us</a>. We are here and happy to help you on your journey to healing.&nbsp;</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9046553/#sec10">https://pmc.ncbi.nlm.nih.gov/articles/PMC9046553</a></p>
+                                <p><a href="https://www.ncbi.nlm.nih.gov/books/NBK538239/">https://www.ncbi.nlm.nih.gov/books/NBK538239/</a>&nbsp;</p>
+                                <p><a href="https://dailydose.ttuhsc.edu/2023/march/growth-mindset.aspx#:~:text=Studies%20found%20that%20individuals%20with,that%20accompanies%20a%20growth%20mindset">https://dailydose.ttuhsc.edu/2023/march/growth-mindset</a>&nbsp;</p>
+                                <p><a href="https://www.psychologytoday.com/us/basics/neuroplasticity">https://www.psychologytoday.com/us/basics/neuroplasticity</a>&nbsp;</p>
+                                <p><a href="https://www.psychologytoday.com/us/blog/spellbound/202011/is-your-threat-brain-always-on#:~:text=Our%20threat%20brain%20evolved%20to,to%20a%20short%2Dterm%20crisis">https://www.psychologytoday.com/us/blog/spellbound</a>&nbsp;</p>
+                                <p><a href="https://newsroom.ucla.edu/releases/Putting-Feelings-Into-Words-Produces-8047">https://newsroom.ucla.edu/releases/Putting-Feelings-Into-Words-Produces-8047</a>&nbsp;</p>
+                                <p><a href="https://greatergood.berkeley.edu/article/Item/how_gratitude_changes_you_and_your_brain#:~:text=We%20found%20that%20across%20the,of%20our%20Expanding%20Gratitude%20project">https://greatergood.berkeley.edu/article/Item/how_gratitude_changes_you_and_your_brain</a>&nbsp;</p>
+                                <p><a href="https://www.science.org/doi/10.1126/sciadv.adk3222">https://www.science.org/doi/10.1126/sciadv.adk3222</a>&nbsp;</p>
+                                <p><a href="https://www.ncbi.nlm.nih.gov/books/NBK470241/">https://www.ncbi.nlm.nih.gov/books/NBK470241/</a>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4814782/#sec19">https://pmc.ncbi.nlm.nih.gov/articles/PMC4814782</a>&nbsp;</p>
+                                <p><a href="https://www.health.harvard.edu/mind-and-mood/mindfulness-meditation-practice-changes-the-brain#:~:text=The%20results.,correlated%20with%20lower%20stress%20levels">https://www.health.harvard.edu/mind-and-mood/mindfulness-meditation-practice-changes-the-brain</a>&nbsp;</p>
+                                <p><strong>Keywords</strong>: mental health, growth mindset, neuroplasticity, mindset shift</p>
+                                
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/the-benefits-of-combining-medication-and-therapy-for-depression.php">⇐ the benefits of combining medication and therapy for depression </a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/10-signs-youre-stuck-in-survival-mode.php"> 10 signs youre stuck in survival mode ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+ 
+
+<?php include('../include/footer.php'); ?>
