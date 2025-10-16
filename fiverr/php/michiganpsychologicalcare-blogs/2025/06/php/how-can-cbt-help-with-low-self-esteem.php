@@ -1,0 +1,95 @@
+<?php 
+
+$img = '';
+$title = "How Can CBT Help with Low Self-Esteem?";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>How Can CBT Help with Low Self-Esteem?</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>June 5, 2025</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2025/06/how-can-cbt-help-with-low-self-esteem.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>How Can CBT Help with Low Self-Esteem?</strong></h1>
+                                
+                                <p>Low self-esteem can be challenging to change and affects nearly all areas of our lives. The good news is that improving low self-esteem is possible for anyone willing to work through it. Low <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2914631/">self-esteem</a> can especially impact people&rsquo;s mental health. If a person feels negatively about themselves, they may withdraw from their relationships or things they enjoy, which can result in symptoms of depression. <a href="https://www.ncbi.nlm.nih.gov/books/NBK470241/">Cognitive Behavioral Therapy</a> (CBT) is a great approach to improving low self-esteem and, in turn, improving mental health symptoms.&nbsp;</p>
+                                <h2><strong>What is Low Self-Esteem?</strong></h2>
+                                <p>When a person has low self-esteem, it typically means they lack confidence in themselves as individuals and their abilities. While the causes of lower self-esteem are not concrete, there are a few things that could potentially be causes. For example, childhood trauma or experiences, having an inner critic, or bullying can lead to a person developing low self-esteem. If these feelings are not processed or challenged, people are more likely to develop mental health conditions such as <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6777005/">anxiety</a> and depression.&nbsp;</p>
+                                <h2><strong>What is Cognitive Behavioral Therapy?&nbsp;</strong></h2>
+                                <p>Cognitive Behavioral Therapy (<a href="https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral">CBT</a>) is a type of therapy that teaches patients to identify distortions in their thinking and develop healthier, more accurate thoughts. This type of therapy also helps people to identify their unhelpful behaviors and use <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6461437/">behavioral activation</a> to create new ones. Behavioral activation is a practice that focuses on teaching patients how behaviors can affect their emotions. Patients can use these skills to help minimize unhelpful behaviors and distorted thoughts.&nbsp;</p>
+                                <h2><strong>How Does CBT Help Improve Self-Esteem?</strong></h2>
+                                <p>CBT can help improve people&rsquo;s self-esteem uniquely and effectively. For example, when a patient is working through cognitive behavioral therapy, they will be able to identify, challenge, and reframe their negative beliefs they have about themselves. By creating more compassionate and accurate thoughts, self-esteem can be improved. In addition to this, people working through CBT can also use behavioral activation to engage in more activities that improve their mood. They can also use this skill to set small achievable goals that can help improve a person&rsquo;s confidence and thus their self-esteem.&nbsp;</p>
+                                <p>When a person has low self-esteem, they will often feel isolated, defeated, or like there is no hope for them. But this is not true. Anyone experiencing low self-worth can work through their thoughts and behaviors in a way that will improve their life. Cognitive behavioral therapy is a great tool to use when combating low self-worth. This is because CBT targets the main causes of low self-esteem directly. This type of therapy teaches patients how to identify and reframe their negative thoughts about themselves and develop a more compassionate voice. CBT can also be used to help increase behaviors that can help improve a person&rsquo;s mood. All of these changes can lead to higher self-esteem and improve mental health. There is always hope to have a better relationship with yourself and improve your mental health.&nbsp;</p>
+                                <p>If you are interested in working with someone from our practice for in-person therapy or teletherapy, please <a href="https://michiganpsychologicalcare.com/contact.php">reach out to us</a>. We are here and ready to help you however we can.</p>
+                                <p><strong>References</strong>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2914631/">https://pmc.ncbi.nlm.nih.gov/articles/PMC2914631/</a>&nbsp;</p>
+                                <p><a href="https://www.ncbi.nlm.nih.gov/books/NBK470241/">https://www.ncbi.nlm.nih.gov/books/NBK470241/</a></p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6777005/">https://pmc.ncbi.nlm.nih.gov/articles/PMC6777005/</a>&nbsp;</p>
+                                <p><a href="https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral">https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral</a></p>
+                                <p><strong>Keywords</strong>: cognitive behavioral therapy, self-esteem, self-worth, mental health, teletherapy</p>
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<!-- <a href="/blog/Using-CBT-Techniques-to-Challenge-Negative-Self-Talk.php">⇐ Using CBT Techniques to Challenge Negative Self Talk </a> -->
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/how-cbt-helps-rewire-the-brain-in-alcoholism-recovery.php"> how cbt helps rewire the brain in alcoholism recovery ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+ 
+
+<?php include('../include/footer.php'); ?>

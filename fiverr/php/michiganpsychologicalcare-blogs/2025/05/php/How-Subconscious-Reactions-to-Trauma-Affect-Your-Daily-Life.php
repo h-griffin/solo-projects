@@ -1,0 +1,112 @@
+<?php 
+
+$img = '';
+$title = "How Subconscious Reactions to Trauma Affect Your Daily Life";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>How Subconscious Reactions to Trauma Affect Your Daily Life</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>May 29, 2025</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2025/05/How-Subconscious-Reactions-to-Trauma-Affect-Your-Daily-Life.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>How Subconscious Reactions to Trauma Affect Your Daily Life</strong></h1>
+                                
+                                <p><a href="https://www.nimh.nih.gov/health/topics/coping-with-traumatic-events">Trauma</a> is an emotional response to a distressing or frightening event that can make it difficult for a person to deal with. Trauma can be a single incident or it can be a series of exposures. Trauma can be stored within our subconscious mind without us even realizing it. If we don&rsquo;t work through trauma, it will often show up in other areas of our lives. Working with a therapist or online counselor can be a great way to work through unresolved trauma. Therapists can also help guide patients to understand the subconscious mind and how it shows up in our daily lives.</p>
+                                <h2><strong>What Is the Subconscious Mind?</strong></h2>
+                                <p>The <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2440575/">subconscious</a> mind is a part of our mind that is not within our conscious awareness. This part of our mind can still influence our behaviors and emotional responses. Our subconscious minds store trauma and can often remain stuck there. This part of our minds stores implicit memories, which operate on a subconscious level. This means that these stored traumas can be triggered in everyday situations.</p>
+                                <h2><strong>What Are Subconscious Reactions?</strong></h2>
+                                <p>Subconscious reactions are reactions that appear to come up without much thought. However, these reactions are coming from the trauma that is stored in the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4329552/">subconscious</a>. An example of a subconscious reaction to trauma is avoiding specific situations as a way to avoid uncomfortable emotions. For example, our subconscious mind might procrastinate on tasks that might bring up emotions from previous experiences. Another example of a subconscious reaction is when we have physical symptoms of trauma. This could manifest as chronic pain or sleep difficulties. Our subconscious is always trying to keep us safe, which means it is wired to help shield us from the effects of our trauma.</p>
+                                <h2><strong>How Trauma Affects Daily Life</strong></h2>
+                                <p><a href="https://www.mentalhealth.org.uk/explore-mental-health/a-z-topics/trauma">Trauma</a> can affect our daily lives in many different ways. Sometimes we might not even recognize that our trauma is showing up in certain ways. The first step to understanding our subconscious reactions is to become aware of them. Below, we will discuss some common ways that trauma can show up in our lives.</p>
+                                <ul>
+                                    <li><em>Relationships</em>: Trauma can affect relationships because it can interfere with our ability to communicate effectively. If a person has unprocessed trauma, they might overreact in situations with loved ones or say things they don&rsquo;t mean. Unprocessed trauma can also cause people to withdraw and isolate from relationships. This can be unpredictable and can cause relationships to struggle in the long run.<br /><br /></li>
+                                    <li><em>Productivity</em>: Trauma can also get in the way of being productive at work or school. Trauma can cause burnout or perfectionism. Both of these can damage productivity and make it harder to complete tasks. Perfectionism can cause a person to procrastinate because they are so fearful of not doing each step perfectly. This will affect productivity and make it more difficult to accomplish tasks. If a person&rsquo;s unprocessed trauma is something they actively think about often, this may make it more difficult for them to be productive, too. <br /><br /></li>
+                                    <li><em>Decision Making</em>: Trauma can affect decision-making because it can cause us to have less trust in ourselves. If we have less trust in ourselves, it&rsquo;s more difficult to make decisions. We have to make hundreds of decisions daily, and indecisiveness can make this incredibly challenging. Trauma can also cause us to feel disconnected from ourselves and our decisions. Sometimes it can feel like life is happening to us versus us having the power to make things happen.</li>
+                                    <li><em>Habits and Routines</em>: Trauma can affect our ability to create and sustain new habits and routines. Trauma makes creating new habits difficult because people are often consumed with their trauma and find it hard to focus on other efforts. Trauma can also make it difficult for people to be consistent in their efforts. This can be because their emotions become too overwhelming in day-to-day life, that it too difficult to accomplish other things.<br /><br /></li>
+                                    <li><em>Self-Worth</em>: Unfortunately, trauma often erodes our self-worth and self-esteem. Depending on the specifics of a person&rsquo;s trauma, they might have experienced physical or mental abuse. Both of these can cause low self-worth and make people feel like they will never be enough. But this is not true! One of the worst effects of trauma is how it changes how we see ourselves. Through healing trauma, people can learn to see themselves in a more positive light. They can also work on being more compassionate to themselves in the process.</li>
+                                </ul>
+                                <h2><strong>Healing From Trauma</strong></h2>
+                                <p>While trauma can affect daily life, there is hope that trauma can be healed. Everyone&rsquo;s trauma is different, and everyone has different reactions to their trauma. In many cases, people dealing with trauma will need to seek professional help. Some ways to get help for trauma include the following:</p>
+                                <ul>
+                                    <li><strong><em>Therapy</em>: Therapy is a helpful tool for processing trauma. This provides patients with a safe and supportive environment to share what they are going through. Therapists are trained to know how to handle the delicate nature of trauma in a way that supports the goals and well-being of the patient.<br /></strong></li>
+                                    <li><em>Mindfulness</em>: Mindfulness can be used to help heal trauma because it helps bring attention to the present moment. Practicing mindfulness can bring attention to the mind-body connection that is often damaged as a result of trauma. People can also try practicing breathwork as a coping skill for when they are triggered by trauma.</li>
+                                    <li><em>Journaling</em>: Journaling can be a great way to work through trauma because it can help bring our thoughts and emotions to our awareness. Our subconscious does such a good job of protecting us that we often don&rsquo;t even know what is actually underneath it. Journaling can be a way to explore what our subconscious might be trying to tell us.</li>
+                                    <li><strong><em>Support Group</em>s: Support groups can be helpful for people dealing with trauma because they help other strugglers feel less alone. These groups can provide social support and coping strategies to members. Support groups can be a great way to incorporate socialization into healing.&nbsp;</strong></li>
+                                    <li><strong><em>Online Resources</em>: There are also free online resources for people who have dealt with trauma. The National Center for PTSD has a <a href="https://www.ptsd.va.gov/gethelp/">website</a> that offers information and resources for people struggling. In addition to this, if any person is in a crisis or considers suicide, they can call or text 988. These are free resources that are available to help anyone struggling. Please remember that you are never alone.</strong></li>
+                                </ul>
+                                <p>If you or someone you love is carrying the weight of trauma, we want to remind you that hope is out there. Nobody deserves trauma or the aftermath of trauma. Trauma can cause us to feel isolated and make us think there is no hope for the future. But this is not true. There is always hope for a life that is not consumed by the effects of trauma.&nbsp;</p>
+                                <p>If you are interested in working with an online counselor with us, you can <a href="https://michiganpsychologicalcare.com/contact.php">reach out to us</a>. We are here and happy to help any way that we can!</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://www.nimh.nih.gov/health/topics/coping-with-traumatic-events">https://www.nimh.nih.gov/health/topics/coping-with-traumatic-events</a></p>
+                                <p><a href="https://www.health.harvard.edu/staying-healthy/understanding-the-stress-response">https://www.health.harvard.edu/staying-healthy/understanding-the-stress-response</a>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2440575/">https://pmc.ncbi.nlm.nih.gov/articles/PMC2440575/</a>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4329552/">https://pmc.ncbi.nlm.nih.gov/articles/PMC4329552/</a>&nbsp;</p>
+                                <p><a href="https://www.mentalhealth.org.uk/explore-mental-health/a-z-topics/trauma">https://www.mentalhealth.org.uk/explore-mental-health/a-z-topics/trauma</a>&nbsp;</p>
+                                <p><strong>Keywords</strong>: subconscious, mental health, trauma, online counselor [Michigan]</p>
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/Using-CBT-Techniques-to-Challenge-Negative-Self-Talk.php">⇐ Using CBT Techniques to Challenge Negative Self Talk </a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/how-cbt-helps-you-rewire-your-brain-for-positivity.php"> how cbt helps you rewire your brain for positivity ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+ 
+
+<?php include('../include/footer.php'); ?>

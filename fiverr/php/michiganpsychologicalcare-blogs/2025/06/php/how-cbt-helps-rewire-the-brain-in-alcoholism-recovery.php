@@ -1,0 +1,102 @@
+<?php 
+
+$img = '';
+$title = "How Cognitive Behavioral Therapy (СВТ) Helps Rewire the Brain in Alcoholism Recovery";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>How Cognitive Behavioral Therapy (СВТ) Helps Rewire the Brain in Alcoholism Recovery</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>June 12, 2025</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2025/06/how-cbt-helps-rewire-the-brain-in-alcoholism-recovery.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>How Cognitive Behavioral Therapy (СВТ) Helps Rewire the Brain in Alcoholism Recovery</strong></h1>
+                                
+                                <p>Alcohol use disorder is, unfortunately, a common struggle for people in the world. In the United States alone, 28.9 million people struggle with <a href="https://www.niaaa.nih.gov/alcohols-effects-health/alcohol-topics/alcohol-facts-and-statistics/alcohol-use-disorder-aud-united-states-age-groups-and-demographic-characteristics">alcoholism</a>. This disorder can be chronic and can lead to a variety of physical health concerns, such as liver damage and increased blood pressure. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6760419/">Addiction treatment</a> can be tedious and challenging, but it&rsquo;s available for anyone beginning the journey to live their lives free of alcohol.</p>
+                                <h2><strong>What is Cognitive Behavioral Therapy (CBT)?</strong></h2>
+                                <p>Cognitive Behavioral Therapy (<a href="https://www.ncbi.nlm.nih.gov/books/NBK470241/">CBT</a>) is a type of therapy that teaches people that their mental health can be improved by learning how their thoughts, feelings, and behaviors are all connected. CBT is used to treat a variety of mental health concerns such as depression, anxiety, and obsessive-compulsive disorder (OCD).&nbsp;</p>
+                                <h2><strong>The Brain in Addiction</strong></h2>
+                                <p>When a person is dealing with alcoholism, their brain is being affected negatively. Abuse of alcohol disrupts dopamine levels in the brain. It also affects the parts of the brain responsible for memory and decision-making. Cognitive function is impaired significantly when people abuse alcohol. When someone enters alcoholism recovery, they will likely notice their cognitive functions improving over time.</p>
+                                <h2><strong>How CBT Supports Brain Rewiring</strong></h2>
+                                <p><a href="https://www.health.harvard.edu/blog/what-is-cognitive-behavioral-therapy-202406053047">CBT</a> can help our brains change in several ways. Below, we will discuss how CBT can support rewiring the brain in addiction treatment for alcoholism.&nbsp;</p>
+                                <ul>
+                                    <li>Neuroplasticity: Cognitive behavioral therapy helps to support brain rewiring because it promotes neuroplasticity. <a href="https://www.health.harvard.edu/blog/brain-plasticity-in-drug-addiction-burden-and-benefit-2020062620479">Neuroplasticity</a> is the brain&rsquo;s ability to create new pathways and change. CBT helps the brain create new pathways by reframing distorted thoughts to be more accurate. Repetition of these thoughts helps to strengthen these pathways.</li>
+                                    <li>Repetition: Another way that CBT supports brain rewiring is because it teaches repetition. One of the core principles of CBT is that the skills must be practiced over time consistently to be most effective. Using these skills repetitively helps to strengthen the circuits in the brain that can be damaged when abusing alcohol.</li>
+                                    <li>Challenging Thoughts: When a person is in alcoholism <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2016.01118/full?ref=blog.wondermed.com">recovery</a> and challenges their thoughts or remains sober, they are reframing how they think about drinking. This isn&rsquo;t something that always happens right away. However, over time&mdash;throughout addiction treatment&mdash;the person struggling will start to see that they can live a happy and fulfilled life without alcohol.</li>
+                                </ul>
+                                <p>Recovery from <a href="https://www.niaaa.nih.gov/publications/cycle-alcohol-addiction">alcohol use disorder</a> is challenging because alcohol abuse affects several areas of the brain and cognitive function. A popular form of addiction treatment is CBT because it can help to rewire the brain in a way that supports recovery. When a person enters recovery from alcoholism, it may take time for them to see how alcohol has taken over so many areas of their lives. We want to remind you that living a life without alcohol is possible. If you or someone you love struggles with alcohol, you are not alone. Help is available, and you are worth the fight it takes to live a life free of addiction&rsquo;s shackles.</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://www.niaaa.nih.gov/alcohols-effects-health/alcohol-topics/alcohol-facts-and-statistics/alcohol-use-disorder-aud-united-states-age-groups-and-demographic-characteristics">https://www.niaaa.nih.gov/alcohols-effects-health/alcohol-topics/alcohol-facts-and-statistics/alcohol-use-disorder-aud-united-states-age-groups-and-demographic-characteristics</a></p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6760419/">https://pmc.ncbi.nlm.nih.gov/articles/PMC6760419/</a>&nbsp;</p>
+                                <p><a href="https://www.ncbi.nlm.nih.gov/books/NBK470241/">https://www.ncbi.nlm.nih.gov/books/NBK470241/</a>&nbsp;</p>
+                                <p><a href="https://www.health.harvard.edu/blog/what-is-cognitive-behavioral-therapy-202406053047">https://www.health.harvard.edu/blog/what-is-cognitive-behavioral-therapy-202406053047</a>&nbsp;</p>
+                                <p><a href="https://www.health.harvard.edu/blog/brain-plasticity-in-drug-addiction-burden-and-benefit-2020062620479">https://www.health.harvard.edu/blog/brain-plasticity-in-drug-addiction-burden-and-benefit-2020062620479</a>&nbsp;</p>
+                                <p><a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2016.01118/full?ref=blog.wondermed.com">https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2016.01118/full?ref=blog.wondermed.com</a>&nbsp;</p>
+                                <p><a href="https://www.niaaa.nih.gov/publications/cycle-alcohol-addiction">https://www.niaaa.nih.gov/publications/cycle-alcohol-addiction</a>&nbsp;</p>
+                                <p><strong>Keywords</strong>: teletherapist, CBT, alcoholism, addiction treatment, recovery</p>
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/how-can-cbt-help-with-low-self-esteem.php">⇐ how can cbt help with low self esteem </a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/how-medication-can-help-manage-anxiety-symptoms.php"> how medication can help manage anxiety symptoms ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+ 
+
+<?php include('../include/footer.php'); ?>

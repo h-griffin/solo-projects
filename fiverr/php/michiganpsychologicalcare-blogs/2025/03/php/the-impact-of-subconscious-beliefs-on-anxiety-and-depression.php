@@ -1,0 +1,95 @@
+<?php 
+
+$img = '';
+$title = "The Impact of Subconscious Beliefs on Anxiety and Depression";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>The Impact of Subconscious Beliefs on Anxiety and Depression</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Mar 24, 2025</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2025/03/the-impact-of-subconscious-beliefs-on-anxiety-and-depression.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>The Impact of Subconscious Beliefs on Anxiety and Depression</strong></h1>
+                                
+                                <p>There are always a variety of different reasons why people struggle with their mental health. Parts of treatment for anxiety and depression can include exploring <a href="https://www.psychologytoday.com/us/blog/understanding-hypnosis/202112/understanding-the-subconscious-its-central-role-in-hypnosis">subconscious beliefs</a> that can be running the show more than we are aware of. Subconscious beliefs are often core beliefs that were shaped in our childhood and that shape how we see ourselves and the world. These beliefs can affect a person&rsquo;s emotional health, self-esteem, and overall well-being.&nbsp;</p>
+                                <h2><strong>What are Subconscious Beliefs?</strong></h2>
+                                <p><a href="https://www.verywellmind.com/what-is-the-unconscious-2796004">Subconscious Beliefs</a> are beliefs that were often developed during the early years of our lives. These are automatic thoughts that we usually do not challenge. These beliefs are assumptions that you have towards yourself, others, and the world. An example of a subconscious belief is &ldquo;it&rsquo;s not safe to be myself&rdquo;. These beliefs can affect how people respond to triggers, stress, and relationships. These beliefs can also create an inner critic that can drastically affect a person&rsquo;s well-being and lead to symptoms of anxiety and depression.&nbsp;</p>
+                                <h2><strong>How Subconscious Beliefs Affect Anxiety and Depression</strong></h2>
+                                <p>Subconscious beliefs can affect people&rsquo;s <a href="https://psychiatryonline.org/doi/10.1176/appi.psychotherapy.20180003">emotional health</a> in a variety of ways, including causing symptoms of anxiety and depression. Our subconscious beliefs can lead to anxiety and depression because they can change our emotions. For example, if a person has a subconscious belief that they will never succeed in life, they may experience symptoms of low self-esteem and depression. On the other hand, if someone has a subconscious belief that people will never like them for who they are, they may experience social anxiety.&nbsp;</p>
+                                <h2><strong>How to Identify Subconscious Beliefs</strong></h2>
+                                <p>We can identify our subconscious beliefs by asking our <a href="https://www.psychologytoday.com/us/blog/understanding-hypnosis/202210/questions-you-can-ask-your-subconscious">subconscious</a> questions focused on improving overall well-being. The act of being mindful and listening to our bodies will likely lead to answers for the person struggling. Some common ways that people identify these beliefs are CBT, inner child work, journaling prompts, and emotional health improvement. Journaling can be used as a tool to learn about our limiting beliefs, which is the first step to reframing them. By reframing these beliefs to be more accurate and positive, people can improve their emotional health and self-esteem.</p>
+                                <h2><strong>How to Reframe Your Subconscious Beliefs</strong></h2>
+                                <p><a href="https://www.verywellmind.com/reframing-defined-2610419">Cognitive reframing</a> can be used to reframe subconscious beliefs. This type of reframing is often taught in cognitive behavioral therapy (CBT). This type of therapy is often used to treat anxiety and depression as a way to learn how a person&rsquo;s thoughts, feelings, and behaviors all interact with one another. Through doing this, a person who is struggling with depression or anxiety will have a higher likelihood of maintaining recovery.</p>
+                                <p>Limiting subconscious beliefs can affect almost all areas of our lives. However, regardless of how long you have lived with these beliefs, you still can reframe them. Reframing these beliefs can help improve symptoms of anxiety, depression and improve a person&rsquo;s emotional well-being. In some cases, people can struggle with figuring out what their subconscious beliefs are and how they can reframe them. In these cases, people can work with a therapist. Therapists can help their patients work through their beliefs and reframe them to be more accurate and positive. If you are ready to work with a therapist and reframe your limiting beliefs, you can reach out to us <a href="https://michiganpsychologicalcare.com/contact.php">here</a>.</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://www.psychologytoday.com/us/blog/understanding-hypnosis/202112/understanding-the-subconscious-its-central-role-in-hypnosis">https://www.psychologytoday.com/us/blog/understanding-hypnosis/202112/understanding-the-subconscious-its-central-role-in-hypnosis</a></p>
+                                <p><a href="https://www.verywellmind.com/what-is-the-unconscious-2796004">https://www.verywellmind.com/what-is-the-unconscious-2796004</a></p>
+                                <p><a href="https://psychiatryonline.org/doi/10.1176/appi.psychotherapy.20180003">https://psychiatryonline.org/doi/10.1176/appi.psychotherapy.20180003</a>&nbsp;</p>
+                                <p><a href="https://www.psychologytoday.com/us/blog/understanding-hypnosis/202210/questions-you-can-ask-your-subconscious">https://www.psychologytoday.com/us/blog/understanding-hypnosis/202210/questions-you-can-ask-your-subconscious</a>&nbsp;</p>
+                                <p><a href="https://www.verywellmind.com/reframing-defined-2610419">https://www.verywellmind.com/reframing-defined-2610419</a></p>
+                                <p><strong>Keywords</strong>: anxiety, emotional health, self-esteem, subconscious beliefs</p>
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/how-therapy-and-medication-help-manage-schizophrenia-symptoms.php">⇐ how therapy and medication help manage schizophrenia symptoms </a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/cbt-and-medication-how-both-can-boost-your-healing-journey.php"> cbt-and-medication-how-both-can-boost-your-healing-journey ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>

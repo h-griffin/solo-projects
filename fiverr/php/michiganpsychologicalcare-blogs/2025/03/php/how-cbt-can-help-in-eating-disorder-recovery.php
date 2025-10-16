@@ -1,0 +1,107 @@
+<?php 
+
+$img = '';
+$title = "How CBT Can Help in Eating Disorder Recovery";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>How CBT Can Help in Eating Disorder Recovery</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Mar 10, 2025</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2025/03/how-cbt-can-help-in-eating-disorder-recovery.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>How CBT Can Help in Eating Disorder Recovery</strong></h1>
+                                
+                                <p><a href="https://www.nationaleatingdisorders.org/what-are-eating-disorders/">Eating disorders</a> are often misunderstood to be all about eating and the food itself. However, eating disorders are so much more than that! When someone develops an eating disorder, they are usually struggling with how they think, feel, and see themselves in the world. Eating disorders can be life-threatening and should be <a href="https://www.nimh.nih.gov/health/topics/eating-disorders">treated</a> as soon as possible. Cognitive Behavioral Therapy (CBT) can be used as a tool in eating disorder recovery and can help people sustain lifelong recovery. Eating disorder recovery can be challenging, but it is possible for anyone struggling.</p>
+                                <h2><strong>What Are Eating Disorders?</strong></h2>
+                                <p>Eating disorders are disorders that involve obsessions about controlling food and exercise. These symptoms are often masking deep shame or trauma. These disorders also include <a href="https://www.ncbi.nlm.nih.gov/books/NBK555901/#:~:text=Epidemiology,common%20for%20patients%20with%20BDD.">body image</a> struggles that can often show up as body dysmorphia. <a href="https://www.mayoclinic.org/diseases-conditions/body-dysmorphic-disorder/symptoms-causes/syc-20353938#:~:text=Body%20dysmorphic%20disorder%20is%20a,may%20avoid%20many%20social%20situations.">Body dysmorphia</a> is a disorder where a person is obsessed with their appearance. They are oftentimes so deep into their obsessions that they cannot see themselves clearly. If a person is struggling with this, they should seek treatment as soon as they can. The chances of lifelong recovery from eating disorders are higher when recovery is started sooner rather than later.</p>
+                                <h2><strong>Understanding Cognitive Behavioral Therapy (CBT)</strong></h2>
+                                <p><a href="https://www.psychologytoday.com/us/conditions/eating-disorders">CBT</a> is a type of therapy that teaches patients to identify and reframe their unhelpful thoughts or beliefs they have about themselves. These thoughts and beliefs are often a contributing factor to many mental health concerns, including eating disorders. An example of a cognitive distortion (or unhelpful thoughts) that can be common in eating disorder recovery is &ldquo;I&rsquo;m only worthy if I lose weight&rdquo;. Not only is this thought false, but it is unhelpful and can lead to a person engaging in dangerous behaviors such as overexercising or purging behaviors.&nbsp;</p>
+                                <h2><strong>How CBT Helps in Eating Disorder Recovery</strong></h2>
+                                <p>Cognitive behavioral therapy can help people with <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5711426/">eating disorders </a>recover in a variety of ways.&nbsp; In most cases, when a person is recovering from their eating disorder, they will combine a variety of treatments. This could include therapy, medications, or lifestyle changes.&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2928448/">Cognitive behavioral therapy</a> can help people:</p>
+                                <ul>
+                                    <li>Identify harmful thought patterns</li>
+                                    <li>Challenge negative core beliefs and improve self-esteem.</li>
+                                    <li>Teaches coping skills for eating disorder behaviors or triggers that a person could experience in recovery.</li>
+                                    <li>Improve mindfulness in their lives and recoveries.&nbsp;</li>
+                                </ul>
+                                <h2><strong>Using CBT for Body Image</strong></h2>
+                                <p>CBT can be helpful for people struggling with their <a href="https://www.nationaleatingdisorders.org/body-image-and-eating-disorders/">body image</a> because it can help them change their negative thoughts they have towards their body. This is a long process and often requires a lot of practice because body image issues are not developed overnight. Body image issues develop over time and can require many forms of treatment. In most cases, people will need to work with a therapist either in person or with a teletherapist.</p>
+                                <p><a href="https://www.verywellhealth.com/body-image-8708330#:~:text=CBT%20involves%20identifying%20negative%20or,about%20your%20body%20over%20time.">Eating disorders</a> are disorders that can be life-threatening if left untreated. When someone is in recovery, they will often need to use a variety of treatments in their recovery journey. Cognitive behavioral therapy is a great way to reframe negative thoughts in eating disorder recovery. Eating disorder recovery is possible, and everyone who struggles with one deserves to recover. If you or someone you love is interested in working with us in your recovery journey, please <a href="https://michiganpsychologicalcare.com/contact.php">reach out to us</a>. We are here for you and want to support you however we can.&nbsp;</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://www.nationaleatingdisorders.org/what-are-eating-disorders/">https://www.nationaleatingdisorders.org/what-are-eating-disorders/</a></p>
+                                <p><a href="https://www.nimh.nih.gov/health/topics/eating-disorders">https://www.nimh.nih.gov/health/topics/eating-disorders</a></p>
+                                <p><a href="https://www.ncbi.nlm.nih.gov/books/NBK555901/#:~:text=Epidemiology,common%20for%20patients%20with%20BDD">https://www.ncbi.nlm.nih.gov/books/NBK555901</a>&nbsp;</p>
+                                <p><a href="https://www.mayoclinic.org/diseases-conditions/body-dysmorphic-disorder/symptoms-causes/syc-20353938#:~:text=Body%20dysmorphic%20disorder%20is%20a,may%20avoid%20many%20social%20situations">https://www.mayoclinic.org/diseases-conditions/body-dysmorphic-disorder/symptoms-causes</a>&nbsp;</p>
+                                <p><a href="https://www.psychologytoday.com/us/conditions/eating-disorders">https://www.psychologytoday.com/us/conditions/eating-disorders</a>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5711426/">https://pmc.ncbi.nlm.nih.gov/articles/PMC5711426/</a></p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2928448/">https://pmc.ncbi.nlm.nih.gov/articles/PMC2928448/</a>&nbsp;</p>
+                                <p><a href="https://www.nationaleatingdisorders.org/body-image-and-eating-disorders/">https://www.nationaleatingdisorders.org/body-image-and-eating-disorders/</a>&nbsp;</p>
+                                <p><a href="https://www.verywellhealth.com/body-image-8708330#:~:text=CBT%20involves%20identifying%20negative%20or,about%20your%20body%20over%20time">https://www.verywellhealth.com/body-image-8708330</a>&nbsp;</p>
+                                <p><strong>Keywords</strong>: eating disorders, teletherapist, CBT, body image</p>
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/10-signs-youre-stuck-in-survival-mode.php">⇐ 10 signs youre stuck in survival mode </a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/how-therapy-and-medication-help-manage-schizophrenia-symptoms.php"> how therapy and medication help manage schizophrenia symptoms ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+<?php include('../include/footer.php'); ?>
