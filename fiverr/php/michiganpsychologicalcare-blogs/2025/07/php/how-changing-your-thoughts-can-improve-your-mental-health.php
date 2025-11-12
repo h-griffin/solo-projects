@@ -1,0 +1,112 @@
+<?php 
+
+$img = '';
+$title = "How Changing Your Thoughts Can Improve Your Mental Health";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>How Changing Your Thoughts Can Improve Your Mental Health</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>July 29, 2025</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2025/07/how-changing-your-thoughts-can-improve-your-mental-health.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>How Changing Your Thoughts Can Improve Your Mental Health</strong></h1>
+                                
+                                <p>Have you ever had a day when you get into a bad mood without knowing why? This is completely normal. Oftentimes, our negative thoughts can be running the show without us even realizing it. Our thoughts have much more power over our physical and mental health than we give them credit for. Shifting our thought patterns to reflect positive thinking can have a significant impact on our <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4760272/">mental health</a>. National Positive Thinking Day is September 13th, and we want to remind everyone reading this how important positive thinking really is.</p>
+                                <h2><strong>How Are Your Thoughts Related to Your Mental Health?</strong></h2>
+                                <p>Our thought patterns and beliefs we have towards ourselves have likely been present in our thinking for a long time. Our thought patterns can influence how we feel about ourselves, others, and the world. Behaviors that we engage in are also influenced by our thought patterns.&nbsp; Cognitive Behavioral Therapy (CBT) teaches us that our thoughts influence our feelings, behaviors, and overall <a href="https://www.sciencedirect.com/science/article/pii/S2212144724000991">mental health</a>.&nbsp;</p>
+                                <h3><strong>What Is Positive Thinking?</strong></h3>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5533095/">Positive thinking</a> can improve our mental health in incredible ways, but it's also a lot easier said than done. It&rsquo;s important not to shame people struggling with their mental health if they are having difficulty being positive. Positive thinking is helpful only if it does not reach levels of toxic positivity. Positive thinking focuses on hopefulness, flexibility, and solutions. Developing a mindset is not about ignoring difficulties in life. Rather, positive thinking introduces the idea that we can acknowledge our challenges, find a new direction, and ultimately move past them.&nbsp;</p>
+                                <h3><strong>Benefits of a Positive Mindset</strong></h3>
+                                <p>Cultivating a positive <a href="https://www.health.harvard.edu/heart-health/optimism-and-your-health">mindset</a> helps reduce symptoms of depression and anxiety. Thinking in a positive way can also help improve the strength and communication of our relationships. Having optimistic <a href="https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/positive-thinking/art-20043950">thought patterns</a> can help reduce the risk of stroke, pain, and cancer. When people are thinking positively, they are likely better at managing stressful experiences. Having a positive mindset helps with emotional regulation because it helps us to respond to situations in healthier ways. Positive thinking also helps to encourage other positive behaviors. When we develop optimistic thoughts, we are more likely to practice activities that are helpful for our well-being. Developing a positive mindset also helps us to solve problems better. When we think positively, we are open to creative or new ways of approaching situations.</p>
+                                <h3><strong>Ways to Shift Your Mindset</strong></h3>
+                                <p>There isn&rsquo;t one specific way to change your mindset. Instead, there are a variety of different strategies that can be used to help cultivate a positive mindset. Different things will work differently for each person. Trying a variety of options is the best way to have success when learning new skills.</p>
+                                <ul>
+                                    <li>The first step to changing your mindset is being aware of your thinking. Bringing awareness to our thoughts can help us understand where we need to start on our positive thinking journey. If a person&rsquo;s thoughts are incredibly negative, they will start with a different experience than someone who isn&rsquo;t thinking as negatively. You can become aware of your thoughts by creating a thought log or journaling about thoughts that are frequently present. You can use these notes to understand what areas of your mindset are stronger than others. Being aware of your thoughts is the first step in changing your mindset because becoming aware enables you to change.<br /><br /></li>
+                                    <li>The next step in developing a positive <a href="https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral">mindset</a> is challenging the negative thoughts you have. Sometimes people have cognitive distortions in their thinking that affect how they see themselves. However, these cognitive distortions are not always accurate or helpful. CBT teaches us that we can reframe our unhelpful, inaccurate thoughts with more accurate, positive ones. The action of reframing these unhelpful thoughts helps improve mental health symptoms. It can be helpful to reframe thoughts with &ldquo;evidence&rdquo;. Evidence can be anything that proves your unhelpful thoughts to be wrong. <br /><br /></li>
+                                    <li>Another tool in shifting your <a href="https://greatergood.berkeley.edu/topic/gratitude/definition">thought patterns</a> is developing a gratitude practice. Practicing gratitude helps to train our brains to be thankful for the things we have in our lives. Gratitude can help improve our sleep, physical body&rsquo;s and happiness levels. A simple gratitude practice to try is writing down three things you are thankful for in the morning or night.&nbsp;</li>
+                                    <li>Decrease rumination as much as possible. Rumination or the inclination to obsess over negative thoughts and feelings. Not only does rumination make our negative thoughts stronger, but it can negatively affect our mental health in many ways.<br /><br /></li>
+                                    <li>Practicing self-compassion can be a great way to improve our thinking patterns. Self-compassion teaches us that we can have the same compassion towards ourselves as we have towards others. Being kind to ourselves helps improve our confidence and mood.<br /><br /></li>
+                                    <li>In addition to self-compassion, practicing mindfulness can be a helpful tool in moving towards positive thinking. Mindfulness is the practice of being aware of the present moment without holding any judgment for it. Mindfulness encourages acceptance of anything that comes up in the present moment.<br /><br /></li>
+                                    <li>Surrounding yourself with positive influences is another way to help maintain a positive mindset. The people we spend the most time with have a much bigger effect on our mental health than we realize. If you have someone who is a negative influence in your life, you may consider spending less time with them or setting more boundaries with them.<br /><br /></li>
+                                    <li>Similar to the point above, limiting your exposure to negativity is a helpful way to foster a positive mindset. The more negativity we are exposed to, the more likely we are to have negative thoughts. In this case, it&rsquo;s important to set boundaries with people or situations that affect you negatively.</li>
+                                </ul>
+                                <h2><strong>How Therapy Can Help</strong></h2>
+                                <p>Therapy can be helpful in improving our thoughts and mental health. Therapists can help patients reframe their thoughts and practice other skills we mentioned in the previous section. While therapy is not necessary to change your thought patterns, it certainly helps the process. Working with a therapist helps us to feel less alone, have accountability for our treatment, and educate us on methods that might be helpful. Advancements in technology have made working with teletherapists more accessible for people all over the world.&nbsp;</p>
+                                <p>It can be enormously challenging to change thoughts or beliefs that we have held for most of our lives. But it is not impossible. Reframing our thoughts to be more positive can help improve our mental and physical health. There are many different ways to improve our thoughts, including awareness, reframing, gratitude, self-compassion, and mindfulness. All of these tools can be used to help cultivate a positive mindset. Changing your mindset is not about ignoring the positive. It&rsquo;s about empowering yourself with a mindset that allows you to live the most fulfilling life possible.</p>
+                                <p>If you are interested in working with someone from our practice, please <a href="https://michiganpsychologicalcare.com/contact.php">reach out to us</a>. We are eager to help you experience the benefits of having a positive mindset.&nbsp;</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4760272/">https://pmc.ncbi.nlm.nih.gov/articles/PMC4760272/</a>&nbsp;</p>
+                                <p><a href="https://www.sciencedirect.com/science/article/pii/S2212144724000991">https://www.sciencedirect.com/science/article/pii/S2212144724000991</a>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5533095/">https://pmc.ncbi.nlm.nih.gov/articles/PMC5533095/</a>&nbsp;</p>
+                                <p><a href="https://www.health.harvard.edu/heart-health/optimism-and-your-health">https://www.health.harvard.edu/heart-health/optimism-and-your-health</a>&nbsp;</p>
+                                <p><a href="https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/positive-thinking/art-20043950">https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/positive-thinking</a>&nbsp;</p>
+                                <p><a href="https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral">https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral</a></p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3679190/">https://pmc.ncbi.nlm.nih.gov/articles/PMC3679190/</a>&nbsp;</p>
+                                <p><strong>Keywords</strong>: positive thinking, mental health, mindset, thought patterns, teletherapist</p>
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/managing-seasonal-affective-disorder-(sad)-during-the-fall-season.php">⇐ managing seasonal affective disorder (sad) during the fall season </a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/how-can-cbt-help-with-low-self-esteem.php"> how can cbt help with low self esteem ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+ 
+
+<?php include('../include/footer.php'); ?>
