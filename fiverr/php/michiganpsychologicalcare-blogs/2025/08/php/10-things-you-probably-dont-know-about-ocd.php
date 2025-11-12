@@ -1,0 +1,106 @@
+<?php 
+
+$img = '';
+$title = "10 Things You Probably Don't Know About OCD";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>10 Things You Probably Don't Know About OCD</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Aug 28, 2025</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2025/08/10-things-you-probably-dont-know-about-ocd.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1>10 Things You Probably Don't Know About OCD</h1>
+                                <p>National Obsessive-Compulsive Disorder (OCD) Awareness Week falls in October every year. This year, this week falls on October 12 through 18th. This week serves to educate society about OCD, the dangerous stigmas, and help people struggling to remember that hope is possible. OCD is a disorder that is marked by unwanted obsessions that cause suffering and compulsions that act as an effort to decrease that suffering. OCD Awareness Week is important to help educate the public and remove harmful stigmas. This week also serves as a reminder for anyone struggling with OCD that they are never alone in their struggles.</p>
+                                <h2>What Is OCD?</h2>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10726089/">Obsessive-Compulsive Disorder</a> (OCD) is a debilitating anxiety disorder that involves obsessions and compulsions. The obsessions within OCD are usually intrusive thoughts, images, or ideas. Compulsions, on the other hand, are actions that aim to decrease the anxiety caused by the obsessions.</p>
+                                <ol>
+                                    <li>Obsessions and compulsions are not the same thing. Obsessions are unwanted thoughts that cause the person to struggle with anxiety. On the other hand, compulsions are the behaviors that are performed to decrease the anxiety caused by obsessions. For example, a person who has obsessive thoughts related to cleanliness; the preoccupation with being clean is the obsession. On the other hand, the act of washing hands or cleaning an item is a compulsion. It&rsquo;s most common for people with OCD to have both compulsions and obsessions, but this is not always the case. <br /><br /></li>
+                                    <li>Not all forms of OCD involve compulsions. There is a <a href="https://www.treatmyocd.com/blog/pure-obsessional-ocd">type of OCD</a> called &ldquo;Pure O,&rdquo; which means the person struggling does not have compulsions to pair with their obsessions. People with this type of OCD will struggle with obsessive, intrusive thoughts. Unfortunately, these people might struggle more than people with compulsions present because their symptoms are taking place within their minds. This type of OCD is often misunderstood and can lead to the person struggling to feel alone in their struggle because they don&rsquo;t meet the common description of OCD.<br /><br /></li>
+                                    <li>OCD is not just about being clean. Unfortunately, some stigmas suggest that anyone who struggles with OCD is struggling with cleanliness or organization concerns. While some people with OCD do struggle with these types of obsessions, there are many other types of thoughts and compulsions that people deal with. Some people have compulsions related to things being organized or checking on something multiple times.&nbsp; Over the years, it has become a pattern for people to say they have OCD when, in reality, they are describing a character trait about their life. For example, if a person says, &ldquo;I have to keep everything organized so I have OCD,&rdquo; this can be damaging for people who fit the symptom requirement for the disorder. This type of generalization makes OCD seem less serious or that it is something people can turn on and off.<br /><br /></li>
+                                    <li>OCD is a spectrum. Like many other <a href="https://www.psychiatry.org/patients-families/obsessive-compulsive-disorder/what-is-obsessive-compulsive-disorder">anxiety disorders</a>, people will struggle with varying degrees of severity. Symptoms of OCD might also fluctuate during difficult life changes. It&rsquo;s not uncommon for people with OCD to also be diagnosed with other mental health conditions, such as anxiety and depression. Symptoms of OCD can start as early as childhood and continue flaring up throughout the person&rsquo;s life. It&rsquo;s important to address OCD symptoms as soon as they arise to ensure the best change at recovery.<br /><br /></li>
+                                    <li><a href="https://psychiatry.ufl.edu/patient-care-services/uf-ocd-anxiety-related-disorders-treatment-program/medications-for-ocd/">Medication</a> can help with treatment. Some psychiatric medications can help reduce some of the symptoms of OCD. SSRIs are primarily used to treat symptoms of OCD. Medication is recommended to be combined with therapy or teletherapy for the best results. Some people may fear that they will become addicted to psychiatric medications. However, most of the medication used to treat OCD&rsquo;s symptoms is non-habit forming.<br /><br /></li>
+                                    <li>The focus of OCD isn&rsquo;t always fear. While some of the obsessions and compulsions associated with OCD can be fear-driven, this is not always the case. In some cases, obsessions can be driven by low self-esteem or perfectionism. In other cases, people might be driven by guilt or shame.<br /><br /></li>
+                                    <li><a href="https://pubmed.ncbi.nlm.nih.gov/17651534/">Logic</a> isn&rsquo;t enough to fight OCD. Even if a person is struggling with OCD logically understands the insights needed to fight their obsessions. Logics or insights are not usually enough to convince the person struggling to stop performing compulsions. When someone is in therapy for OCD, therapists usually focus less on trying to argue with the obsessive thought. It&rsquo;s nearly impossible to rationalize irrational thoughts.<br /><br /></li>
+                                    <li>Stress and fatigue can make OCD symptoms worse. Lack of sleep and stress weaken our body's immune system and have an impact on cognitive functions. Because of this, these factors can exacerbate symptoms of OCD. When someone struggles with OCD, they need to practice self-care and routines to try to help keep their stress and fatigue at lower levels.<br /><br /></li>
+                                    <li><a href="https://pubmed.ncbi.nlm.nih.gov/40392553/">Exposure therapy</a> is a powerful treatment for people struggling with OCD. Exposure Response Prevention (ERP) is a powerful tool in fighting the symptoms of OCD. ERP is a type of therapy that helps patients expose themselves to their fears while under the supervision of a therapist. This type of therapy exposes patients to their fears and works to delay or prevent their compulsions. While this type of therapy is effective, it&rsquo;s very challenging and scary for someone struggling with OCD. <br /><br /></li>
+                                    <li>OCD can be so distressing because it capitalizes on what people value most. Obsessions that are the strongest are usually related to someone the person cares about. Intrusive thoughts that are related to areas of a person's life that are important to them are going to be more distressing than those of another person who doesn&rsquo;t value the same things. This is what makes OCD so complex and challenging to treat.</li>
+                                </ol>
+                                <p>Obsessive-compulsive disorder is a complex anxiety disorder that can take over all areas of a person&rsquo;s life. Even if a person struggling with OCD wants to stop their compulsions, they often find it difficult to do so alone without professional intervention. National OCD Awareness Week takes place this month, providing an excellent opportunity to educate the public about this disorder. This week aims to educate, reduce stigmas, and combat the many myths people have towards this disorder. People who struggle with OCD often struggle with both compulsions and obsessive thoughts. However, in some cases, people will have solely obsessive thoughts but without the compulsive aspect.</p>
+                                <p>If you are reading this and you think you might struggle with symptoms of OCD, you are not alone. This disorder can be incredibly isolating and challenging, but recovery is possible. Living a life with OCD isn&rsquo;t really living at all. You deserve a life free of your OCD.</p>
+                                <p>If you are interested in working with our practice, we are here for you! We want to remind you that asking for or accepting help is never a sign of weakness. <a href="https://michiganpsychologicalcare.com/contact.php">Reach out to us</a> today if you are ready to start your journey to recovery.</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10726089/">https://pmc.ncbi.nlm.nih.gov/articles/PMC10726089/</a><strong>&nbsp;</strong></p>
+                                <p><a href="https://www.treatmyocd.com/blog/pure-obsessional-ocd">https://www.treatmyocd.com/blog/pure-obsessional-ocd</a><strong>&nbsp;</strong></p>
+                                <p><a href="https://www.psychiatry.org/patients-families/obsessive-compulsive-disorder/what-is-obsessive-compulsive-disorder">https://www.psychiatry.org/patients-families/obsessive-compulsive-disorder/what-is-obsessive-compulsive-disorder</a><strong>&nbsp;</strong></p>
+                                <p><a href="https://psychiatry.ufl.edu/patient-care-services/uf-ocd-anxiety-related-disorders-treatment-program/medications-for-ocd/">https://psychiatry.ufl.edu/patient-care-services/uf-ocd-anxiety-related-disorders-treatment-program/medications-for-ocd/</a><strong>&nbsp;</strong></p>
+                                <p><a href="https://pubmed.ncbi.nlm.nih.gov/17651534/">https://pubmed.ncbi.nlm.nih.gov/17651534/</a><strong>&nbsp;</strong></p>
+                                <p><a href="https://pubmed.ncbi.nlm.nih.gov/40392553/">https://pubmed.ncbi.nlm.nih.gov/40392553/</a></p>
+                                <p><strong>Keywords</strong>: obsessive-compulsive disorder, anxiety disorder, teletherapy, exposure therapy</p>
+ 
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/why-its-essential-to-talk-about-mental-health-every-day.php">⇐ why its essential to talk about mental health every day </a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/10-reasons-why-using-medication-for-mental-health-is-strong-not-weak.php"> 10 reasons why using medication for mental health is strong not weak ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+ 
+
+<?php include('../include/footer.php'); ?>
