@@ -1,0 +1,109 @@
+<?php 
+
+$img = '';
+$title = "The Science of Self-Talk: Rewriting Your Internal Narrative";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>The Science of Self-Talk: Rewriting Your Internal Narrative</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Dec 30, 2025</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2025/12/the-science-of-self-talk-rewriting-your-internal-narrative.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>The Science of Self-Talk: Rewriting Your Internal Narrative</strong></h1>
+                                <p>The way we talk to ourselves and the story we are telling ourselves affects us more than we know. When we speak negatively to ourselves, there are actually changes in our brains and nervous systems. Changing our internal narrative and removing our inner critics can help change almost all areas of a person&rsquo;s life. Cognitive behavioral therapy (CBT) is a helpful tool in rewriting our internal narratives and shifting our self-talk to be more compassionate. Negative thought patterns have negative effects on our physical and mental health.&nbsp;</p>
+                                <h2><strong>What is Self-Talk?</strong></h2>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8295361/">Self-talk</a> is defined as an internal dialogue that influences all areas of a person&rsquo;s life. Self-talk plays a role in emotions, decisions, and behavior. When people have negative self-talk, they may also have an <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11916919/">inner critic</a>. Inner critics are automatic negative thoughts (ANTs) that can damage a person&rsquo;s self-esteem and mental health. Many people go through life without realizing their self-talk may be negative, and their inner critic might be running the show. Everyone deserves to live a life free of an inner critic and to have compassionate, loving self-talk. Even if this doesn&rsquo;t come naturally to everyone, it&rsquo;s always possible with tools and practice. Regardless of how long it takes, living a life with an inner critic is not a life possible for growth and healing. Everyone is worth the effort it takes to improve their mental health by removing their inner critic and creating a more positive self-talk.</p>
+                                <h2><strong>The Psychology of Self-Talk</strong></h2>
+                                <p>Negative self-talk can be associated with mental health conditions such as depression and anxiety. Psychology teaches us that <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11904750/">Automatic Negative Thoughts</a> (ANTs) are negative thoughts that occur without conscious control and are capable of taking over a person&rsquo;s self-image. When these thoughts are so deeply embedded in a person&rsquo;s being, they may be challenging to change. If a person&rsquo;s self-talk is constantly negative over time, it will reinforce emotional distress. When a person develops an inner critic, it is a learned pattern of self-talk that usually develops during childhood. People who have inner critics usually also experience perfectionistic, high expectations, and high-shame environments. All these factors can lead to the development of a critical voice that terrorizes the person daily. Unfortunately, over time, the critical voice can become so automatic that it becomes incredibly difficult to change. However, psychology teaches us that there is always hope through learned self-talk. People can always decide to work on self-talk and self-compassionate approaches to improve how they talk to themselves.</p>
+                                <h2><strong>The Science of Self-Criticism and Self-Compassion</strong></h2>
+                                <p>Self-talk and self-criticism don&rsquo;t just change how we feel, but also change how our brain functions. <a href="https://pubmed.ncbi.nlm.nih.gov/19770047/">Research</a> has shown that self-critical self-talk activates certain areas of the brain that are associated with threats and activates our nervous systems. On the other hand, <a href="https://ccare.stanford.edu/uncategorized/the-scientific-benefits-of-self-compassion-infographic/">self-compassion</a> decreases stress levels and increases levels of productivity. This shows that if we change our internal dialogue, we can rewire how our brains are functioning. <a href="https://www.sciencedirect.com/science/article/pii/S0006899325002021">Neuroplasticity</a> teaches us that we can change our brains at most points in life. If we change our negative thoughts into more positive ones, we are strengthening different neural pathways. Over time, these neural pathways strengthen and become automatic thoughts.</p>
+                                <h2><strong>Cognitive Behavioral Therapy (CBT) and Self-Talk</strong></h2>
+                                <p><a href="https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral">Cognitive Behavioral Therapy </a>(CBT) is a type of therapy that teaches how a person&rsquo;s thoughts, behaviors, and feelings are connected. CBT can be used to help improve a person&rsquo;s self-talk and become more compassionate. Patients and therapists can work together and use <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8475916/">CBT techniques</a> to work through rewriting self-talk to be more compassionate. These techniques will need to be practiced and used over time to be effective.</p>
+                                <h2><strong>CBT Techniques for Rewriting Self-Talk</strong></h2>
+                                <p>One of the great things about CBT as an approach to therapy is that there are many techniques to try. This way, a person can try several different approaches and find the one that works best for them. Rewriting self-talk often takes time, so please do not get discouraged if you run into issues along the way. Changing our thoughts and the way we have always talked to ourselves is challenging, and it&rsquo;s valid to take time to do so.</p>
+                                <ul>
+                                    <li>Identifying negative thought patterns is often the first step to rewriting self-talk. People can try reflecting on their automatic thoughts that come up often. This can be done through journaling or thought records. It can be helpful to share this information with therapists to stay accountable and accurate. <br /><br /></li>
+                                    <li>Oftentimes, the stories that we tell ourselves are simply not accurate. Therapists can help patients challenge and find evidence for or against certain thoughts. People can help to reframe their thoughts to be more accurate, balanced, and compassionate. Rewriting thoughts that have been present for most of our lives can be challenging and will take time. This is normal and part of the journey of changing the way we speak to ourselves. <br /><br /></li>
+                                    <li>Self-compassion can be a helpful tool in changing how we speak to ourselves. It can be difficult to adopt self-compassion if we aren&rsquo;t used to it. Therapists can help patients embrace self-compassion and recognize that all humans deserve it. Another way to practice self-compassion is through repeated daily affirmation. This can help people introduce self-compassion and self-kindness into their lives in gentle ways.<br /><br /></li>
+                                    <li>Mindfulness practices can help people adopt a nonjudgmental attitude towards themselves. People can use mindfulness to observe their thoughts and feelings without judgment. Mindfulness can help decrease stress levels and improve mental health.<br /><br /></li>
+                                    <li>Working with our inner critics is another way to improve self-talk. Some people have an inner critic that judges and shames almost all of a person&rsquo;s actions. These voices are usually internalized voices of people in a person&rsquo;s childhood or behaviors that were modeled to them early on in life. Self-criticism can become so detrimental at times that it can lead to mental health conditions such as depression and anxiety.</li>
+                                </ul>
+                                <p>Changing your internal narrative is a great way to develop better relationships with yourself and others. Rewriting this narrative can help improve mental health and emotional resilience. It&rsquo;s important to remember that it&rsquo;s not your fault if you are experiencing negative self-talk or an inner critic. It may take time to work through these changes, but it is always possible. If you are having a hard time being kind to yourself, this does not mean you are falling short. It just might mean that these thoughts are deeper than you thought. The way we speak to ourselves matters. The story we tell ourselves has the power to change the course of our lives and how fulfilled we feel.&nbsp;</p>
+                                <p>If you (or someone you love) may benefit from working with a therapist and rewriting your internal narrative, we are here for you! <a href="https://michiganpsychologicalcare.com/contact.php">Reach out to us</a> today if you are ready to start your healing journey. We are here for you every step of the way.</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8295361/">https://pmc.ncbi.nlm.nih.gov/articles/PMC8295361/</a>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11916919/">https://pmc.ncbi.nlm.nih.gov/articles/PMC11916919/</a>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11904750/">https://pmc.ncbi.nlm.nih.gov/articles/PMC11904750/</a>&nbsp;</p>
+                                <p><a href="https://pubmed.ncbi.nlm.nih.gov/19770047/">https://pubmed.ncbi.nlm.nih.gov/19770047/</a>&nbsp;</p>
+                                <p><a href="https://ccare.stanford.edu/uncategorized/the-scientific-benefits-of-self-compassion-infographic/">https://ccare.stanford.edu/uncategorized/the-scientific-benefits-of-self-compassion</a>&nbsp;</p>
+                                <p><a href="https://www.sciencedirect.com/science/article/pii/S0006899325002021">https://www.sciencedirect.com/science/article/pii/S0006899325002021</a>&nbsp;</p>
+                                <p><a href="https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral">https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral</a>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8475916/">https://pmc.ncbi.nlm.nih.gov/articles/PMC8475916/</a>&nbsp;</p>
+                                <p><strong>Keywords</strong>: self-talk, CBT techniques, inner critic, self-compassion</p>
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/what-to-do-when-you-feel-stuck-in-therapy.php">⇐ what to do when you feel stuck in therapy </a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/how-to-challenge-fear-of-failure-through-behavioral-experiment.php"> how to challenge fear of failure through behavioral experiment ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+ 
+
+<?php include('../include/footer.php'); ?>

@@ -1,0 +1,95 @@
+<?php 
+
+$img = '';
+$title = 'What to Do When You Feel "Stuck" in Therapy';
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>What to Do When You Feel "Stuck" in Therapy</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Dec 23, 2025</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2025/12/what-to-do-when-you-feel-stuck-in-therapy.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>What to Do When You Feel "Stuck" in Therapy</strong></h1>
+                                <p><span style="font-weight: 400;">Therapy is a helpful way to work through a variety of mental health conditions and life changes. Taking the step to start therapy is brave and can be challenging. Sometimes people can feel stuck in therapy. This can mean that they feel unable to move forward through certain issues or feel as if their symptoms are not improving quickly enough. Feeling stuck is not a sign of failure. Instead, it&rsquo;s helpful to reframe feeling stuck as finding a new direction to take. We will discuss how it might feel to feel stuck in therapy and how to move forward with </span><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7769763/"><span style="font-weight: 400;">therapy tips</span></a><span style="font-weight: 400;"> to use.&nbsp;</span></p>
+                                <h2><strong>What Does It Mean to Feel &ldquo;Stuck&rdquo; in Therapy?</strong></h2>
+                                <p><span style="font-weight: 400;">As we mentioned above, feeling stuck in therapy is normal and valid. Feeling stuck can show up within therapy in different ways. Patients may explain that their sessions feel repetitive or too theoretical. Another way patients may feel stuck is by feeling numb emotionally and finding it difficult to work through difficult issues.</span></p>
+                                <h2><strong>Feeling Stuck Is a Normal Part of Therapy</strong></h2>
+                                <p><span style="font-weight: 400;">Therapy is an evidence-based tool used to treat a variety of mental health conditions. Healing from mental health conditions is never linear, and progress often comes with ups and downs. Sometimes growth can feel uncomfortable and unnatural. Oftentimes, therapy involves making changes in areas of our lives that we may not be able to see yet.&nbsp;</span></p>
+                                <h2><strong>Navigating The Feeling of Stuck in Therapy</strong></h2>
+                                <p><span style="font-weight: 400;">Feeling stuck in therapy is normal. But it&rsquo;s also valid if patients want to push through and help themselves become &ldquo;un-stuck&rdquo;. One way to help troubleshoot this feeling is to reflect in meaningful ways. This could mean </span><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3505408/"><span style="font-weight: 400;">journaling</span></a><span style="font-weight: 400;"> or meditating on certain issues that are contributing to feeling stuck. Another way to move past feeling stuck is for patients to communicate this feeling to their therapist. Therapists are intuitive, but they can&rsquo;t always read their patients&rsquo; minds. It&rsquo;s important for patients to communicate openly and honestly for the </span><a href="https://www.psychologytoday.com/us/blog/comparatively-speaking/202409/one-reason-why-you-may-feel-stuck-in-therapy"><span style="font-weight: 400;">therapy progress</span></a><span style="font-weight: 400;"> to be most effective. Patients can also use </span><a href="https://www.sciencedirect.com/science/article/pii/S0272735824001107"><span style="font-weight: 400;">self-reflection</span></a><span style="font-weight: 400;"> to look at their goals for therapy. It&rsquo;s normal and often needed to change goals because life circumstances change all the time. On the other hand, </span><a href="https://www.apa.org/monitor/2017/02/online-therapy"><span style="font-weight: 400;">online counselors</span></a><span style="font-weight: 400;"> may consider tweaking their therapeutic approach to help patients who are feeling stuck in therapy.&nbsp;</span></p>
+                                <p><span style="font-weight: 400;">Feeling stuck is never a sign of failure. Reframing feeling stuck as an area to move forward can help patients feel empowered to keep fighting in their therapy journey. When patients feel stuck in therapy, they may need to consider pausing to get to the bottom of this feeling. People can use journaling, meditation, conversations, and goal reflection to help them move past feeling stuck. We want to remind you to approach these feelings with compassion and communication, and without judgment.&nbsp;</span></p>
+                                <p><span style="font-weight: 400;">If you (or someone you love) may benefit from therapy, we are here for you! </span><a href="https://michiganpsychologicalcare.com/contact.php"><span style="font-weight: 400;">Reach out to us</span></a><span style="font-weight: 400;"> today if you are ready to start your therapy journey.</span></p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7769763/"><span style="font-weight: 400;">https://pmc.ncbi.nlm.nih.gov/articles/PMC7769763/</span></a><span style="font-weight: 400;">&nbsp;</span></p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3505408/"><span style="font-weight: 400;">https://pmc.ncbi.nlm.nih.gov/articles/PMC3505408/</span></a><span style="font-weight: 400;">&nbsp;</span></p>
+                                <p><a href="https://www.psychologytoday.com/us/blog/comparatively-speaking/202409/one-reason-why-you-may-feel-stuck-in-therapy"><span style="font-weight: 400;">https://www.psychologytoday.com/us/blog/comparatively-speaking/202409/one-reason-why-you-may-feel-stuck-in-therapy</span></a><span style="font-weight: 400;">&nbsp;</span></p>
+                                <p><a href="https://www.sciencedirect.com/science/article/pii/S0272735824001107"><span style="font-weight: 400;">https://www.sciencedirect.com/science/article/pii/S0272735824001107</span></a><span style="font-weight: 400;">&nbsp;</span></p>
+                                <p><a href="https://www.apa.org/monitor/2017/02/online-therapy"><span style="font-weight: 400;">https://www.apa.org/monitor/2017/02/online-therapy</span></a><span style="font-weight: 400;">&nbsp;</span></p>
+                                <p><strong>Keywords</strong><span style="font-weight: 400;">: therapy progress, online counselor [Michigan], self-reflection, therapy tips</span></p>
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/the-psychology-of-people-pleasing-and-how-to-unlearn-it.php">⇐ the psychology of people pleasing and how to unlearn it </a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/the-science-of-self-talk-rewriting-your-internal-narrative.php"> the science of self talk rewriting your internal narrative ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+ 
+
+<?php include('../include/footer.php'); ?>
