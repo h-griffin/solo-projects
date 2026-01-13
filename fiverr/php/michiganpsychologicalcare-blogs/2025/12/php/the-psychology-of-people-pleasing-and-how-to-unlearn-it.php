@@ -1,0 +1,97 @@
+<?php 
+
+$img = '';
+$title = "The Psychology of People-Pleasing and How to Unlearn It";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>The Psychology of People-Pleasing and How to Unlearn It</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Dec 16, 2025</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2025/12/the-psychology-of-people-pleasing-and-how-to-unlearn-it.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>The Psychology of People-Pleasing and How to Unlearn It</strong></h1>
+                                <p>Everyone has basic needs that deserve to be met at all times. However, people who struggle with people-pleasing often have difficulty seeing their own needs as important as those of others. People-pleasing is developed as a survival strategy, not as a flaw or shortcoming. These traits are often rooted in underlying feelings of low self-worth and a fear of losing meaningful connections.</p>
+                                <h2><strong>What Is a People-Pleaser?</strong></h2>
+                                <p>A <a href="https://www.psychologytoday.com/us/blog/your-emotional-meter/202408/the-complexity-of-people-pleasing">people-pleaser</a> is someone who prioritizes the needs of others over the needs of their own. When someone is classified as a people-pleaser, they oftentimes have a difficult time saying no, oftentimes agree to things that they don&rsquo;t actually agree to, avoid conflict, and apologize when they are not at fault. As we mentioned previously, these traits are not character flaws.</p>
+                                <h2><strong>The Psychology Behind People-Pleasing</strong></h2>
+                                <p>People-pleasing is a challenging thing to work through because it is deeply rooted within the person&rsquo;s psyche. When someone experiences people-pleasing, they are likely doing so based on several factors. The first being that people-pleasers fear being rejected or abandoned. When someone struggles with people-pleasing, disapproval can feel like danger. People-pleasing is also deeply rooted in low <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12318589/">self-worth</a> and the seeking of external validation. When someone struggles with people-pleasing, these struggles often attach to self-esteem.</p>
+                                <h2><strong>How People-Pleasing Affects Self-Worth</strong></h2>
+                                <p>People-pleasing affects self-worth because people begin to abandon their own needs and desires for others. When someone struggles with people-pleasing, they will likely also struggle with self-trust. Over time, people-pleasers begin to internalize the belief that their needs are too much or don&rsquo;t matter.&nbsp;</p>
+                                <h2><strong>How to Unlearn People Pleasing</strong></h2>
+                                <p>People who struggle with people-pleasing likely also struggle with emotional boundaries and <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12379063/">assertiveness</a>. Assertiveness is a powerful form of communication that can be difficult for people-pleasers to navigate. Being assertive is not mean but important to maintain boundaries that protect the well-being of all parties in the relationship. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5868552/">Emotional boundaries</a> are important to understanding that taking care of our own needs must come first. When people are unlearning people-pleasing behaviors, they will often feel guilty after saying no. This does not mean that they are wrong; it&rsquo;s just an example of how deeply these issues are rooted. Another way that people can start to unlearn people-pleasing is to reconnect with their own <a href="https://www.sciencedirect.com/science/article/abs/pii/S0305750X23000037">needs</a>. People can try identifying their own personal values and try scheduling activities that include them.&nbsp;</p>
+                                <p>People-pleasing is a learned behavior that developed for specific reasons. Unlearning people-pleasing is important for the person&rsquo;s safety and well-being, but it&rsquo;s not about being selfish. People who struggle with people-pleasing can work through reframing assertiveness as a way to preserve connection, not bring danger to it. It&rsquo;s important for people-pleasers to remember that their needs are not too much or invalid. They are just as valid as everyone else&rsquo;s needs. When people unlearn people-pleasing, they will need to work through strengthening their self-worth and taking care of their own needs. This can be challenging, but it is always worth the effort. Everyone&rsquo;s needs are valid, even if they don&rsquo;t always feel that way.</p>
+                                <p>If you (or someone you love) may benefit from working with us, we are here for you! <a href="https://michiganpsychologicalcare.com/contact.php">Reach out to us</a> today if you are ready to start your therapy journey. We are here for you every step of the way.</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://www.psychologytoday.com/us/blog/your-emotional-meter/202408/the-complexity-of-people-pleasing">https://www.psychologytoday.com/us/blog/your-emotional-meter/202408/the-complexity-of-people-pleasing</a>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12318589/">https://pmc.ncbi.nlm.nih.gov/articles/PMC12318589/</a>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12379063/">https://pmc.ncbi.nlm.nih.gov/articles/PMC12379063/</a>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5868552/">https://pmc.ncbi.nlm.nih.gov/articles/PMC5868552/</a>&nbsp;</p>
+                                <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0305750X23000037">https://www.sciencedirect.com/science/article/abs/pii/S0305750X23000037</a>&nbsp;</p>
+                                <p><strong>Keywords</strong>: people-pleaser, self-worth, assertiveness, emotional boundaries</p>
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<a href="/blog/the-difference-between-medication-adjustment-and-medication-resistance.php">⇐ the difference between medication adjustment and medication resistance </a>
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/what-to-do-when-you-feel-stuck-in-therapy.php"> what to do when you feel stuck in therapy ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+ 
+
+<?php include('../include/footer.php'); ?>
