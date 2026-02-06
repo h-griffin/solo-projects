@@ -1,0 +1,91 @@
+<?php 
+
+$img = '';
+$title = "How to Support a Loved One's Mental Health Journey";
+$meta_desc = '';
+
+?>
+<?php include('../include/header.php'); ?>
+
+		<!-- Page Title
+		============================================= -->
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Title
+							============================================= -->
+							<div class="entry-title">
+								<h2>How to Support a Loved One's Mental Health Journey</h2>
+							</div><!-- .entry-title end -->
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="entry-meta">
+								<ul>
+									<li><i class="icon-calendar3"></i>Jan 6, 2026</li>
+								</ul>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<a href="#"><img src="/images/blog/2026/01/how-to-support-a-loved-ones-mental-health-journey.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+                                
+                                <h1><strong>How to Support a Loved One's Mental Health Journey</strong></h1>
+                                <p>Supporting someone struggling with their mental health can be intimidating for some people. In most cases, this isn&rsquo;t because the person doesn&rsquo;t care about their loved one. It usually just means they don&rsquo;t know what to say or do to be most helpful. Oftentimes, it&rsquo;s less about what a person does or says and more about the person&rsquo;s presence in general. When someone is struggling with their mental health, they often feel alone. In most cases, the most helpful thing for someone struggling is just being reminded they are not alone.&nbsp;</p>
+                                <p>Everyone struggling with their mental health will struggle in different ways. Because of this, everyone&rsquo;s <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8409246/">mental health support</a> needs will look different. Unfortunately, there is not a one size fits all guide for helping people with their mental health. In most cases, the most helpful thing someone can do support their loved ones&rsquo; struggling is being present and understanding. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8623346/">Empathy</a> can be used as a tool to help people struggling feel validated in how they are feeling without judgment. Empathy helps people to build trust and a safe environment.&nbsp;</p>
+                                <p>Along with empathy, <a href="https://www.sciencedirect.com/science/article/pii/S0378595519303491">active listening</a> is another way to provide support to people struggling with their mental health. Active listening is defined as listening to a person fully in a way that considers the person&rsquo;s words, emotions, and physical state. Active listening goes hand in hand with empathy, and both help one another become stronger. Becoming an active listener involves asking open-ended questions, avoiding interruptions, and reflecting what the person is saying. These skills can help the person who is struggling feel supported when they are sharing their feelings. In most cases, people find active listening to be more important than advice.</p>
+                                <p>Approaching loved ones with curiosity instead of assumptions and judgments can help to create a safe environment. People can try to ask their loved one&rsquo;s questions about how they are feeling or their struggles to help them understand more effectively. It&rsquo;s important to avoid comparisons or dismissing a person&rsquo;s experience. It&rsquo;s also important to respect your loved one's boundaries and abilities. People may have different limits regarding their emotions and mental health conditions. It&rsquo;s important to be aware of these boundaries and not push past them. This will help to maintain a safe and supportive environment for your loved one. In many cases, people may need professional support depending on the struggles they are dealing with. In some cases, people may choose to work with a therapist in person or an <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10888081/">online counselor</a>.&nbsp;</p>
+                                <p>All of us want to be heard and understood. But unfortunately, people don&rsquo;t always take the time to listen to their loved ones. Becoming better listeners and supporters to those in our lives is something we will never regret. One of the greatest things we have in this life is each other.</p>
+                                <p>If you or someone you love is interested in working with us for treatment, we are here for you!&nbsp; <a href="https://michiganpsychologicalcare.com/contact.php">Reach out to us</a> today if you are ready to start.</p>
+                                <p><strong>References</strong></p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8409246/">https://pmc.ncbi.nlm.nih.gov/articles/PMC8409246/</a></p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8623346/">https://pmc.ncbi.nlm.nih.gov/articles/PMC8623346/</a></p>
+                                <p><a href="https://www.sciencedirect.com/science/article/pii/S0378595519303491">https://www.sciencedirect.com/science/article/pii/S0378595519303491</a>&nbsp;</p>
+                                <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10888081/">https://pmc.ncbi.nlm.nih.gov/articles/PMC10888081/</a>&nbsp;</p>
+                                <p><strong>Keywords</strong>: online counselor [Michigan], mental health support, empathy, active listening</p>
+                                
+                                <!-- Post Single - Content End -->
+
+								<div class="clear"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+                        		<?php
+                        		include('../include/share_button.php');
+                        		?>
+                        		<!-- Post Single - Share End -->
+							</div>
+						</div><!-- .entry end -->
+
+							<!-- Post Navigation
+							============================================= -->
+							<div class="row justify-content-between col-mb-30 post-navigation">
+							<div class="col-12 col-md-auto text-center">
+								<!-- <a href="/blog/the-science-behind-antidepressants-how-they-actually-work.php">⇐ the science behind antidepressants how they actually work </a> -->
+							</div>
+
+							<div class="col-12 col-md-auto text-center">
+								<a  href="/blog/the-neuroscience-of-manifestation-how-your-brain-responds-to-intentions.php"> the neuroscience of manifestation ⇒</a>
+							</div>
+						</div><!-- .post-navigation end -->
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+ 
+
+<?php include('../include/footer.php'); ?>
